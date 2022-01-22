@@ -19,18 +19,11 @@ public class Manager : MonoBehaviour
     public GameObject PersonagemMasculino;
     public GameObject PersonagemFeminino;
 
-    void Awake()
-    {
-        
-    }
-
-    // Start is called before the first frame update
     void Start()
     {
-
+        Generate();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Return))
@@ -87,7 +80,7 @@ public class Manager : MonoBehaviour
             Cabelo.GetComponent<SpriteRenderer>().sprite = null;
         }
 
-        if (hasOclin > 40)
+        if (hasOclin < 35)
         {
             Oclin.GetComponent<SpriteRenderer>().sprite = oclinSprite;
         }
@@ -158,7 +151,7 @@ public class Manager : MonoBehaviour
         int cabelin = Random.Range(0, 18);
         CabeloF.GetComponent<SpriteRenderer>().sprite = cabeloArrayF[cabelin];
 
-        if (hasOclin > 40)
+        if (hasOclin < 35)
         {
             Oclin.GetComponent<SpriteRenderer>().sprite = oclinSprite;
         }
