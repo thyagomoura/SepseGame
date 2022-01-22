@@ -10,12 +10,18 @@ public class Manager : MonoBehaviour
     public Sprite[] calcaArray;
     public Sprite[] blusaArray;
 
+    public Sprite[] peleArrayF;
+    public Sprite[] cabeloArrayF;
+    public Sprite[] calcaArrayF;
+
+    public Sprite oclinSprite;
+
     public GameObject PersonagemMasculino;
     public GameObject PersonagemFeminino;
 
     void Awake()
     {
-        Generate();
+        
     }
 
     // Start is called before the first frame update
@@ -36,7 +42,14 @@ public class Manager : MonoBehaviour
     public void Generate()
     {
         int gender = Random.Range(0, 2);
-        GenerateMale();
+        if (gender < 1)
+        {
+            GenerateMale();
+        }
+        else
+        {
+            GenerateFemale();
+        }
     }
 
     void GenerateMale()
@@ -47,10 +60,12 @@ public class Manager : MonoBehaviour
         GameObject Pele = GameObject.Find("Pele");
         GameObject Cabelo = GameObject.Find("Cabelin");
         GameObject Blusa = GameObject.Find("Blusa");
+        GameObject BlusaOutline = GameObject.Find("BlusaOutline");
         GameObject Calca = GameObject.Find("Calca");
         GameObject CalcaOutline = GameObject.Find("CalcaOutline");
         GameObject Pisante = GameObject.Find("Pisante");
         GameObject PeloFacial = GameObject.Find("PeloFacial");
+        GameObject Oclin = GameObject.Find("AcessorioRosto");
 
         int corDaPele = Random.Range(0, 3);
 
@@ -58,6 +73,7 @@ public class Manager : MonoBehaviour
         int hasCabas = Random.Range(0, 99);
         int hasCorta = Random.Range(0, 2);
         int hasCalca = Random.Range(0, 2);
+        int hasOclin = Random.Range(0, 99);
 
         Pele.GetComponent<SpriteRenderer>().sprite = peleArray[corDaPele];
 
@@ -69,6 +85,15 @@ public class Manager : MonoBehaviour
         else
         {
             Cabelo.GetComponent<SpriteRenderer>().sprite = null;
+        }
+
+        if (hasOclin > 40)
+        {
+            Oclin.GetComponent<SpriteRenderer>().sprite = oclinSprite;
+        }
+        else
+        {
+            Oclin.GetComponent<SpriteRenderer>().sprite = null;
         }
 
         if (hasBigas < 1)
@@ -92,6 +117,17 @@ public class Manager : MonoBehaviour
             Calca.GetComponent<SpriteRenderer>().sprite = calcaArray[3];
         }
 
+        if (hasCorta < 1)
+        {
+            BlusaOutline.GetComponent<SpriteRenderer>().sprite = blusaArray[0];
+            Blusa.GetComponent<SpriteRenderer>().sprite = blusaArray[1];
+        }
+        else
+        {
+            BlusaOutline.GetComponent<SpriteRenderer>().sprite = blusaArray[2];
+            Blusa.GetComponent<SpriteRenderer>().sprite = blusaArray[3];
+        }
+
         Blusa.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
         Calca.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
         Pisante.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
@@ -99,6 +135,51 @@ public class Manager : MonoBehaviour
 
     void GenerateFemale()
     {
+        PersonagemMasculino.SetActive(false);
+        PersonagemFeminino.SetActive(true);
 
+        GameObject PeleF = GameObject.Find("PeleF");
+        GameObject CabeloF = GameObject.Find("CabelinF");
+        GameObject BlusaF = GameObject.Find("BlusaF");
+        GameObject BlusaOutlineF = GameObject.Find("BlusaOutlineF");
+        GameObject CalcaF = GameObject.Find("CalcaF");
+        GameObject CalcaOutlineF = GameObject.Find("CalcaOutlineF");
+        GameObject PisanteF = GameObject.Find("PisanteF");
+        GameObject PeloFacialF = GameObject.Find("PeloFacialF");
+        GameObject Oclin = GameObject.Find("AcessorioRostoF");
+
+        int corDaPele = Random.Range(0, 3);
+
+        int hasCalca = Random.Range(0, 2);
+        int hasOclin = Random.Range(0, 99);
+
+        PeleF.GetComponent<SpriteRenderer>().sprite = peleArrayF[corDaPele];
+
+        int cabelin = Random.Range(0, 18);
+        CabeloF.GetComponent<SpriteRenderer>().sprite = cabeloArrayF[cabelin];
+
+        if (hasOclin > 40)
+        {
+            Oclin.GetComponent<SpriteRenderer>().sprite = oclinSprite;
+        }
+        else
+        {
+            Oclin.GetComponent<SpriteRenderer>().sprite = null;
+        }
+
+        if (hasCalca < 1)
+        {
+            CalcaOutlineF.GetComponent<SpriteRenderer>().sprite = calcaArrayF[0];
+            CalcaF.GetComponent<SpriteRenderer>().sprite = calcaArrayF[1];
+        }
+        else
+        {
+            CalcaOutlineF.GetComponent<SpriteRenderer>().sprite = calcaArrayF[2];
+            CalcaF.GetComponent<SpriteRenderer>().sprite = calcaArrayF[3];
+        }
+
+        BlusaF.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+        CalcaF.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+        PisanteF.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
     }
 }
