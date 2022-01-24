@@ -9,6 +9,10 @@ public class MenuPause : MonoBehaviour
     public GameObject PauseMenuUI;
     public GameObject PauseIcon;
 
+    void Start()
+    {
+        Time.timeScale = 1f;
+    }
 
     public void Resume()
     {
