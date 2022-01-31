@@ -1587,8 +1587,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -587.2}
-  m_SizeDelta: {x: -1074.5, y: -532.05005}
+  m_AnchoredPosition: {x: 0, y: -633.5625}
+  m_SizeDelta: {x: -1074.5, y: -439.325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223254510
 MonoBehaviour:
@@ -1748,7 +1748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256523378}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.752, y: -0.254, z: 0}
+  m_LocalPosition: {x: -0.752, y: -0.274, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 144223204}
@@ -1845,8 +1845,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -500.25}
-  m_SizeDelta: {x: -1074.5, y: -611.30005}
+  m_AnchoredPosition: {x: 0, y: -544.60004}
+  m_SizeDelta: {x: -1074.5, y: -522.6001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &258880866
 MonoBehaviour:
@@ -2566,7 +2566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6868304036755426748, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6868304036755426748, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2768,7 +2768,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 562070550}
-  m_PlaneDistance: 4.15
+  m_PlaneDistance: 5.7
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -3056,8 +3056,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -521.6}
-  m_SizeDelta: {x: -1074.5, y: -568.6001}
+  m_AnchoredPosition: {x: 0, y: -567.39996}
+  m_SizeDelta: {x: -1074.5, y: -476.99994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &548948359
 MonoBehaviour:
