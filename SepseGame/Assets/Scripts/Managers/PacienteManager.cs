@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Manager : MonoBehaviour
+public class PacienteManager : MonoBehaviour
 {
     public Sprite[] peleArray;
     public Sprite[] cabeloArray;
@@ -19,9 +19,11 @@ public class Manager : MonoBehaviour
     public GameObject PersonagemMasculino;
     public GameObject PersonagemFeminino;
 
-    void Start()
+    public int teste;
+
+    private void Start()
     {
-        Generate();
+        Debug.Log(teste);
     }
 
     void Update()

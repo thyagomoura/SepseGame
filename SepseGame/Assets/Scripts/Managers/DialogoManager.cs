@@ -9,6 +9,7 @@ public class DialogoManager : MonoBehaviour
 {
     public GameObject Saudacao, Opcao1, Opcao2, objResposta, buttonContinuar, buttonAvancar, o1txt, o2txt;
     public Text Resposta;
+    public PacienteManager paciente;
 
     int currentPosition = 0;
     float Delay = 0.04f;
@@ -16,6 +17,11 @@ public class DialogoManager : MonoBehaviour
 
     bool r1 = false;
     bool r2 = false;
+
+    private void Awake()
+    {
+       
+    }
 
     public void Resposta1()
     {
