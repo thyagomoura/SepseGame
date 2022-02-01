@@ -19,11 +19,24 @@ public class PacienteManager : MonoBehaviour
     public GameObject PersonagemMasculino;
     public GameObject PersonagemFeminino;
 
-    public int teste;
+    public PacienteTemp data;
+
+    public int corDaPele, hasBigas, hasCabas, hasCorta, hasCalca, hasOclin, cabelin, bigas;
 
     private void Start()
     {
-        Debug.Log(teste);
+        if (!data.set)
+        {
+            Generate();
+        }
+        else if(data.gender == 0)
+        {
+            SetMale();
+        }
+        else
+        {
+            SetFemale();
+        }
     }
 
     void Update()
@@ -37,6 +50,8 @@ public class PacienteManager : MonoBehaviour
     public void Generate()
     {
         int gender = Random.Range(0, 2);
+        data.gender = gender;
+        data.set = true;
         if (gender < 1)
         {
             GenerateMale();
@@ -48,6 +63,51 @@ public class PacienteManager : MonoBehaviour
     }
 
     void GenerateMale()
+    {
+        corDaPele = Random.Range(0, 4);
+
+        hasBigas = Random.Range(0, 2);
+        hasCabas = Random.Range(0, 100);
+        hasCorta = Random.Range(0, 2);
+        hasCalca = Random.Range(0, 2);
+        hasOclin = Random.Range(0, 100);
+
+        bigas = Random.Range(0, 9);
+        cabelin = Random.Range(0, 19);
+
+        data.corDaPele = corDaPele;
+
+        data.hasBigas = hasBigas;
+        data.hasCabas = hasCabas;
+        data.hasCorta = hasCorta;
+        data.hasCalca = hasCalca;
+        data.hasOclin = hasOclin;
+
+        data.bigas = bigas;
+        data.cabelin = cabelin;
+
+        SetMale();
+    }
+
+    void GenerateFemale()
+    {
+        corDaPele = Random.Range(0, 4);
+
+        hasCalca = Random.Range(0, 2);
+        hasOclin = Random.Range(0, 100);
+
+        cabelin = Random.Range(0, 24);
+
+        data.corDaPele = corDaPele;
+        data.hasCalca = hasCalca;
+        data.hasOclin = hasOclin;
+
+        data.cabelin = cabelin;
+
+        SetFemale();
+    }
+
+    void SetMale()
     {
         PersonagemMasculino.SetActive(true);
         PersonagemFeminino.SetActive(false);
@@ -62,19 +122,19 @@ public class PacienteManager : MonoBehaviour
         GameObject PeloFacial = GameObject.Find("PeloFacial");
         GameObject Oclin = GameObject.Find("AcessorioRosto");
 
-        int corDaPele = Random.Range(0, 3);
-
-        int hasBigas = Random.Range(0, 2);
-        int hasCabas = Random.Range(0, 99);
-        int hasCorta = Random.Range(0, 2);
-        int hasCalca = Random.Range(0, 2);
-        int hasOclin = Random.Range(0, 99);
+        corDaPele = data.corDaPele;
+        hasBigas = data.hasBigas;
+        hasCabas = data.hasCabas;
+        hasCorta = data.hasCorta;
+        hasCalca = data.hasCalca;
+        hasOclin = data.hasOclin;
+        cabelin = data.cabelin;
+        bigas = data.bigas;
 
         Pele.GetComponent<SpriteRenderer>().sprite = peleArray[corDaPele];
 
         if (hasCabas > 30)
         {
-            int cabelin = Random.Range(0, 18);
             Cabelo.GetComponent<SpriteRenderer>().sprite = cabeloArray[cabelin];
         }
         else
@@ -93,7 +153,6 @@ public class PacienteManager : MonoBehaviour
 
         if (hasBigas < 1)
         {
-            int bigas = Random.Range(0, 9);
             PeloFacial.GetComponent<SpriteRenderer>().sprite = barbaArray[bigas];
         }
         else
@@ -128,7 +187,7 @@ public class PacienteManager : MonoBehaviour
         Pisante.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
     }
 
-    void GenerateFemale()
+    void SetFemale()
     {
         PersonagemMasculino.SetActive(false);
         PersonagemFeminino.SetActive(true);
@@ -136,21 +195,19 @@ public class PacienteManager : MonoBehaviour
         GameObject PeleF = GameObject.Find("PeleF");
         GameObject CabeloF = GameObject.Find("CabelinF");
         GameObject BlusaF = GameObject.Find("BlusaF");
-        GameObject BlusaOutlineF = GameObject.Find("BlusaOutlineF");
         GameObject CalcaF = GameObject.Find("CalcaF");
         GameObject CalcaOutlineF = GameObject.Find("CalcaOutlineF");
         GameObject PisanteF = GameObject.Find("PisanteF");
-        GameObject PeloFacialF = GameObject.Find("PeloFacialF");
         GameObject Oclin = GameObject.Find("AcessorioRostoF");
 
-        int corDaPele = Random.Range(0, 3);
+        corDaPele = data.corDaPele;
+        hasCalca = data.hasCalca;
+        hasOclin = data.hasOclin;
 
-        int hasCalca = Random.Range(0, 2);
-        int hasOclin = Random.Range(0, 99);
+        data.cabelin = cabelin;
 
         PeleF.GetComponent<SpriteRenderer>().sprite = peleArrayF[corDaPele];
 
-        int cabelin = Random.Range(0, 18);
         CabeloF.GetComponent<SpriteRenderer>().sprite = cabeloArrayF[cabelin];
 
         if (hasOclin < 35)

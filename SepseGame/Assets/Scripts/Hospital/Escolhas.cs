@@ -9,6 +9,11 @@ public class Escolhas : MonoBehaviour
     bool isEFIn = false;
     bool isEIn = false;
 
+    private void Start()
+    {
+        
+    }
+
     public void monitorizar()
     {
         if (isPlaying(GameObject.Find("PanelMonitorizar").GetComponent<Animator>(), "In") || isPlaying(GameObject.Find("PanelMonitorizar").GetComponent<Animator>(), "Out"))

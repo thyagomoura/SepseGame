@@ -18,11 +18,6 @@ public class DialogoManager : MonoBehaviour
     bool r1 = false;
     bool r2 = false;
 
-    private void Awake()
-    {
-       
-    }
-
     public void Resposta1()
     {
         r1 = true;
