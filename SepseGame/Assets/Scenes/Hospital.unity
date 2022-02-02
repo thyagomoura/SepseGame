@@ -4537,6 +4537,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PauseMenuUI: {fileID: 659586555}
   PauseIcon: {fileID: 1329838579}
+  buttonsEscolhas:
+  - {fileID: 86372782}
+  - {fileID: 770917914}
+  - {fileID: 1339975768}
 --- !u!1 &872828816
 GameObject:
   m_ObjectHideFlags: 0
