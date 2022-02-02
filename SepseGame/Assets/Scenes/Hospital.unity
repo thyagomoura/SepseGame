@@ -4501,7 +4501,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_TargetDisplay: 0
 --- !u!224 &843866808
 RectTransform:
@@ -4536,6 +4536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuUI: {fileID: 659586555}
+  Escolhas: {fileID: 73354497}
   PauseIcon: {fileID: 1329838579}
   buttonsEscolhas:
   - {fileID: 86372782}
@@ -6838,6 +6839,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8ece75f32b2eba428218200e5a91b4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMIn: 0
+  isEFIn: 0
+  isEIn: 0
 --- !u!1 &1523335045
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class MenuPause : MonoBehaviour
 {
 
     public GameObject PauseMenuUI;
+    public GameObject Escolhas;
     public GameObject PauseIcon;
     public Button[] buttonsEscolhas;
 
@@ -20,6 +21,7 @@ public class MenuPause : MonoBehaviour
     {
         PauseIcon.SetActive(true);
         PauseMenuUI.SetActive(false);
+        Escolhas.SetActive(true);
         buttonsEscolhas[0].interactable = !buttonsEscolhas[0].interactable;
         buttonsEscolhas[1].interactable = !buttonsEscolhas[1].interactable;
         buttonsEscolhas[2].interactable = !buttonsEscolhas[2].interactable;
@@ -29,6 +31,7 @@ public class MenuPause : MonoBehaviour
     {
         PauseMenuUI.SetActive(true);
         PauseIcon.SetActive(false);
+        Escolhas.SetActive(false);
         buttonsEscolhas[0].interactable = !buttonsEscolhas[0].interactable;
         buttonsEscolhas[1].interactable = !buttonsEscolhas[1].interactable;
         buttonsEscolhas[2].interactable = !buttonsEscolhas[2].interactable;

@@ -5,14 +5,9 @@ using UnityEngine;
 public class Escolhas : MonoBehaviour
 {
     Animation anim;
-    bool isMIn = false;
-    bool isEFIn = false;
-    bool isEIn = false;
-
-    private void Start()
-    {
-        
-    }
+    public bool isMIn = false;
+    public bool isEFIn = false;
+    public bool isEIn = false;
 
     public void monitorizar()
     {
