@@ -19,17 +19,17 @@ public class PacienteManager : MonoBehaviour
     public GameObject PersonagemMasculino;
     public GameObject PersonagemFeminino;
 
-    public PacienteTemp data;
+    public Estetica Estetica;
 
     public int corDaPele, hasBigas, hasCabas, hasCorta, hasCalca, hasOclin, cabelin, bigas;
 
     private void Start()
     {
-        if (!data.set)
+        if (!Estetica.set)
         {
             Generate();
         }
-        else if(data.gender == 0)
+        else if(Estetica.gender == 0)
         {
             SetMale();
         }
@@ -50,8 +50,8 @@ public class PacienteManager : MonoBehaviour
     public void Generate()
     {
         int gender = Random.Range(0, 2);
-        data.gender = gender;
-        data.set = true;
+        Estetica.gender = gender;
+        Estetica.set = true;
         if (gender < 1)
         {
             GenerateMale();
@@ -75,16 +75,16 @@ public class PacienteManager : MonoBehaviour
         bigas = Random.Range(0, 9);
         cabelin = Random.Range(0, 19);
 
-        data.corDaPele = corDaPele;
+        Estetica.corDaPele = corDaPele;
 
-        data.hasBigas = hasBigas;
-        data.hasCabas = hasCabas;
-        data.hasCorta = hasCorta;
-        data.hasCalca = hasCalca;
-        data.hasOclin = hasOclin;
+        Estetica.hasBigas = hasBigas;
+        Estetica.hasCabas = hasCabas;
+        Estetica.hasCorta = hasCorta;
+        Estetica.hasCalca = hasCalca;
+        Estetica.hasOclin = hasOclin;
 
-        data.bigas = bigas;
-        data.cabelin = cabelin;
+        Estetica.bigas = bigas;
+        Estetica.cabelin = cabelin;
 
         SetMale();
     }
@@ -98,11 +98,11 @@ public class PacienteManager : MonoBehaviour
 
         cabelin = Random.Range(0, 24);
 
-        data.corDaPele = corDaPele;
-        data.hasCalca = hasCalca;
-        data.hasOclin = hasOclin;
+        Estetica.corDaPele = corDaPele;
+        Estetica.hasCalca = hasCalca;
+        Estetica.hasOclin = hasOclin;
 
-        data.cabelin = cabelin;
+        Estetica.cabelin = cabelin;
 
         SetFemale();
     }
@@ -122,14 +122,14 @@ public class PacienteManager : MonoBehaviour
         GameObject PeloFacial = GameObject.Find("PeloFacial");
         GameObject Oclin = GameObject.Find("AcessorioRosto");
 
-        corDaPele = data.corDaPele;
-        hasBigas = data.hasBigas;
-        hasCabas = data.hasCabas;
-        hasCorta = data.hasCorta;
-        hasCalca = data.hasCalca;
-        hasOclin = data.hasOclin;
-        cabelin = data.cabelin;
-        bigas = data.bigas;
+        corDaPele = Estetica.corDaPele;
+        hasBigas = Estetica.hasBigas;
+        hasCabas = Estetica.hasCabas;
+        hasCorta = Estetica.hasCorta;
+        hasCalca = Estetica.hasCalca;
+        hasOclin = Estetica.hasOclin;
+        cabelin = Estetica.cabelin;
+        bigas = Estetica.bigas;
 
         Pele.GetComponent<SpriteRenderer>().sprite = peleArray[corDaPele];
 
@@ -200,11 +200,11 @@ public class PacienteManager : MonoBehaviour
         GameObject PisanteF = GameObject.Find("PisanteF");
         GameObject Oclin = GameObject.Find("AcessorioRostoF");
 
-        corDaPele = data.corDaPele;
-        hasCalca = data.hasCalca;
-        hasOclin = data.hasOclin;
+        corDaPele = Estetica.corDaPele;
+        hasCalca = Estetica.hasCalca;
+        hasOclin = Estetica.hasOclin;
 
-        data.cabelin = cabelin;
+        Estetica.cabelin = cabelin;
 
         PeleF.GetComponent<SpriteRenderer>().sprite = peleArrayF[corDaPele];
 

@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "DadosPaciente", menuName = "Paciente/Temp")]
+[CreateAssetMenu(fileName = "Estetica", menuName = "Paciente/Estetica")]
 
-public class PacienteTemp : ScriptableObject
+public class Estetica : ScriptableObject
 {
     public bool set = false;
 
