@@ -15,7 +15,7 @@ public class NurseManage : MonoBehaviour
     public Sprite calcaF;
 
     public Sprite oclinSprite;
-
+    public Sprite[] oclinArray;
     public GameObject PersonagemMasculino;
     public GameObject PersonagemFeminino;
 
@@ -62,7 +62,7 @@ public class NurseManage : MonoBehaviour
         }
     }
 
-    void GenerateMale()
+    public void GenerateMale()
     {
         corDaPele = Random.Range(0, 4);
 
@@ -87,7 +87,7 @@ public class NurseManage : MonoBehaviour
         SetMale();
     }
 
-    void GenerateFemale()
+    public void GenerateFemale()
     {
         corDaPele = Random.Range(0, 4);
 
@@ -103,7 +103,7 @@ public class NurseManage : MonoBehaviour
         SetFemale();
     }
 
-    void SetMale()
+    public void SetMale()
     {
         PersonagemMasculino.SetActive(true);
         PersonagemFeminino.SetActive(false);
@@ -168,7 +168,7 @@ public class NurseManage : MonoBehaviour
         Pisante.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
     }
 
-    void SetFemale()
+    public void SetFemale()
     {
         PersonagemMasculino.SetActive(false);
         PersonagemFeminino.SetActive(true);
