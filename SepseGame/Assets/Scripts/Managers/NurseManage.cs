@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NurseManage: MonoBehaviour
+public class NurseManage : MonoBehaviour
 {
     public Sprite[] peleArray;
     public Sprite[] cabeloArray;
@@ -21,7 +21,7 @@ public class NurseManage: MonoBehaviour
 
     public EsteticaNurse EsteticaNurse;
 
-    public int corDaPele, hasBigas, hasCabas, /*hasCorta*/ hasOclin, cabelin, bigas;
+    public int corDaPele, hasBigas, hasCabas, /*hasCorta*/ hasOclin, cabelin, bigas, sexo;
 
     private void Start()
     {
@@ -176,8 +176,8 @@ public class NurseManage: MonoBehaviour
         GameObject PeleF = GameObject.Find("PeleF");
         GameObject CabeloF = GameObject.Find("CabelinF");
         GameObject BlusaF = GameObject.Find("BlusaF");
-       // GameObject CalcaF = GameObject.Find("CalcaF");
-       // GameObject CalcaOutlineF = GameObject.Find("CalcaOutlineF");
+        // GameObject CalcaF = GameObject.Find("CalcaF");
+        // GameObject CalcaOutlineF = GameObject.Find("CalcaOutlineF");
         GameObject PisanteF = GameObject.Find("PisanteF");
         GameObject Oclin = GameObject.Find("AcessorioRostoF");
 
@@ -200,9 +200,9 @@ public class NurseManage: MonoBehaviour
         }
 
         BlusaF.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
-       // CalcaF.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+        // CalcaF.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
         PisanteF.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
     }
 
-    
+
 }
