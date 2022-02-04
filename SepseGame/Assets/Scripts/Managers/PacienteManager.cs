@@ -204,7 +204,7 @@ public class PacienteManager : MonoBehaviour
         hasCalca = Estetica.hasCalca;
         hasOclin = Estetica.hasOclin;
 
-        Estetica.cabelin = cabelin;
+        cabelin = Estetica.cabelin;
 
         PeleF.GetComponent<SpriteRenderer>().sprite = peleArrayF[corDaPele];
 
