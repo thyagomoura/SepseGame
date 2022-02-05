@@ -13,7 +13,7 @@ public class PacoteDe1hora : MonoBehaviour
     int glicemiaCapilar;
     int debitoUrinario;
 
-    bool check1;
+    //as posicoes corretas são sempre: 0,1,2,3
 
     private void Start()
     {
@@ -48,5 +48,4 @@ public class PacoteDe1hora : MonoBehaviour
 
         GameObject.Find("Debito Urinario").GetComponent<Text>().text = GameObject.Find("Debito Urinario").GetComponent<Text>().text + ": " + debitoUrinario.ToString();
     }
-        
 }
