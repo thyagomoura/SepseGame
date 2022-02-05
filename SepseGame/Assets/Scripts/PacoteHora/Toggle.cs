@@ -45,45 +45,56 @@ public class Toggle : MonoBehaviour
     int random7 = 0;
     int random8 = 0;
 
+    //bug na contagem de certas
+    //fazer tela quando confirmar e mostrar oq acertou
+
     private void Start()
     {
         RandomText();
 
     }
-
+    //checkbox
         public void CheckBox1()
     {
         check1 = Verificar(check1, random1);
+        Debug.Log(certas);
     }
     public void CheckBox2()
     {
         check2 = Verificar(check2, random2);
+        Debug.Log(certas);
     }
     public void CheckBox3()
     {
         check3 = Verificar(check3, random3);
+        Debug.Log(certas);
     }
     public void CheckBox4()
     {
         check4 = Verificar(check4, random4);
+        Debug.Log(certas);
     }
     public void CheckBox5()
     {
         check5 = Verificar(check5, random5);
+        Debug.Log(certas);
     }
     public void CheckBox6()
     {
         check6 = Verificar(check6, random6);
+        Debug.Log(certas);
     }
     public void CheckBox7()
     {
         check7 = Verificar(check7, random7);
+        Debug.Log(certas);
     }
     public void CheckBox8()
     {
         check8 = Verificar(check8, random8);
+        Debug.Log(certas);
     }
-
+    //verificar acertos do user
     private bool Verificar(bool check, int random)
     {
         if (check == false)
@@ -92,7 +103,7 @@ public class Toggle : MonoBehaviour
             if (random==0 || random==1 || random==2 || random==3)
             {
                 certas++;
-                Debug.Log(certas);
+                return check;
             }
             return check;
         }
@@ -102,7 +113,8 @@ public class Toggle : MonoBehaviour
             if (random == 0 || random == 1 || random == 2 || random == 3)
             {
                 certas--;
-                Debug.Log(certas);
+                
+                return check;
             }
             return check;
         }
