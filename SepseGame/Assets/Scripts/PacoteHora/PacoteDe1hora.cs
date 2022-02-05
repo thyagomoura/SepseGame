@@ -48,11 +48,5 @@ public class PacoteDe1hora : MonoBehaviour
 
         GameObject.Find("Debito Urinario").GetComponent<Text>().text = GameObject.Find("Debito Urinario").GetComponent<Text>().text + ": " + debitoUrinario.ToString();
     }
-
-
-    private void CheckBox()
-    {
-
-    }
-
+        
 }
