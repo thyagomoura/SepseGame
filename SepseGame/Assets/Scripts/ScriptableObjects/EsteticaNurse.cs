@@ -16,4 +16,7 @@ public class EsteticaNurse : ScriptableObject
     public int hasOclin;
     public int cabelin;
     public int bigas;
+    public int role;
+    public int estetoscopio;
+    public int mascara;
 }

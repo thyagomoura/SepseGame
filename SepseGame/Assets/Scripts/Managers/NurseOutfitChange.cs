@@ -9,23 +9,57 @@ public class NurseOutfitChange : MonoBehaviour
     public void Randomize()
     {
         nm.Generate();
+        nm.sexo = nm.gender;
     }
 
     private int currentOptionSkin = 0;
     private int currentOptionHair = 0;
     private int currentOptionBigas = 0;
     private int currentOptionOclin = 0;
+    private int currentOptionEstetoscopio = 0;
+    private int currentOptionMascara = 0;
+
     public void SexoM()
     {
-        nm.SetMale();
         nm.GenerateMale();
         nm.sexo = 0;
     }
-    public void SexoF() {
-        nm.SetFemale();
+
+    public void SexoF()
+    {
         nm.GenerateFemale();
         nm.sexo = 1;
     }
+
+    public void Nurse()
+    {
+        GameObject ProfissaoF = GameObject.Find("ProfissaoF");
+        GameObject Profissao = GameObject.Find("Profissao");
+        if (nm.sexo == 0)
+        {
+            Profissao.GetComponent<SpriteRenderer>().sprite = nm.profissaoArray[0];
+        }
+        else
+        {
+            ProfissaoF.GetComponent<SpriteRenderer>().sprite = nm.profissaoArrayF[0];
+        }
+    }
+
+    public void Doctor()
+    {
+        GameObject ProfissaoF = GameObject.Find("ProfissaoF");
+        GameObject Profissao = GameObject.Find("Profissao");
+        if (nm.sexo == 0)
+        {
+            Profissao.GetComponent<SpriteRenderer>().sprite = nm.profissaoArray[1];
+        }
+        else
+        {
+            ProfissaoF.GetComponent<SpriteRenderer>().sprite = nm.profissaoArrayF[1];
+        }
+
+    }
+
     public void NextSkin()
     {
         GameObject Pele = GameObject.Find("Pele");
@@ -123,29 +157,53 @@ public class NurseOutfitChange : MonoBehaviour
 
     public void NextOclin()
     {
-        Debug.Log(currentOptionOclin);
         GameObject Oclin = GameObject.Find("AcessorioRosto");
-        currentOptionOclin++;
-        if (currentOptionOclin >= nm.oclinArray.Length)
+        GameObject OclinF = GameObject.Find("AcessorioRostoF");
+        if (nm.sexo == 0)
         {
-            currentOptionOclin = 0;
+            currentOptionOclin++;
+            if (currentOptionOclin >= nm.oclinArray.Length)
+            {
+                currentOptionOclin = 0;
+            }
+            Oclin.GetComponent<SpriteRenderer>().sprite = nm.oclinArray[currentOptionOclin];
         }
-        Oclin.GetComponent<SpriteRenderer>().sprite = nm.oclinArray[currentOptionOclin];
-
+        else
+        {
+            currentOptionOclin++;
+            if (currentOptionOclin >= nm.oclinArray.Length)
+            {
+                currentOptionOclin = 0;
+            }
+            OclinF.GetComponent<SpriteRenderer>().sprite = nm.oclinArray[currentOptionOclin];
+        }
     }
 
     public void PreviousOclin()
     {
         GameObject Oclin = GameObject.Find("AcessorioRosto");
+        GameObject OclinF = GameObject.Find("AcessorioRostoF");
 
-        currentOptionOclin--;
-        if (currentOptionOclin < 0)
+        if (nm.sexo == 0)
         {
-            currentOptionOclin = nm.oclinArray.Length - 1;
+            currentOptionOclin--;
+            if (currentOptionOclin < 0)
+            {
+                currentOptionOclin = 1;
+            }
+            Oclin.GetComponent<SpriteRenderer>().sprite = nm.oclinArray[currentOptionOclin];
         }
-        Oclin.GetComponent<SpriteRenderer>().sprite = nm.oclinArray[currentOptionOclin];
+        else
+        {
+            currentOptionOclin--;
+            if (currentOptionOclin < 0)
+            {
+                currentOptionOclin = 1;
+            }
+            OclinF.GetComponent<SpriteRenderer>().sprite = nm.oclinArray[currentOptionOclin];
 
 
+        }
     }
 
     public void NextBigas()
@@ -175,4 +233,107 @@ public class NurseOutfitChange : MonoBehaviour
         PeloFacial.GetComponent<SpriteRenderer>().sprite = nm.barbaArray[currentOptionBigas];
 
     }
+
+    public void NextEstetoscopio()
+    {
+        GameObject Estetoscopio = GameObject.Find("Estetoscopio");
+        GameObject EstetoscopioF = GameObject.Find("EstetoscopioF");
+
+        if (nm.sexo == 0)
+        {
+            currentOptionEstetoscopio++;
+            if (currentOptionEstetoscopio >= nm.estetoscopioArray.Length)
+            {
+                currentOptionEstetoscopio = 0;
+            }
+            Estetoscopio.GetComponent<SpriteRenderer>().sprite = nm.estetoscopioArray[currentOptionEstetoscopio];
+        }
+        else
+        {
+            currentOptionEstetoscopio++;
+            if (currentOptionEstetoscopio >= nm.estetoscopioArray.Length)
+            {
+                currentOptionEstetoscopio = 0;
+            }
+            EstetoscopioF.GetComponent<SpriteRenderer>().sprite = nm.estetoscopioArray[currentOptionEstetoscopio];
+        }
+    }
+
+    public void PrevEstetoscopio()
+    {
+        GameObject Estetoscopio = GameObject.Find("Estetoscopio");
+        GameObject EstetoscopioF = GameObject.Find("EstetoscopioF");
+
+
+        if (nm.sexo == 0)
+        {
+            currentOptionEstetoscopio--;
+            if (currentOptionEstetoscopio < 0)
+            {
+                currentOptionEstetoscopio = 1;
+            }
+            Estetoscopio.GetComponent<SpriteRenderer>().sprite = nm.estetoscopioArray[currentOptionEstetoscopio];
+        }
+        else
+        {
+            currentOptionEstetoscopio--;
+            if (currentOptionEstetoscopio < 0)
+            {
+                currentOptionEstetoscopio = 1;
+            }
+            EstetoscopioF.GetComponent<SpriteRenderer>().sprite = nm.estetoscopioArray[currentOptionEstetoscopio];
+        }
+    }
+
+    public void NextMascara()
+    {
+        GameObject Mascara = GameObject.Find("Mascara");
+        GameObject MascaraF = GameObject.Find("MascaraF");
+
+        if (nm.sexo == 0)
+        {
+            currentOptionMascara++;
+            if (currentOptionMascara >= nm.oclinArray.Length)
+            {
+                currentOptionMascara = 0;
+            }
+            Mascara.GetComponent<SpriteRenderer>().sprite = nm.mascaraArray[currentOptionMascara];
+        }
+        else
+        {
+            currentOptionMascara++;
+            if (currentOptionMascara >= nm.oclinArray.Length)
+            {
+                currentOptionMascara = 0;
+            }
+            MascaraF.GetComponent<SpriteRenderer>().sprite = nm.mascaraArray[currentOptionMascara];
+        }
+    }
+
+    public void PrevMascara()
+    {
+        GameObject Mascara = GameObject.Find("Mascara");
+        GameObject MascaraF = GameObject.Find("MascaraF");
+
+
+        if (nm.sexo == 0)
+        {
+            currentOptionMascara--;
+            if (currentOptionMascara < 0)
+            {
+                currentOptionMascara = 1;
+            }
+            Mascara.GetComponent<SpriteRenderer>().sprite = nm.mascaraArray[currentOptionMascara];
+        }
+        else
+        {
+            currentOptionMascara--;
+            if (currentOptionMascara < 0)
+            {
+                currentOptionMascara = 1;
+            }
+            MascaraF.GetComponent<SpriteRenderer>().sprite = nm.mascaraArray[currentOptionMascara];
+        }
+    }
+
 }

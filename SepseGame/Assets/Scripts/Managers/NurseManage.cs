@@ -4,24 +4,31 @@ using UnityEngine;
 
 public class NurseManage : MonoBehaviour
 {
+    public GameObject PersonagemMasculino;
     public Sprite[] peleArray;
     public Sprite[] cabeloArray;
     public Sprite[] barbaArray;
+    public Sprite blusa;
+    public Sprite[] profissaoArray;
     public Sprite calca;
-    public Sprite[] blusaArray;
 
+    public GameObject PersonagemFeminino;
     public Sprite[] peleArrayF;
     public Sprite[] cabeloArrayF;
+    public Sprite blusaF;
+    public Sprite[] profissaoArrayF;
     public Sprite calcaF;
 
-    public Sprite oclinSprite;
+
     public Sprite[] oclinArray;
-    public GameObject PersonagemMasculino;
-    public GameObject PersonagemFeminino;
+    public Sprite oclinSprite;
+    public Sprite[] estetoscopioArray;
+    public Sprite estetoscopioSprite;
+    public Sprite[] mascaraArray;
 
     public EsteticaNurse EsteticaNurse;
 
-    public int corDaPele, hasBigas, hasCabas, /*hasCorta*/ hasOclin, cabelin, bigas, sexo;
+    public int gender, corDaPele, hasBigas, hasCabas, hasOclin, cabelin, bigas, sexo, role, estetoscopio, mascara;
 
     private void Start()
     {
@@ -49,7 +56,7 @@ public class NurseManage : MonoBehaviour
 
     public void Generate()
     {
-        int gender = Random.Range(0, 2);
+        gender = Random.Range(0, 2);
         EsteticaNurse.gender = gender;
         EsteticaNurse.set = true;
         if (gender < 1)
@@ -68,19 +75,20 @@ public class NurseManage : MonoBehaviour
 
         hasBigas = Random.Range(0, 2);
         hasCabas = Random.Range(0, 100);
-        /*hasCorta = Random.Range(0, 2);*/
         hasOclin = Random.Range(0, 100);
-
+        role = Random.Range(0, 100);
         bigas = Random.Range(0, 9);
         cabelin = Random.Range(0, 19);
+        estetoscopio = Random.Range(0, 100);
+        mascara = Random.Range(0, 100);
 
+        EsteticaNurse.estetoscopio = estetoscopio;
         EsteticaNurse.corDaPele = corDaPele;
-
+        EsteticaNurse.role = role;
         EsteticaNurse.hasBigas = hasBigas;
         EsteticaNurse.hasCabas = hasCabas;
-        /*EsteticaNurse.hasCorta = hasCorta;*/
         EsteticaNurse.hasOclin = hasOclin;
-
+        EsteticaNurse.mascara = mascara;
         EsteticaNurse.bigas = bigas;
         EsteticaNurse.cabelin = cabelin;
 
@@ -90,14 +98,17 @@ public class NurseManage : MonoBehaviour
     public void GenerateFemale()
     {
         corDaPele = Random.Range(0, 4);
-
         hasOclin = Random.Range(0, 100);
-
         cabelin = Random.Range(0, 24);
+        role = Random.Range(0, 100);
+        mascara = Random.Range(0, 100);
+        estetoscopio = Random.Range(0, 100);
 
+        EsteticaNurse.estetoscopio = estetoscopio;
+        EsteticaNurse.role = role;
         EsteticaNurse.corDaPele = corDaPele;
         EsteticaNurse.hasOclin = hasOclin;
-
+        EsteticaNurse.mascara = mascara;
         EsteticaNurse.cabelin = cabelin;
 
         SetFemale();
@@ -111,18 +122,22 @@ public class NurseManage : MonoBehaviour
         GameObject Pele = GameObject.Find("Pele");
         GameObject Cabelo = GameObject.Find("Cabelin");
         GameObject Blusa = GameObject.Find("Blusa");
-        GameObject BlusaOutline = GameObject.Find("BlusaOutline");
+        GameObject Profissao = GameObject.Find("Profissao");
         GameObject Pisante = GameObject.Find("Pisante");
         GameObject PeloFacial = GameObject.Find("PeloFacial");
         GameObject Oclin = GameObject.Find("AcessorioRosto");
+        GameObject Estetoscopio = GameObject.Find("Estetoscopio");
+        GameObject Mascara = GameObject.Find("Mascara");
 
         corDaPele = EsteticaNurse.corDaPele;
         hasBigas = EsteticaNurse.hasBigas;
         hasCabas = EsteticaNurse.hasCabas;
-        /*hasCorta = EsteticaNurse.hasCorta;*/
         hasOclin = EsteticaNurse.hasOclin;
         cabelin = EsteticaNurse.cabelin;
         bigas = EsteticaNurse.bigas;
+        role = EsteticaNurse.role;
+        estetoscopio = EsteticaNurse.estetoscopio;
+        mascara = EsteticaNurse.mascara;
 
         Pele.GetComponent<SpriteRenderer>().sprite = peleArray[corDaPele];
 
@@ -153,17 +168,39 @@ public class NurseManage : MonoBehaviour
             PeloFacial.GetComponent<SpriteRenderer>().sprite = null;
         }
 
-        /*if (hasCorta < 1)
+        if (role < 50)
         {
-            BlusaOutline.GetComponent<SpriteRenderer>().sprite = blusaArray[0];
-            Blusa.GetComponent<SpriteRenderer>().sprite = blusaArray[1];
+            role = 0;
+            Profissao.GetComponent<SpriteRenderer>().sprite = profissaoArray[role];
         }
         else
         {
-            BlusaOutline.GetComponent<SpriteRenderer>().sprite = blusaArray[2];
-            Blusa.GetComponent<SpriteRenderer>().sprite = blusaArray[3];
-        }*/
+            role = 1;
+            Profissao.GetComponent<SpriteRenderer>().sprite = profissaoArray[role];
 
+        }
+        if (estetoscopio < 50)
+        {
+            estetoscopio = 0;
+            Estetoscopio.GetComponent<SpriteRenderer>().sprite = estetoscopioArray[estetoscopio];
+        }
+        else
+        {
+            estetoscopio = 1;
+            Estetoscopio.GetComponent<SpriteRenderer>().sprite = estetoscopioArray[estetoscopio];
+
+        }
+        if (mascara < 50)
+        {
+            mascara = 0;
+            Mascara.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];
+        }
+        else
+        {
+            mascara = 1;
+            Mascara.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];
+
+        }
         Blusa.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
         Pisante.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
     }
@@ -176,18 +213,20 @@ public class NurseManage : MonoBehaviour
         GameObject PeleF = GameObject.Find("PeleF");
         GameObject CabeloF = GameObject.Find("CabelinF");
         GameObject BlusaF = GameObject.Find("BlusaF");
-        // GameObject CalcaF = GameObject.Find("CalcaF");
-        // GameObject CalcaOutlineF = GameObject.Find("CalcaOutlineF");
+        GameObject ProfissaoF = GameObject.Find("ProfissaoF");
         GameObject PisanteF = GameObject.Find("PisanteF");
         GameObject Oclin = GameObject.Find("AcessorioRostoF");
+        GameObject EstetoscopioF = GameObject.Find("EstetoscopioF");
+        GameObject MascaraF = GameObject.Find("MascaraF");
 
+        estetoscopio = EsteticaNurse.estetoscopio;
         corDaPele = EsteticaNurse.corDaPele;
         hasOclin = EsteticaNurse.hasOclin;
-
+        role = EsteticaNurse.role;
+        mascara = EsteticaNurse.mascara;
         EsteticaNurse.cabelin = cabelin;
 
         PeleF.GetComponent<SpriteRenderer>().sprite = peleArrayF[corDaPele];
-
         CabeloF.GetComponent<SpriteRenderer>().sprite = cabeloArrayF[cabelin];
 
         if (hasOclin < 35)
@@ -199,10 +238,41 @@ public class NurseManage : MonoBehaviour
             Oclin.GetComponent<SpriteRenderer>().sprite = null;
         }
 
+        if (role < 50)
+        {
+            role = 0;
+            ProfissaoF.GetComponent<SpriteRenderer>().sprite = profissaoArrayF[role];
+        }
+        else
+        {
+            role = 1;
+            ProfissaoF.GetComponent<SpriteRenderer>().sprite = profissaoArrayF[role];
+
+        }
+        if (estetoscopio < 50)
+        {
+            estetoscopio = 0;
+            EstetoscopioF.GetComponent<SpriteRenderer>().sprite = profissaoArray[estetoscopio];
+        }
+        else
+        {
+            estetoscopio = 1;
+            EstetoscopioF.GetComponent<SpriteRenderer>().sprite = profissaoArray[estetoscopio];
+
+        }
+        if (mascara < 50)
+        {
+            mascara = 0;
+            MascaraF.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];
+        }
+        else
+        {
+            mascara = 1;
+            MascaraF.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];
+
+        }
         BlusaF.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
-        // CalcaF.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
         PisanteF.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
     }
-
 
 }
