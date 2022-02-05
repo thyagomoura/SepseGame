@@ -56,69 +56,143 @@ public class Toggle : MonoBehaviour
     //checkbox
         public void CheckBox1()
     {
-        check1 = Verificar(check1, random1);
+        check1 = Verificar(check1);
+        if (check1==true)
+        {
+            certas = VerificarCertas(random1, check1);
+        }
+        else if (check1==false)
+        {
+            certas = VerificarErradas(random1, check1);
+        }
         Debug.Log(certas);
     }
     public void CheckBox2()
     {
-        check2 = Verificar(check2, random2);
+        check2 = Verificar(check2);
+        if (check2 == true)
+        {
+            certas = VerificarCertas(random2, check2);
+        }
+        else if (check2 == false)
+        {
+            certas = VerificarErradas(random2, check2);
+        }
         Debug.Log(certas);
     }
     public void CheckBox3()
     {
-        check3 = Verificar(check3, random3);
+        check3 = Verificar(check3);
+        if (check3 == true)
+        {
+            certas = VerificarCertas(random3, check3);
+        }
+        else if (check1 == false)
+        {
+            certas = VerificarErradas(random3, check3);
+        }
         Debug.Log(certas);
     }
     public void CheckBox4()
     {
-        check4 = Verificar(check4, random4);
+        check4 = Verificar(check4);
+        if (check4 == true)
+        {
+            certas = VerificarCertas(random4, check4);
+        }
+        else if (check4 == false)
+        {
+            Debug.Log(check4);
+            certas = VerificarErradas(random4, check4);
+        }
         Debug.Log(certas);
     }
     public void CheckBox5()
     {
-        check5 = Verificar(check5, random5);
+        check5 = Verificar(check5);
+        if (check5 == true)
+        {
+            certas = VerificarCertas(random5, check5);
+        }
+        else if (check5 == false)
+        {
+            certas = VerificarErradas(random5, check5);
+        }
         Debug.Log(certas);
     }
     public void CheckBox6()
     {
-        check6 = Verificar(check6, random6);
+        check6 = Verificar(check6);
+        if (check6 == true)
+        {
+            certas = VerificarCertas(random6, check6);
+        }
+        else if (check6 == false)
+        {
+            certas = VerificarErradas(random6, check6);
+        }
         Debug.Log(certas);
     }
     public void CheckBox7()
     {
-        check7 = Verificar(check7, random7);
+        check7 = Verificar(check7);
+        if (check7 == true)
+        {
+            certas = VerificarCertas(random7, check7);
+        }
+        else if (check7 == false)
+        {
+            certas = VerificarErradas(random7, check7);
+        }
         Debug.Log(certas);
     }
     public void CheckBox8()
     {
-        check8 = Verificar(check8, random8);
+        check8 = Verificar(check8);
+        if (check8 == true)
+        {
+            certas = VerificarCertas(random8, check8);
+        }
+        else if (check8 == false)
+        {
+            certas = VerificarErradas(random8, check8);
+        }
         Debug.Log(certas);
     }
     //verificar acertos do user
-    private bool Verificar(bool check, int random)
+    private bool Verificar(bool check)
     {
         if (check == false)
         {
             check = true;
-            if (random==0 || random==1 || random==2 || random==3)
-            {
-                certas++;
-                return check;
-            }
             return check;
         }
         if (check == true)
         {
             check = false;
-            if (random == 0 || random == 1 || random == 2 || random == 3)
-            {
-                certas--;
-                
-                return check;
-            }
             return check;
         }
         return check;
+    }
+
+    private int VerificarCertas(int random, bool check)
+    {
+        if (check == true)
+        {
+            if (random == 0 || random == 1 || random == 2 || random == 3)
+            {
+                certas++;
+                return certas;
+            }
+        }
+
+        return certas;
+    }
+
+    private int VerificarErradas(int random1,bool check1)
+    {
+        certas--;
+        return certas;
     }
 
     public void LoadMenu()
@@ -161,9 +235,5 @@ public class Toggle : MonoBehaviour
         GameObject.Find("Label8").GetComponent<Text>().text = GameObject.Find("Label8").GetComponent<Text>().text + "" + txt[random8];
 
     }
-
-    public void MostrarCertas()
-    {
-        Debug.Log(certas);
-    }
+ 
 }
