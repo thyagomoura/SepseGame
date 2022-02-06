@@ -10,6 +10,7 @@ public class NurseOutfitChange : MonoBehaviour
     {
         nm.Generate();
         nm.sexo = nm.gender;
+        Debug.Log(nm.sexo);
     }
 
     private int currentOptionSkin = 0;
@@ -80,7 +81,7 @@ public class NurseOutfitChange : MonoBehaviour
             {
                 currentOptionSkin = 0;
             }
-            PeleF.GetComponent<SpriteRenderer>().sprite = nm.peleArray[currentOptionSkin];
+            PeleF.GetComponent<SpriteRenderer>().sprite = nm.peleArrayF[currentOptionSkin];
         }
     }
 

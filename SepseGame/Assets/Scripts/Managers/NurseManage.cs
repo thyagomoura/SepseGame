@@ -128,6 +128,7 @@ public class NurseManage : MonoBehaviour
         GameObject Oclin = GameObject.Find("AcessorioRosto");
         GameObject Estetoscopio = GameObject.Find("Estetoscopio");
         GameObject Mascara = GameObject.Find("Mascara");
+        GameObject Calca = GameObject.Find("Calca");
 
         corDaPele = EsteticaNurse.corDaPele;
         hasBigas = EsteticaNurse.hasBigas;
@@ -201,8 +202,10 @@ public class NurseManage : MonoBehaviour
             Mascara.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];
 
         }
-        Blusa.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
-        Pisante.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+        Color corzinha = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+        Blusa.GetComponent<SpriteRenderer>().color = corzinha;
+        Calca.GetComponent<SpriteRenderer>().color = corzinha;
+
     }
 
     public void SetFemale()
@@ -218,6 +221,7 @@ public class NurseManage : MonoBehaviour
         GameObject Oclin = GameObject.Find("AcessorioRostoF");
         GameObject EstetoscopioF = GameObject.Find("EstetoscopioF");
         GameObject MascaraF = GameObject.Find("MascaraF");
+        GameObject CalcaF = GameObject.Find("CalcaF");
 
         estetoscopio = EsteticaNurse.estetoscopio;
         corDaPele = EsteticaNurse.corDaPele;
@@ -252,12 +256,12 @@ public class NurseManage : MonoBehaviour
         if (estetoscopio < 50)
         {
             estetoscopio = 0;
-            EstetoscopioF.GetComponent<SpriteRenderer>().sprite = profissaoArray[estetoscopio];
+            EstetoscopioF.GetComponent<SpriteRenderer>().sprite = estetoscopioArray[estetoscopio];
         }
         else
         {
             estetoscopio = 1;
-            EstetoscopioF.GetComponent<SpriteRenderer>().sprite = profissaoArray[estetoscopio];
+            EstetoscopioF.GetComponent<SpriteRenderer>().sprite = estetoscopioArray[estetoscopio];
 
         }
         if (mascara < 50)
@@ -271,8 +275,14 @@ public class NurseManage : MonoBehaviour
             MascaraF.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];
 
         }
-        BlusaF.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
-        PisanteF.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+
+        Color corzinha = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+        BlusaF.GetComponent<SpriteRenderer>().color = corzinha;
+        CalcaF.GetComponent<SpriteRenderer>().color = corzinha;
+
+
+
+
     }
 
 }
