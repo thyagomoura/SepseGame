@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hospital.unity
     guid: dfda1887ff496374c88389377f32f934
+  - enabled: 1
+    path: Assets/Scenes/PacoteHora.unity
+    guid: b1749753daa3c9843ab181de1b3cabc4
+  - enabled: 1
+    path: Assets/Scenes/Ministrar.unity
+    guid: 158a5fa618547a04d93827c19c1fd36e
   m_configObjects: {}
