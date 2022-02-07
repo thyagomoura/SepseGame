@@ -6,6 +6,11 @@ public class NurseOutfitChange : MonoBehaviour
 {
     public NurseManage nm;
 
+    private void Start()
+    {
+        
+    }
+
     public void Randomize()
     {
         nm.Generate();
@@ -77,7 +82,7 @@ public class NurseOutfitChange : MonoBehaviour
         else
         {
             currentOptionSkin++;
-            if (currentOptionSkin >= nm.peleArray.Length)
+            if (currentOptionSkin >= nm.peleArrayF.Length)
             {
                 currentOptionSkin = 0;
             }
@@ -100,10 +105,10 @@ public class NurseOutfitChange : MonoBehaviour
         }
         else
         {
-            currentOptionSkin++;
+            currentOptionSkin--;
             if (currentOptionSkin < 0)
             {
-                currentOptionSkin = nm.peleArray.Length - 1;
+                currentOptionSkin = nm.peleArrayF.Length - 1;                
             }
             PeleF.GetComponent<SpriteRenderer>().sprite = nm.peleArrayF[currentOptionSkin];
         }
@@ -124,7 +129,7 @@ public class NurseOutfitChange : MonoBehaviour
         else
         {
             currentOptionHair++;
-            if (currentOptionHair >= nm.cabeloArray.Length)
+            if (currentOptionHair >= nm.cabeloArrayF.Length)
             {
                 currentOptionHair = 0;
             }
@@ -134,6 +139,7 @@ public class NurseOutfitChange : MonoBehaviour
 
     public void PreviousHair()
     {
+
         GameObject Cabelo = GameObject.Find("Cabelin");
         GameObject CabeloF = GameObject.Find("CabelinF");
         if (nm.sexo == 0)
@@ -141,13 +147,13 @@ public class NurseOutfitChange : MonoBehaviour
             currentOptionHair--;
             if (currentOptionHair < 0)
             {
-                currentOptionHair = nm.cabeloArrayF.Length - 1;
+                currentOptionHair = nm.cabeloArray.Length - 1;
             }
             Cabelo.GetComponent<SpriteRenderer>().sprite = nm.cabeloArray[currentOptionHair];
         }
         else
         {
-            currentOptionHair++;
+            currentOptionHair--;
             if (currentOptionHair < 0)
             {
                 currentOptionHair = nm.cabeloArrayF.Length - 1;
