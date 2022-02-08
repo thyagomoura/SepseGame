@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using System.Linq;
 
 public class Options : MonoBehaviour
 {
@@ -27,41 +28,31 @@ public class Options : MonoBehaviour
 
     private void RandomText()
     {
-        
 
-        //Condicionar para nao ter valores iguais
-        random1 = Random.Range(0, 7);
 
-        do
-        {
-            random2 = Random.Range(0, 7);
-        } while (random2 == random1);
+        int[] nuns = new int[] {random1, random2, random3, random4, random5, random6, random7, random8 };
+        int rand = 0;
 
-        do
+        for (int i=0; i<8 ;i++)
         {
-            random3 = Random.Range(0, 7);
-        } while (random3 == random2 || random3 == random1 || random3 == random4 || random3 == random5 || random3 == random6 || random3 == random7 || random3 == random8);
+            rand = Random.Range(0, 8);
+            do
+            {
+                nuns[i] = Random.Range(0, 8);
+            } while (nuns.Contains(rand));
+            nuns[i] = rand;
+            Debug.Log(nuns[i]);
+        }
 
-        do
-        {
-            random4 = Random.Range(0, 7);
-        } while (random4 == random2 || random4 == random3 || random4 == random1 || random4 == random5 || random4 == random6 || random4 == random7 || random4 == random8);
-        do
-        {
-            random5 = Random.Range(0, 7);
-        } while (random5 == random2 || random5 == random3 || random5 == random4 || random5 == random1 || random5 == random6 || random5 == random7 || random5 == random8);
-        do
-        {
-            random6 = Random.Range(0, 7);
-        } while (random6 == random2 || random6 == random3 || random6 == random4 || random6 == random5 || random6 == random1 || random6 == random7 || random6 == random8);
-        do
-        {
-            random7 = Random.Range(0, 7);
-        } while (random7 == random2 || random7 == random3 || random7 == random4 || random7 == random5 || random7 == random6 || random7 == random1 || random7 == random8);
-        do
-        {
-            random8 = Random.Range(0, 7);
-        } while (random8 == random2 || random8 == random3 || random8 == random4 || random8 == random5 || random8 == random6 || random8 == random7 || random8 == random1);
+        random1 = nuns[0];
+        random2 = nuns[1];
+        random3 = nuns[2];
+        random4 = nuns[3];
+        random5 = nuns[4];
+        random6 = nuns[5];
+        random7 = nuns[6];
+        random8 = nuns[7];
+
 
         GameObject.Find("Label1").GetComponent<Text>().text = GameObject.Find("Label1").GetComponent<Text>().text + "" + txt[random1];
         
@@ -80,6 +71,7 @@ public class Options : MonoBehaviour
         GameObject.Find("Label8").GetComponent<Text>().text = GameObject.Find("Label8").GetComponent<Text>().text + "" + txt[random8];
 
     }
+
     public void Toggle1(bool tog)
     {
         if (tog)
