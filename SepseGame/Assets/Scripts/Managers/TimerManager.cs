@@ -9,12 +9,23 @@ public class TimerManager : MonoBehaviour
 
     float timeLeft = 300.0f;
 
-    void Start()
+    void Awake()
     {
-        
+        SetUpSingleton();
     }
 
-    // Update is called once per frame
+    private void SetUpSingleton()
+    {
+        if (FindObjectsOfType(GetType()).Length > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
     void Update()
     {
         timeLeft -= Time.deltaTime;

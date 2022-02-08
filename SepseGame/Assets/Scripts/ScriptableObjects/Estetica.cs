@@ -18,4 +18,8 @@ public class Estetica : ScriptableObject
     public int hasOclin;
     public int cabelin;
     public int bigas;
+
+    public Vector4 corBlusa;
+    public Vector4 corCalca; 
+    public Vector4 corPisante;
 }

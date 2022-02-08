@@ -23,6 +23,8 @@ public class PacienteManager : MonoBehaviour
 
     public int corDaPele, hasBigas, hasCabas, hasCorta, hasCalca, hasOclin, cabelin, bigas;
 
+    public Vector4 corBlusa, corCalca, corPisante;
+
     private void Start()
     {
         if (!Estetica.set)
@@ -75,6 +77,10 @@ public class PacienteManager : MonoBehaviour
         bigas = Random.Range(0, 9);
         cabelin = Random.Range(0, 19);
 
+        corBlusa = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+        corCalca = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+        corPisante = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+
         Estetica.corDaPele = corDaPele;
 
         Estetica.hasBigas = hasBigas;
@@ -85,6 +91,10 @@ public class PacienteManager : MonoBehaviour
 
         Estetica.bigas = bigas;
         Estetica.cabelin = cabelin;
+
+        Estetica.corBlusa = corBlusa;
+        Estetica.corCalca = corCalca;
+        Estetica.corPisante = corPisante;
 
         SetMale();
     }
@@ -98,11 +108,19 @@ public class PacienteManager : MonoBehaviour
 
         cabelin = Random.Range(0, 24);
 
+        corBlusa = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+        corCalca = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+        corPisante = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+
         Estetica.corDaPele = corDaPele;
         Estetica.hasCalca = hasCalca;
         Estetica.hasOclin = hasOclin;
 
         Estetica.cabelin = cabelin;
+
+        Estetica.corBlusa = corBlusa;
+        Estetica.corCalca = corCalca;
+        Estetica.corPisante = corPisante;
 
         SetFemale();
     }
@@ -182,9 +200,9 @@ public class PacienteManager : MonoBehaviour
             Blusa.GetComponent<SpriteRenderer>().sprite = blusaArray[3];
         }
 
-        Blusa.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
-        Calca.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
-        Pisante.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+        Blusa.GetComponent<SpriteRenderer>().color = Estetica.corBlusa;
+        Calca.GetComponent<SpriteRenderer>().color = Estetica.corCalca;
+        Pisante.GetComponent<SpriteRenderer>().color = Estetica.corPisante;
     }
 
     void SetFemale()
@@ -230,8 +248,8 @@ public class PacienteManager : MonoBehaviour
             CalcaF.GetComponent<SpriteRenderer>().sprite = calcaArrayF[3];
         }
 
-        BlusaF.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
-        CalcaF.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
-        PisanteF.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+        BlusaF.GetComponent<SpriteRenderer>().color = Estetica.corBlusa;
+        CalcaF.GetComponent<SpriteRenderer>().color = Estetica.corCalca;
+        PisanteF.GetComponent<SpriteRenderer>().color = Estetica.corPisante;
     }
 }
