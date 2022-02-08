@@ -1,0 +1,1596 @@
+fileFormatVersion: 2
+guid: c977476ecd181eb42999d56b82e267dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 920175955452115459
+    second: AnimacaoBatimentos_0
+  - first:
+      213: 903523849966613903
+    second: AnimacaoBatimentos_1
+  - first:
+      213: 3613966542767244029
+    second: AnimacaoBatimentos_2
+  - first:
+      213: 8001389842287248968
+    second: AnimacaoBatimentos_3
+  - first:
+      213: 1527062735993263121
+    second: AnimacaoBatimentos_4
+  - first:
+      213: 7343831358434293093
+    second: AnimacaoBatimentos_5
+  - first:
+      213: -8697980364290428238
+    second: AnimacaoBatimentos_6
+  - first:
+      213: -1066727094515528858
+    second: AnimacaoBatimentos_7
+  - first:
+      213: -7020099156258654796
+    second: AnimacaoBatimentos_8
+  - first:
+      213: 6832417782429522586
+    second: AnimacaoBatimentos_9
+  - first:
+      213: -2069246642485843020
+    second: AnimacaoBatimentos_10
+  - first:
+      213: -3298215291803162505
+    second: AnimacaoBatimentos_11
+  - first:
+      213: -770031791651766795
+    second: AnimacaoBatimentos_12
+  - first:
+      213: -5474933603016942974
+    second: AnimacaoBatimentos_13
+  - first:
+      213: -3587814295682992882
+    second: AnimacaoBatimentos_14
+  - first:
+      213: -4822278162767602417
+    second: AnimacaoBatimentos_15
+  - first:
+      213: 9037668272316023820
+    second: AnimacaoBatimentos_16
+  - first:
+      213: 1920950904101904001
+    second: AnimacaoBatimentos_17
+  - first:
+      213: -2224630111947865477
+    second: AnimacaoBatimentos_18
+  - first:
+      213: 5190672831880561518
+    second: AnimacaoBatimentos_19
+  - first:
+      213: 1799723364683635939
+    second: AnimacaoBatimentos_20
+  - first:
+      213: 4617580016530628753
+    second: AnimacaoBatimentos_21
+  - first:
+      213: -5255299108205399194
+    second: AnimacaoBatimentos_22
+  - first:
+      213: -6968660822501998789
+    second: AnimacaoBatimentos_23
+  - first:
+      213: -2926356615449717159
+    second: AnimacaoBatimentos_24
+  - first:
+      213: -2016878890047264418
+    second: AnimacaoBatimentos_25
+  - first:
+      213: 5644949564383572034
+    second: AnimacaoBatimentos_26
+  - first:
+      213: -3218212774033673631
+    second: AnimacaoBatimentos_27
+  - first:
+      213: 2698830382509516144
+    second: AnimacaoBatimentos_28
+  - first:
+      213: 1769041245903524934
+    second: AnimacaoBatimentos_29
+  - first:
+      213: 6235236436048597651
+    second: AnimacaoBatimentos_30
+  - first:
+      213: 8394988679587506877
+    second: AnimacaoBatimentos_31
+  - first:
+      213: -8121253464135452018
+    second: AnimacaoBatimentos_32
+  - first:
+      213: -2678694946222188943
+    second: AnimacaoBatimentos_33
+  - first:
+      213: -2360276131858587353
+    second: AnimacaoBatimentos_34
+  - first:
+      213: 9090013479518092701
+    second: AnimacaoBatimentos_35
+  - first:
+      213: 849693267963604332
+    second: AnimacaoBatimentos_36
+  - first:
+      213: -844770709011240484
+    second: AnimacaoBatimentos_37
+  - first:
+      213: -3221623074013636475
+    second: AnimacaoBatimentos_38
+  - first:
+      213: 4137465830903751133
+    second: AnimacaoBatimentos_39
+  - first:
+      213: 7617856632955128353
+    second: AnimacaoBatimentos_40
+  - first:
+      213: -1377206202989957228
+    second: AnimacaoBatimentos_41
+  - first:
+      213: 2983745901226708195
+    second: AnimacaoBatimentos_42
+  - first:
+      213: 4795393871054889580
+    second: AnimacaoBatimentos_43
+  - first:
+      213: -1812454345156270390
+    second: AnimacaoBatimentos_44
+  - first:
+      213: -7633448241961480631
+    second: AnimacaoBatimentos_45
+  - first:
+      213: -1460731780690073600
+    second: AnimacaoBatimentos_46
+  - first:
+      213: -1451644423455672668
+    second: AnimacaoBatimentos_47
+  - first:
+      213: 7986310635977776528
+    second: AnimacaoBatimentos_48
+  - first:
+      213: 2616383097199758165
+    second: AnimacaoBatimentos_49
+  - first:
+      213: -258222101393850306
+    second: AnimacaoBatimentos_50
+  - first:
+      213: 8083297841735922004
+    second: AnimacaoBatimentos_51
+  - first:
+      213: -4672054954450736938
+    second: AnimacaoBatimentos_52
+  - first:
+      213: -7782857312817153145
+    second: AnimacaoBatimentos_53
+  - first:
+      213: -4215795959850570520
+    second: AnimacaoBatimentos_54
+  - first:
+      213: 3337540741691408742
+    second: AnimacaoBatimentos_55
+  - first:
+      213: -4562896170605691755
+    second: AnimacaoBatimentos_56
+  - first:
+      213: -1467732833379083571
+    second: AnimacaoBatimentos_57
+  - first:
+      213: -7387995807611864867
+    second: AnimacaoBatimentos_58
+  - first:
+      213: -1563276019271894730
+    second: AnimacaoBatimentos_59
+  - first:
+      213: -4792322268224633197
+    second: AnimacaoBatimentos_60
+  - first:
+      213: -8074358331802042704
+    second: AnimacaoBatimentos_61
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a349bf72f15cc00800000000000000
+      internalID: 920175955452115459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f857a5b8726f98c00800000000000000
+      internalID: 903523849966613903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2c9cb4c63672230800000000000000
+      internalID: 3613966542767244029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84643fa1ba5aa0f60800000000000000
+      internalID: 8001389842287248968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1145d98b777313510800000000000000
+      internalID: 1527062735993263121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_5
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565b9d116b78ae560800000000000000
+      internalID: 7343831358434293093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_6
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2752b41f09a4780800000000000000
+      internalID: -8697980364290428238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_7
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b0e1bfb593231f0800000000000000
+      internalID: -1066727094515528858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_8
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5fe2fe209939e90800000000000000
+      internalID: -7020099156258654796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_9
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a16cef5cf91de50800000000000000
+      internalID: 6832417782429522586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_10
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb26f9542f8843e0800000000000000
+      internalID: -2069246642485843020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_11
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778af43baa26a32d0800000000000000
+      internalID: -3298215291803162505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_12
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdb6d05a2c4055f0800000000000000
+      internalID: -770031791651766795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_13
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a535f35e02504b0800000000000000
+      internalID: -5474933603016942974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_14
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e053fb938e5853ec0800000000000000
+      internalID: -3587814295682992882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_15
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d1d1c7f83d31db0800000000000000
+      internalID: -4822278162767602417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_16
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c040739f86f3c6d70800000000000000
+      internalID: 9037668272316023820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_17
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e95fd6ba698aa10800000000000000
+      internalID: 1920950904101904001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_18
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72c5b423b68021e0800000000000000
+      internalID: -2224630111947865477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_19
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6303817079f80840800000000000000
+      internalID: 5190672831880561518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_20
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec50f56dd6e9f810800000000000000
+      internalID: 1799723364683635939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_21
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190204f5f80f41040800000000000000
+      internalID: 4617580016530628753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_22
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6637dfa0e4d6117b0800000000000000
+      internalID: -5255299108205399194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_23
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f369a47e75a4f90800000000000000
+      internalID: -6968660822501998789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_24
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956510aa92e7367d0800000000000000
+      internalID: -2926356615449717159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_25
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59afbbd55b9204e0800000000000000
+      internalID: -2016878890047264418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_26
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240341878b3e65e40800000000000000
+      internalID: 5644949564383572034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_27
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1623918688c9653d0800000000000000
+      internalID: -3218212774033673631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_28
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075e2821feb247520800000000000000
+      internalID: 2698830382509516144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_29
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644181fe3a5ec8810800000000000000
+      internalID: 1769041245903524934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_30
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392df3db082088650800000000000000
+      internalID: 6235236436048597651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_31
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba2d3cb9bdf08470800000000000000
+      internalID: 8394988679587506877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_32
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8abb4ba0038b4f80800000000000000
+      internalID: -8121253464135452018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_33
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176dac4832d53dad0800000000000000
+      internalID: -2678694946222188943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_34
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7216cb40d5d9e3fd0800000000000000
+      internalID: -2360276131858587353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_35
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d30324917362e70800000000000000
+      internalID: 9090013479518092701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_36
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6de20d7687bacb00800000000000000
+      internalID: 849693267963604332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_37
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9eab41485c644f0800000000000000
+      internalID: -844770709011240484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_38
+      rect:
+        serializedVersion: 2
+        x: 2508
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588173112ee7a43d0800000000000000
+      internalID: -3221623074013636475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_39
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1a551804b3b6930800000000000000
+      internalID: 4137465830903751133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_40
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ac42d1f3018b960800000000000000
+      internalID: 7617856632955128353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_41
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49fa150514e23ece0800000000000000
+      internalID: -1377206202989957228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_42
+      rect:
+        serializedVersion: 2
+        x: 2772
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec45aea615686920800000000000000
+      internalID: 2983745901226708195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_43
+      rect:
+        serializedVersion: 2
+        x: 2838
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62ef429159ac8240800000000000000
+      internalID: 4795393871054889580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_44
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6e859306ed8d6e0800000000000000
+      internalID: -1812454345156270390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_45
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e4e86844b801690800000000000000
+      internalID: -7633448241961480631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_46
+      rect:
+        serializedVersion: 2
+        x: 3036
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00828db4f207abbe0800000000000000
+      internalID: -1460731780690073600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_47
+      rect:
+        serializedVersion: 2
+        x: 3102
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a67fb78619badbe0800000000000000
+      internalID: -1451644423455672668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_48
+      rect:
+        serializedVersion: 2
+        x: 3168
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d116bc53315de60800000000000000
+      internalID: 7986310635977776528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_49
+      rect:
+        serializedVersion: 2
+        x: 3234
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b8de090924f4420800000000000000
+      internalID: 2616383097199758165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_50
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30c34ded5c9a6cf0800000000000000
+      internalID: -258222101393850306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_51
+      rect:
+        serializedVersion: 2
+        x: 3366
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451f9565f84ad2070800000000000000
+      internalID: 8083297841735922004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_52
+      rect:
+        serializedVersion: 2
+        x: 3432
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d82cd4c5c6892fb0800000000000000
+      internalID: -4672054954450736938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_53
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b7bf3628cbdf390800000000000000
+      internalID: -7782857312817153145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_54
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec649729eb7e75c0800000000000000
+      internalID: -4215795959850570520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_55
+      rect:
+        serializedVersion: 2
+        x: 3630
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66109eb1f93515e20800000000000000
+      internalID: 3337540741691408742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_56
+      rect:
+        serializedVersion: 2
+        x: 3696
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cbe0cab165da0c0800000000000000
+      internalID: -4562896170605691755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_57
+      rect:
+        serializedVersion: 2
+        x: 3762
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca1341b3c091abe0800000000000000
+      internalID: -1467732833379083571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_58
+      rect:
+        serializedVersion: 2
+        x: 3828
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8383dc4f0987990800000000000000
+      internalID: -7387995807611864867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_59
+      rect:
+        serializedVersion: 2
+        x: 3894
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63979693eb02e4ae0800000000000000
+      internalID: -1563276019271894730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_60
+      rect:
+        serializedVersion: 2
+        x: 3960
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396c641b9404e7db0800000000000000
+      internalID: -4792322268224633197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimacaoBatimentos_61
+      rect:
+        serializedVersion: 2
+        x: 4026
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be39b380ed12ff80800000000000000
+      internalID: -8074358331802042704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
