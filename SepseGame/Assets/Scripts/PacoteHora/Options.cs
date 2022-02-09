@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.EventSystems;
-using System.Linq;
+using UnityEngine.UI;
+using System.Collections.Generic;
+using System.Collections;
 
 public class Options : MonoBehaviour
 {
-    int Acertos=0;
+    int Acertos = 0;
     string[] txt = new string[] { "certo1", "certo2", "certo3", "certo4", "errado1", "errado2", "errado3", "errado4" };
     int random1 = 0;
     int random2 = 0;
@@ -19,6 +17,10 @@ public class Options : MonoBehaviour
     int random7 = 0;
     int random8 = 0;
 
+    int valorMin = 0;
+    int valorMax = 8;
+    List<int> numeroSorteados = new List<int>();
+
 
     private void Start()
     {
@@ -28,35 +30,47 @@ public class Options : MonoBehaviour
 
     private void RandomText()
     {
-        random1 = Random.Range(0, 8);
-        random2 = Random.Range(0, 8); 
-        random3 = Random.Range(0, 8); 
-        random4 = Random.Range(0, 8); 
-        random5 = Random.Range(0, 8); 
-        random6 = Random.Range(0, 8); 
-        random7 = Random.Range(0, 8); 
-        random8 = Random.Range(0, 8);
-        /*
-        Verifica1();
-        Verifica2();
-        Verifica3();
-        Verifica4();
-        Verifica5();
-        Verifica6();
-        Verifica7();*/
+
+        if (Mathf.Abs(valorMax - valorMin)> numeroSorteados.Count)
+        {
+            int i = 0;
+            while (i!=8)
+            {
+                int num = Random.Range(valorMin, valorMax);
+                if (!numeroSorteados.Contains(num))
+                {
+                    numeroSorteados.Add(num);
+                    i++;
+                }
+            }
+        }
+        else
+        {
+            Debug.LogError("Todos sorteados");
+            return;
+        }
+        random1 = numeroSorteados.IndexOf(0);
+        random2 = numeroSorteados.IndexOf(1);
+        random3 = numeroSorteados.IndexOf(2);
+        random4 = numeroSorteados.IndexOf(3);
+        random5 = numeroSorteados.IndexOf(4);
+        random6 = numeroSorteados.IndexOf(5);
+        random7 = numeroSorteados.IndexOf(6);
+        random8 = numeroSorteados.IndexOf(7);
+
 
         GameObject.Find("Label1").GetComponent<Text>().text = GameObject.Find("Label1").GetComponent<Text>().text + "" + txt[random1];
-        
+
         GameObject.Find("Label2").GetComponent<Text>().text = GameObject.Find("Label2").GetComponent<Text>().text + "" + txt[random2];
 
         GameObject.Find("Label3").GetComponent<Text>().text = GameObject.Find("Label3").GetComponent<Text>().text + "" + txt[random3];
 
         GameObject.Find("Label4").GetComponent<Text>().text = GameObject.Find("Label4").GetComponent<Text>().text + "" + txt[random4];
-        
+
         GameObject.Find("Label5").GetComponent<Text>().text = GameObject.Find("Label5").GetComponent<Text>().text + "" + txt[random5];
 
         GameObject.Find("Label6").GetComponent<Text>().text = GameObject.Find("Label6").GetComponent<Text>().text + "" + txt[random6];
-        
+
         GameObject.Find("Label7").GetComponent<Text>().text = GameObject.Find("Label7").GetComponent<Text>().text + "" + txt[random7];
 
         GameObject.Find("Label8").GetComponent<Text>().text = GameObject.Find("Label8").GetComponent<Text>().text + "" + txt[random8];
@@ -98,7 +112,7 @@ public class Options : MonoBehaviour
                 Acertos--;
             }
         }
-        Debug.Log(tog2 + " : " +Acertos);
+        Debug.Log(tog2 + " : " + Acertos);
     }
 
     public void Toggle3(bool tog3)
@@ -221,309 +235,3 @@ public class Options : MonoBehaviour
         SceneManager.LoadScene("Ministrar");
     }
 }
-
-
-/*void Verifica1()
-    {
-        if (random2 == random1)
-        {
-            Debug.Log("Iguais");
-            while (random2 == random1)
-            {
-                random2 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random2);
-        }
-        if (random3 == random1)
-        {
-            Debug.Log("Iguais");
-            while (random3 == random1)
-            {
-                random3 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random3);
-        }
-        if (random4 == random1)
-        {
-            Debug.Log("Iguais");
-            while (random4 == random1)
-            {
-                random4 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random4);
-        }
-        if (random5 == random1)
-        {
-            Debug.Log("Iguais");
-            while (random5 == random1)
-            {
-                random5 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random5);
-        }
-        if (random6 == random1)
-        {
-            Debug.Log("Iguais");
-            while (random6 == random1)
-            {
-                random6 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random6);
-        }
-        if (random7 == random1)
-        {
-            Debug.Log("Iguais");
-            while (random7 == random1)
-            {
-                random7 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random7);
-        }
-        if (random8 == random1)
-        {
-            Debug.Log("Iguais");
-            while (random8 == random1)
-            {
-                random8 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random8);
-        }
-    }
-
-    void Verifica2()
-    {
-
-        if (random3 == random2)
-        {
-            Debug.Log("Iguais");
-            while (random3 == random2)
-            {
-                random3 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random3);
-        }
-        if (random4 == random2)
-        {
-            Debug.Log("Iguais");
-            while (random4 == random2)
-            {
-                random4 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random4);
-        }
-        if (random5 == random2)
-        {
-            Debug.Log("Iguais");
-            while (random5 == random2)
-            {
-                random5 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random5);
-        }
-        if (random6 == random2)
-        {
-            Debug.Log("Iguais");
-            while (random6 == random2)
-            {
-                random6 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random6);
-        }
-        if (random7 == random2)
-        {
-            Debug.Log("Iguais");
-            while (random7 == random2)
-            {
-                random7 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random7);
-        }
-    }
-    void Verifica3()
-    {
-
-        if (random4 == random3)
-        {
-            Debug.Log("Iguais");
-            while (random4 == random3)
-            {
-                random4 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random4);
-        }
-        if (random5 == random3)
-        {
-            Debug.Log("Iguais");
-            while (random5 == random3)
-            {
-                random5 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random5);
-        }
-        if (random6 == random3)
-        {
-            Debug.Log("Iguais");
-            while (random6 == random3)
-            {
-                random6 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random6);
-        }
-        if (random7 == random3)
-        {
-            Debug.Log("Iguais");
-            while (random7 == random3)
-            {
-                random7 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random7);
-        }
-        if (random8 == random3)
-        {
-            Debug.Log("Iguais");
-            while (random8 == random3)
-            {
-                random8 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random8);
-        }
-    }
-    void Verifica4()
-    {
-        if (random5 == random4)
-        {
-            Debug.Log("Iguais");
-            while (random5 == random4)
-            {
-                random5 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random5);
-        }
-        if (random6 == random4)
-        {
-            Debug.Log("Iguais");
-            while (random6 == random4)
-            {
-                random6 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random6);
-        }
-        if (random7 == random4)
-        {
-            Debug.Log("Iguais");
-            while (random7 == random4)
-            {
-                random7 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random7);
-        }
-        if (random8 == random4)
-        {
-            Debug.Log("Iguais");
-            while (random8 == random4)
-            {
-                random8 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random8);
-        }
-    }
-    void Verifica5()
-    {
-        if (random6 == random5)
-        {
-            Debug.Log("Iguais");
-            while (random6 == random5)
-            {
-                random6 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random6);
-        }
-        if (random7 == random5)
-        {
-            Debug.Log("Iguais");
-            while (random7 == random5)
-            {
-                random7 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random7);
-        }
-        if (random8 == random5)
-        {
-            Debug.Log("Iguais");
-            while (random8 == random5)
-            {
-                random8 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random8);
-        }
-    }
-    void Verifica6()
-    {
-        if (random7 == random6)
-        {
-            Debug.Log("Iguais");
-            while (random7 == random6)
-            {
-                random7 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random7);
-        }
-        if (random8 == random6)
-        {
-            Debug.Log("Iguais");
-            while (random8 == random6)
-            {
-                random8 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random8);
-        }
-    }
-    void Verifica7()
-    {
-        if (random8 == random7)
-        {
-            Debug.Log("Iguais");
-            while (random8 == random7)
-            {
-                random8 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random8);
-        }
-        if (random2 == random8)
-        {
-            Debug.Log("Iguais");
-            while (random2 == random8)
-            {
-                random2 = Random.Range(0, 8);
-            }
-
-            Debug.Log(random2);
-        }
-    }*/
