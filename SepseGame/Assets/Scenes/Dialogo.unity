@@ -1152,9 +1152,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: Arrays
+      value: 
+      objectReference: {fileID: 11400000, guid: 2b9c7a4ae2fd8e243bd94c072ddb063f, type: 2}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
       propertyPath: Estetica
       value: 
       objectReference: {fileID: 11400000, guid: f0d4e489b31b05947b364615576b5215, type: 2}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: Monitorizar
+      value: 
+      objectReference: {fileID: 11400000, guid: 109e1ad231ed30445b533dec47538130, type: 2}
     - target: {fileID: 6868304036755426748, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
       propertyPath: m_RootOrder
       value: 7

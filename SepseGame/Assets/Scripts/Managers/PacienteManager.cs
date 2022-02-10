@@ -19,11 +19,13 @@ public class PacienteManager : MonoBehaviour
     public GameObject PersonagemMasculino;
     public GameObject PersonagemFeminino;
 
+    public Monitorizar Monitorizar;
+
     public Estetica Estetica;
 
-    public int corDaPele, hasBigas, hasCabas, hasCorta, hasCalca, hasOclin, cabelin, bigas;
+    public Arrays Arrays;
 
-    public int[] indexes;
+    public int corDaPele, hasBigas, hasCabas, hasCorta, hasCalca, hasOclin, cabelin, bigas;
 
     public Vector4 corBlusa, corCalca, corPisante;
 
@@ -65,15 +67,22 @@ public class PacienteManager : MonoBehaviour
             GenerateFemale();
         }
 
+        List<int> indexes = new List<int>();
+
         int i;
-        var length = Random.Range(0, 4);
+        var length = Random.Range(2, 5);
+        int rand;
         for (i=0; i < length; i++)
         {
-            //indexes[i] = Random.Range(0, 7);
-            
+            do{
+                rand = Random.Range(0, 8);
+            }while(indexes.Contains(rand));
+
+            indexes.Add(rand);
         }
 
-        GenerateMonitorizar();
+
+        GenerateMonitorizar(indexes);
     }
 
     void GenerateMale()
@@ -265,8 +274,43 @@ public class PacienteManager : MonoBehaviour
         PisanteF.GetComponent<SpriteRenderer>().color = Estetica.corPisante;
     }
 
-    public void GenerateMonitorizar()
+    public void GenerateMonitorizar(List<int> indexes)
     {
+        Monitorizar.PressaoArterial = Arrays.PressaoNormal[Random.Range(0, Arrays.PressaoNormal.Count - 1)];
+        Monitorizar.FrequenciaCardiaca = Arrays.CardiacaNormal[Random.Range(0, Arrays.CardiacaNormal.Count - 1)];
+        Monitorizar.FrequenciaRespiratoria = Arrays.RespiratoriaNormal[Random.Range(0, Arrays.RespiratoriaNormal.Count - 1)];
+        Monitorizar.Saturacao = Arrays.SaturacaoNormal[Random.Range(0, Arrays.SaturacaoNormal.Count - 1)];
+        Monitorizar.Temperatura = Arrays.TemperaturaNormal[Random.Range(0, Arrays.TemperaturaNormal.Count - 1)];
+        Monitorizar.Glicemia = Arrays.GlicemiaNormal[Random.Range(0, Arrays.GlicemiaNormal.Count - 1)];
+        Monitorizar.DebitoUrinario = Arrays.DebitoNormal[Random.Range(0, Arrays.DebitoNormal.Count - 1)];
 
+        if (indexes.Contains(0))
+        {
+            Monitorizar.PressaoArterial = Arrays.PressaoAnormal[Random.Range(0, Arrays.PressaoAnormal.Count - 1)];
+        }
+        if (indexes.Contains(1))
+        {
+            Monitorizar.FrequenciaCardiaca = Arrays.CardiacaAnormal[Random.Range(0, Arrays.CardiacaAnormal.Count - 1)];
+        }
+        if (indexes.Contains(2))
+        {
+            Monitorizar.FrequenciaRespiratoria = Arrays.RespiratoriaAnormal[Random.Range(0, Arrays.RespiratoriaAnormal.Count - 1)];
+        }
+        if (indexes.Contains(3))
+        {
+            Monitorizar.Saturacao = Arrays.SaturacaoAnormal[Random.Range(0, Arrays.SaturacaoAnormal.Count - 1)];
+        }
+        if (indexes.Contains(4))
+        {
+            Monitorizar.Temperatura = Arrays.TemperaturaAnormal[Random.Range(0, Arrays.TemperaturaAnormal.Count - 1)];
+        }
+        if (indexes.Contains(5))
+        {
+            Monitorizar.Glicemia = Arrays.GlicemiaAnormal[Random.Range(0, Arrays.GlicemiaAnormal.Count - 1)];
+        }
+        if (indexes.Contains(6))
+        {
+            Monitorizar.DebitoUrinario = Arrays.DebitoAnormal[Random.Range(0, Arrays.DebitoAnormal.Count - 1)];
+        }
     }
 }
