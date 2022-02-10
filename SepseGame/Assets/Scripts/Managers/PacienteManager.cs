@@ -23,6 +23,8 @@ public class PacienteManager : MonoBehaviour
 
     public int corDaPele, hasBigas, hasCabas, hasCorta, hasCalca, hasOclin, cabelin, bigas;
 
+    public int[] indexes;
+
     public Vector4 corBlusa, corCalca, corPisante;
 
     private void Start()
@@ -62,6 +64,16 @@ public class PacienteManager : MonoBehaviour
         {
             GenerateFemale();
         }
+
+        int i;
+        var length = Random.Range(0, 4);
+        for (i=0; i < length; i++)
+        {
+            //indexes[i] = Random.Range(0, 7);
+            
+        }
+
+        GenerateMonitorizar();
     }
 
     void GenerateMale()
@@ -251,5 +263,10 @@ public class PacienteManager : MonoBehaviour
         BlusaF.GetComponent<SpriteRenderer>().color = Estetica.corBlusa;
         CalcaF.GetComponent<SpriteRenderer>().color = Estetica.corCalca;
         PisanteF.GetComponent<SpriteRenderer>().color = Estetica.corPisante;
+    }
+
+    public void GenerateMonitorizar()
+    {
+
     }
 }

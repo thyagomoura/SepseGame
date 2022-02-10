@@ -6,11 +6,11 @@ using UnityEngine;
 
 public class Monitorizar : ScriptableObject
 {
-    public int PressaoArterial;
-    public int FrequenciaCardiaca;
-    public int FrequenciaRespiratoria;
-    public int Saturacao;
-    public int Temperatura;
-    public int Glicemia;
-    public int DebitoUrinario;
+    public string PressaoArterial;
+    public string FrequenciaCardiaca;
+    public string FrequenciaRespiratoria;
+    public string Saturacao;
+    public string Temperatura;
+    public string Glicemia;
+    public string DebitoUrinario;
 }
