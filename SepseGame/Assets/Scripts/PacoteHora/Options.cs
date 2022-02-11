@@ -93,7 +93,6 @@ public class Options : MonoBehaviour
                 Acertos--;
             }
         }
-        Debug.Log(tog + " : " + Acertos);
     }
 
     public void Toggle2(bool tog2)
@@ -112,7 +111,6 @@ public class Options : MonoBehaviour
                 Acertos--;
             }
         }
-        Debug.Log(tog2 + " : " + Acertos);
     }
 
     public void Toggle3(bool tog3)
@@ -131,7 +129,6 @@ public class Options : MonoBehaviour
                 Acertos--;
             }
         }
-        Debug.Log(tog3 + " : " + Acertos);
     }
 
     public void Toggle4(bool tog4)
@@ -150,7 +147,6 @@ public class Options : MonoBehaviour
                 Acertos--;
             }
         }
-        Debug.Log(tog4 + " : " + Acertos);
     }
 
     public void Toggle5(bool tog5)
@@ -169,7 +165,6 @@ public class Options : MonoBehaviour
                 Acertos--;
             }
         }
-        Debug.Log(tog5 + " : " + Acertos);
     }
 
     public void Toggle6(bool tog6)
@@ -188,7 +183,6 @@ public class Options : MonoBehaviour
                 Acertos--;
             }
         }
-        Debug.Log(tog6 + " : " + Acertos);
     }
 
     public void Toggle7(bool tog7)
@@ -207,8 +201,6 @@ public class Options : MonoBehaviour
                 Acertos--;
             }
         }
-        Debug.Log(tog7 + " : " + Acertos);
-
     }
     public void Toggle8(bool tog8)
     {
@@ -226,7 +218,6 @@ public class Options : MonoBehaviour
                 Acertos--;
             }
         }
-        Debug.Log(tog8 + " : " + Acertos);
     }
 
     public void LoadMinistar()
