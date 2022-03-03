@@ -7,7 +7,7 @@ public class TimerManager : MonoBehaviour
 {
     public Text timerText;
 
-    float timeLeft = 300.0f;
+    float timeLeft = 900.0f;
 
     void Awake()
     {

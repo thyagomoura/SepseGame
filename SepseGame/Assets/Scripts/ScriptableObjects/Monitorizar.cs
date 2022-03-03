@@ -13,4 +13,6 @@ public class Monitorizar : ScriptableObject
     public string Temperatura;
     public string Glicemia;
     public string DebitoUrinario;
+
+
 }
