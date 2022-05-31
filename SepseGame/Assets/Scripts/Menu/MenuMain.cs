@@ -31,6 +31,6 @@ public class MenuMain : MonoBehaviour
         OptionsMenuUI.SetActive(false);
         MainMenuUI.SetActive(true);
         //sair do menu options e voltar para o main menu
-        Debug.Log("Voltar");
+        //Debug.Log("Voltar");
     }
 }

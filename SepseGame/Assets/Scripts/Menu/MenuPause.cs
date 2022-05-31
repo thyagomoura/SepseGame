@@ -11,10 +11,14 @@ public class MenuPause : MonoBehaviour
     public GameObject Escolhas;
     public GameObject PauseIcon;
     public Button[] buttonsEscolhas;
+    public AudioSource MusicManager;
+    public Slider slider;
 
     void Start()
     {
         Time.timeScale = 1f;
+        float sliderValue = slider.value;
+        MusicManager.volume = 0.5f;
     }
 
     public void Resume()
@@ -27,6 +31,7 @@ public class MenuPause : MonoBehaviour
         buttonsEscolhas[2].interactable = !buttonsEscolhas[2].interactable;
         Time.timeScale = 1f;
     }
+
     public void Pause()
     {
         PauseMenuUI.SetActive(true);
@@ -35,6 +40,7 @@ public class MenuPause : MonoBehaviour
         buttonsEscolhas[0].interactable = !buttonsEscolhas[0].interactable;
         buttonsEscolhas[1].interactable = !buttonsEscolhas[1].interactable;
         buttonsEscolhas[2].interactable = !buttonsEscolhas[2].interactable;
+
         Time.timeScale = 0f;
     }
     public void LoadMenu()
@@ -46,5 +52,10 @@ public class MenuPause : MonoBehaviour
     {
         Debug.Log("Quit");
         Application.Quit();
+    }
+    public void Update()
+    {
+        float sliderValue = slider.value;
+        MusicManager.volume = sliderValue;
     }
 }

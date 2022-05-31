@@ -658,6 +658,8 @@ MonoBehaviour:
   Escolhas: {fileID: 0}
   PauseIcon: {fileID: 0}
   buttonsEscolhas: []
+  MusicManager: {fileID: 1244910206}
+  slider: {fileID: 1583585565}
 --- !u!114 &364091310
 MonoBehaviour:
   m_ObjectHideFlags: 0
