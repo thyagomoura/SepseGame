@@ -9,13 +9,12 @@ public class Caso : ScriptableObject
     public string dialogo1;
     public string dialogo2;
 
-    public string PressaoArterial;
     public string FrequenciaCardiaca;
-    public string FrequenciaRespiratoria;
+    public string PressaoArterial;
     public string Saturacao;
+    public string FrequenciaRespiratoria;
     public string Temperatura;
     public string Glicemia;
-    public string DebitoUrinario;
 
     public string Neurologico;
     public string Respiratorio;

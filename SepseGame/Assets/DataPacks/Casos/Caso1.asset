@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso1
   m_EditorClassIdentifier: 
-  dialogo1: 
-  dialogo2: 
-  PressaoArterial: 
-  FrequenciaCardiaca: 
-  FrequenciaRespiratoria: 
-  Saturacao: 
-  Temperatura: 
-  Glicemia: 
-  DebitoUrinario: 
-  Neurologico: 
-  Respiratorio: 
-  Cardiocirculatorio: 
-  Gastrintestinal: 
-  Renal: 
+  dialogo1: "Eu sinto muito cansa\xE7o e n\xE3o paro de tossir."
+  dialogo2: "O meu estado de des\xE2nimo, inapet\xEAncia e cansa\xE7o aos m\xEDnimos
+    esfor\xE7os."
+  FrequenciaCardiaca: 164b.p.m
+  PressaoArterial: 94x58mmHg
+  Saturacao: 92% em ar ambiente
+  FrequenciaRespiratoria: 26i.p.m
+  Temperatura: "39\xBAC"
+  Glicemia: 90 mg/dL
+  Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa."
+  Respiratorio: "Murm\xFArios vesiculares presentes sem ru\xEDdos advent\xEDcios,
+    tosse seca com secre\xE7\xE3o clara. Leve hiperemia de orofaringe."
+  Cardiocirculatorio: "Taquicardia, bulhas r\xEDtmicas e normofon\xE9ticas em 2 tempos,
+    sem sopros."
+  Gastrintestinal: "Abdome globoso, fl\xE1cido, indolor a palpa\xE7\xE3o superficial
+    e profunda. Sem visceromegalias."
+  Renal: "Sem d\xE9bito urin\xE1rio at\xE9 o momento."
   indexesCorretos: 

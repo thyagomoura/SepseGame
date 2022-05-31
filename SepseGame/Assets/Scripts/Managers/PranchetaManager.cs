@@ -74,12 +74,48 @@ public class PranchetaManager : MonoBehaviour
         }
     }
 
-    public void updateDU()
+    public void updateNeuro()
     {
-        texts[6].text = texts[6].text + " " + Caso.DebitoUrinario.ToString();
+        texts[6].text = texts[6].text + " " + Caso.Neurologico.ToString();
         if (!aferidos.Contains(6))
         {
             aferidos.Add(6);
+        }
+    }
+
+    public void updateResp()
+    {
+        texts[7].text = texts[7].text + " " + Caso.Respiratorio.ToString();
+        if (!aferidos.Contains(7))
+        {
+            aferidos.Add(7);
+        }
+    }
+
+    public void updateCardio()
+    {
+        texts[8].text = texts[8].text + " " + Caso.Cardiocirculatorio.ToString();
+        if (!aferidos.Contains(8))
+        {
+            aferidos.Add(8);
+        }
+    }
+
+    public void updateGastro()
+    {
+        texts[9].text = texts[9].text + " " + Caso.Gastrintestinal.ToString();
+        if (!aferidos.Contains(9))
+        {
+            aferidos.Add(9);
+        }
+    }
+
+    public void updateRenal()
+    {
+        texts[10].text = texts[10].text + " " + Caso.Renal.ToString();
+        if (!aferidos.Contains(10))
+        {
+            aferidos.Add(10);
         }
     }
 
