@@ -8,6 +8,7 @@ public class MenuMain : MonoBehaviour
     public static bool GameIsOption = false;
     public GameObject OptionsMenuUI;
     public GameObject MainMenuUI;
+    public AudioSource Musica;
 
     public void Play()
     {
@@ -32,5 +33,12 @@ public class MenuMain : MonoBehaviour
         MainMenuUI.SetActive(true);
         //sair do menu options e voltar para o main menu
         //Debug.Log("Voltar");
+    }
+
+    public void Update()
+    {
+        if (gameObject.activeSelf) {
+            Musica.volume = 0.5f;
+        }
     }
 }

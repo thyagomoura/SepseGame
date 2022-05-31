@@ -7,6 +7,7 @@ public class MusicManager : MonoBehaviour
     void Awake()
     {
         SetUpSingleton();
+
     }
 
     private void SetUpSingleton()
