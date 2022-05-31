@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuCustomize : MonoBehaviour
 {
+    public EsteticaNurse nurseDataPack;
 
     public void BackMainMenu(){
         SceneManager.LoadScene("MainMenu");

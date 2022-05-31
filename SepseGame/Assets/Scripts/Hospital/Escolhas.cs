@@ -8,12 +8,13 @@ public class Escolhas : MonoBehaviour
     public bool isMIn = false;
     public bool isEFIn = false;
     public bool isEIn = false;
+    public bool isPIn = false;
 
     public void monitorizar()
     {
         if (isPlaying(GameObject.Find("PanelMonitorizar").GetComponent<Animator>(), "In") || isPlaying(GameObject.Find("PanelMonitorizar").GetComponent<Animator>(), "Out"))
         {
-
+            return;
         }
         else if (!isMIn)
         {
@@ -34,7 +35,7 @@ public class Escolhas : MonoBehaviour
     {
         if (isPlaying(GameObject.Find("PanelExamesFisicos").GetComponent<Animator>(), "InExamesFisicos") || isPlaying(GameObject.Find("PanelMonitorizar").GetComponent<Animator>(), "OutExamesFisicos"))
         {
-
+            return;
         }
         else if (!isEFIn)
         {
@@ -55,7 +56,7 @@ public class Escolhas : MonoBehaviour
     {
         if (isPlaying(GameObject.Find("PanelExames").GetComponent<Animator>(), "InExames") || isPlaying(GameObject.Find("PanelExames").GetComponent<Animator>(), "OutExames"))
         {
-
+            return;
         }
         else if (!isEIn)
         {
@@ -68,6 +69,27 @@ public class Escolhas : MonoBehaviour
         {
             GameObject.Find("PanelExames").GetComponent<Animator>().Play("OutExames");
             isEIn = false;
+            return;
+        }
+    }
+
+    public void prancheta()
+    {
+        if (isPlaying(GameObject.Find("Content").GetComponent<Animator>(), "slide_in_content") || isPlaying(GameObject.Find("Content").GetComponent<Animator>(), "slide_out_content"))
+        {
+            return;
+        }
+        else if (!isPIn)
+        {
+            GameObject.Find("Content").GetComponent<Animator>().Play("slide_in_content");
+            isPIn = true;
+            disable(3);
+            return;
+        }
+        else
+        {
+            GameObject.Find("Content").GetComponent<Animator>().Play("slide_out_content");
+            isPIn = false;
             return;
         }
     }
@@ -97,6 +119,11 @@ public class Escolhas : MonoBehaviour
         {
             GameObject.Find("PanelExames").GetComponent<Animator>().Play("OutExames");
             isEIn = false;
+        }
+        if (isPIn && exception != 3)
+        {
+            GameObject.Find("Content").GetComponent<Animator>().Play("slide_out_content");
+            isPIn = false;
         }
     }
 }

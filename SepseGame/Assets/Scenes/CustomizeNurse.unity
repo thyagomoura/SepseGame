@@ -604,6 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebe223ead05ea345bc0fe281793fc3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nurseDataPack: {fileID: 11400000, guid: fcfc5772fb0a6a84a9b7df6e3a64168b, type: 2}
 --- !u!1 &226005756
 GameObject:
   m_ObjectHideFlags: 0

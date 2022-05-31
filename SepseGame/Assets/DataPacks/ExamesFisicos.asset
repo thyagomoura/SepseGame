@@ -9,18 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdfa52e3009a6144bbe98e91aedf724e, type: 3}
-  m_Name: EsteticaNurse
+  m_Script: {fileID: 11500000, guid: a867ef5823edafb4d9a106a2be19c810, type: 3}
+  m_Name: ExamesFisicos
   m_EditorClassIdentifier: 
-  set: 0
-  gender: 0
-  corDaPele: 3
-  hasBigas: 0
-  hasCabas: 60
-  hasOclin: 9
-  cabelin: 12
-  bigas: 1
-  role: 16
-  estetoscopio: 22
-  mascara: 98
-  corRoupa: {x: 0, y: 0, z: 0, w: 0}
+  Neurologico: 
+  Respiratorio: 
+  Cardiocirculatorio: 
+  Gastrintestinal: 
+  Renal: 

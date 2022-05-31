@@ -29,12 +29,14 @@ public class NurseOutfitChange : MonoBehaviour
     {
         nm.GenerateMale();
         nm.sexo = 0;
+        nm.gender = 0;
     }
 
     public void SexoF()
     {
         nm.GenerateFemale();
         nm.sexo = 1;
+        nm.gender = 1;
     }
 
     public void Nurse()

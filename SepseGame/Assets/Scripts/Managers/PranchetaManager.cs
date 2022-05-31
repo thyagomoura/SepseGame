@@ -9,68 +9,72 @@ public class PranchetaManager : MonoBehaviour
     public Text[] texts;
     public Toggle[] Toggles;
     public Selecionados ArraySelected;
-    public Aferidos ArrayAferidos;
+    public Animator content;
+
+    List<int> aferidos = new List<int>();
+
+    private bool isIn = false;
 
     public void updatePAS()
     {
         texts[0].text = texts[0].text + " " + Monitorizar.PressaoArterial.ToString();
-        if (!ArrayAferidos.IndexesAferidos.Contains(0))
+        if (!aferidos.Contains(0))
         {
-            ArrayAferidos.IndexesAferidos.Add(0);
+            aferidos.Add(0);
         }
     }
 
     public void updateFC()
     {
         texts[1].text = texts[1].text + " " + Monitorizar.FrequenciaCardiaca.ToString();
-        if (!ArrayAferidos.IndexesAferidos.Contains(1))
+        if (!aferidos.Contains(1))
         {
-            ArrayAferidos.IndexesAferidos.Add(1);
+            aferidos.Add(1);
         }
     }
 
     public void updateFR()
     {
         texts[2].text = texts[2].text + " " + Monitorizar.FrequenciaRespiratoria.ToString();
-        if (!ArrayAferidos.IndexesAferidos.Contains(2))
+        if (!aferidos.Contains(2))
         {
-            ArrayAferidos.IndexesAferidos.Add(2);
+            aferidos.Add(2);
         }
     }
 
     public void updateSO()
     {
         texts[3].text = texts[3].text + " " + Monitorizar.Saturacao.ToString();
-        if (!ArrayAferidos.IndexesAferidos.Contains(3))
+        if (!aferidos.Contains(3))
         {
-            ArrayAferidos.IndexesAferidos.Add(3);
+            aferidos.Add(3);
         }
     }
 
     public void updateTA()
     {
         texts[4].text = texts[4].text + " " + Monitorizar.Temperatura.ToString();
-        if (!ArrayAferidos.IndexesAferidos.Contains(4))
+        if (!aferidos.Contains(4))
         {
-            ArrayAferidos.IndexesAferidos.Add(4);
+            aferidos.Add(4);
         }
     }
 
     public void updateGC()
     {
         texts[5].text = texts[5].text + " " + Monitorizar.Glicemia.ToString();
-        if (!ArrayAferidos.IndexesAferidos.Contains(5))
+        if (!aferidos.Contains(5))
         {
-            ArrayAferidos.IndexesAferidos.Add(5);
+            aferidos.Add(5);
         }
     }
 
     public void updateDU()
     {
         texts[6].text = texts[6].text + " " + Monitorizar.DebitoUrinario.ToString();
-        if (!ArrayAferidos.IndexesAferidos.Contains(6))
+        if (!aferidos.Contains(6))
         {
-            ArrayAferidos.IndexesAferidos.Add(6);
+            aferidos.Add(6);
         }
     }
 
@@ -89,6 +93,18 @@ public class PranchetaManager : MonoBehaviour
             else
             {
                 ArraySelected.Selected.Remove(i);
+            }
+        }
+    }
+
+    public void updatePrancheta()
+    {
+        int i;
+        for (i = 0; i < Toggles.Length; i++)
+        {
+            if (aferidos.Contains(i))
+            {
+                Toggles[i].interactable = true;
             }
         }
     }

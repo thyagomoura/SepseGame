@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3199b488a9b8a7344baf48aab31d880c, type: 3}
   m_Name: Monitorizar
   m_EditorClassIdentifier: 
-  PressaoArterial: 
+  PressaoArterial: 164 bpm
   FrequenciaCardiaca: 
   FrequenciaRespiratoria: 
   Saturacao: 

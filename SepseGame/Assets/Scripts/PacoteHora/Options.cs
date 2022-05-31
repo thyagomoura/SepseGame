@@ -25,7 +25,6 @@ public class Options : MonoBehaviour
     private void Start()
     {
         RandomText();
-
     }
 
     private void RandomText()

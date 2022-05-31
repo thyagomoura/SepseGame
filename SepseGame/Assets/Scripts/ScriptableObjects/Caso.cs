@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Monitorizar", menuName = "Paciente/Monitorizar")]
+[CreateAssetMenu(fileName = "Caso", menuName = "Paciente/Caso")]
 
-public class Monitorizar : ScriptableObject
+public class Caso : ScriptableObject
 {
     public string PressaoArterial;
     public string FrequenciaCardiaca;
@@ -13,4 +13,10 @@ public class Monitorizar : ScriptableObject
     public string Temperatura;
     public string Glicemia;
     public string DebitoUrinario;
+
+    public string Neurologico;
+    public string Respiratorio;
+    public string Cardiocirculatorio;
+    public string Gastrintestinal;
+    public string Renal;
 }

@@ -81,7 +81,10 @@ public class Pacote : MonoBehaviour
             }
         }
         updating = false;
-        currentSelected = excludeIndex;
+        if (!once)
+        {
+            currentSelected = excludeIndex;
+        }
     }
 
     public void Avancar()
@@ -92,13 +95,12 @@ public class Pacote : MonoBehaviour
             bars[respostaCorreta].SetActive(true);
             if (currentSelected != respostaCorreta)
             {
-                bars[currentSelected].GetComponent<Image>().color = new Color(1, 0, 0, 1);
+                bars[currentSelected].GetComponent<Image>().color = new Color(0.75f, 0, 0, 1);
                 bars[currentSelected].SetActive(true);
             }
             once = true;
-            return;
         }
-        if (once)
+        else
         {
             once = false;
             numerosSorteados = new List<int>();

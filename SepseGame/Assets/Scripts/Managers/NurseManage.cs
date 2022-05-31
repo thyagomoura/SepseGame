@@ -217,7 +217,7 @@ public class NurseManage : MonoBehaviour
             Mascara.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];
 
         }
-        Color corzinha = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+        Color corzinha = EsteticaNurse.corRoupa;
         scm.MudarBolinha(corzinha);
         Blusa.GetComponent<SpriteRenderer>().color = corzinha;
         Calca.GetComponent<SpriteRenderer>().color = corzinha;
@@ -292,7 +292,7 @@ public class NurseManage : MonoBehaviour
 
         }
 
-        Color corzinha = Random.ColorHSV(0, 1, 0, 0.75f, 1, 1);
+        Color corzinha = EsteticaNurse.corRoupa;
         scm.MudarBolinha(corzinha);
         BlusaF.GetComponent<SpriteRenderer>().color = corzinha;
         CalcaF.GetComponent<SpriteRenderer>().color = corzinha;

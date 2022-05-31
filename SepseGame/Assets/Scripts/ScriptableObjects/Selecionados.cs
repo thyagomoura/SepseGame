@@ -8,3 +8,4 @@ public class Selecionados : ScriptableObject
 {
     public List<int> Selected = new List<int>();
 }
+//lista que contem os sinais vitais aferidos selecionados

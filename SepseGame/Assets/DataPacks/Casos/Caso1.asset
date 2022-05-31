@@ -9,7 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17fb8690e74bc7a4b8f0dbbd060e82a4, type: 3}
-  m_Name: Unselected
+  m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
+  m_Name: Caso1
   m_EditorClassIdentifier: 
-  NonSelected: 
+  PressaoArterial: 
+  FrequenciaCardiaca: 
+  FrequenciaRespiratoria: 
+  Saturacao: 
+  Temperatura: 
+  Glicemia: 
+  DebitoUrinario: 
