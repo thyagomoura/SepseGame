@@ -8107,7 +8107,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97153aeedb8f78746ae62ea369e187be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Monitorizar: {fileID: 11400000, guid: 109e1ad231ed30445b533dec47538130, type: 2}
+  Caso: {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}
+  ArrayCasos:
+  - {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}
   texts:
   - {fileID: 365229829}
   - {fileID: 939311321}

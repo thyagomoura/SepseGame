@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso1
   m_EditorClassIdentifier: 
+  dialogo1: 
+  dialogo2: 
   PressaoArterial: 
   FrequenciaCardiaca: 
   FrequenciaRespiratoria: 
@@ -19,3 +21,9 @@ MonoBehaviour:
   Temperatura: 
   Glicemia: 
   DebitoUrinario: 
+  Neurologico: 
+  Respiratorio: 
+  Cardiocirculatorio: 
+  Gastrintestinal: 
+  Renal: 
+  indexesCorretos: 

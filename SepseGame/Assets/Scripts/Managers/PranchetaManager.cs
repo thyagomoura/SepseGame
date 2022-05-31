@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class PranchetaManager : MonoBehaviour
 {
-    public Monitorizar Monitorizar;
+    public Caso Caso;
+    public Caso[] ArrayCasos;
     public Text[] texts;
     public Toggle[] Toggles;
     public Selecionados ArraySelected;
@@ -13,11 +15,14 @@ public class PranchetaManager : MonoBehaviour
 
     List<int> aferidos = new List<int>();
 
-    private bool isIn = false;
+    private void Start()
+    {
+        
+    }
 
     public void updatePAS()
     {
-        texts[0].text = texts[0].text + " " + Monitorizar.PressaoArterial.ToString();
+        texts[0].text = texts[0].text + " " + Caso.PressaoArterial.ToString();
         if (!aferidos.Contains(0))
         {
             aferidos.Add(0);
@@ -26,7 +31,7 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateFC()
     {
-        texts[1].text = texts[1].text + " " + Monitorizar.FrequenciaCardiaca.ToString();
+        texts[1].text = texts[1].text + " " + Caso.FrequenciaCardiaca.ToString();
         if (!aferidos.Contains(1))
         {
             aferidos.Add(1);
@@ -35,7 +40,7 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateFR()
     {
-        texts[2].text = texts[2].text + " " + Monitorizar.FrequenciaRespiratoria.ToString();
+        texts[2].text = texts[2].text + " " + Caso.FrequenciaRespiratoria.ToString();
         if (!aferidos.Contains(2))
         {
             aferidos.Add(2);
@@ -44,7 +49,7 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateSO()
     {
-        texts[3].text = texts[3].text + " " + Monitorizar.Saturacao.ToString();
+        texts[3].text = texts[3].text + " " + Caso.Saturacao.ToString();
         if (!aferidos.Contains(3))
         {
             aferidos.Add(3);
@@ -53,7 +58,7 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateTA()
     {
-        texts[4].text = texts[4].text + " " + Monitorizar.Temperatura.ToString();
+        texts[4].text = texts[4].text + " " + Caso.Temperatura.ToString();
         if (!aferidos.Contains(4))
         {
             aferidos.Add(4);
@@ -62,7 +67,7 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateGC()
     {
-        texts[5].text = texts[5].text + " " + Monitorizar.Glicemia.ToString();
+        texts[5].text = texts[5].text + " " + Caso.Glicemia.ToString();
         if (!aferidos.Contains(5))
         {
             aferidos.Add(5);
@@ -71,7 +76,7 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateDU()
     {
-        texts[6].text = texts[6].text + " " + Monitorizar.DebitoUrinario.ToString();
+        texts[6].text = texts[6].text + " " + Caso.DebitoUrinario.ToString();
         if (!aferidos.Contains(6))
         {
             aferidos.Add(6);
