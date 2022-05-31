@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class Caso : ScriptableObject
 {
+    public string dialogo1;
+    public string dialogo2;
+
     public string PressaoArterial;
     public string FrequenciaCardiaca;
     public string FrequenciaRespiratoria;
@@ -19,4 +22,6 @@ public class Caso : ScriptableObject
     public string Cardiocirculatorio;
     public string Gastrintestinal;
     public string Renal;
+
+    public int[] indexesCorretos;
 }
