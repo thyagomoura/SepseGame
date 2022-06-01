@@ -6538,102 +6538,96 @@ MonoBehaviour:
   m_GameObject: {fileID: 763300522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e0f868fbf8238443b10ef436930d50d, type: 3}
+  m_Script: {fileID: 11500000, guid: 02915324aa522ef4aaefc1ff1a069d7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PersonagemMasculino: {fileID: 183015103}
-  BigodeOptions: {fileID: 1517204766}
   peleArray:
-  - {fileID: 4785416502366957982, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: 636125614853124351, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -6476073430808487830, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: 9174639125423546684, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
+  - {fileID: 4517783092763003773, guid: f130d1a2a8880f0428071e8fa5247f76, type: 3}
+  - {fileID: 6453568021868127114, guid: f130d1a2a8880f0428071e8fa5247f76, type: 3}
+  - {fileID: -7783963551514933754, guid: f130d1a2a8880f0428071e8fa5247f76, type: 3}
+  - {fileID: -8232353103302070166, guid: f130d1a2a8880f0428071e8fa5247f76, type: 3}
   cabeloArray:
-  - {fileID: 8575153061236039873, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: 7834023044769807780, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -1965177407984252378, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -9056104409346901496, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -309316449988679118, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -3944177906431115763, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: 3073210224273870372, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: 1292950371295307809, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -8476543794911562266, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -120402897678559533, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: 775576103010364929, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: 8867367399360911347, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -8327235319485915920, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -2371123758242119606, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -1839455151069556347, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -209428898005892580, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -230024264019712479, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: 5418724057127367828, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: 1322303372283447633, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   barbaArray:
-  - {fileID: 799330931482288562, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: 8397340996971531433, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -5090302482932389936, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -2976712095062179536, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -2981692430049568176, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -2349717505339926414, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: 8066316886691372756, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -2692337845544895538, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -3869009067285555775, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: 2786242222576984941, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   blusa: {fileID: -1169755358952293711, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
   profissaoArray:
-  - {fileID: 3558774531630188508, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -6478166032499076432, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   calca: {fileID: 2952662330050420941, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
   PersonagemFeminino: {fileID: 1466806951}
   peleArrayF:
-  - {fileID: 7492470159447225405, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: 6946253139321095085, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: 763205728613161273, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: 6597097866119081974, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
+  - {fileID: 3460021878064576459, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
+  - {fileID: 2640958118534844887, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
+  - {fileID: -400578526610845321, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
+  - {fileID: 3332063933340604127, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
   cabeloArrayF:
-  - {fileID: -6993220112083930077, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -1381989750027950878, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -8001597490286468511, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -9098108921690738850, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: 1744995555663705337, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -824922807859091574, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -1239753867252744354, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -9008497491349257341, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: 7906567756595428118, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -7531987178023570961, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: 1681006089113658411, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -2679505680813446008, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: 1706395745036902740, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -6232474119413852534, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -8182216283211984540, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -8671591364516864, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -1806627891051310533, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -9182439902517291169, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -4610684356132203147, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -6732523502423272803, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: 3468792143477140039, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -2340585610280792578, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -3862326384987939377, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: 2376164597328753378, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   blusaF: {fileID: 7316675982175140385, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
   profissaoArrayF:
-  - {fileID: -2533494965180961652, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: 6027204512768156296, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   calcaF: {fileID: 8368722754618101687, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  oclinArray:
-  - {fileID: 5912770758131805232, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: -6097251582043861225, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
+  oclinArray: []
   oclinSprite: {fileID: -6097251582043861225, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
   estetoscopioArray:
-  - {fileID: 7921582192167664278, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  - {fileID: 5912770758131805232, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   estetoscopioSprite: {fileID: 7921582192167664278, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  mascaraArray:
-  - {fileID: -8745384162588317561, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
-  - {fileID: -465554932055314407, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
+  mascaraArray: []
   EsteticaNurse: {fileID: 11400000, guid: fcfc5772fb0a6a84a9b7df6e3a64168b, type: 2}
-  scm: {fileID: 0}
   gender: 0
   corDaPele: 0
   hasBigas: 0
@@ -6645,7 +6639,6 @@ MonoBehaviour:
   role: 0
   estetoscopio: 0
   mascara: 0
-  corRoupas: {r: 0.525, g: 0.249375, b: 0.249375, a: 1}
 --- !u!4 &763300524
 Transform:
   m_ObjectHideFlags: 0
@@ -6654,8 +6647,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763300522}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5154648, z: 90}
-  m_LocalScale: {x: 6.9246697, y: 6.9246697, z: 1.38493}
+  m_LocalPosition: {x: -4.63, y: -1.09, z: 90}
+  m_LocalScale: {x: 5.136166, y: 5.136166, z: 1.0272303}
   m_Children:
   - {fileID: 1466806952}
   - {fileID: 183015104}
@@ -12862,11 +12855,6 @@ MonoBehaviour:
   isEFIn: 0
   isEIn: 0
   isPIn: 0
---- !u!1 &1517204766 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6868304037801303292, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
-  m_PrefabInstance: {fileID: 375856345}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1518432584
 GameObject:
   m_ObjectHideFlags: 0

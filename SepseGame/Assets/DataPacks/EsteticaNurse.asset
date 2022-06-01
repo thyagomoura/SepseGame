@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   set: 1
   gender: 0
-  corDaPele: 1
+  corDaPele: 2
   hasBigas: 0
   hasCabas: 46
   hasOclin: 6
