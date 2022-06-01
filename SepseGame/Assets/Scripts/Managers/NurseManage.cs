@@ -60,6 +60,7 @@ public class NurseManage : MonoBehaviour
         }
 
     }
+
     void SetSliderColor()
     {
         corRoupas = scm.corFinal;

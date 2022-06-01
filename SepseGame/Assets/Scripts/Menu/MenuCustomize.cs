@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class MenuCustomize : MonoBehaviour
 {
     public EsteticaNurse nurseDataPack;
+    public NurseManage nurseManage;
 
     public void BackMainMenu(){
         SceneManager.LoadScene("MainMenu");
     }
-        
+       
 }
