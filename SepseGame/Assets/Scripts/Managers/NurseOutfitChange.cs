@@ -250,7 +250,7 @@ public class NurseOutfitChange : MonoBehaviour
         }
         PeloFacial.GetComponent<SpriteRenderer>().sprite = nm.barbaArray[currentOptionBigas];
         nm.hasBigas = currentOptionBigas;
-        en.hasBigas = currentOptionBigas;
+        en.bigas = currentOptionBigas;
     }
 
     public void PreviousBigas()
@@ -265,7 +265,7 @@ public class NurseOutfitChange : MonoBehaviour
         }
         PeloFacial.GetComponent<SpriteRenderer>().sprite = nm.barbaArray[currentOptionBigas];
         nm.hasBigas = currentOptionBigas;
-        en.hasBigas = currentOptionBigas;
+        en.bigas = currentOptionBigas;
     }
 
     public void NextEstetoscopio()
