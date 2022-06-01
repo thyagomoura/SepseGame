@@ -5,6 +5,7 @@ using UnityEngine;
 public class NurseManage : MonoBehaviour
 {
     public GameObject PersonagemMasculino;
+    public GameObject BigodeOptions;
     public Sprite[] peleArray;
     public Sprite[] cabeloArray;
     public Sprite[] barbaArray;
@@ -134,6 +135,7 @@ public class NurseManage : MonoBehaviour
     {
         PersonagemMasculino.SetActive(true);
         PersonagemFeminino.SetActive(false);
+        BigodeOptions.SetActive(true);
 
         GameObject Pele = GameObject.Find("Pele");
         GameObject Cabelo = GameObject.Find("Cabelin");
@@ -229,6 +231,7 @@ public class NurseManage : MonoBehaviour
     {
         PersonagemMasculino.SetActive(false);
         PersonagemFeminino.SetActive(true);
+        BigodeOptions.SetActive(false);
 
         GameObject PeleF = GameObject.Find("PeleF");
         GameObject CabeloF = GameObject.Find("CabelinF");
