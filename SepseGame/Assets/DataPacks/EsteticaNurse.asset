@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   set: 1
   gender: 0
-  corDaPele: 3
-  hasBigas: 1
-  hasCabas: 60
-  hasOclin: 59
-  cabelin: 12
-  bigas: 8
-  role: 74
-  estetoscopio: 93
-  mascara: 59
-  corRoupa: {x: 0, y: 0, z: 0, w: 0}
+  corDaPele: 0
+  hasBigas: 0
+  hasCabas: 70
+  hasOclin: 69
+  cabelin: 14
+  bigas: 6
+  role: 11
+  estetoscopio: 32
+  mascara: 8
+  corRoupa: {x: 1, y: 1, z: 1, w: 1}
