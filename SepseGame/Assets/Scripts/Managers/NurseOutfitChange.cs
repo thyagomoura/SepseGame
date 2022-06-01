@@ -5,6 +5,7 @@ using UnityEngine;
 public class NurseOutfitChange : MonoBehaviour
 {
     public NurseManage nm;
+    public EsteticaNurse en;
     private void Start()
     {
         
@@ -80,6 +81,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             Pele.GetComponent<SpriteRenderer>().sprite = nm.peleArray[currentOptionSkin];
             nm.corDaPele = currentOptionSkin;
+            en.corDaPele = currentOptionSkin;
         }
         else
         {
@@ -90,6 +92,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             PeleF.GetComponent<SpriteRenderer>().sprite = nm.peleArrayF[currentOptionSkin];
             nm.corDaPele = currentOptionSkin;
+            en.corDaPele = currentOptionSkin;
         }
     }
 
@@ -107,6 +110,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             Pele.GetComponent<SpriteRenderer>().sprite = nm.peleArray[currentOptionSkin];
             nm.corDaPele = currentOptionSkin;
+            en.corDaPele = currentOptionSkin;
         }
         else
         {
@@ -117,6 +121,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             PeleF.GetComponent<SpriteRenderer>().sprite = nm.peleArrayF[currentOptionSkin];
             nm.corDaPele = currentOptionSkin;
+            en.corDaPele = currentOptionSkin;
         }
     }
     public void NextHair()
@@ -132,6 +137,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             Cabelo.GetComponent<SpriteRenderer>().sprite = nm.cabeloArray[currentOptionHair];
             nm.hasCabas = currentOptionHair;
+            en.hasCabas = currentOptionHair;
         }
         else
         {
@@ -142,6 +148,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             CabeloF.GetComponent<SpriteRenderer>().sprite = nm.cabeloArrayF[currentOptionHair];
             nm.hasCabas = currentOptionHair;
+            en.hasCabas = currentOptionHair;
         }
     }
 
@@ -159,6 +166,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             Cabelo.GetComponent<SpriteRenderer>().sprite = nm.cabeloArray[currentOptionHair];
             nm.hasCabas = currentOptionHair;
+            en.hasCabas = currentOptionHair;
         }
         else
         {
@@ -169,6 +177,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             CabeloF.GetComponent<SpriteRenderer>().sprite = nm.cabeloArrayF[currentOptionHair];
             nm.hasCabas = currentOptionHair;
+            en.hasCabas = currentOptionHair;
         }
     }
 
@@ -185,6 +194,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             Oclin.GetComponent<SpriteRenderer>().sprite = nm.oclinArray[currentOptionOclin];
             nm.hasOclin = currentOptionOclin;
+            en.hasOclin = currentOptionOclin;
         }
         else
         {
@@ -195,6 +205,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             OclinF.GetComponent<SpriteRenderer>().sprite = nm.oclinArray[currentOptionOclin];
             nm.hasOclin = currentOptionOclin;
+            en.hasOclin = currentOptionOclin;
         }
     }
 
@@ -212,6 +223,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             Oclin.GetComponent<SpriteRenderer>().sprite = nm.oclinArray[currentOptionOclin];
             nm.hasOclin = currentOptionOclin;
+            en.hasOclin = currentOptionOclin;
         }
         else
         {
@@ -222,6 +234,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             OclinF.GetComponent<SpriteRenderer>().sprite = nm.oclinArray[currentOptionOclin];
             nm.hasOclin = currentOptionOclin;
+            en.hasOclin = currentOptionOclin;
         }
     }
 
@@ -237,6 +250,7 @@ public class NurseOutfitChange : MonoBehaviour
         }
         PeloFacial.GetComponent<SpriteRenderer>().sprite = nm.barbaArray[currentOptionBigas];
         nm.hasBigas = currentOptionBigas;
+        en.hasBigas = currentOptionBigas;
     }
 
     public void PreviousBigas()
@@ -251,6 +265,7 @@ public class NurseOutfitChange : MonoBehaviour
         }
         PeloFacial.GetComponent<SpriteRenderer>().sprite = nm.barbaArray[currentOptionBigas];
         nm.hasBigas = currentOptionBigas;
+        en.hasBigas = currentOptionBigas;
     }
 
     public void NextEstetoscopio()
@@ -267,6 +282,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             Estetoscopio.GetComponent<SpriteRenderer>().sprite = nm.estetoscopioArray[currentOptionEstetoscopio];
             nm.estetoscopio = currentOptionEstetoscopio;
+            en.estetoscopio = currentOptionEstetoscopio;
         }
         else
         {
@@ -277,6 +293,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             EstetoscopioF.GetComponent<SpriteRenderer>().sprite = nm.estetoscopioArray[currentOptionEstetoscopio];
             nm.estetoscopio = currentOptionEstetoscopio;
+            en.estetoscopio = currentOptionEstetoscopio;
         }
     }
 
@@ -295,6 +312,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             Estetoscopio.GetComponent<SpriteRenderer>().sprite = nm.estetoscopioArray[currentOptionEstetoscopio];
             nm.estetoscopio = currentOptionEstetoscopio;
+            en.estetoscopio = currentOptionEstetoscopio;
         }
         else
         {
@@ -305,6 +323,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             EstetoscopioF.GetComponent<SpriteRenderer>().sprite = nm.estetoscopioArray[currentOptionEstetoscopio];
             nm.estetoscopio = currentOptionEstetoscopio;
+            en.estetoscopio = currentOptionEstetoscopio;
         }
     }
 
@@ -322,6 +341,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             Mascara.GetComponent<SpriteRenderer>().sprite = nm.mascaraArray[currentOptionMascara];
             nm.mascara = currentOptionMascara;
+            en.mascara = currentOptionMascara;
         }
         else
         {
@@ -332,6 +352,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             MascaraF.GetComponent<SpriteRenderer>().sprite = nm.mascaraArray[currentOptionMascara];
             nm.mascara = currentOptionMascara;
+            en.mascara = currentOptionMascara;
         }
     }
 
@@ -350,6 +371,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             Mascara.GetComponent<SpriteRenderer>().sprite = nm.mascaraArray[currentOptionMascara];
             nm.mascara = currentOptionMascara;
+            en.mascara = currentOptionMascara;
         }
         else
         {
@@ -360,6 +382,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             MascaraF.GetComponent<SpriteRenderer>().sprite = nm.mascaraArray[currentOptionMascara];
             nm.mascara = currentOptionMascara;
+            en.mascara = currentOptionMascara;
         }
     }
 

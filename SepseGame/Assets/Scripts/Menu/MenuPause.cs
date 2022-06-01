@@ -12,12 +12,12 @@ public class MenuPause : MonoBehaviour
     public GameObject PauseIcon;
     public Button[] buttonsEscolhas;
     public AudioSource MusicManager;
-    public Slider slider;
+    //public Slider slider;
 
     void Start()
     {
         Time.timeScale = 1f;
-        float sliderValue = slider.value;
+        //float sliderValue = slider.value;
         MusicManager.volume = 0.5f;
     }
 
@@ -53,9 +53,9 @@ public class MenuPause : MonoBehaviour
         Debug.Log("Quit");
         Application.Quit();
     }
-    public void Update()
-    {
-        float sliderValue = slider.value;
-        MusicManager.volume = sliderValue;
-    }
+    //public void Update()
+    //{
+    //    //float sliderValue = slider.value;
+    //    //MusicManager.volume = sliderValue;
+    //}
 }
