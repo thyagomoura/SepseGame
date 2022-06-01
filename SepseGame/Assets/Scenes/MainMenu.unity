@@ -655,11 +655,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuUI: {fileID: 2029675541}
-  Escolhas: {fileID: 0}
-  PauseIcon: {fileID: 0}
+  Escolhas: {fileID: 1458453868}
+  PauseIcon: {fileID: 871800873}
   buttonsEscolhas: []
   MusicManager: {fileID: 1244910206}
-  slider: {fileID: 1583585565}
 --- !u!114 &364091310
 MonoBehaviour:
   m_ObjectHideFlags: 0

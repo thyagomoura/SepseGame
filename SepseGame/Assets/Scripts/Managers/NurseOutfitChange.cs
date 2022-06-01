@@ -137,7 +137,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             Cabelo.GetComponent<SpriteRenderer>().sprite = nm.cabeloArray[currentOptionHair];
             nm.hasCabas = currentOptionHair;
-            en.hasCabas = currentOptionHair;
+            en.cabelin = currentOptionHair;
         }
         else
         {
@@ -148,7 +148,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             CabeloF.GetComponent<SpriteRenderer>().sprite = nm.cabeloArrayF[currentOptionHair];
             nm.hasCabas = currentOptionHair;
-            en.hasCabas = currentOptionHair;
+            en.cabelin = currentOptionHair;
         }
     }
 
@@ -166,7 +166,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             Cabelo.GetComponent<SpriteRenderer>().sprite = nm.cabeloArray[currentOptionHair];
             nm.hasCabas = currentOptionHair;
-            en.hasCabas = currentOptionHair;
+            en.cabelin = currentOptionHair;
         }
         else
         {
@@ -177,7 +177,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             CabeloF.GetComponent<SpriteRenderer>().sprite = nm.cabeloArrayF[currentOptionHair];
             nm.hasCabas = currentOptionHair;
-            en.hasCabas = currentOptionHair;
+            en.cabelin = currentOptionHair;
         }
     }
 

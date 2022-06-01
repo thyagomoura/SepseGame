@@ -300,8 +300,6 @@ public class NurseManage : MonoBehaviour
         scm.MudarBolinha(corzinha);
         BlusaF.GetComponent<SpriteRenderer>().color = corzinha;
         CalcaF.GetComponent<SpriteRenderer>().color = corzinha;
-
-
     }
 
 }
