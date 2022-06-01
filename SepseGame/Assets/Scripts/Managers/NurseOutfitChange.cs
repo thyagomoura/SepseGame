@@ -15,7 +15,6 @@ public class NurseOutfitChange : MonoBehaviour
     {
         nm.Generate();
         nm.sexo = nm.gender;
-        Debug.Log(nm.sexo);
     }
 
     private int currentOptionSkin = 0;
@@ -137,6 +136,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             Cabelo.GetComponent<SpriteRenderer>().sprite = nm.cabeloArray[currentOptionHair];
             nm.hasCabas = currentOptionHair;
+            nm.cabelin = currentOptionHair;
             en.cabelin = currentOptionHair;
         }
         else
@@ -148,6 +148,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             CabeloF.GetComponent<SpriteRenderer>().sprite = nm.cabeloArrayF[currentOptionHair];
             nm.hasCabas = currentOptionHair;
+            nm.cabelin = currentOptionHair;
             en.cabelin = currentOptionHair;
         }
     }
@@ -166,6 +167,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             Cabelo.GetComponent<SpriteRenderer>().sprite = nm.cabeloArray[currentOptionHair];
             nm.hasCabas = currentOptionHair;
+            nm.cabelin = currentOptionHair;
             en.cabelin = currentOptionHair;
         }
         else
@@ -177,6 +179,7 @@ public class NurseOutfitChange : MonoBehaviour
             }
             CabeloF.GetComponent<SpriteRenderer>().sprite = nm.cabeloArrayF[currentOptionHair];
             nm.hasCabas = currentOptionHair;
+            nm.cabelin = currentOptionHair;
             en.cabelin = currentOptionHair;
         }
     }
@@ -250,6 +253,7 @@ public class NurseOutfitChange : MonoBehaviour
         }
         PeloFacial.GetComponent<SpriteRenderer>().sprite = nm.barbaArray[currentOptionBigas];
         nm.hasBigas = currentOptionBigas;
+        nm.bigas = currentOptionBigas;
         en.bigas = currentOptionBigas;
     }
 
@@ -265,6 +269,7 @@ public class NurseOutfitChange : MonoBehaviour
         }
         PeloFacial.GetComponent<SpriteRenderer>().sprite = nm.barbaArray[currentOptionBigas];
         nm.hasBigas = currentOptionBigas;
+        nm.bigas = currentOptionBigas;
         en.bigas = currentOptionBigas;
     }
 

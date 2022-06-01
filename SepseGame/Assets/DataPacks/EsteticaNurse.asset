@@ -15,12 +15,12 @@ MonoBehaviour:
   set: 1
   gender: 0
   corDaPele: 1
-  hasBigas: 1
-  hasCabas: 26
-  hasOclin: 70
-  cabelin: 13
-  bigas: 3
-  role: 55
-  estetoscopio: 4
-  mascara: 61
+  hasBigas: 0
+  hasCabas: 46
+  hasOclin: 6
+  cabelin: 18
+  bigas: 2
+  role: 23
+  estetoscopio: 5
+  mascara: 82
   corRoupa: {x: 1, y: 1, z: 1, w: 1}
