@@ -14,6 +14,7 @@ public class PranchetaManager : MonoBehaviour
     public Animator content;
     public GameObject NotificacaoButton;
     public int setText;
+    //public GameObject notificationText;
 
     List<int> aferidos = new List<int>();
 
@@ -175,8 +176,10 @@ public class PranchetaManager : MonoBehaviour
     }
     public void EnterNotificacao()
     {
+        //notificationText.GetComponent<TextMesh>().text = texts[setText].text;
         texts[11].text = texts[setText].text;
         NotificacaoButton.SetActive(true);
+
     }
     public void OutNotificacao()
     {
