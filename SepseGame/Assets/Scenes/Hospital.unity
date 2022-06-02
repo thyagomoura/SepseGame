@@ -614,7 +614,7 @@ GameObject:
   - component: {fileID: 28220102}
   - component: {fileID: 28220103}
   m_Layer: 0
-  m_Name: Boca
+  m_Name: BocaM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -755,7 +755,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 7
   m_Sprite: {fileID: -9077546532343039388, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1369,7 +1369,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: -3021988177786480778, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1811,7 +1811,7 @@ GameObject:
   - component: {fileID: 139107510}
   - component: {fileID: 139107511}
   m_Layer: 0
-  m_Name: PeloFacial
+  m_Name: PeloFacialM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2079,7 +2079,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &156959902
@@ -4524,7 +4524,7 @@ GameObject:
   - component: {fileID: 498345009}
   - component: {fileID: 498345010}
   m_Layer: 0
-  m_Name: Profissao
+  m_Name: ProfissaoM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4584,7 +4584,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 3558774531630188508, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
+  m_Sprite: {fileID: 3558774531630188508, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4678,7 +4678,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1695456656}
   m_Direction: 2
   m_Value: 1.0000007
-  m_Size: 0.34088787
+  m_Size: 0.34088784
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4832,7 +4832,7 @@ GameObject:
   - component: {fileID: 530814495}
   - component: {fileID: 530814496}
   m_Layer: 0
-  m_Name: Cabelin
+  m_Name: CabelinM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5471,7 +5471,7 @@ GameObject:
   - component: {fileID: 559772668}
   - component: {fileID: 559772669}
   m_Layer: 0
-  m_Name: Blusa
+  m_Name: BlusaM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5838,7 +5838,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7768426016651631362, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6090,7 +6090,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &659586555
@@ -6543,90 +6543,94 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PersonagemMasculino: {fileID: 183015103}
   peleArray:
-  - {fileID: 4517783092763003773, guid: f130d1a2a8880f0428071e8fa5247f76, type: 3}
-  - {fileID: 6453568021868127114, guid: f130d1a2a8880f0428071e8fa5247f76, type: 3}
-  - {fileID: -7783963551514933754, guid: f130d1a2a8880f0428071e8fa5247f76, type: 3}
-  - {fileID: -8232353103302070166, guid: f130d1a2a8880f0428071e8fa5247f76, type: 3}
+  - {fileID: 4785416502366957982, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: 636125614853124351, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -6476073430808487830, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: 9174639125423546684, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   cabeloArray:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8575153061236039873, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: 7834023044769807780, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -1965177407984252378, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -9056104409346901496, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -309316449988679118, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -3944177906431115763, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: 3073210224273870372, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: 1292950371295307809, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -8476543794911562266, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -120402897678559533, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: 775576103010364929, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: 8867367399360911347, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -8327235319485915920, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -2371123758242119606, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -1839455151069556347, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -209428898005892580, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -230024264019712479, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: 5418724057127367828, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: 1322303372283447633, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   - {fileID: 0}
   barbaArray:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  blusa: {fileID: -1169755358952293711, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
+  - {fileID: 799330931482288562, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: 8397340996971531433, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -5090302482932389936, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -2976712095062179536, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -2981692430049568176, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -2349717505339926414, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: 8066316886691372756, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -2692337845544895538, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -3869009067285555775, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: 2786242222576984941, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  blusa: {fileID: -6737654259578313531, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   profissaoArray:
-  - {fileID: 0}
-  - {fileID: 0}
-  calca: {fileID: 2952662330050420941, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
+  - {fileID: 3558774531630188508, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -6478166032499076432, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  calca: {fileID: 2952662330050420941, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   PersonagemFeminino: {fileID: 1466806951}
   peleArrayF:
-  - {fileID: 3460021878064576459, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
-  - {fileID: 2640958118534844887, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
-  - {fileID: -400578526610845321, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
-  - {fileID: 3332063933340604127, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
+  - {fileID: 7492470159447225405, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: 6946253139321095085, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: 763205728613161273, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: 6597097866119081974, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
   cabeloArrayF:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  blusaF: {fileID: 7316675982175140385, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
+  - {fileID: -6993220112083930077, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -1381989750027950878, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -8001597490286468511, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -9098108921690738850, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: 1744995555663705337, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -824922807859091574, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -9008497491349257341, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -1239753867252744354, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: 7906567756595428118, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -7531987178023570961, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: 1681006089113658411, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -2679505680813446008, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: 1706395745036902740, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -6232474119413852534, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -8182216283211984540, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -8671591364516864, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -1806627891051310533, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -9182439902517291169, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -4610684356132203147, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -6732523502423272803, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: 3468792143477140039, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -2340585610280792578, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -3862326384987939377, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: 2376164597328753378, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  blusaF: {fileID: 7316675982175140385, guid: c7e6c7064da4db445ae2c8713d1bc15b, type: 3}
   profissaoArrayF:
-  - {fileID: 0}
-  - {fileID: 0}
-  calcaF: {fileID: 8368722754618101687, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  oclinArray: []
-  oclinSprite: {fileID: -6097251582043861225, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
+  - {fileID: -2533494965180961652, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: 6027204512768156296, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  calcaF: {fileID: 8368722754618101687, guid: c7e6c7064da4db445ae2c8713d1bc15b, type: 3}
+  oclinArray:
+  - {fileID: 5912770758131805232, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: -6097251582043861225, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  oclinSprite: {fileID: -6097251582043861225, guid: c7e6c7064da4db445ae2c8713d1bc15b, type: 3}
   estetoscopioArray:
-  - {fileID: 0}
-  - {fileID: 0}
-  estetoscopioSprite: {fileID: 7921582192167664278, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
-  mascaraArray: []
+  - {fileID: 7921582192167664278, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  - {fileID: 5912770758131805232, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
+  estetoscopioSprite: {fileID: 7921582192167664278, guid: c7e6c7064da4db445ae2c8713d1bc15b, type: 3}
+  mascaraArray:
+  - {fileID: -465554932055314407, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  - {fileID: -8745384162588317561, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   EsteticaNurse: {fileID: 11400000, guid: fcfc5772fb0a6a84a9b7df6e3a64168b, type: 2}
   gender: 0
   corDaPele: 0
@@ -6725,7 +6729,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_Sprite: {fileID: 7816188602955872549, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7670,7 +7674,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: -3586197604943786984, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8494,7 +8498,7 @@ GameObject:
   - component: {fileID: 995499020}
   - component: {fileID: 995499021}
   m_Layer: 0
-  m_Name: BlusaOutline
+  m_Name: BlusaOutlineM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9201,7 +9205,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 8368722754618101687, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
+  m_Sprite: {fileID: 8368722754618101687, guid: 2d73c31dfe9ef1e44b8a9b0239148da4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9570,7 +9574,7 @@ GameObject:
   - component: {fileID: 1141400304}
   - component: {fileID: 1141400305}
   m_Layer: 0
-  m_Name: Pupila
+  m_Name: PupilaM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10136,7 +10140,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -2897776986676223484, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10499,7 +10503,7 @@ GameObject:
   - component: {fileID: 1249838345}
   - component: {fileID: 1249838346}
   m_Layer: 0
-  m_Name: Pisante
+  m_Name: PisanteM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10799,7 +10803,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 0
   m_Sprite: {fileID: -4165515662810593080, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10822,7 +10826,7 @@ GameObject:
   - component: {fileID: 1296493596}
   - component: {fileID: 1296493597}
   m_Layer: 0
-  m_Name: Mascara
+  m_Name: MascaraM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10882,7 +10886,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -8745384162588317561, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
+  m_Sprite: {fileID: -465554932055314407, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11428,7 +11432,7 @@ GameObject:
   - component: {fileID: 1347364120}
   - component: {fileID: 1347364121}
   m_Layer: 0
-  m_Name: Calca
+  m_Name: CalcaM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11487,8 +11491,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
-  m_Sprite: {fileID: 2952662330050420941, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
+  m_SortingOrder: 4
+  m_Sprite: {fileID: 2952662330050420941, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11795,7 +11799,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1385765127
@@ -12307,7 +12311,7 @@ GameObject:
   - component: {fileID: 1415662850}
   - component: {fileID: 1415662851}
   m_Layer: 0
-  m_Name: CalcaOutline
+  m_Name: CalcaOutlineM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12366,8 +12370,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
-  m_Sprite: {fileID: -7621450132503759914, guid: b436c62a22ea04044b276fec366cfd0b, type: 3}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: -7621450132503759914, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13648,7 +13652,7 @@ GameObject:
   - component: {fileID: 1599394198}
   - component: {fileID: 1599394199}
   m_Layer: 0
-  m_Name: AcessorioRosto
+  m_Name: AcessorioRostoM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13840,7 +13844,7 @@ GameObject:
   - component: {fileID: 1603663209}
   - component: {fileID: 1603663210}
   m_Layer: 0
-  m_Name: Estetoscopio
+  m_Name: EstetoscopioM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13900,7 +13904,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 7921582192167664278, guid: 36c87df068af417489b94ed0e0e5c56f, type: 3}
+  m_Sprite: {fileID: -6478166032499076432, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14668,7 +14672,7 @@ GameObject:
   - component: {fileID: 1704601505}
   - component: {fileID: 1704601506}
   m_Layer: 0
-  m_Name: Pele
+  m_Name: PeleM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15291,7 +15295,7 @@ GameObject:
   - component: {fileID: 1821061147}
   - component: {fileID: 1821061148}
   m_Layer: 0
-  m_Name: Olhos
+  m_Name: OlhosM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15628,7 +15632,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -46796077282318393, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15710,7 +15714,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: -1055954586838607238, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

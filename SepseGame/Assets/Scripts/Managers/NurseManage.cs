@@ -75,14 +75,15 @@ public class NurseManage : MonoBehaviour
     {
         gender = Random.Range(0, 2);
         EsteticaNurse.gender = gender;
-        EsteticaNurse.set = true;
         if (gender < 1)
         {
             GenerateMale();
+            EsteticaNurse.set = true;
         }
         else
         {
             GenerateFemale();
+            EsteticaNurse.set = true;
         }
     }
 
@@ -115,11 +116,11 @@ public class NurseManage : MonoBehaviour
     public void GenerateFemale()
     {
         corDaPele = Random.Range(0, 4);
-        hasOclin = Random.Range(0, 100);
+        hasOclin = Random.Range(0, 2);
         cabelin = Random.Range(0, 24);
-        role = Random.Range(0, 100);
-        mascara = Random.Range(0, 100);
-        estetoscopio = Random.Range(0, 100);
+        role = Random.Range(0, 2);
+        mascara = Random.Range(0, 2);
+        estetoscopio = Random.Range(0, 2);
 
         EsteticaNurse.estetoscopio = estetoscopio;
         EsteticaNurse.role = role;

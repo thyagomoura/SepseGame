@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class SlideColorManager : MonoBehaviour
 {
+    public EsteticaNurse EsteticaNurse;
     public Slider slider;
     public Image alvoCor;
     public Color corFinal;
@@ -30,6 +31,7 @@ public class SlideColorManager : MonoBehaviour
         alvoCor.color = Color.HSVToRGB(valorSlider, saturationOrig, brightnessOrig);
 
         corFinal = alvoCor.color;
+        EsteticaNurse.corRoupa = corFinal;
     }
     public void MudarBolinha(Color corzinha)
     {
