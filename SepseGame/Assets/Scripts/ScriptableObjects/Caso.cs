@@ -22,5 +22,8 @@ public class Caso : ScriptableObject
     public string Gastrintestinal;
     public string Renal;
 
-    public int[] indexesCorretos;
+    public Sprite Imagem;
+    public string Laboratorial;
+
+    public List<int> indexesCorretos;
 }
