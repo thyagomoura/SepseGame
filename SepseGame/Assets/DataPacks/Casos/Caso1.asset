@@ -31,4 +31,5 @@ MonoBehaviour:
   Renal: "Sem d\xE9bito urin\xE1rio at\xE9 o momento."
   Imagem: {fileID: 0}
   Laboratorial: 
-  indexesCorretos: 
+  indexesCorretos: 000000000100000002000000
+  buttonCorreto: 0
