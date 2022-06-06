@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEditor;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PranchetaManager : MonoBehaviour
 {
@@ -16,12 +17,15 @@ public class PranchetaManager : MonoBehaviour
     public GameObject NotificacaoButton;
     public int setText;
     public GameObject notificationText;
+    public Estetica pack;
+    public GameObject pranchetaDiag;
+    public GameObject diagText;
 
     List<int> aferidos = new List<int>();
 
     private void Start()
     {
-        
+        Caso = ArrayCasos[pack.currentCase - 1];
     }
 
     public void updatePAS()
@@ -185,5 +189,36 @@ public class PranchetaManager : MonoBehaviour
     public void OutNotificacao()
     {
         NotificacaoButton.SetActive(false);
+    }
+
+    public void darDiagnostico()
+    {
+        pranchetaDiag.SetActive(true);
+        if(Caso.buttonCorreto == 0)
+        {
+            diagText.GetComponent<Text>().text = "SEPSE PROVÁVEL";
+        }
+        else
+        {
+            diagText.GetComponent<Text>().text = "SEPSE POSSÍVEL";
+        }
+    }
+
+    public void opcaoUm()
+    {
+        if(Caso.buttonCorreto == 0)
+        {
+            pack.pontuacao += 100;
+            SceneManager.LoadScene("Pacotao");
+        }
+    }
+
+    public void opcaoDois()
+    {
+        if (Caso.buttonCorreto == 1)
+        {
+            pack.pontuacao -= 100;
+            SceneManager.LoadScene("Pacotao");
+        }
     }
 }

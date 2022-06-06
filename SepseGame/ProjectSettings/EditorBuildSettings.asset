@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ministrar.unity
     guid: 158a5fa618547a04d93827c19c1fd36e
+  - enabled: 1
+    path: Assets/Scenes/Pacotao.unity
+    guid: 2279854cd34439740b4148fca8b57f1c
+  - enabled: 1
+    path: Assets/Scenes/Pontuacao.unity
+    guid: 0e26ef3f5e9777f49a1012565b90b301
   m_configObjects: {}

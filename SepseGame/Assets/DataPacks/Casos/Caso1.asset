@@ -29,4 +29,6 @@ MonoBehaviour:
   Gastrintestinal: "Abdome globoso, fl\xE1cido, indolor a palpa\xE7\xE3o superficial
     e profunda. Sem visceromegalias."
   Renal: "Sem d\xE9bito urin\xE1rio at\xE9 o momento."
+  Imagem: {fileID: 0}
+  Laboratorial: 
   indexesCorretos: 

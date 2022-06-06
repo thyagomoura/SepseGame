@@ -26,4 +26,6 @@ public class Caso : ScriptableObject
     public string Laboratorial;
 
     public List<int> indexesCorretos;
+
+    public int buttonCorreto;
 }
