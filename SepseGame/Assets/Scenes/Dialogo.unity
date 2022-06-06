@@ -749,6 +749,10 @@ MonoBehaviour:
   o2txt: {fileID: 1661211239}
   Resposta: {fileID: 1611642747}
   paciente: {fileID: 581999262}
+  Caso: {fileID: 0}
+  pack: {fileID: 11400000, guid: f0d4e489b31b05947b364615576b5215, type: 2}
+  ArrayCasos:
+  - {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}
 --- !u!1 &515526398
 GameObject:
   m_ObjectHideFlags: 0

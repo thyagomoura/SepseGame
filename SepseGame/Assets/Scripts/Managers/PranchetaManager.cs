@@ -30,7 +30,10 @@ public class PranchetaManager : MonoBehaviour
 
     public void updatePAS()
     {
-        texts[0].text = texts[0].text + " " + Caso.PressaoArterial.ToString();
+        if (!texts[0].text.Contains(Caso.PressaoArterial))
+        {
+            texts[0].text = texts[0].text + " " + Caso.PressaoArterial;
+        }
         setText = 0;
         if (!aferidos.Contains(0))
         {
@@ -41,7 +44,10 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateFC()
     {
-        texts[1].text = texts[1].text + " " + Caso.FrequenciaCardiaca.ToString();
+        if (!texts[1].text.Contains(Caso.FrequenciaCardiaca))
+        {
+            texts[1].text = texts[1].text + " " + Caso.FrequenciaCardiaca;
+        }
         setText = 1;
         if (!aferidos.Contains(1))
         {
@@ -52,7 +58,10 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateFR()
     {
-        texts[2].text = texts[2].text + " " + Caso.FrequenciaRespiratoria.ToString();
+        if (!texts[2].text.Contains(Caso.FrequenciaRespiratoria))
+        {
+            texts[2].text = texts[2].text + " " + Caso.FrequenciaRespiratoria;
+        }
         setText = 2;
         if (!aferidos.Contains(2))
         {
@@ -63,7 +72,10 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateSO()
     {
-        texts[3].text = texts[3].text + " " + Caso.Saturacao.ToString();
+        if (!texts[3].text.Contains(Caso.Saturacao))
+        {
+            texts[3].text = texts[3].text + " " + Caso.Saturacao;
+        }
         setText = 3;
         if (!aferidos.Contains(3))
         {
@@ -74,7 +86,10 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateTA()
     {
-        texts[4].text = texts[4].text + " " + Caso.Temperatura.ToString();
+        if (!texts[4].text.Contains(Caso.Temperatura))
+        {
+            texts[4].text = texts[4].text + " " + Caso.Temperatura;
+        }
         setText = 4;
         if (!aferidos.Contains(4))
         {
@@ -85,7 +100,10 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateGC()
     {
-        texts[5].text = texts[5].text + " " + Caso.Glicemia.ToString();
+        if (!texts[5].text.Contains(Caso.Glicemia))
+        {
+            texts[5].text = texts[5].text + " " + Caso.Glicemia;
+        }
         setText = 5;
         if (!aferidos.Contains(5))
         {
@@ -96,7 +114,10 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateNeuro()
     {
-        texts[6].text = texts[6].text + " " + Caso.Neurologico.ToString();
+        if (!texts[6].text.Contains(Caso.Neurologico))
+        {
+            texts[6].text = texts[6].text + " " + Caso.Neurologico;
+        }
         setText = 6;
         if (!aferidos.Contains(6))
         {
@@ -107,7 +128,10 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateResp()
     {
-        texts[7].text = texts[7].text + " " + Caso.Respiratorio.ToString();
+        if (!texts[7].text.Contains(Caso.Respiratorio))
+        {
+            texts[7].text = texts[7].text + " " + Caso.Respiratorio;
+        }
         setText = 7;
         if (!aferidos.Contains(7))
         {
@@ -118,7 +142,10 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateCardio()
     {
-        texts[8].text = texts[8].text + " " + Caso.Cardiocirculatorio.ToString();
+        if (!texts[8].text.Contains(Caso.Cardiocirculatorio))
+        {
+            texts[8].text = texts[8].text + " " + Caso.Cardiocirculatorio;
+        }
         setText = 8;
         if (!aferidos.Contains(8))
         {
@@ -129,7 +156,10 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateGastro()
     {
-        texts[9].text = texts[9].text + " " + Caso.Gastrintestinal.ToString();
+        if (!texts[9].text.Contains(Caso.Gastrintestinal))
+        {
+            texts[9].text = texts[9].text + " " + Caso.Gastrintestinal;
+        }
         setText = 9;
         if (!aferidos.Contains(9))
         {
@@ -140,7 +170,10 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateRenal()
     {
-        texts[10].text = texts[10].text + " " + Caso.Renal.ToString();
+        if (!texts[10].text.Contains(Caso.Renal))
+        {
+            texts[10].text = texts[10].text + " " + Caso.Renal;
+        }
         setText = 10;
         if (!aferidos.Contains(10))
         {

@@ -10,6 +10,9 @@ public class DialogoManager : MonoBehaviour
     public GameObject Saudacao, Opcao1, Opcao2, objResposta, buttonContinuar, buttonAvancar, o1txt, o2txt;
     public Text Resposta;
     public PacienteManager paciente;
+    public Caso Caso;
+    public Estetica pack;
+    public List<Caso> ArrayCasos;
 
     int currentPosition = 0;
     float Delay = 0.04f;
@@ -17,6 +20,11 @@ public class DialogoManager : MonoBehaviour
 
     bool r1 = false;
     bool r2 = false;
+
+    private void Start()
+    {
+        Caso = ArrayCasos[pack.currentCase - 1];
+    }
 
     public void Resposta1()
     {
@@ -31,7 +39,7 @@ public class DialogoManager : MonoBehaviour
         Opcao1.GetComponent<Image>().color = new Color(1, 1, 1, 0.5f);
         o1txt.GetComponent<Text>().color = new Color(1, 1, 1, 0.5f);
 
-        fullText = "Estou sentindo muito cansaço.";
+        fullText = Caso.dialogo1;
 
         StartCoroutine(showText());
     }
@@ -49,7 +57,7 @@ public class DialogoManager : MonoBehaviour
         Opcao2.GetComponent<Image>().color = new Color(1, 1, 1, 0.5f);
         o2txt.GetComponent<Text>().color = new Color(1, 1, 1, 0.5f);
 
-        fullText = "Esta noite não dormi direito devido à tosse e falta de ar.";
+        fullText = Caso.dialogo2;
 
         StartCoroutine(showText());
     }
