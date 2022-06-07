@@ -191,14 +191,14 @@ public class PranchetaManager : MonoBehaviour
         {
             if (Toggles[i].isOn)
             {
-                if (!ArraySelected.Selected.Contains(i))
+                if (!Caso.selecionados.Contains(i))
                 {
-                    ArraySelected.Selected.Add(i);
+                    Caso.selecionados.Add(i);
                 }
             }
             else
             {
-                ArraySelected.Selected.Remove(i);
+                Caso.selecionados.Remove(i);
             }
         }
     }

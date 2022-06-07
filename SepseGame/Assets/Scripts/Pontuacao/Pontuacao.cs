@@ -33,17 +33,17 @@ public class Pontuacao : MonoBehaviour
         int i;
         for(i=0; i < Lines.Count; i++)
         {
-            if (Caso.indexesCorretos.Contains(i) && Selecionados.Selected.Contains(i))
+            if (Caso.indexesCorretos.Contains(i) && Caso.selecionados.Contains(i))
             {
                 Lines[i].GetComponent<Image>().color = Acerto;
                 Caso.pontuacao += 50;
             }
-            else if (Caso.indexesCorretos.Contains(i) && !Selecionados.Selected.Contains(i))
+            else if (Caso.indexesCorretos.Contains(i) && !Caso.selecionados.Contains(i))
             {
                 Lines[i].GetComponent<Image>().color = NaoMarcou;
                 Caso.pontuacao -= 50;
             }
-            else if (!Caso.indexesCorretos.Contains(i) && Selecionados.Selected.Contains(i))
+            else if (!Caso.indexesCorretos.Contains(i) && Caso.selecionados.Contains(i))
             {
                 Lines[i].GetComponent<Image>().color = Erro;
                 Caso.pontuacao -= 100;

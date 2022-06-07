@@ -25,6 +25,7 @@ public class Caso : ScriptableObject
     public Sprite Imagem;
 
     public List<int> indexesCorretos;
+    public List<int> selecionados;
 
     public int buttonCorreto;
 
