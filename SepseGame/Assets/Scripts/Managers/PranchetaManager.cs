@@ -241,7 +241,7 @@ public class PranchetaManager : MonoBehaviour
     {
         if(Caso.buttonCorreto == 0)
         {
-            pack.pontuacao += 100;
+            Caso.pontuacao += 500;
             SceneManager.LoadScene("Pacotao");
         }
     }
@@ -250,7 +250,7 @@ public class PranchetaManager : MonoBehaviour
     {
         if (Caso.buttonCorreto == 1)
         {
-            pack.pontuacao -= 100;
+            Caso.pontuacao -= 500;
             SceneManager.LoadScene("Pacotao");
         }
     }
