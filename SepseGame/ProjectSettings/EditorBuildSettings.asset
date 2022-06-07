@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CustomizeNurse.unity
     guid: 742ad0e4cda9aae4fae06dcccc26bfcd
+  - enabled: 1
+    path: Assets/Scenes/Transicao.unity
+    guid: ca0a59b0d9800a64caf94f78a7d7af89
   m_configObjects: {}

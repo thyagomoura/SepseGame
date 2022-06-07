@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Pontuacao : MonoBehaviour
 {
@@ -51,5 +51,10 @@ public class Pontuacao : MonoBehaviour
         }
 
         ptsText.GetComponent<TextMeshProUGUI>().text = ptsText.GetComponent<TextMeshProUGUI>().text + " " + Caso.pontuacao.ToString() + " pontos";
+    }
+
+    public void transition()
+    {
+        SceneManager.LoadScene("Transicao");
     }
 }

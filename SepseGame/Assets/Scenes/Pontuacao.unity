@@ -3204,7 +3204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1851951923}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2100840173}
+        m_TargetAssemblyTypeName: Pontuacao, Assembly-CSharp
+        m_MethodName: transition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1851951923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3672,6 +3684,18 @@ MonoBehaviour:
   - {fileID: 0}
   Casos:
   - {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}
+  - {fileID: 11400000, guid: 7886000bd22f26e47bb8544df39a6ba6, type: 2}
+  - {fileID: 11400000, guid: 95b94bb6d5f8fd344a64adfa77eb48bf, type: 2}
+  - {fileID: 11400000, guid: c5895efc851d9134c89ac4f9de30264d, type: 2}
+  - {fileID: 11400000, guid: db95b5c6db7f8884d8507a30a12e1c42, type: 2}
+  - {fileID: 11400000, guid: 0897e249e810a8b4fbe0b04879681089, type: 2}
+  - {fileID: 11400000, guid: f2a6d46bf5549434abb8ed5725f15d04, type: 2}
+  - {fileID: 11400000, guid: 4e0e70d036c412d49a728c89a022fd8d, type: 2}
+  - {fileID: 11400000, guid: dd320aa9e3547764098f76eda5894f48, type: 2}
+  - {fileID: 11400000, guid: 86e07f68bbb15bc4da20b27d69314087, type: 2}
+  - {fileID: 11400000, guid: 62cb05028d173cb4fa3acb016504c32a, type: 2}
+  - {fileID: 11400000, guid: 15d368d6a7020bf46bb5b803d55a44b6, type: 2}
+  - {fileID: 11400000, guid: 401ab15f4e846504f85665e7ec10603e, type: 2}
   Caso: {fileID: 0}
   pack: {fileID: 11400000, guid: f0d4e489b31b05947b364615576b5215, type: 2}
   Selecionados: {fileID: 11400000, guid: 2b330c84de4d3e74595d584332e0fa69, type: 2}
