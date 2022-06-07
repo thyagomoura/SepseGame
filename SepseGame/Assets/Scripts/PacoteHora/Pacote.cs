@@ -95,7 +95,7 @@ public class Pacote : MonoBehaviour
             bars[respostaCorreta].SetActive(true);
             if (currentSelected != respostaCorreta)
             {
-                bars[currentSelected].GetComponent<Image>().color = new Color(0.75f, 0, 0, 1);
+                bars[currentSelected].GetComponent<Image>().color = new Color(0.75f, 0, 0, 0.9f);
                 bars[currentSelected].SetActive(true);
             }
             once = true;
@@ -105,7 +105,7 @@ public class Pacote : MonoBehaviour
             once = false;
             numerosSorteados = new List<int>();
             bars[respostaCorreta].SetActive(false);
-            bars[currentSelected].GetComponent<Image>().color = new Color(0, 0.75f, 0, 1);
+            bars[currentSelected].GetComponent<Image>().color = new Color(1, 1, 1, 0.9f);
             bars[currentSelected].SetActive(false);
 
             int k;
