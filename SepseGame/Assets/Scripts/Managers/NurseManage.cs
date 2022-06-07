@@ -57,6 +57,7 @@ public class NurseManage : MonoBehaviour
         }
         else
         {
+            Debug.Log(EsteticaNurse.gender);
             SetFemale();
         }
 
@@ -78,12 +79,12 @@ public class NurseManage : MonoBehaviour
         if (gender < 1)
         {
             GenerateMale();
-            EsteticaNurse.set = true;
+            //EsteticaNurse.set = true;
         }
         else
         {
             GenerateFemale();
-            EsteticaNurse.set = true;
+            //EsteticaNurse.set = true;
         }
     }
 

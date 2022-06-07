@@ -6,6 +6,8 @@ public class NurseOutfitChange : MonoBehaviour
 {
     public NurseManage nm;
     public EsteticaNurse en;
+    public GameObject E1;
+    public GameObject E2;
     private void Start()
     {
         
@@ -14,7 +16,7 @@ public class NurseOutfitChange : MonoBehaviour
     public void Randomize()
     {
         nm.Generate();
-        nm.sexo = nm.gender;
+        en.gender = nm.gender;
     }
 
     private int currentOptionSkin = 0;
@@ -27,14 +29,14 @@ public class NurseOutfitChange : MonoBehaviour
     public void SexoM()
     {
         nm.GenerateMale();
-        nm.sexo = 0;
+        en.gender = 0;
         nm.gender = 0;
     }
 
     public void SexoF()
     {
         nm.GenerateFemale();
-        nm.sexo = 1;
+        en.gender = 1;
         nm.gender = 1;
     }
 
@@ -42,7 +44,7 @@ public class NurseOutfitChange : MonoBehaviour
     {
         GameObject ProfissaoF = GameObject.Find("ProfissaoF");
         GameObject Profissao = GameObject.Find("Profissao");
-        if (nm.sexo == 0)
+        if (en.gender == 0)
         {
             Profissao.GetComponent<SpriteRenderer>().sprite = nm.profissaoArray[0];
         }
@@ -56,7 +58,7 @@ public class NurseOutfitChange : MonoBehaviour
     {
         GameObject ProfissaoF = GameObject.Find("ProfissaoF");
         GameObject Profissao = GameObject.Find("Profissao");
-        if (nm.sexo == 0)
+        if (en.gender == 0)
         {
             Profissao.GetComponent<SpriteRenderer>().sprite = nm.profissaoArray[1];
         }
@@ -71,8 +73,9 @@ public class NurseOutfitChange : MonoBehaviour
     {
         GameObject Pele = GameObject.Find("Pele");
         GameObject PeleF = GameObject.Find("PeleF");
-        if (nm.sexo == 0)
+        if (en.gender == 0)
         {
+            Debug.Log(en.gender);
             currentOptionSkin++;
             if (currentOptionSkin >= nm.peleArray.Length)
             {
@@ -99,7 +102,7 @@ public class NurseOutfitChange : MonoBehaviour
     {
         GameObject Pele = GameObject.Find("Pele");
         GameObject PeleF = GameObject.Find("PeleF");
-        if (nm.sexo == 0)
+        if (en.gender == 0)
         {
             currentOptionSkin--;
             if (currentOptionSkin < 0)
@@ -127,7 +130,7 @@ public class NurseOutfitChange : MonoBehaviour
     {
         GameObject Cabelo = GameObject.Find("Cabelin");
         GameObject CabeloF = GameObject.Find("CabelinF");
-        if (nm.sexo == 0)
+        if (en.gender == 0)
         {
             currentOptionHair++;
             if (currentOptionHair >= nm.cabeloArray.Length)
@@ -158,7 +161,7 @@ public class NurseOutfitChange : MonoBehaviour
 
         GameObject Cabelo = GameObject.Find("Cabelin");
         GameObject CabeloF = GameObject.Find("CabelinF");
-        if (nm.sexo == 0)
+        if (en.gender == 0)
         {
             currentOptionHair--;
             if (currentOptionHair < 0)
@@ -188,7 +191,7 @@ public class NurseOutfitChange : MonoBehaviour
     {
         GameObject Oclin = GameObject.Find("AcessorioRosto");
         GameObject OclinF = GameObject.Find("AcessorioRostoF");
-        if (nm.sexo == 0)
+        if (en.gender == 0)
         {
             currentOptionOclin++;
             if (currentOptionOclin >= nm.oclinArray.Length)
@@ -217,7 +220,7 @@ public class NurseOutfitChange : MonoBehaviour
         GameObject Oclin = GameObject.Find("AcessorioRosto");
         GameObject OclinF = GameObject.Find("AcessorioRostoF");
 
-        if (nm.sexo == 0)
+        if (en.gender == 0)
         {
             currentOptionOclin--;
             if (currentOptionOclin < 0)
@@ -278,7 +281,7 @@ public class NurseOutfitChange : MonoBehaviour
         GameObject Estetoscopio = GameObject.Find("Estetoscopio");
         GameObject EstetoscopioF = GameObject.Find("EstetoscopioF");
 
-        if (nm.sexo == 0)
+        if (en.gender == 0)
         {
             currentOptionEstetoscopio++;
             if (currentOptionEstetoscopio >= nm.estetoscopioArray.Length)
@@ -308,7 +311,7 @@ public class NurseOutfitChange : MonoBehaviour
         GameObject EstetoscopioF = GameObject.Find("EstetoscopioF");
 
 
-        if (nm.sexo == 0)
+        if (en.gender == 0)
         {
             currentOptionEstetoscopio--;
             if (currentOptionEstetoscopio < 0)
@@ -337,7 +340,7 @@ public class NurseOutfitChange : MonoBehaviour
         GameObject Mascara = GameObject.Find("Mascara");
         GameObject MascaraF = GameObject.Find("MascaraF");
 
-        if (nm.sexo == 0)
+        if (en.gender == 0)
         {
             currentOptionMascara++;
             if (currentOptionMascara >= nm.oclinArray.Length)
@@ -367,7 +370,7 @@ public class NurseOutfitChange : MonoBehaviour
         GameObject MascaraF = GameObject.Find("MascaraF");
 
 
-        if (nm.sexo == 0)
+        if (en.gender == 0)
         {
             currentOptionMascara--;
             if (currentOptionMascara < 0)
