@@ -42,4 +42,9 @@ public class MenuMain : MonoBehaviour
         //sair do menu options e voltar para o main menu
         //Debug.Log("Voltar");
     }
+    public void GoCustomize()
+    {
+        //ir pra customizacao de personagem
+        SceneManager.LoadScene("CustomizeNurse");
+    }
 }
