@@ -502,6 +502,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nm: {fileID: 130360383317633404}
   en: {fileID: 11400000, guid: fcfc5772fb0a6a84a9b7df6e3a64168b, type: 2}
+  E1: {fileID: 0}
+  E2: {fileID: 0}
 --- !u!114 &196821793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9329,7 +9331,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 196821797}
         m_TargetAssemblyTypeName: MenuCustomize, Assembly-CSharp
-        m_MethodName: BackMainMenu
+        m_MethodName: GoDialog
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

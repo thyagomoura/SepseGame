@@ -11,5 +11,9 @@ public class MenuCustomize : MonoBehaviour
     public void BackMainMenu(){
         SceneManager.LoadScene("MainMenu");
     }
-       
+
+    public void GoDialog()
+    {
+        SceneManager.LoadScene("Dialogo");
+    }
 }
