@@ -29,7 +29,6 @@ public class Pontuacao : MonoBehaviour
         Lines[8].GetComponentInChildren<TextMeshProUGUI>().text = Lines[8].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Cardiocirculatorio;
         Lines[9].GetComponentInChildren<TextMeshProUGUI>().text = Lines[9].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Gastrintestinal;
         Lines[10].GetComponentInChildren<TextMeshProUGUI>().text = Lines[10].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Renal;
-        Lines[11].GetComponentInChildren<TextMeshProUGUI>().text = Lines[11].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Laboratorial;
 
         int i;
         for(i=0; i < Lines.Count; i++)
@@ -51,6 +50,6 @@ public class Pontuacao : MonoBehaviour
             }
         }
 
-        ptsText.GetComponent<TextMeshProUGUI>().text = ptsText.GetComponent<TextMeshProUGUI>().text + " " + Caso.pontuacao.ToString() + " pintos";
+        ptsText.GetComponent<TextMeshProUGUI>().text = ptsText.GetComponent<TextMeshProUGUI>().text + " " + Caso.pontuacao.ToString() + " pontos";
     }
 }

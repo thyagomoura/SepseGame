@@ -20,6 +20,8 @@ public class PranchetaManager : MonoBehaviour
     public Estetica pack;
     public GameObject pranchetaDiag;
     public GameObject diagText;
+    public GameObject ExameImagem;
+    public GameObject xray;
 
     List<int> aferidos = new List<int>();
 
@@ -224,6 +226,12 @@ public class PranchetaManager : MonoBehaviour
         NotificacaoButton.SetActive(false);
     }
 
+    public void showXray()
+    {
+        xray.GetComponent<Image>().sprite = Caso.Imagem;
+        ExameImagem.SetActive(true);
+    }
+
     public void darDiagnostico()
     {
         pranchetaDiag.SetActive(true);
@@ -237,21 +245,34 @@ public class PranchetaManager : MonoBehaviour
         }
     }
 
+    public void hideDiagnostico()
+    {
+        pranchetaDiag.SetActive(false);
+    }
+
     public void opcaoUm()
     {
         if(Caso.buttonCorreto == 0)
         {
             Caso.pontuacao += 500;
-            SceneManager.LoadScene("Pacotao");
         }
+        else
+        {
+            Caso.pontuacao -= 500;
+        }
+        SceneManager.LoadScene("Pacotao");
     }
 
     public void opcaoDois()
     {
         if (Caso.buttonCorreto == 1)
         {
-            Caso.pontuacao -= 500;
-            SceneManager.LoadScene("Pacotao");
+            Caso.pontuacao += 500;
         }
+        else
+        {
+            Caso.pontuacao -= 500;
+        }
+        SceneManager.LoadScene("Pacotao");
     }
 }

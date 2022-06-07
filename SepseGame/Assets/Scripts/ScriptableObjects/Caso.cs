@@ -23,7 +23,6 @@ public class Caso : ScriptableObject
     public string Renal;
 
     public Sprite Imagem;
-    public string Laboratorial;
 
     public List<int> indexesCorretos;
 
