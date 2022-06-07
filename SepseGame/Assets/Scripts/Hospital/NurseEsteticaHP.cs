@@ -33,6 +33,7 @@ public class NurseEsteticaHP : MonoBehaviour
     void Start()
     {
         SetSkin();
+        sexo = EsteticaNurse.gender;
     }
     public void SetSkin()
     {
@@ -41,82 +42,11 @@ public class NurseEsteticaHP : MonoBehaviour
         if (gender == 0)
         {
             SetSkinMale();
-           
+
         }
         else if (gender == 1)
         {
-            Color corzinha = EsteticaNurse.corRoupa;
-
-            // ativacao do personagem
-            PersonagemMasculino.SetActive(false);
-            PersonagemFeminino.SetActive(true);
-
-            // recepcao e declaracao de indices
-            GameObject PeleF = GameObject.Find("PeleF");
-            GameObject CabeloF = GameObject.Find("CabelinF");
-            GameObject BlusaF = GameObject.Find("BlusaF");
-            GameObject ProfissaoF = GameObject.Find("ProfissaoF");
-            GameObject Oclin = GameObject.Find("AcessorioRostoF");
-            GameObject EstetoscopioF = GameObject.Find("EstetoscopioF");
-            GameObject MascaraF = GameObject.Find("MascaraF");
-            GameObject CalcaF = GameObject.Find("CalcaF");
-
-            corDaPele = EsteticaNurse.corDaPele;
-            cabelin = EsteticaNurse.cabelin;
-            estetoscopio = EsteticaNurse.estetoscopio;
-            hasOclin = EsteticaNurse.hasOclin;
-            role = EsteticaNurse.role;
-            mascara = EsteticaNurse.mascara;
-            EsteticaNurse.cabelin = cabelin;
-
-            PeleF.GetComponent<SpriteRenderer>().sprite = peleArrayF[corDaPele];
-            CabeloF.GetComponent<SpriteRenderer>().sprite = cabeloArrayF[cabelin];
-            BlusaF.GetComponent<SpriteRenderer>().color = corzinha;
-            CalcaF.GetComponent<SpriteRenderer>().color = corzinha;
-
-            //condicoes
-            if (role < 50)
-            {
-                role = 0;
-                ProfissaoF.GetComponent<SpriteRenderer>().sprite = profissaoArray[role];
-            }
-            else
-            {
-                role = 1;
-                ProfissaoF.GetComponent<SpriteRenderer>().sprite = profissaoArray[role];
-
-            }
-            if (estetoscopio < 50)
-            {
-                estetoscopio = 0;
-                EstetoscopioF.GetComponent<SpriteRenderer>().sprite = estetoscopioArray[estetoscopio];
-            }
-            else
-            {
-                estetoscopio = 1;
-                EstetoscopioF.GetComponent<SpriteRenderer>().sprite = estetoscopioArray[estetoscopio];
-            }
-
-            if (mascara < 50)
-            {
-                mascara = 0;
-                MascaraF.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];
-            }
-            else
-            {
-                mascara = 1;
-                MascaraF.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];
-
-            }
-
-            if (hasOclin < 35)
-            {
-                Oclin.GetComponent<SpriteRenderer>().sprite = oclinSprite;
-            }
-            else
-            {
-                Oclin.GetComponent<SpriteRenderer>().sprite = null;
-            }
+            SetSkinFemale();
         }
     }
 
@@ -199,4 +129,79 @@ public class NurseEsteticaHP : MonoBehaviour
         }
     }
 
+    public void SetSkinFemale()
+    {
+        Color corzinha = EsteticaNurse.corRoupa;
+
+        // ativacao do personagem
+        PersonagemMasculino.SetActive(false);
+        PersonagemFeminino.SetActive(true);
+
+        // recepcao e declaracao de indices
+        GameObject PeleF = GameObject.Find("PeleF");
+        GameObject CabeloF = GameObject.Find("CabelinF");
+        GameObject BlusaF = GameObject.Find("BlusaF");
+        GameObject ProfissaoF = GameObject.Find("ProfissaoF");
+        GameObject Oclin = GameObject.Find("AcessorioRostoF");
+        GameObject EstetoscopioF = GameObject.Find("EstetoscopioF");
+        GameObject MascaraF = GameObject.Find("MascaraF");
+        GameObject CalcaF = GameObject.Find("CalcaF");
+
+        corDaPele = EsteticaNurse.corDaPele;
+        cabelin = EsteticaNurse.cabelin;
+        estetoscopio = EsteticaNurse.estetoscopio;
+        hasOclin = EsteticaNurse.hasOclin;
+        role = EsteticaNurse.role;
+        mascara = EsteticaNurse.mascara;
+        EsteticaNurse.cabelin = cabelin;
+
+        PeleF.GetComponent<SpriteRenderer>().sprite = peleArrayF[corDaPele];
+        CabeloF.GetComponent<SpriteRenderer>().sprite = cabeloArrayF[cabelin];
+        BlusaF.GetComponent<SpriteRenderer>().color = corzinha;
+        CalcaF.GetComponent<SpriteRenderer>().color = corzinha;
+
+        //condicoes
+        if (role < 50)
+        {
+            role = 0;
+            ProfissaoF.GetComponent<SpriteRenderer>().sprite = profissaoArray[role];
+        }
+        else
+        {
+            role = 1;
+            ProfissaoF.GetComponent<SpriteRenderer>().sprite = profissaoArray[role];
+
+        }
+        if (estetoscopio < 50)
+        {
+            estetoscopio = 0;
+            EstetoscopioF.GetComponent<SpriteRenderer>().sprite = estetoscopioArray[estetoscopio];
+        }
+        else
+        {
+            estetoscopio = 1;
+            EstetoscopioF.GetComponent<SpriteRenderer>().sprite = estetoscopioArray[estetoscopio];
+        }
+
+        if (mascara < 50)
+        {
+            mascara = 0;
+            MascaraF.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];
+        }
+        else
+        {
+            mascara = 1;
+            MascaraF.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];
+
+        }
+
+        if (hasOclin < 35)
+        {
+            Oclin.GetComponent<SpriteRenderer>().sprite = oclinSprite;
+        }
+        else
+        {
+            Oclin.GetComponent<SpriteRenderer>().sprite = null;
+        }
+    }
 }
