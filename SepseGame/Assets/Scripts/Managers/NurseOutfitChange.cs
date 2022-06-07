@@ -46,10 +46,14 @@ public class NurseOutfitChange : MonoBehaviour
         GameObject Profissao = GameObject.Find("Profissao");
         if (en.gender == 0)
         {
+            nm.role = 0;
+            en.role = 0;
             Profissao.GetComponent<SpriteRenderer>().sprite = nm.profissaoArray[0];
         }
         else
         {
+            nm.role = 0;
+            en.role = 0;
             ProfissaoF.GetComponent<SpriteRenderer>().sprite = nm.profissaoArrayF[0];
         }
     }
@@ -61,9 +65,13 @@ public class NurseOutfitChange : MonoBehaviour
         if (en.gender == 0)
         {
             Profissao.GetComponent<SpriteRenderer>().sprite = nm.profissaoArray[1];
+            nm.role = 1;
+            en.role = 1;
         }
         else
         {
+            nm.role = 1;
+            en.role = 1;
             ProfissaoF.GetComponent<SpriteRenderer>().sprite = nm.profissaoArrayF[1];
         }
 

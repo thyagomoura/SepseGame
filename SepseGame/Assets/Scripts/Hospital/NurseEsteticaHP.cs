@@ -33,7 +33,10 @@ public class NurseEsteticaHP : MonoBehaviour
     void Start()
     {
         SetSkin();
-        sexo = EsteticaNurse.gender;
+
+        estetoscopio = EsteticaNurse.estetoscopio;
+        mascara = EsteticaNurse.mascara;
+        role = EsteticaNurse.role;
     }
     public void SetSkin()
     {
@@ -79,7 +82,6 @@ public class NurseEsteticaHP : MonoBehaviour
 
         CabeloM.GetComponent<SpriteRenderer>().sprite = cabeloArray[cabelin];
         PeleM.GetComponent<SpriteRenderer>().sprite = peleArray[corDaPele];
-        PeloFacialM.GetComponent<SpriteRenderer>().sprite = barbaArray[bigas];
         BlusaM.GetComponent<SpriteRenderer>().color = corzinha;
         CalcaM.GetComponent<SpriteRenderer>().color = corzinha;
 
@@ -96,29 +98,28 @@ public class NurseEsteticaHP : MonoBehaviour
 
         }
 
-        if (estetoscopio < 50)
+        if (estetoscopio == 0)
         {
             estetoscopio = 0;
             EstetoscopioM.GetComponent<SpriteRenderer>().sprite = estetoscopioArray[estetoscopio];
         }
-        else
+        else if(estetoscopio == 1)
         {
             estetoscopio = 1;
             EstetoscopioM.GetComponent<SpriteRenderer>().sprite = estetoscopioArray[estetoscopio];
         }
 
-        if (mascara < 50)
+        if (mascara == 0)
         {
             mascara = 0;
             MascaraM.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];
         }
-        else
+        else if(mascara == 1)
         {
             mascara = 1;
             MascaraM.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];
 
         }
-
         if (hasOclin < 35)
         {
             OclinM.GetComponent<SpriteRenderer>().sprite = oclinSprite;
@@ -126,6 +127,14 @@ public class NurseEsteticaHP : MonoBehaviour
         else
         {
             OclinM.GetComponent<SpriteRenderer>().sprite = null;
+        }
+        if (EsteticaNurse.hasBigas == 1)
+        {
+            PeloFacialM.GetComponent<SpriteRenderer>().sprite = barbaArray[bigas];
+        }
+        else if (EsteticaNurse.hasBigas == 0)
+        {
+            PeloFacialM.GetComponent<SpriteRenderer>().sprite = null;
         }
     }
 
@@ -161,7 +170,7 @@ public class NurseEsteticaHP : MonoBehaviour
         CalcaF.GetComponent<SpriteRenderer>().color = corzinha;
 
         //condicoes
-        if (role < 50)
+        if (role == 0)
         {
             role = 0;
             ProfissaoF.GetComponent<SpriteRenderer>().sprite = profissaoArray[role];
@@ -172,7 +181,7 @@ public class NurseEsteticaHP : MonoBehaviour
             ProfissaoF.GetComponent<SpriteRenderer>().sprite = profissaoArray[role];
 
         }
-        if (estetoscopio < 50)
+        if (estetoscopio == 0)
         {
             estetoscopio = 0;
             EstetoscopioF.GetComponent<SpriteRenderer>().sprite = estetoscopioArray[estetoscopio];
@@ -183,7 +192,7 @@ public class NurseEsteticaHP : MonoBehaviour
             EstetoscopioF.GetComponent<SpriteRenderer>().sprite = estetoscopioArray[estetoscopio];
         }
 
-        if (mascara < 50)
+        if (mascara == 0)
         {
             mascara = 0;
             MascaraF.GetComponent<SpriteRenderer>().sprite = mascaraArray[mascara];

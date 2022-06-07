@@ -119,7 +119,7 @@ public class NurseManage : MonoBehaviour
         corDaPele = Random.Range(0, 4);
         hasOclin = Random.Range(0, 2);
         cabelin = Random.Range(0, 24);
-        role = Random.Range(0, 2);
+        role = Random.Range(0, 100);
         mascara = Random.Range(0, 2);
         estetoscopio = Random.Range(0, 2);
 
