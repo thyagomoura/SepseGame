@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
+  m_Name: Caso4
+  m_EditorClassIdentifier: 
+  dialogo1: "N\xE1useas, dor de cabe\xE7a, dor nas articula\xE7\xF5es"
+  dialogo2: "V\xF4mitos frequentes desde ontem a noite, piora da minha dor de  cabe\xE7a,
+    febre, calafrios."
+  FrequenciaCardiaca: 120b.p.m
+  PressaoArterial: 90x60mmHg
+  Saturacao: 90%
+  FrequenciaRespiratoria: 25 rpm
+  Temperatura: "39\xB0C"
+  Glicemia: 
+  Neurologico: "Irritabilidade, agita\xE7\xE3o, fotofobia, rigidez de nuca"
+  Respiratorio: "A ausculta pulmonar murm\xFArios vesiculares presentes  sem ru\xEDdos
+    advent\xEDcios."
+  Cardiocirculatorio: "Extremidades frias, palidez cut\xE2nea."
+  Gastrintestinal: "Abdome fl\xE1cido, ru\xEDdos hidroa\xE9reos presentes, indolor
+    a  palpa\xE7\xE3o superficial e profunda."
+  Renal: "Refere diminui\xE7\xE3o do d\xE9bito urin\xE1rio, urina de aspecto  concentrado."
+  Imagem: {fileID: 0}
+  indexesCorretos: 0000000001000000020000000300000004000000
+  selecionados: 
+  buttonCorreto: 0
+  pontuacao: 0

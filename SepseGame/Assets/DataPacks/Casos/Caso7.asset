@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
+  m_Name: Caso7
+  m_EditorClassIdentifier: 
+  dialogo1: "Estou sentindo dor na minha perna direita, n\xE1useas e calafrio"
+  dialogo2: "Aumento da febre, mal estar geral e sensa\xE7\xE3o de fraqueza"
+  FrequenciaCardiaca: 110b.p.m
+  PressaoArterial: 140x90mmHg
+  Saturacao: 93% em ar ambiente
+  FrequenciaRespiratoria: 20 i.p.m
+  Temperatura: "38,9\xB0C"
+  Glicemia: 120 mg/dl
+  Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa. Por\xE9m,  sonolenta,
+    fala arrastada"
+  Respiratorio: "Ausculta pulmonar com murm\xFArios vesiculares presentes  e sem
+    ru\xEDdos advent\xEDcios"
+  Cardiocirculatorio: "R\xEDtmico card\xEDaco regular, bulhas card\xEDacas  normofon\xE9ticas
+    em 2 tempos, sem sopro."
+  Gastrintestinal: "Abdome globoso, fl\xE1cido, indolor a palpa\xE7\xE3o  superficial
+    e profunda. Ru\xEDdos hidroa\xE9reos presentes."
+  Renal: "Elimina\xE7\xE3o vesical espont\xE2nea, aspecto amarelo claro."
+  Imagem: {fileID: 0}
+  indexesCorretos: 0000000004000000
+  selecionados: 
+  buttonCorreto: 0
+  pontuacao: 0

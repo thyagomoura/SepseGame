@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
+  m_Name: Caso2
+  m_EditorClassIdentifier: 
+  dialogo1: "Estou sentindo fraqueza, n\xE1useas e muita dor abdome ( barriga)"
+  dialogo2: A piora da minha dor abdominal (na barriga) e a febre
+  FrequenciaCardiaca: 118b.p.m
+  PressaoArterial: 155x90mmHg
+  Saturacao: 97%
+  FrequenciaRespiratoria: 25i.p.m
+  Temperatura: "38,5\xB0C"
+  Glicemia: 100 mg/dl
+  Neurologico: "Consciente, orientada em tempo, espa\xE7o, pessoa. Fascies  de dor
+    e ansiedade."
+  Respiratorio: "Expansibilidade tor\xE1cica diminu\xEDda, respira\xE7\xE3o superficial,
+    taquipneia. Murm\xFArios vesiculares presentes, diminu\xEDdos em bases, sem ru\xEDdos 
+    advent\xEDcios."
+  Cardiocirculatorio: "Ritmo card\xEDaco regular, bulhas card\xEDacas  normofon\xE9ticas
+    em 2 tempos, sem sopro."
+  Gastrintestinal: "Abdome distendido, doloroso a palpa\xE7\xE3o superficial e  profunda.
+    Ru\xEDdos hidroa\xE9reos diminu\xEDdos"
+  Renal: "Elimina\xE7\xE3o vesical presente com altera\xE7\xE3o na colora\xE7\xE3o
+    da urina  (col\xFAria) e com volume m\xE9dio de 1.500 mL nas \xFAltimas 24 horas"
+  Imagem: {fileID: 0}
+  indexesCorretos: 000000000300000004000000
+  selecionados: 
+  buttonCorreto: 1
+  pontuacao: 0

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
+  m_Name: Caso12
+  m_EditorClassIdentifier: 
+  dialogo1: Dor no peito e falta de ar
+  dialogo2: A dor no meu peito, a falta de ar e o sangue no meu escarro
+  FrequenciaCardiaca: 105 b.p.m
+  PressaoArterial: 110x80mmHg
+  Saturacao: 91% em ar ambiente
+  FrequenciaRespiratoria: 26 i.p.m.
+  Temperatura: "36,5\xB0C"
+  Glicemia: 
+  Neurologico: "Consciente, orientado em tempo, espa\xE7o"
+  Respiratorio: "Taquipneica, expansibilidade pulmonar diminu\xEDda,  murm\xFArios
+    vesiculares reduzidos em bases pulmonares, hemoptise."
+  Cardiocirculatorio: "Taquicardia, bulhas r\xEDtmicas e hiperfon\xE9ticas, sem 
+    sopros. Presen\xE7a de dor, edema em membro inferior direito 3+/4+, desconforto
+    na  panturrilha na dorsiflex\xE3o do p\xE9."
+  Gastrintestinal: "Abdome globoso, fl\xE1cido, indolor a palpa\xE7\xE3o superficial
+    e  profunda. Sem visceromegalias."
+  Renal: "Sem d\xE9bito urin\xE1rio at\xE9 o momento"
+  Imagem: {fileID: 0}
+  indexesCorretos: 0000000003000000
+  selecionados: 
+  buttonCorreto: 1
+  pontuacao: 0
