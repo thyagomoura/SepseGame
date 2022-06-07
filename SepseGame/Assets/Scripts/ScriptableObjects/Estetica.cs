@@ -24,6 +24,4 @@ public class Estetica : ScriptableObject
     public Vector4 corPisante;
 
     public int currentCase = 1;
-
-    public int pontuacao;
 }

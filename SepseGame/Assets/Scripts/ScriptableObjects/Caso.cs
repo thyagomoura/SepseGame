@@ -28,4 +28,6 @@ public class Caso : ScriptableObject
     public List<int> indexesCorretos;
 
     public int buttonCorreto;
+
+    public int pontuacao;
 }

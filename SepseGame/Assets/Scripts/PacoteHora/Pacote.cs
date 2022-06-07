@@ -2,9 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Pacote : MonoBehaviour
 {
+    public Estetica pack;
+
+    public Caso Caso;
+
+    public List<Caso> Casos;
+
     public List<Text> opcoes;
 
     public List<Toggle> toggles;
@@ -22,9 +29,13 @@ public class Pacote : MonoBehaviour
 
     bool updating = false;
 
+    int acertos;
+
     void Start()
     {
         updateOptions();
+
+        Caso = Casos[pack.currentCase - 1];
     }
 
     void updateOptions()
@@ -98,22 +109,34 @@ public class Pacote : MonoBehaviour
                 bars[currentSelected].GetComponent<Image>().color = new Color(0.75f, 0, 0, 0.9f);
                 bars[currentSelected].SetActive(true);
             }
+            else
+            {
+                acertos++;
+            }
             once = true;
         }
         else
         {
-            once = false;
-            numerosSorteados = new List<int>();
-            bars[respostaCorreta].SetActive(false);
-            bars[currentSelected].GetComponent<Image>().color = new Color(1, 1, 1, 0.9f);
-            bars[currentSelected].SetActive(false);
-
-            int k;
-            for(k=0; k < toggles.Count; k++)
+            if(control < 6)
             {
-                toggles[k].isOn = false;
+                once = false;
+                numerosSorteados = new List<int>();
+                bars[respostaCorreta].SetActive(false);
+                bars[currentSelected].GetComponent<Image>().color = new Color(1, 1, 1, 0.9f);
+                bars[currentSelected].SetActive(false);
+
+                int k;
+                for (k = 0; k < toggles.Count; k++)
+                {
+                    toggles[k].isOn = false;
+                }
+                updateOptions();
             }
-            updateOptions();
+            else
+            {
+                Caso.pontuacao += (acertos * 100);
+                SceneManager.LoadScene("Pontuacao");
+            } 
         }
     }
 }

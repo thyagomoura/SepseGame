@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using TMPro;
 
 public class Pontuacao : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Pontuacao : MonoBehaviour
     public Estetica pack;
     public Selecionados Selecionados;
     public Color Acerto, Erro, NaoMarcou;
+    public GameObject ptsText;
 
     void Start()
     {
@@ -35,15 +37,20 @@ public class Pontuacao : MonoBehaviour
             if (Caso.indexesCorretos.Contains(i) && Selecionados.Selected.Contains(i))
             {
                 Lines[i].GetComponent<Image>().color = Acerto;
+                Caso.pontuacao += 50;
             }
             else if (Caso.indexesCorretos.Contains(i) && !Selecionados.Selected.Contains(i))
             {
                 Lines[i].GetComponent<Image>().color = NaoMarcou;
+                Caso.pontuacao -= 50;
             }
             else if (!Caso.indexesCorretos.Contains(i) && Selecionados.Selected.Contains(i))
             {
                 Lines[i].GetComponent<Image>().color = Erro;
+                Caso.pontuacao -= 100;
             }
         }
+
+        ptsText.GetComponent<TextMeshProUGUI>().text = ptsText.GetComponent<TextMeshProUGUI>().text + " " + Caso.pontuacao.ToString() + " pintos";
     }
 }
