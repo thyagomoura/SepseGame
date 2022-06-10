@@ -980,7 +980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23921569, g: 0.22352941, b: 0.20784314, a: 1}
+  m_Color: {r: 0.8113208, g: 0.7267861, b: 0.44010326, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2576,7 +2576,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 93558456}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.6257607
+  m_Size: 0.48586285
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3701,7 +3701,7 @@ MonoBehaviour:
   Selecionados: {fileID: 11400000, guid: 2b330c84de4d3e74595d584332e0fa69, type: 2}
   Acerto: {r: 0.34117648, g: 0.7254902, b: 0.34117648, a: 1}
   Erro: {r: 0.76470596, g: 0.31764707, b: 0.31764707, a: 1}
-  NaoMarcou: {r: 0.23921569, g: 0.22352941, b: 0.20784314, a: 1}
+  NaoMarcou: {r: 0.8117648, g: 0.7254902, b: 0.43921572, a: 1}
   ptsText: {fileID: 1052406834}
 --- !u!1001 &2753623555574883989
 PrefabInstance:
