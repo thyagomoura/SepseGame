@@ -14,7 +14,6 @@ public class Caso : ScriptableObject
     public string Saturacao;
     public string FrequenciaRespiratoria;
     public string Temperatura;
-    public string Glicemia;
 
     public string Neurologico;
     public string Respiratorio;

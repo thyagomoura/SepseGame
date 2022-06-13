@@ -100,20 +100,6 @@ public class PranchetaManager : MonoBehaviour
         EnterNotificacao();
     }
 
-    public void updateGC()
-    {
-        if (!texts[5].text.Contains(Caso.Glicemia))
-        {
-            texts[5].text = texts[5].text + " " + Caso.Glicemia;
-        }
-        setText = 5;
-        if (!aferidos.Contains(5))
-        {
-            aferidos.Add(5);
-        }
-        EnterNotificacao();
-    }
-
     public void updateNeuro()
     {
         if (!texts[6].text.Contains(Caso.Neurologico))

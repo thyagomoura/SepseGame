@@ -20,7 +20,6 @@ MonoBehaviour:
   Saturacao: 92% em ar ambiente
   FrequenciaRespiratoria: 26i.p.m
   Temperatura: "39\xBAC"
-  Glicemia: 90 mg/dL
   Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa."
   Respiratorio: "Murm\xFArios vesiculares presentes sem ru\xEDdos advent\xEDcios,
     tosse seca com secre\xE7\xE3o clara. Leve hiperemia de orofaringe."
@@ -33,4 +32,4 @@ MonoBehaviour:
   indexesCorretos: 000000000300000004000000
   selecionados: 000000000200000003000000
   buttonCorreto: 1
-  pontuacao: 2000
+  pontuacao: 0
