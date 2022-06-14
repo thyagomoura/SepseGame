@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso7
   m_EditorClassIdentifier: 
+  historiaClinica: "Hist\xF3ria cl\xEDnica: J.A.S., 68 anos, sexo masculino, obeso,
+    procurou atendimento m\xE9dico no servi\xE7o de  emerg\xEAncia com queixas de
+    febre h\xE1 2 dias, n\xE1useas, calafrios, sensa\xE7\xE3o de fraqueza  associada
+    a dor no membro inferior direito onde surgiu uma extensa \xE1rea hiperemiada 
+    que se tornou uma bolha drenando secre\xE7\xE3o amarelada. Informa ter diabetes
+    mellitus  tipo 2, fazendo tratamento irregular h\xE1 cerca de 05 anos, juntamente
+    com hipertens\xE3o  arterial."
   dialogo1: "Estou sentindo dor na minha perna direita, n\xE1useas e calafrio"
   dialogo2: "Aumento da febre, mal estar geral e sensa\xE7\xE3o de fraqueza"
   FrequenciaCardiaca: 110b.p.m
@@ -19,7 +26,6 @@ MonoBehaviour:
   Saturacao: 93% em ar ambiente
   FrequenciaRespiratoria: 20 i.p.m
   Temperatura: "38,9\xB0C"
-  Glicemia: 120 mg/dl
   Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa. Por\xE9m,  sonolenta,
     fala arrastada"
   Respiratorio: "Ausculta pulmonar com murm\xFArios vesiculares presentes  e sem

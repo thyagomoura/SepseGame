@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 
 public class DialogoManager : MonoBehaviour
 {
-    public GameObject Saudacao, Opcao1, Opcao2, objResposta, buttonContinuar, buttonAvancar, o1txt, o2txt;
-    public Text Resposta;
+    public GameObject Opcao1, Opcao2, objResposta, buttonContinuar, buttonAvancar, o1txt, o2txt, Resposta, HC, CasoClinico;
     public PacienteManager paciente;
     public Caso Caso;
     public Estetica pack;
@@ -24,17 +24,19 @@ public class DialogoManager : MonoBehaviour
     private void Start()
     {
         Caso = ArrayCasos[pack.currentCase - 1];
+
+        HC.GetComponent<TextMeshProUGUI>().text = Caso.historiaClinica;
     }
 
     public void Resposta1()
     {
         r1 = true;
 
-        Saudacao.SetActive(false);
         Opcao1.SetActive(false);
         Opcao2.SetActive(false);
-        objResposta.SetActive(true);
         buttonAvancar.SetActive(false);
+
+        Resposta.GetComponent<TextMeshProUGUI>().text = "";
 
         Opcao1.GetComponent<Image>().color = new Color(1, 1, 1, 0.5f);
         o1txt.GetComponent<Text>().color = new Color(1, 1, 1, 0.5f);
@@ -48,11 +50,11 @@ public class DialogoManager : MonoBehaviour
     {
         r2 = true;
 
-        Saudacao.SetActive(false);
         Opcao1.SetActive(false);
         Opcao2.SetActive(false);
-        objResposta.SetActive(true);
         buttonAvancar.SetActive(false);
+
+        Resposta.GetComponent<TextMeshProUGUI>().text = "";
 
         Opcao2.GetComponent<Image>().color = new Color(1, 1, 1, 0.5f);
         o2txt.GetComponent<Text>().color = new Color(1, 1, 1, 0.5f);
@@ -66,7 +68,7 @@ public class DialogoManager : MonoBehaviour
     {
         while(currentPosition < fullText.Length)
         {
-            Resposta.text += fullText[currentPosition++];
+            Resposta.GetComponent<TextMeshProUGUI>().text += fullText[currentPosition++];
             yield return new WaitForSeconds(Delay);
         }
 
@@ -75,17 +77,20 @@ public class DialogoManager : MonoBehaviour
 
     public void Continuar()
     {
-        Saudacao.SetActive(true);
         Opcao1.SetActive(true);
         Opcao2.SetActive(true);
-        objResposta.SetActive(false);
         buttonContinuar.SetActive(false);
-        Resposta.text = "";
+        Resposta.GetComponent<TextMeshProUGUI>().text = "...";
         currentPosition = 0;
         if (r1 && r2)
         {
             buttonAvancar.SetActive(true);
         }
+    }
+
+    public void fecharHC()
+    {
+        CasoClinico.SetActive(false);
     }
 
     public void changeScene()

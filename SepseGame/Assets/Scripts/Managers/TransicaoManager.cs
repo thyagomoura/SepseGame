@@ -13,7 +13,7 @@ public class TransicaoManager : MonoBehaviour
     {
         Estetica.set = false;
         Estetica.currentCase++;
-        text.GetComponent<TextMeshProUGUI>().text = text.GetComponent<TextMeshProUGUI>().text + " " + Estetica.currentCase.ToString();
+        text.GetComponent<TextMeshProUGUI>().text = "CASO " + Estetica.currentCase.ToString();
     }
 
     public void goNext()

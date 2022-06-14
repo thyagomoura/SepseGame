@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso1
   m_EditorClassIdentifier: 
+  historiaClinica: "Hist\xF3ria cl\xEDnica: paciente M.C.N., 50 anos, sexo masculino
+    deu entrada na Unidade de  emerg\xEAncia de um hospital da rede privada, com
+    queixas de tosse, mesmo em  repouso, associada a dor ao respirar em regi\xE3o
+    dorsal do t\xF3rax h\xE1 uma semana. H\xE1 um  dia apresentou quadro de febre
+    (temperatura axilar de 38,50 C) e queda do estado  geral. Tabagista h\xE1 15
+    anos, 1 ma\xE7o de cigarro por dia."
   dialogo1: "Eu sinto muito cansa\xE7o e n\xE3o paro de tossir."
   dialogo2: "O meu estado de des\xE2nimo, inapet\xEAncia e cansa\xE7o aos m\xEDnimos
     esfor\xE7os."

@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso2
   m_EditorClassIdentifier: 
+  historiaClinica: "Hist\xF3ria cl\xEDnica: L.M.S , 75 anos, sexo feminino, 80 kg,
+    1,62 metros de altura. \xC9  hipertensa e dislipid\xEAmica. Tem uma alimenta\xE7\xE3o
+    pouco saud\xE1vel e rica em gordura. H\xE1  um ano apresenta quadros espor\xE1dicos
+    de dor em c\xF3licas na regi\xE3o do hipoc\xF4ndrio  direito e regi\xE3o epig\xE1strica.
+    Toda vez que sentia estas dores comparecia ao servi\xE7o de  emerg\xEAncia, no
+    qual era medicada e ap\xF3s algumas horas era liberada para casa. No  momento,
+    deu entrada na unidade de emerg\xEAncia do hospital, com queixas de dor  aguda
+    abdominal de forte intensidade e hipersensibilidade no quadrante superior  direito,
+    febre, n\xE1useas e v\xF4mitos."
   dialogo1: "Estou sentindo fraqueza, n\xE1useas e muita dor abdome ( barriga)"
   dialogo2: A piora da minha dor abdominal (na barriga) e a febre
   FrequenciaCardiaca: 118b.p.m
@@ -19,7 +28,6 @@ MonoBehaviour:
   Saturacao: 97%
   FrequenciaRespiratoria: 25i.p.m
   Temperatura: "38,5\xB0C"
-  Glicemia: 100 mg/dl
   Neurologico: "Consciente, orientada em tempo, espa\xE7o, pessoa. Fascies  de dor
     e ansiedade."
   Respiratorio: "Expansibilidade tor\xE1cica diminu\xEDda, respira\xE7\xE3o superficial,

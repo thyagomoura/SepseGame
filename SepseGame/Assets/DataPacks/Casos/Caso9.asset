@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso9
   m_EditorClassIdentifier: 
+  historiaClinica: "Hist\xF3ria Cl\xEDnica: : L.S.R , 26 anos, sexo feminino, peso
+    60 kg, previamente h\xEDgida. Deu  entrada no pronto atendimento do servi\xE7o
+    hospitalar devido quadro de diarreia  sanguinolenta associada a febre de 38,5\xBAC,
+    com inicio h\xE1 24 horas. Refere fadiga, dor  abdominal, n\xE1useas e 10 epis\xF3dios
+    diarreicos. Sem hist\xF3rias de comorbidades."
   dialogo1: "Sensa\xE7\xE3o de fadiga, fraqueza, dor no meu abdome, n\xE1useas"
   dialogo2: A diarreia com sangue e a febre
   FrequenciaCardiaca: 115b.p.m
@@ -19,7 +24,6 @@ MonoBehaviour:
   Saturacao: 97%
   FrequenciaRespiratoria: 20 i.p.m
   Temperatura: "38\xB0C"
-  Glicemia: 100 mg/dl
   Neurologico: "Prostrada, abertura ocular \xE0 voz, obedece a comandos  motores."
   Respiratorio: "A ausculta pulmonar murm\xFArios vesiculares presentes  sem ru\xEDdos
     advent\xEDcios."

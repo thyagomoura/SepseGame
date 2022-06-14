@@ -11,7 +11,6 @@ public class Pontuacao : MonoBehaviour
     public List<Caso> Casos;
     public Caso Caso;
     public Estetica pack;
-    public Selecionados Selecionados;
     public Color Acerto, Erro, NaoMarcou;
     public GameObject ptsText;
 

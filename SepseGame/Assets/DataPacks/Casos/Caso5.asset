@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso5
   m_EditorClassIdentifier: 
+  historiaClinica: "Hist\xF3ria Cl\xEDnica: GCN, 35 anos, sexo masculino, compareceu
+    ao pronto socorro  com queixas de sonol\xEAncia, febre alta, inapet\xEAncia,
+    cefaleia, n\xE1useas, dor ao  redor dos olhos, dores no corpo principalmente
+    em articula\xE7\xF5es h\xE1 4 dias. Relata que no \xFAltimo final de semana que
+    antecedeu o in\xEDcio dos sintomas  ajudou um amigo a cortar cana em um s\xEDtio
+    em um bairro pr\xF3ximo a casa dele."
   dialogo1: "Dor de cabe\xE7a, nos olhos, no corpo todo"
   dialogo2: "Piora da dor no corpo, febre, des\xE2nimo. Tenho vontade de ficar  deitado
     o tempo todo."
@@ -20,7 +26,6 @@ MonoBehaviour:
   Saturacao: 94 % em ar ambiente
   FrequenciaRespiratoria: 24i.p.m.
   Temperatura: "39\xB0 C"
-  Glicemia: 
   Neurologico: "Orientado, por\xE9m sonolento. Aus\xEAncia de rigidez de nuca"
   Respiratorio: "Murm\xFArios vesiculares presentes e sem ru\xEDdos advent\xEDcios"
   Cardiocirculatorio: "Taquic\xE1rdico, bulhas r\xEDtmicas e normofon\xE9ticas em

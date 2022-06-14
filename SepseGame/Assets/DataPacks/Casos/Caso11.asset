@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso11
   m_EditorClassIdentifier: 
+  historiaClinica: "Hist\xF3ria Cl\xEDnica: L.S.S, 30 anos, sexo masculino, compareceu
+    ao pronto socorro  com hist\xF3ria de tosse seca, febre alta, secre\xE7\xE3o
+    nasal clara, dor no corpo,  fraqueza h\xE1 36 horas. Nega comorbidades e medica\xE7\xF5es
+    de uso cont\xEDnuo."
   dialogo1: "Fraqueza, dor no corpo, des\xE2nimo, tosse seca com secre\xE7\xE3o clara"
   dialogo2: "A minha febre alta, a falta de disposi\xE7\xE3o e dor no corpo.  "
   FrequenciaCardiaca: 104b.p.m
@@ -19,7 +23,6 @@ MonoBehaviour:
   Saturacao: 92 % em ar ambiente
   FrequenciaRespiratoria: 20 i.p.m.
   Temperatura: "38,5\xB0C"
-  Glicemia: 
   Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa"
   Respiratorio: "Murm\xFArios vesiculares presentes sem ru\xEDdos advent\xEDcios, 
     tosse seca com secre\xE7\xE3o clara. Leve hiperemia de orofaringe"

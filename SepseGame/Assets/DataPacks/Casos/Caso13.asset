@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso13
   m_EditorClassIdentifier: 
+  historiaClinica: "Hist\xF3ria Cl\xEDnica: MMM, sexo masculino, 64 anos, 1,58 metros
+    de altura, 94 kg. Diabetes  tipo 2 e hipertens\xE3o n\xE3o tratadas. H\xE1 30
+    dias traumatizou o h\xE1lux do p\xE9 direito, o qual  evoluiu com edema e descolamento
+    da unha. Realizou tratamento domiciliar por conta  pr\xF3pria utilizando pomadas.
+    H\xE1 uma semana percebeu vermelhid\xE3o no dorso do p\xE9  direito que se estendeu
+    at\xE9 a face anterior da perna. Hoje, deu entrada no pronto  socorro com altera\xE7\xE3o
+    do n\xEDvel de consci\xEAncia, calafrios, aumento da temperatura  corporal."
   dialogo1: Desorientado. Alega calafrios e muito sono
   dialogo2: "N\xE3o sei n\xE3o. Estou na minha casa?"
   FrequenciaCardiaca: 112b.p.m
@@ -19,7 +26,6 @@ MonoBehaviour:
   Saturacao: 90% em ar ambiente
   FrequenciaRespiratoria: 22 i.p.m
   Temperatura: "38,7\xB0C"
-  Glicemia: 
   Neurologico: Confuso, agitado, Glasgow 13 (Abertura ocular=3,Melhor  resposta verbal=4,
     melhor resposta motora=6).
   Respiratorio: "A ausculta pulmonar murm\xFArios vesiculares presentes  sem ru\xEDdos

@@ -12,10 +12,9 @@ public class PranchetaManager : MonoBehaviour
     public Caso[] ArrayCasos;
     public Text[] texts;
     public Toggle[] Toggles;
-    public Selecionados ArraySelected;
     public Animator content;
     public GameObject NotificacaoButton;
-    public int setText;
+    public string setText;
     public GameObject notificationText;
     public Estetica pack;
     public GameObject pranchetaDiag;
@@ -30,13 +29,13 @@ public class PranchetaManager : MonoBehaviour
         Caso = ArrayCasos[pack.currentCase - 1];
     }
 
-    public void updatePAS()
+    public void updateFC()
     {
-        if (!texts[0].text.Contains(Caso.PressaoArterial))
+        if (!texts[0].text.Contains(Caso.FrequenciaCardiaca))
         {
-            texts[0].text = texts[0].text + " " + Caso.PressaoArterial;
+            texts[0].text = texts[0].text + " " + Caso.FrequenciaCardiaca;
         }
-        setText = 0;
+        setText = Caso.FrequenciaCardiaca;
         if (!aferidos.Contains(0))
         {
             aferidos.Add(0);
@@ -44,13 +43,13 @@ public class PranchetaManager : MonoBehaviour
         EnterNotificacao();
     }
 
-    public void updateFC()
+    public void updatePAS()
     {
-        if (!texts[1].text.Contains(Caso.FrequenciaCardiaca))
+        if (!texts[1].text.Contains(Caso.PressaoArterial))
         {
-            texts[1].text = texts[1].text + " " + Caso.FrequenciaCardiaca;
+            texts[1].text = texts[1].text + " " + Caso.PressaoArterial;
         }
-        setText = 1;
+        setText = Caso.PressaoArterial;
         if (!aferidos.Contains(1))
         {
             aferidos.Add(1);
@@ -58,13 +57,13 @@ public class PranchetaManager : MonoBehaviour
         EnterNotificacao();
     }
 
-    public void updateFR()
+    public void updateSO()
     {
-        if (!texts[2].text.Contains(Caso.FrequenciaRespiratoria))
+        if (!texts[2].text.Contains(Caso.Saturacao))
         {
-            texts[2].text = texts[2].text + " " + Caso.FrequenciaRespiratoria;
+            texts[2].text = texts[2].text + " " + Caso.Saturacao;
         }
-        setText = 2;
+        setText = Caso.Saturacao;
         if (!aferidos.Contains(2))
         {
             aferidos.Add(2);
@@ -72,13 +71,13 @@ public class PranchetaManager : MonoBehaviour
         EnterNotificacao();
     }
 
-    public void updateSO()
+    public void updateFR()
     {
-        if (!texts[3].text.Contains(Caso.Saturacao))
+        if (!texts[3].text.Contains(Caso.FrequenciaRespiratoria))
         {
-            texts[3].text = texts[3].text + " " + Caso.Saturacao;
+            texts[3].text = texts[3].text + " " + Caso.FrequenciaRespiratoria;
         }
-        setText = 3;
+        setText = Caso.FrequenciaRespiratoria;
         if (!aferidos.Contains(3))
         {
             aferidos.Add(3);
@@ -92,7 +91,7 @@ public class PranchetaManager : MonoBehaviour
         {
             texts[4].text = texts[4].text + " " + Caso.Temperatura;
         }
-        setText = 4;
+        setText = Caso.Temperatura;
         if (!aferidos.Contains(4))
         {
             aferidos.Add(4);
@@ -102,11 +101,25 @@ public class PranchetaManager : MonoBehaviour
 
     public void updateNeuro()
     {
-        if (!texts[6].text.Contains(Caso.Neurologico))
+        if (!texts[5].text.Contains(Caso.Neurologico))
         {
-            texts[6].text = texts[6].text + " " + Caso.Neurologico;
+            texts[5].text = texts[5].text + " " + Caso.Neurologico;
         }
-        setText = 6;
+        setText = Caso.Neurologico;
+        if (!aferidos.Contains(5))
+        {
+            aferidos.Add(5);
+        }
+        EnterNotificacao();
+    }
+
+    public void updateResp()
+    {
+        if (!texts[6].text.Contains(Caso.Respiratorio))
+        {
+            texts[6].text = texts[6].text + " " + Caso.Respiratorio;
+        }
+        setText = Caso.Respiratorio;
         if (!aferidos.Contains(6))
         {
             aferidos.Add(6);
@@ -114,13 +127,13 @@ public class PranchetaManager : MonoBehaviour
         EnterNotificacao();
     }
 
-    public void updateResp()
+    public void updateCardio()
     {
-        if (!texts[7].text.Contains(Caso.Respiratorio))
+        if (!texts[7].text.Contains(Caso.Cardiocirculatorio))
         {
-            texts[7].text = texts[7].text + " " + Caso.Respiratorio;
+            texts[7].text = texts[7].text + " " + Caso.Cardiocirculatorio;
         }
-        setText = 7;
+        setText = Caso.Cardiocirculatorio;
         if (!aferidos.Contains(7))
         {
             aferidos.Add(7);
@@ -128,13 +141,13 @@ public class PranchetaManager : MonoBehaviour
         EnterNotificacao();
     }
 
-    public void updateCardio()
+    public void updateGastro()
     {
-        if (!texts[8].text.Contains(Caso.Cardiocirculatorio))
+        if (!texts[8].text.Contains(Caso.Gastrintestinal))
         {
-            texts[8].text = texts[8].text + " " + Caso.Cardiocirculatorio;
+            texts[8].text = texts[8].text + " " + Caso.Gastrintestinal;
         }
-        setText = 8;
+        setText = Caso.Gastrintestinal;
         if (!aferidos.Contains(8))
         {
             aferidos.Add(8);
@@ -142,30 +155,16 @@ public class PranchetaManager : MonoBehaviour
         EnterNotificacao();
     }
 
-    public void updateGastro()
+    public void updateRenal()
     {
-        if (!texts[9].text.Contains(Caso.Gastrintestinal))
+        if (!texts[9].text.Contains(Caso.Renal))
         {
-            texts[9].text = texts[9].text + " " + Caso.Gastrintestinal;
+            texts[9].text = texts[9].text + " " + Caso.Renal;
         }
-        setText = 9;
+        setText = Caso.Renal;
         if (!aferidos.Contains(9))
         {
             aferidos.Add(9);
-        }
-        EnterNotificacao();
-    }
-
-    public void updateRenal()
-    {
-        if (!texts[10].text.Contains(Caso.Renal))
-        {
-            texts[10].text = texts[10].text + " " + Caso.Renal;
-        }
-        setText = 10;
-        if (!aferidos.Contains(10))
-        {
-            aferidos.Add(10);
         }
         EnterNotificacao();
     }
@@ -202,7 +201,7 @@ public class PranchetaManager : MonoBehaviour
     }
     public void EnterNotificacao()
     {
-        notificationText.GetComponent<TextMeshProUGUI>().text = texts[setText].text;
+        notificationText.GetComponent<TextMeshProUGUI>().text = setText;
         //texts[11].text = texts[setText].text;
         NotificacaoButton.SetActive(true);
 

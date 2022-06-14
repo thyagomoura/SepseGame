@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso10
   m_EditorClassIdentifier: 
+  historiaClinica: "Hist\xF3ria cl\xEDnica: M.C.A, 23 anos, casada, sexo feminino,
+    procurou o pronto  atendimento do hospital com hist\xF3ria de dor de garganta
+    h\xE1 08 dias e febre  concomitante sem aferi\xE7\xE3o da temperatura. Neste
+    per\xEDodo fez uso de  dipirona gotas. Refere que h\xE1 dois dias iniciou com
+    dificuldades para deglutir,  que se agravou no dia de hoje. N\xE3o apresenta
+    doen\xE7as de base e n\xE3o est\xE1 em uso de medica\xE7\xF5es de rotina."
   dialogo1: Estou sentindo muita dor de garganta e dificuldade para deglutir
   dialogo2: "A piora da minha dor de garganta, sensa\xE7\xE3o febril."
   FrequenciaCardiaca: 109b.p.m
@@ -19,7 +25,6 @@ MonoBehaviour:
   Saturacao: 92% em ar ambiente
   FrequenciaRespiratoria: 22 i.p.m
   Temperatura: "39\xB0C"
-  Glicemia: 109 mg/dL
   Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa"
   Respiratorio: "Ausculta pulmonar com murm\xFArios vesiculares presentes,  sem ru\xEDdos
     advent\xEDcios"

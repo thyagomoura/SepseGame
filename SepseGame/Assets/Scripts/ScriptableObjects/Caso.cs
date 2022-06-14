@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Caso : ScriptableObject
 {
+    public string historiaClinica;
+
     public string dialogo1;
     public string dialogo2;
 
