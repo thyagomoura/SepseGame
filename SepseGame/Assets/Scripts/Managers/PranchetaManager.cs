@@ -21,6 +21,8 @@ public class PranchetaManager : MonoBehaviour
     public GameObject diagText;
     public GameObject ExameImagem;
     public GameObject xray;
+    public GameObject pranchImg;
+    public GameObject pranchTxt;
 
     List<int> aferidos = new List<int>();
 
@@ -213,8 +215,18 @@ public class PranchetaManager : MonoBehaviour
 
     public void showXray()
     {
-        xray.GetComponent<Image>().sprite = Caso.Imagem;
-        ExameImagem.SetActive(true);
+        if (Caso.Imagem != null)
+        {
+            xray.GetComponent<Image>().sprite = Caso.Imagem;
+            ExameImagem.SetActive(true);
+            pranchImg.GetComponent<Image>().sprite = Caso.Imagem;
+            pranchTxt.GetComponent<TextMeshProUGUI>().text = Caso.descricaoImagem;
+        }
+        else
+        {
+            setText = "não possui";
+            EnterNotificacao();
+        }
     }
 
     public void darDiagnostico()

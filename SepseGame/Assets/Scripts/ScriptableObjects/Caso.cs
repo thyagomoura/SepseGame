@@ -24,6 +24,11 @@ public class Caso : ScriptableObject
     public string Renal;
 
     public Sprite Imagem;
+    public string descricaoImagem;
+    public string lab1;
+    public string lab2;
+    public string lab3;
+    public string lab4;
 
     public List<int> indexesCorretos;
     public List<int> selecionados;

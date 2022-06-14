@@ -903,6 +903,7 @@ MonoBehaviour:
   Resposta: {fileID: 1605445531}
   HC: {fileID: 1204540014}
   CasoClinico: {fileID: 1880191825}
+  Opcoes: {fileID: 1554554321}
   paciente: {fileID: 581999262}
   Caso: {fileID: 0}
   pack: {fileID: 11400000, guid: f0d4e489b31b05947b364615576b5215, type: 2}
@@ -3402,7 +3403,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.53252083, y: 0.30400002}
   m_AnchorMax: {x: 0.82900006, y: 0.46785188}
-  m_AnchoredPosition: {x: 329.984, y: -113.29259}
+  m_AnchoredPosition: {x: 329.984, y: -113.29257}
   m_SizeDelta: {x: 149.95215, y: 556.7248}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1613369314
