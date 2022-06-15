@@ -22,11 +22,11 @@ public class Pontuacao : MonoBehaviour
         Lines[2].GetComponentInChildren<TextMeshProUGUI>().text = Lines[2].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Saturacao;
         Lines[3].GetComponentInChildren<TextMeshProUGUI>().text = Lines[3].GetComponentInChildren<TextMeshProUGUI>().text + Caso.FrequenciaRespiratoria;
         Lines[4].GetComponentInChildren<TextMeshProUGUI>().text = Lines[4].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Temperatura;
-        Lines[6].GetComponentInChildren<TextMeshProUGUI>().text = Lines[6].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Neurologico;
-        Lines[7].GetComponentInChildren<TextMeshProUGUI>().text = Lines[7].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Respiratorio;
-        Lines[8].GetComponentInChildren<TextMeshProUGUI>().text = Lines[8].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Cardiocirculatorio;
-        Lines[9].GetComponentInChildren<TextMeshProUGUI>().text = Lines[9].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Gastrintestinal;
-        Lines[10].GetComponentInChildren<TextMeshProUGUI>().text = Lines[10].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Renal;
+        Lines[5].GetComponentInChildren<TextMeshProUGUI>().text = Lines[5].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Neurologico;
+        Lines[6].GetComponentInChildren<TextMeshProUGUI>().text = Lines[6].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Respiratorio;
+        Lines[7].GetComponentInChildren<TextMeshProUGUI>().text = Lines[7].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Cardiocirculatorio;
+        Lines[8].GetComponentInChildren<TextMeshProUGUI>().text = Lines[8].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Gastrintestinal;
+        Lines[9].GetComponentInChildren<TextMeshProUGUI>().text = Lines[9].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Renal;
 
         int i;
         for(i=0; i < Lines.Count; i++)
