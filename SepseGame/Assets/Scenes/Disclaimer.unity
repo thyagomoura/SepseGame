@@ -420,7 +420,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 961.623, y: 660.7029}
+  m_SizeDelta: {x: 1284.7849, y: 660.7029}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1515781630
 MonoBehaviour:
@@ -444,24 +444,24 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 264
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Este jogo tem intuito totalmente educativo, n\xE3o tendo como objetivo
-    diagnosticar ou tratar doen\xE7as diversas. Nele contem diversas artes, prop\xF3sitos
-    e uma progress\xE3o linear, que tem como prioridade observar se as decis\xF5es
-    do jogador refletem corretamente as medidas que o enfermeiro deve tomar ao identificar
-    poss\xEDveis sinais da doen\xE7a SEPSE. Dessa forma, cada escolha realizada ao
-    iniciar o jogo esta sendo analisada e pontuada, no fim o relat\xF3rio\nde desempenho
-    ser\xE1 revelado."
+  m_Text: "Trata-se de um serious game com a finalidade de sedimentar os conhecimentos
+    sobre o\r\nreconhecimento precoce dos sinais e sintomas de sepse pelo estudante
+    ou profissional\r\nde enfermagem. N\xE3o s\xE3o utilizados casos de pacientes
+    reais. Todas as informa\xE7\xF5es aqui\r\napresentadas foram criadas com o prop\xF3sito
+    educativo. O conte\xFAdo educacional do jogo\r\nest\xE1 fundamentado pelo \u201C
+    protocolo gerenciado de sepse- ficha de triagem\u201D do Instituto\r\nLatino
+    Americano de Sepse (2018) e nos guidelines do Surviving Sepsis Campaign (2021)."
 --- !u!222 &1515781631
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -504,7 +504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 110}
+  m_AnchoredPosition: {x: 0, y: 161}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945172439
