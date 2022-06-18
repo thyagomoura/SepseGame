@@ -23,6 +23,8 @@ public class PranchetaManager : MonoBehaviour
     public GameObject xray;
     public GameObject pranchImg;
     public GameObject pranchTxt;
+    public GameObject PopUpVerificamedico;
+    int chamadaMedico;
 
     List<int> aferidos = new List<int>();
 
@@ -271,5 +273,25 @@ public class PranchetaManager : MonoBehaviour
             Caso.pontuacao -= 500;
         }
         SceneManager.LoadScene("Pacotao");
+    }
+
+    public void VerificarChamadaMedico()
+    {
+        PopUpVerificamedico.SetActive(true);
+    }
+    public void ContabilizarChamada()
+    {
+        if(chamadaMedico == 0)
+        {
+            chamadaMedico = 1;
+            PopUpVerificamedico.SetActive(false);
+            darDiagnostico();
+        }
+        else if(chamadaMedico == 1)
+        {
+            chamadaMedico = 0;
+            PopUpVerificamedico.SetActive(false);
+            darDiagnostico();
+        }
     }
 }
