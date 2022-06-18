@@ -3322,7 +3322,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.4
+  m_fontSize: 26
   m_fontSizeBase: 6.87
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5131,7 +5131,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1695456656}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.34335104
+  m_Size: 0.3433511
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

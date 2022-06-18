@@ -23,17 +23,22 @@ MonoBehaviour:
     febre, calafrios."
   FrequenciaCardiaca: 120b.p.m
   PressaoArterial: 90x60mmHg
-  Saturacao: 90%
+  Saturacao: 90% em ar ambiente
   FrequenciaRespiratoria: 25 rpm
   Temperatura: "39\xB0C"
   Neurologico: "Irritabilidade, agita\xE7\xE3o, fotofobia, rigidez de nuca"
-  Respiratorio: "A ausculta pulmonar murm\xFArios vesiculares presentes  sem ru\xEDdos
+  Respiratorio: "A ausculta pulmonar murm\xFArios vesiculares presentes sem ru\xEDdos
     advent\xEDcios."
   Cardiocirculatorio: "Extremidades frias, palidez cut\xE2nea."
   Gastrintestinal: "Abdome fl\xE1cido, ru\xEDdos hidroa\xE9reos presentes, indolor
     a  palpa\xE7\xE3o superficial e profunda."
   Renal: "Refere diminui\xE7\xE3o do d\xE9bito urin\xE1rio, urina de aspecto  concentrado."
   Imagem: {fileID: 0}
+  descricaoImagem: 
+  lab1: 
+  lab2: 
+  lab3: 
+  lab4: 
   indexesCorretos: 0000000001000000020000000300000004000000
   selecionados: 
   buttonCorreto: 0

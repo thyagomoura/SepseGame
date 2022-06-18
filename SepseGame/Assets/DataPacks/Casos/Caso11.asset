@@ -20,7 +20,7 @@ MonoBehaviour:
   dialogo2: "A minha febre alta, a falta de disposi\xE7\xE3o e dor no corpo.  "
   FrequenciaCardiaca: 104b.p.m
   PressaoArterial: 120x80mmHg
-  Saturacao: 92 % em ar ambiente
+  Saturacao: 92% em ar ambiente
   FrequenciaRespiratoria: 20 i.p.m.
   Temperatura: "38,5\xB0C"
   Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa"
@@ -32,6 +32,11 @@ MonoBehaviour:
     e  profunda. Sem visceromegalias."
   Renal: "Sem d\xE9bito urin\xE1rio at\xE9 o momento"
   Imagem: {fileID: 0}
+  descricaoImagem: 
+  lab1: 
+  lab2: 
+  lab3: 
+  lab4: 
   indexesCorretos: 0000000004000000
   selecionados: 
   buttonCorreto: 1

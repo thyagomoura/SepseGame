@@ -21,7 +21,7 @@ MonoBehaviour:
     pr\xE9vio em uso de AAS 100 mg/dia; carvedilol 6,25mg/dia ,  75mg/dia de captopril
     e 600 mg/dia de aminofilina."
   dialogo1: "Muito cansa\xE7o, tosse e falta de ar. H\xE1 2 dias n\xE3o durmo direito
-    a  noite"
+    a noite"
   dialogo2: A dificuldade de respirar
   FrequenciaCardiaca: 116b.p.m
   PressaoArterial: 160x100mmHg
@@ -31,12 +31,18 @@ MonoBehaviour:
   Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa"
   Respiratorio: "A ausculta pulmonar sibilos difusos e roncos em hemit\xF3rax  direito
     e esquerdo, expira\xE7\xE3o prolongada"
-  Cardiocirculatorio: "A ausculta pulmonar sibilos difusos e roncos em hemit\xF3rax 
-    direito e esquerdo, expira\xE7\xE3o prolongada"
+  Cardiocirculatorio: "R\xEDtmico card\xEDaco regular, bulhas card\xEDacas  normofon\xE9ticas
+    em 2 tempos, sem sopro."
   Gastrintestinal: "Abdome globoso, fl\xE1cido, indolor a palpa\xE7\xE3o  superficial
     e profunda. Ru\xEDdos hidroa\xE9reos presentes."
   Renal: "Elimina\xE7\xE3o vesical espont\xE2nea, aspecto amarelo claro."
   Imagem: {fileID: 21300000, guid: 58fdca50b068e4e4abce028b24a4268e, type: 3}
+  descricaoImagem: "Raio X de t\xF3rax com sinais de hiperinsufla\xE7\xE3o pulmonar 
+    sem focos de consolida\xE7\xE3o."
+  lab1: "Leuc\xF3citos 7.400/mm\xB3 (Valor de Refer\xEAncia: 4.000 a 10.000 /mm\xB3) "
+  lab2: "Plaquetas: 200.000 /mm\xB3 (Valor de refer\xEAncia: 150.000 \u2013 450.000/mm\xB3)"
+  lab3: "Ureia: 35 mg/dL ( Valor de refer\xEAncia: 15 a 40 mg/dL)"
+  lab4: "Creatinina: 0,8mg/dL (Valor de refer\xEAncia: 0,4 a 1,4 mg/dL"
   indexesCorretos: 0000000003000000
   selecionados: 
   buttonCorreto: 0

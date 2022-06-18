@@ -39,6 +39,12 @@ MonoBehaviour:
     colora\xE7\xE3o da urina (concentrada) e com volume m\xE9dio de 750 mL nas \xFAltimas
     24  horas."
   Imagem: {fileID: 0}
+  descricaoImagem: 
+  lab1: "Leuc\xF3citos: 13.000 /mm3 (Valor de refer\xEAncia: 4.000 \u2013 11.000mm3
+    )"
+  lab2: "Creatinina: 2,4 mg/dL (Valor de refer\xEAncia: 0,4 a 1,4 mg/dL)"
+  lab3: "Plaquetas 100.000/mm3 (valor de refer\xEAncia: 150 a 450.000/mm3 )"
+  lab4: 'Ureia: 100 mg/dL (15 a 40 mg/dL'
   indexesCorretos: 0000000001000000020000000300000004000000
   selecionados: 
   buttonCorreto: 0

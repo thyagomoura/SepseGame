@@ -21,7 +21,7 @@ MonoBehaviour:
   dialogo2: A diarreia com sangue e a febre
   FrequenciaCardiaca: 115b.p.m
   PressaoArterial: 90x65mmHg
-  Saturacao: 97%
+  Saturacao: 97% em ar ambiente
   FrequenciaRespiratoria: 20 i.p.m
   Temperatura: "38\xB0C"
   Neurologico: "Prostrada, abertura ocular \xE0 voz, obedece a comandos  motores."
@@ -32,9 +32,14 @@ MonoBehaviour:
   Gastrintestinal: "Abdome plano, levemente distendido, doloroso a  palpa\xE7\xE3o
     superficial e profunda. Ru\xEDdos hidroa\xE9reos aumentados"
   Renal: "Elimina\xE7\xE3o vesical presente, espont\xE2nea, com altera\xE7\xE3o na 
-    colora\xE7\xE3o da urina (concentrada) e com volume m\xE9dio de 650 mL nas \xFAltimas
-    24  horas. "
+    colora\xE7\xE3o da urina (concentrada) e com volume m\xE9dio de 750 mL nas \xFAltimas
+    24  horas."
   Imagem: {fileID: 0}
+  descricaoImagem: 
+  lab1: "Leuc\xF3citos: 18.900 /mm\xB3 (Valor de refer\xEAncia: 4.000 \u2013 11.000mm\xB3)"
+  lab2: "Creatinina: 2,6 mg/dL (Valor de refer\xEAncia: 0,4 a 1,4 mg/dL"
+  lab3: 'Ureia: 100 mg/dL (15 a 40 mg/dL)'
+  lab4: "Plaquetas: 350.000 /mm\xB3 (Valor de Refer\xEAncia: 150.000 \u2013 450.000/mm\xB3)"
   indexesCorretos: 000000000100000004000000
   selecionados: 
   buttonCorreto: 0

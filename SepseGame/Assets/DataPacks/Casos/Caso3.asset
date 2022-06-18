@@ -18,16 +18,15 @@ MonoBehaviour:
     lombar direita h\xE1 duas horas, irradiada para a bexiga, coxa e  genit\xE1lia.
     Tem hist\xF3ria cl\xEDnica de c\xE1lculo renal, mas at\xE9 ontem mantinha-se
     sintom\xE1tico.  Nega diabetes e outras doen\xE7as cardiovasculares."
-  dialogo1: "Estou sentindo dor no abdome, na regi\xE3o lombar, na minha coxa e 
-    genit\xE1lia."
+  dialogo1: "Estou sentindo dor no abdome, na regi\xE3o lombar, na minha coxa e genit\xE1lia."
   dialogo2: A piora da minha dor, febre e sangue na urina
-  FrequenciaCardiaca: 109 bpm
+  FrequenciaCardiaca: 109 b.p.m
   PressaoArterial: 90X50mmHg
-  Saturacao: 94%
+  Saturacao: 94% em ar ambiente
   FrequenciaRespiratoria: 28 i.p.m
   Temperatura: "38,8\xB0C"
-  Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa.  Sonolento com
-    abertura ocular apenas aos chamados verbais."
+  Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa.  Sonolento, abertura
+    ocular apenas aos chamados verbais."
   Respiratorio: "Ausculta pulmonar com murm\xFArios vesiculares presentes  e sem
     ru\xEDdos advent\xEDcios"
   Cardiocirculatorio: "R\xEDtmico card\xEDaco regular, bulhas card\xEDacas  normofon\xE9ticas
@@ -36,6 +35,11 @@ MonoBehaviour:
     e profunda. Ru\xEDdos hidroa\xE9reos presentes."
   Renal: "Elimina\xE7\xE3o vesical presente. Dis\xFAria, hemat\xFAria e pi\xFAria"
   Imagem: {fileID: 0}
+  descricaoImagem: 
+  lab1: "Ureia: 61 mg/dL Valor de Refer\xEAncia: 15 a 50 mg/dl"
+  lab2: "Creatinina: 2,3 mg/dL Valor de Refer\xEAncia: 0,7-1,6 mg/dL"
+  lab3: "Plaquetas: 180.000 /mm3(Valor de refer\xEAncia: 150.000 \u2013 450.000/mm3)"
+  lab4: "Plaquetas: 180.000 /mm3(Valor de refer\xEAncia: 150.000 \u2013 450.000/mm3)"
   indexesCorretos: 00000000010000000300000004000000
   selecionados: 
   buttonCorreto: 0

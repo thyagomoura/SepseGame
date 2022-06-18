@@ -25,7 +25,7 @@ MonoBehaviour:
   dialogo2: A piora da minha dor abdominal (na barriga) e a febre
   FrequenciaCardiaca: 118b.p.m
   PressaoArterial: 155x90mmHg
-  Saturacao: 97%
+  Saturacao: 97% em ar ambiente
   FrequenciaRespiratoria: 25i.p.m
   Temperatura: "38,5\xB0C"
   Neurologico: "Consciente, orientada em tempo, espa\xE7o, pessoa. Fascies  de dor
@@ -40,6 +40,12 @@ MonoBehaviour:
   Renal: "Elimina\xE7\xE3o vesical presente com altera\xE7\xE3o na colora\xE7\xE3o
     da urina  (col\xFAria) e com volume m\xE9dio de 1.500 mL nas \xFAltimas 24 horas"
   Imagem: {fileID: 0}
+  descricaoImagem: "Ultrassonografia abdominal: ves\xEDcula biliar distendida, com
+    paredes  levemente espessadas e presen\xE7a de c\xE1lculos no seu interior."
+  lab1: 
+  lab2: 
+  lab3: 
+  lab4: 
   indexesCorretos: 000000000300000004000000
   selecionados: 
   buttonCorreto: 1

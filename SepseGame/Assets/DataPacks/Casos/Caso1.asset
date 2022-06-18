@@ -22,18 +22,19 @@ MonoBehaviour:
   dialogo2: "O meu estado de des\xE2nimo, inapet\xEAncia e cansa\xE7o aos m\xEDnimos
     esfor\xE7os."
   FrequenciaCardiaca: 164b.p.m
-  PressaoArterial: 94x58mmHg
+  PressaoArterial: 110x80mmHg
   Saturacao: 92% em ar ambiente
   FrequenciaRespiratoria: 26i.p.m
   Temperatura: "39\xBAC"
-  Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa."
-  Respiratorio: "Murm\xFArios vesiculares presentes sem ru\xEDdos advent\xEDcios,
-    tosse seca com secre\xE7\xE3o clara. Leve hiperemia de orofaringe."
-  Cardiocirculatorio: "Taquicardia, bulhas r\xEDtmicas e normofon\xE9ticas em 2 tempos,
-    sem sopros."
-  Gastrintestinal: "Abdome globoso, fl\xE1cido, indolor a palpa\xE7\xE3o superficial
-    e profunda. Sem visceromegalias."
-  Renal: "Sem d\xE9bito urin\xE1rio at\xE9 o momento."
+  Neurologico: "Consciente, abertura ocular espont\xE2nea, orientado,  obedece a
+    comandos. Escala de coma de Glasgow = 15."
+  Respiratorio: "Tosse produtiva, mesmo em repouso, com expectora\xE7\xE3o de secre\xE7\xE3o
+    espessa e  amarelada. Ausculta pulmonar: em base direita h\xE1 murm\xFArios vesiculares
+    diminu\xEDdos e estertores creptantes. "
+  Cardiocirculatorio: "Ritmo card\xEDaco irregular, sem edema de extremidades"
+  Gastrintestinal: "Abdome indolor a palpa\xE7\xE3o superficial e profunda, ru\xEDdos
+    hidroa\xE9reos  presentes"
+  Renal: "Diurese espont\xE2nea, mas ausente at\xE9 o momento"
   Imagem: {fileID: 21300000, guid: 51bac9ed389fedc4987c2c97aaeede6f, type: 3}
   descricaoImagem: Velamento em base pulmonar direita.
   lab1: 
