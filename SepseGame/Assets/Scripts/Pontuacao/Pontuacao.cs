@@ -14,6 +14,10 @@ public class Pontuacao : MonoBehaviour
     public Color Acerto, Erro, NaoMarcou;
     public GameObject ptsText;
 
+    public static string[] acerto = new string[10];
+    public static string[] erro = new string[10];
+    public static int count = 0, countError = 0;
+
     void Start()
     {
         Caso = Casos[pack.currentCase - 1];
@@ -34,16 +38,22 @@ public class Pontuacao : MonoBehaviour
             if (Caso.indexesCorretos.Contains(i) && Caso.selecionados.Contains(i))
             {
                 Lines[i].GetComponent<Image>().color = Acerto;
+                acerto[count] = Lines[i].GetComponentInChildren<TextMeshProUGUI>().text;
+                count++;
                 Caso.pontuacao += 50;
             }
             else if (Caso.indexesCorretos.Contains(i) && !Caso.selecionados.Contains(i))
             {
                 Lines[i].GetComponent<Image>().color = NaoMarcou;
+                erro[countError] = Lines[i].GetComponentInChildren<TextMeshProUGUI>().text;
+                countError++;
                 Caso.pontuacao -= 50;
             }
             else if (!Caso.indexesCorretos.Contains(i) && Caso.selecionados.Contains(i))
             {
                 Lines[i].GetComponent<Image>().color = Erro;
+                erro[countError] = Lines[i].GetComponentInChildren<TextMeshProUGUI>().text;
+                countError++;
                 Caso.pontuacao -= 100;
             }
         }

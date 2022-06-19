@@ -1,15 +1,23 @@
 using UnityEngine;
 using System.ComponentModel;
 using System.Net.Mail;
-
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine.UI;
 
 public class EmailUtility : MonoBehaviour
 {
-    public Caso Caso;
+    public List<Caso> Casos;
+    public Caso caso;
+    public Estetica pack;
     string titleName;
-    // Start is called before the first frame update
+    public int numeroAcertos, numeroErros;
+
     void Start()
     {
+        caso = Casos[pack.currentCase - 1];
+        NumeroDePosicoesEmAcertosEErros();
+
         titleName = "Relatorio de desempenho - " + Login.nome;
         // Linhas referentes a "conexao" com o smtp de envio
         SmtpClient client = new SmtpClient("smtp.mailgun.org", 587);
@@ -57,6 +65,30 @@ public class EmailUtility : MonoBehaviour
         else
         {
             Debug.Log("Message sent.");
+        }
+    }
+
+    public void NumeroDePosicoesEmAcertosEErros()
+    {
+        numeroAcertos = Pontuacao.acerto.Length;
+        numeroErros = Pontuacao.erro.Length;
+
+        Debug.Log("Pontuacao: " + caso.pontuacao);
+        Debug.Log("Acertos: ");
+        for (int i = 0; i < (Pontuacao.acerto.Length-1); i++)
+        {
+            if (Pontuacao.acerto[i] != null)
+            {
+                Debug.Log(Pontuacao.acerto[i]);
+            }
+        }
+        Debug.Log("Erros: ");
+        for (int i = 0; i < (Pontuacao.erro.Length-1); i++)
+        {
+            if (Pontuacao.erro[i] != null)
+            {
+                Debug.Log(Pontuacao.erro[i]);
+            }
         }
     }
 }

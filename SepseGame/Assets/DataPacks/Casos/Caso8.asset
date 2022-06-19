@@ -44,6 +44,6 @@ MonoBehaviour:
   lab3: "Ureia: 35 mg/dL ( Valor de refer\xEAncia: 15 a 40 mg/dL)"
   lab4: "Creatinina: 0,8mg/dL (Valor de refer\xEAncia: 0,4 a 1,4 mg/dL"
   indexesCorretos: 0000000003000000
-  selecionados: 
+  selecionados: 0000000001000000020000000300000004000000
   buttonCorreto: 0
-  pontuacao: 0
+  pontuacao: 3600

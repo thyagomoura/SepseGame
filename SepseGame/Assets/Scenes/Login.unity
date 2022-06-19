@@ -318,8 +318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 103e24e3107363e4b893ce4bf62e5aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nome: 
-  cpf: 
   inputFieldNome: {fileID: 974559503}
   inputFieldCpf: {fileID: 1419601487}
 --- !u!1 &822288006
@@ -1143,7 +1141,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hospital
+  m_Text: Pontuacao
 --- !u!222 &1678851550
 CanvasRenderer:
   m_ObjectHideFlags: 0

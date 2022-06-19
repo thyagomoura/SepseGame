@@ -22,6 +22,6 @@ public class Login : MonoBehaviour
     [System.Obsolete]
     public void ProxScene()
     {
-        Application.LoadLevel("Hospital");
+        Application.LoadLevel("Pontuacao");
     }
 }

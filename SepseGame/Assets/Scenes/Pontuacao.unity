@@ -3484,6 +3484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2100840172}
   - component: {fileID: 2100840173}
+  - component: {fileID: 2100840174}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -3549,6 +3550,46 @@ MonoBehaviour:
   Erro: {r: 0.76470596, g: 0.31764707, b: 0.31764707, a: 1}
   NaoMarcou: {r: 0.8117648, g: 0.7254902, b: 0.43921572, a: 1}
   ptsText: {fileID: 1052406834}
+--- !u!114 &2100840174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100840171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19b291d9118da4458a8670d4d93d70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Casos:
+  - {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}
+  - {fileID: 11400000, guid: 7886000bd22f26e47bb8544df39a6ba6, type: 2}
+  - {fileID: 11400000, guid: 95b94bb6d5f8fd344a64adfa77eb48bf, type: 2}
+  - {fileID: 11400000, guid: c5895efc851d9134c89ac4f9de30264d, type: 2}
+  - {fileID: 11400000, guid: db95b5c6db7f8884d8507a30a12e1c42, type: 2}
+  - {fileID: 11400000, guid: 0897e249e810a8b4fbe0b04879681089, type: 2}
+  - {fileID: 11400000, guid: f2a6d46bf5549434abb8ed5725f15d04, type: 2}
+  - {fileID: 11400000, guid: 4e0e70d036c412d49a728c89a022fd8d, type: 2}
+  - {fileID: 11400000, guid: dd320aa9e3547764098f76eda5894f48, type: 2}
+  - {fileID: 11400000, guid: 86e07f68bbb15bc4da20b27d69314087, type: 2}
+  - {fileID: 11400000, guid: 62cb05028d173cb4fa3acb016504c32a, type: 2}
+  - {fileID: 11400000, guid: 15d368d6a7020bf46bb5b803d55a44b6, type: 2}
+  - {fileID: 11400000, guid: 401ab15f4e846504f85665e7ec10603e, type: 2}
+  caso: {fileID: 0}
+  Lines:
+  - {fileID: 504612289}
+  - {fileID: 787742187}
+  - {fileID: 249661522}
+  - {fileID: 1752152812}
+  - {fileID: 617614658}
+  - {fileID: 381667581}
+  - {fileID: 1390551860}
+  - {fileID: 1318945414}
+  - {fileID: 283991473}
+  - {fileID: 515755496}
+  - {fileID: 0}
+  pack: {fileID: 11400000, guid: f0d4e489b31b05947b364615576b5215, type: 2}
 --- !u!1001 &2753623555574883989
 PrefabInstance:
   m_ObjectHideFlags: 0
