@@ -502,8 +502,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nm: {fileID: 130360383317633404}
   en: {fileID: 11400000, guid: fcfc5772fb0a6a84a9b7df6e3a64168b, type: 2}
-  E1: {fileID: 0}
-  E2: {fileID: 0}
+  E1: {fileID: 123974060}
+  E2: {fileID: 1496754421}
 --- !u!114 &196821793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -610,6 +610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nurseDataPack: {fileID: 11400000, guid: fcfc5772fb0a6a84a9b7df6e3a64168b, type: 2}
   nurseManage: {fileID: 130360383317633404}
+  enfermeiro: {fileID: 130360383317633403}
 --- !u!1 &226005756
 GameObject:
   m_ObjectHideFlags: 0

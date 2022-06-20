@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class NurseEsteticaHP : MonoBehaviour
 {
-    public GameObject PersonagemMasculino;
     public Sprite[] peleArray;
     public Sprite[] cabeloArray;
     public Sprite[] barbaArray;
@@ -12,7 +11,6 @@ public class NurseEsteticaHP : MonoBehaviour
     public Sprite[] profissaoArray;
     public Sprite calca;
 
-    public GameObject PersonagemFeminino;
     public Sprite[] peleArrayF;
     public Sprite[] cabeloArrayF;
     public Sprite blusaF;
@@ -58,8 +56,6 @@ public class NurseEsteticaHP : MonoBehaviour
         Color corzinha = EsteticaNurse.corRoupa;
 
         // ativacao do personagem
-        PersonagemMasculino.SetActive(true);
-        PersonagemFeminino.SetActive(false);
 
         // recepcao e declaracao de indices
         GameObject EstetoscopioM = GameObject.Find("EstetoscopioM");
@@ -143,8 +139,6 @@ public class NurseEsteticaHP : MonoBehaviour
         Color corzinha = EsteticaNurse.corRoupa;
 
         // ativacao do personagem
-        PersonagemMasculino.SetActive(false);
-        PersonagemFeminino.SetActive(true);
 
         // recepcao e declaracao de indices
         GameObject PeleF = GameObject.Find("PeleF");

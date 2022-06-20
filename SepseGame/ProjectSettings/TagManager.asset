@@ -12,6 +12,7 @@ TagManager:
   - check6
   - check7
   - check8
+  - hospital
   layers:
   - Default
   - TransparentFX

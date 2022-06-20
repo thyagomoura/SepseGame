@@ -45,7 +45,7 @@ public class NurseManage : MonoBehaviour
         BlusaF = GameObject.Find("BlusaF");
         CalcaF = GameObject.Find("CalcaF");
 
-        scm.slider.onValueChanged.AddListener(delegate { SetSliderColor(); });
+        if (!CompareTag("hospital")) scm.slider.onValueChanged.AddListener(delegate { SetSliderColor(); });
 
         if (!EsteticaNurse.set)
         {
@@ -117,10 +117,10 @@ public class NurseManage : MonoBehaviour
     public void GenerateFemale()
     {
         corDaPele = Random.Range(0, 4);
-        hasOclin = Random.Range(0, 2);
+        hasOclin = Random.Range(0, 100);
         cabelin = Random.Range(0, 24);
         role = Random.Range(0, 100);
-        mascara = Random.Range(0, 2);
+        mascara = Random.Range(0, 100);
         estetoscopio = Random.Range(0, 2);
 
         EsteticaNurse.estetoscopio = estetoscopio;
@@ -223,7 +223,7 @@ public class NurseManage : MonoBehaviour
 
         }
         Color corzinha = EsteticaNurse.corRoupa;
-        scm.MudarBolinha(corzinha);
+        if (!CompareTag("hospital")) scm.MudarBolinha(corzinha);
         Blusa.GetComponent<SpriteRenderer>().color = corzinha;
         Calca.GetComponent<SpriteRenderer>().color = corzinha;
 
@@ -299,7 +299,7 @@ public class NurseManage : MonoBehaviour
         }
 
         Color corzinha = EsteticaNurse.corRoupa;
-        scm.MudarBolinha(corzinha);
+        if (!CompareTag("hospital")) scm.MudarBolinha(corzinha);
         BlusaF.GetComponent<SpriteRenderer>().color = corzinha;
         CalcaF.GetComponent<SpriteRenderer>().color = corzinha;
     }
