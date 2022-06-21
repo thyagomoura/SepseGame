@@ -24,8 +24,8 @@ public class EmailUtility : MonoBehaviour
         SmtpClient client = new SmtpClient("smtp.mailgun.org", 587);
         //credenciamento para permitir o envio
         client.Credentials = new System.Net.NetworkCredential(
-            "postmaster@sandboxd726a66d4ad744f8a06b788369fab27d.mailgun.org",
-            "6a5878a236c5fe2abb6b41906b1e4f04-50f43e91-c743af05");
+            "login",
+            "senha");
         client.EnableSsl = true;
 
         // Definir quem envia o email e o nome do email que sera enviado
