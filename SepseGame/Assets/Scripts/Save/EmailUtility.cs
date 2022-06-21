@@ -4,6 +4,7 @@ using System.Net.Mail;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UI;
+using System.Net.Mime;
 
 public class EmailUtility : MonoBehaviour
 {
@@ -23,8 +24,8 @@ public class EmailUtility : MonoBehaviour
         SmtpClient client = new SmtpClient("smtp.mailgun.org", 587);
         //credenciamento para permitir o envio
         client.Credentials = new System.Net.NetworkCredential(
-            "Login",
-            "Senha");
+            "postmaster@sandboxd726a66d4ad744f8a06b788369fab27d.mailgun.org",
+            "6a5878a236c5fe2abb6b41906b1e4f04-50f43e91-c743af05");
         client.EnableSsl = true;
 
         // Definir quem envia o email e o nome do email que sera enviado
@@ -37,11 +38,19 @@ public class EmailUtility : MonoBehaviour
         MailAddress to = new MailAddress("bmdrcompany@gmail.com");
 
         // Conteudo da mensagem.
+        var contentID = "Image";
+
+        var inlineLogo = new Attachment(@"D:\Projetos\Sepse Game\SepseGame\SepseGame\Assets\Sprites\Personagens\BasePersonagensFemininos.png");
+        inlineLogo.ContentId = contentID;
+        inlineLogo.ContentDisposition.Inline = true;
+        inlineLogo.ContentDisposition.DispositionType = DispositionTypeNames.Inline;
+        
         MailMessage message = new MailMessage(from, to);
         message.Body = $"Aluno: {Login.nome}\r\nCPF: {Login.cpf} \r\nColocar as variaveis referentes ao relatório de desempenho";
         message.BodyEncoding = System.Text.Encoding.UTF8;
         message.Subject = titleName;
         message.SubjectEncoding = System.Text.Encoding.UTF8;
+        message.Attachments.Add(inlineLogo);
 
         // Metodos para envio e callback.
         client.SendCompleted += new SendCompletedEventHandler(SendCompletedCallback);
