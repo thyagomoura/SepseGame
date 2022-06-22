@@ -45,3 +45,11 @@ MonoBehaviour:
   selecionados: 000000000200000003000000
   buttonCorreto: 1
   pontuacao: 0
+  condutas:
+  - Manter cabeceira do leito elvada a 45 graus
+  - "Puncionar acesso venoso perif\xE9rico"
+  - "Colher exames laboratorais solicitados pelo m\xE9dico fora do protocolo de sepse"
+  - "Avaliar estado neurol\xF3gico do paciente a cada 2 horas"
+  - Verificar sinais vitais de 2 em 2 horas
+  - "Instalar dispositivo urin\xE1rio sistema aberto para controle de d\xE9bito urin\xE1rio
+    a cada 2 horas"

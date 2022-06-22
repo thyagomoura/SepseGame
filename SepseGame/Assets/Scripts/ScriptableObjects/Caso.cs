@@ -36,4 +36,7 @@ public class Caso : ScriptableObject
     public int buttonCorreto;
 
     public int pontuacao;
+
+    public List<string> condutas;
+
 }

@@ -16,7 +16,7 @@ public class Pacote : MonoBehaviour
 
     public List<Toggle> toggles;
 
-    public List<GameObject> bars;
+    public List<PacotaoGridItem> toggleScripts;
 
     List<string> certas = new List<string> {"certo0", "certo1", "certo2", "certo3", "certo4", "certo5"};
     List<string> erradas = new List<string> {"r1", "r2", "r3","r4", "r5", "r6"};
@@ -33,9 +33,9 @@ public class Pacote : MonoBehaviour
 
     void Start()
     {
-        updateOptions();
-
         Caso = Casos[pack.currentCase - 1];
+
+        updateOptions();
     }
 
     void updateOptions()
@@ -50,16 +50,9 @@ public class Pacote : MonoBehaviour
             } while(numerosSorteados.Contains(rand));
 
             numerosSorteados.Add(rand);
+            opcoes[rand].text = Caso.condutas[i];
+            toggleScripts[rand].condutaIndex = i;
         }
-
-        int j;
-        for (j=0; j < numerosSorteados.Count; j++)
-        {
-            opcoes[j].text = erradas[numerosSorteados[j]];
-        }
-
-        respostaCorreta = Random.Range(0, 6);
-        opcoes[respostaCorreta].text = certas[control];
     }
 
     private void Update()
@@ -71,16 +64,23 @@ public class Pacote : MonoBehaviour
         }
     }
 
-    public void updateChecked(int excludeIndex)
+    public void optionClicked(int idx)
+    {
+        // = toggleScripts[idx].condutaIndex;
+        toggleScripts[idx].updt(control + 1);
+        control++;
+    }
+
+    /*public void updateChecked(int excludeIndex)
     {
         if (!updating)
         {
             process(excludeIndex);
         }
         
-    }
+    }*/
 
-    void process(int excludeIndex)
+    /*void process(int excludeIndex)
     {
         updating = true;
         int a;
@@ -96,9 +96,9 @@ public class Pacote : MonoBehaviour
         {
             currentSelected = excludeIndex;
         }
-    }
+    }*/
 
-    public void Avancar()
+    /*public void Avancar()
     {
         if (!once)
         {
@@ -138,5 +138,5 @@ public class Pacote : MonoBehaviour
                 SceneManager.LoadScene("Pontuacao");
             } 
         }
-    }
+    }*/
 }

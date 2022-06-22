@@ -57,7 +57,7 @@ public class NurseManage : MonoBehaviour
         }
         else
         {
-            Debug.Log(EsteticaNurse.gender);
+            //Debug.Log(EsteticaNurse.gender);
             SetFemale();
         }
 
