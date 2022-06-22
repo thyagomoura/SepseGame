@@ -10,6 +10,8 @@ public class Pacote : MonoBehaviour
 
     public Caso Caso;
 
+    public Button avancarButton;
+
     public List<Caso> Casos;
 
     public List<Text> opcoes;
@@ -18,18 +20,9 @@ public class Pacote : MonoBehaviour
 
     public List<PacotaoGridItem> toggleScripts;
 
-    List<string> certas = new List<string> {"certo0", "certo1", "certo2", "certo3", "certo4", "certo5"};
-    List<string> erradas = new List<string> {"r1", "r2", "r3","r4", "r5", "r6"};
     List<int> numerosSorteados = new List<int>();
 
     int control = 0;
-    int respostaCorreta;
-    int currentSelected = -1;
-    bool once = false;
-
-    bool updating = false;
-
-    int acertos;
 
     void Start()
     {
@@ -66,77 +59,42 @@ public class Pacote : MonoBehaviour
 
     public void optionClicked(int idx)
     {
-        // = toggleScripts[idx].condutaIndex;
-        toggleScripts[idx].updt(control + 1);
-        control++;
-    }
-
-    /*public void updateChecked(int excludeIndex)
-    {
-        if (!updating)
+        int retorno = toggleScripts[idx].updt(control + 1);
+        switch (retorno)
         {
-            process(excludeIndex);
+            case 1:
+                Caso.condSelected.Add(toggleScripts[idx].condutaIndex);
+                control++;
+                break;
+            case 2:
+                Caso.condSelected.Remove(toggleScripts[idx].condutaIndex);
+                control--;
+                break;
         }
-        
-    }*/
 
-    /*void process(int excludeIndex)
-    {
-        updating = true;
-        int a;
-        for (a = 0; a < toggles.Count; a++)
+        if (control == 6)
         {
-            if (a != excludeIndex)
-            {
-                toggles[a].isOn = false;
-            }
-        }
-        updating = false;
-        if (!once)
-        {
-            currentSelected = excludeIndex;
-        }
-    }*/
-
-    /*public void Avancar()
-    {
-        if (!once)
-        {
-            control++;
-            bars[respostaCorreta].SetActive(true);
-            if (currentSelected != respostaCorreta)
-            {
-                bars[currentSelected].GetComponent<Image>().color = new Color(0.75f, 0, 0, 0.9f);
-                bars[currentSelected].SetActive(true);
-            }
-            else
-            {
-                acertos++;
-            }
-            once = true;
+            avancarButton.interactable = true;
         }
         else
         {
-            if(control < 6)
-            {
-                once = false;
-                numerosSorteados = new List<int>();
-                bars[respostaCorreta].SetActive(false);
-                bars[currentSelected].GetComponent<Image>().color = new Color(1, 1, 1, 0.9f);
-                bars[currentSelected].SetActive(false);
-
-                int k;
-                for (k = 0; k < toggles.Count; k++)
-                {
-                    toggles[k].isOn = false;
-                }
-                updateOptions();
-            }
-            else
-            {
-                Caso.pontuacao += (acertos * 100);
-                SceneManager.LoadScene("Pontuacao");
-            } 
+            avancarButton.interactable = false;
         }
-    }*/
+    }
+
+    public void resetSelection()
+    {
+        control = 0;
+        Caso.condSelected.Clear();
+        int i;
+        for(i=0; i < toggleScripts.Count; i++)
+        {
+            toggleScripts[i].rst();
+        }
+    }
+
+    public void Avancar()
+    {
+        SceneManager.LoadScene("Pontuacao");
+    }
 }

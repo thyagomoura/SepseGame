@@ -9,8 +9,24 @@ public class PacotaoGridItem : MonoBehaviour
 
     public GameObject objText;
 
-    public void updt(int ordem)
+    public int updt(int ordem)
     {
-        objText.GetComponent<TextMeshProUGUI>().text = ordem.ToString();
+        if ((ordem - 1).ToString() == objText.GetComponent<TextMeshProUGUI>().text)
+        {
+            objText.GetComponent<TextMeshProUGUI>().text = "";
+            return 2;
+        }
+        else if (objText.GetComponent<TextMeshProUGUI>().text == "")
+        {
+            objText.GetComponent<TextMeshProUGUI>().text = ordem.ToString();
+            return 1;
+        }
+
+        return 0;
+    }
+
+    public void rst()
+    {
+        objText.GetComponent<TextMeshProUGUI>().text = "";
     }
 }
