@@ -1103,7 +1103,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.2124939, y: 8.630005}
+  m_AnchoredPosition: {x: -0.21246338, y: 8.630005}
   m_SizeDelta: {x: -0.42, y: 32.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &298328800
@@ -1193,7 +1193,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.500214, y: -16.359253}
+  m_AnchoredPosition: {x: 8.500183, y: -16.359253}
   m_SizeDelta: {x: 16.999985, y: 32.718323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &309793696
@@ -2000,7 +2000,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.21625, y: 0.08222223}
   m_AnchorMax: {x: 0.78124994, y: 0.7702221}
-  m_AnchoredPosition: {x: 1, y: 1.1271057}
+  m_AnchoredPosition: {x: 1, y: 1.1271362}
   m_SizeDelta: {x: 61.64, y: 41.609}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &504204309
@@ -2525,7 +2525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7145670586627108789, guid: b30d3fc58ed47044c92d4af7827826ea, type: 3}
       propertyPath: m_text
-      value: "Leuc\xF3citos:"
+      value: "Leuc\xF3citos: "
       objectReference: {fileID: 0}
     - target: {fileID: 7145670586909365751, guid: b30d3fc58ed47044c92d4af7827826ea, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4000,7 +4000,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 887347717}
   m_FillRect: {fileID: 116830873}
   m_HandleRect: {fileID: 887347716}
@@ -4997,7 +4997,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7145670586627108789, guid: b30d3fc58ed47044c92d4af7827826ea, type: 3}
       propertyPath: m_text
-      value: 'Ureia:'
+      value: 'Ureia: '
       objectReference: {fileID: 0}
     - target: {fileID: 7145670586909365751, guid: b30d3fc58ed47044c92d4af7827826ea, type: 3}
       propertyPath: m_AnchorMax.y
@@ -5171,7 +5171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 28.291992, y: -28.100006}
+  m_AnchoredPosition: {x: 28.291992, y: -28.099976}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1401979845
@@ -5253,7 +5253,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1959226424}
   m_FillRect: {fileID: 574247413}
   m_HandleRect: {fileID: 1959226423}
@@ -6271,7 +6271,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 93558456}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.25954533
+  m_Size: 0.2595453
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7636,7 +7636,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2131787919}
   m_FillRect: {fileID: 2139539626}
   m_HandleRect: {fileID: 2131787918}
@@ -7934,7 +7934,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.500198, y: -16.359207}
+  m_AnchoredPosition: {x: 8.500183, y: -16.359207}
   m_SizeDelta: {x: 16.999985, y: 32.718323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1990492337
@@ -8269,9 +8269,10 @@ MonoBehaviour:
   - {fileID: 1401979847}
   - {fileID: 1869427803}
   - {fileID: 1151275219}
-  acertos: 0
-  naoMarcados: 0
-  erros: 0
+  textsStats:
+  - {fileID: 1652878874}
+  - {fileID: 403036443}
+  - {fileID: 1538313899}
 --- !u!114 &2100840174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8502,6 +8503,10 @@ PrefabInstance:
     - target: {fileID: 7145670586627108786, guid: b30d3fc58ed47044c92d4af7827826ea, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145670586627108789, guid: b30d3fc58ed47044c92d4af7827826ea, type: 3}
+      propertyPath: m_text
+      value: "Frequ\xEAncia Card\xEDaca: "
       objectReference: {fileID: 0}
     - target: {fileID: 7145670586909365751, guid: b30d3fc58ed47044c92d4af7827826ea, type: 3}
       propertyPath: m_AnchorMax.y

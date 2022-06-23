@@ -14,13 +14,14 @@ public class Pontuacao : MonoBehaviour
     public Color Acerto, Erro, NaoMarcou;
     public GameObject ptsText;
     public List<Slider> sliders;
+    public List<GameObject> textsStats;
 
     public static string[] acerto = new string[10];
     public static string[] erro = new string[10];
     public static int count = 0, countError = 0;
-    public int acertos;
-    public int naoMarcados;
-    public int erros;
+    float acertos;
+    float naoMarcados;
+    float erros;
 
     void Start()
     {
@@ -67,15 +68,21 @@ public class Pontuacao : MonoBehaviour
 
         ptsText.GetComponent<TextMeshProUGUI>().text = ptsText.GetComponent<TextMeshProUGUI>().text + " " + Caso.pontuacao.ToString() + " pontos";
 
-        
-
+        sliders[0].maxValue = Caso.indexesCorretos.Count;
         sliders[0].value = acertos;
+        textsStats[0].GetComponent<Text>().text = Mathf.Floor(acertos/Caso.indexesCorretos.Count * 100).ToString("") + "%%";
+
+        sliders[1].maxValue = Caso.indexesCorretos.Count;
         sliders[1].value = naoMarcados;
+        textsStats[1].GetComponent<Text>().text = Mathf.Floor(naoMarcados / Caso.indexesCorretos.Count * 100).ToString("") + "%%";
+
+        sliders[2].maxValue = Lines.Count;
         sliders[2].value = erros;
+        textsStats[2].GetComponent<Text>().text = erros.ToString();
     }
 
     public void transition()
     {
-        SceneManager.LoadScene("Transicao");
+        SceneManager.LoadScene("FeedbackCondutas");
     }
 }

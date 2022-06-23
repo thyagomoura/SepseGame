@@ -44,7 +44,7 @@ MonoBehaviour:
   indexesCorretos: 000000000300000004000000
   selecionados: 000000000200000003000000
   buttonCorreto: 1
-  pontuacao: 100
+  pontuacao: 0
   condutas:
   - Manter cabeceira do leito elvada a 45 graus
   - "Puncionar acesso venoso perif\xE9rico"
@@ -53,4 +53,4 @@ MonoBehaviour:
   - Verificar sinais vitais de 2 em 2 horas
   - "Instalar dispositivo urin\xE1rio sistema aberto para controle de d\xE9bito urin\xE1rio
     a cada 2 horas"
-  condSelected: 
+  condSelected: 010000000000000004000000050000000200000003000000

@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Transicao.unity
     guid: ca0a59b0d9800a64caf94f78a7d7af89
+  - enabled: 1
+    path: Assets/Scenes/FeedbackCondutas.unity
+    guid: 618dd59e9aeef4042a1c876aa4b981d1
   m_configObjects: {}

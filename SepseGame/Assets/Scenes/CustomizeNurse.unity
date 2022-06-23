@@ -8274,7 +8274,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Continuar
+  m_Text: Jogar
 --- !u!222 &1329465395
 CanvasRenderer:
   m_ObjectHideFlags: 0

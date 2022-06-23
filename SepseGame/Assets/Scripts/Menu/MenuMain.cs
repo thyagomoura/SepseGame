@@ -21,7 +21,7 @@ public class MenuMain : MonoBehaviour
     public void Play()
     {
         //ir pro jogo
-        SceneManager.LoadScene("Dialogo");
+        SceneManager.LoadScene("CustomizeNurse");
     }
     public void Quit()
     {
