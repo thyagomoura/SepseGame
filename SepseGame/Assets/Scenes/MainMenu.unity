@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 87616066}
   - component: {fileID: 87616068}
   - component: {fileID: 87616067}
+  - component: {fileID: 87616069}
   m_Layer: 5
   m_Name: Text2
   m_TagString: Untagged
@@ -259,12 +260,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Sua tomada de decis\xE3o permitir\xE1 que voc\xEA avance no jogo. Utilize
-    o sistema de clicks para ativar os di\xE1logos, as tomadas de decis\xF5es e as
-    a\xE7\xF5es. Condutas corretas permitir\xE1 que voc\xEA acumule pontos, caso
-    contr\xE1rio perder\xE1 pontos. No total h\xE1 13 casos cl\xEDnicos para serem
-    solucionados. No final de cada caso, voc\xEA ter\xE1 um feedback de sua performance.
-    Aparecer\xE1 uma janela mostrando o seu desempenho. Boa sorte!"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -341,6 +337,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87616065}
   m_CullTransparentMesh: 1
+--- !u!114 &87616069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87616065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e13805b3ebeed2048ba870d2a8a16298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  T2: {fileID: 87616065}
 --- !u!1 &97134747
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,6 +2486,7 @@ GameObject:
   - component: {fileID: 1536897801}
   - component: {fileID: 1536897803}
   - component: {fileID: 1536897802}
+  - component: {fileID: 1536897804}
   m_Layer: 5
   m_Name: Text1
   m_TagString: Untagged
@@ -2523,12 +2533,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Voc\xEA ser\xE1 o (a) enfermeiro (a) que est\xE1 de plant\xE3o na unidade
-    de emerg\xEAncia e dever\xE1 avaliar cada paciente admitido. O desafio de hoje
-    \xE9 reconhecer os casos confirmados ou suspeitos de sepse, tomar decis\xF5es
-    acerca do preenchimento ou n\xE3o o protocolo de sepse, iniciar ou n\xE3o o pacote
-    de primeira hora para o tratamento de casos suspeitos, priorizar as condutas
-    de enfermagem necess\xE1rias para cada caso cl\xEDnico."
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -2555,7 +2560,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.7
+  m_fontSize: 47.2
   m_fontSizeBase: 47.2
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2605,6 +2610,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536897800}
   m_CullTransparentMesh: 1
+--- !u!114 &1536897804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536897800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea9ff15de7fbf0449580019f51d4665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  T1: {fileID: 1536897800}
 --- !u!1 &1569923853
 GameObject:
   m_ObjectHideFlags: 0
