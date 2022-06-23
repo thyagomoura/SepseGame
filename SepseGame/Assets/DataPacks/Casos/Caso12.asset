@@ -37,7 +37,14 @@ MonoBehaviour:
     e  profunda. Sem visceromegalias."
   Renal: "Sem d\xE9bito urin\xE1rio at\xE9 o momento"
   Imagem: {fileID: 0}
+  descricaoImagem: 
+  lab1: "n\xE3o tem"
+  lab2: "n\xE3o tem"
+  lab3: "n\xE3o tem"
+  lab4: "n\xE3o tem"
   indexesCorretos: 0000000003000000
   selecionados: 
   buttonCorreto: 1
   pontuacao: 0
+  condutas: []
+  condSelected: 

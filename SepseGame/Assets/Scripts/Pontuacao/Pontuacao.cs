@@ -36,6 +36,11 @@ public class Pontuacao : MonoBehaviour
         Lines[7].GetComponentInChildren<TextMeshProUGUI>().text = Lines[7].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Cardiocirculatorio;
         Lines[8].GetComponentInChildren<TextMeshProUGUI>().text = Lines[8].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Gastrintestinal;
         Lines[9].GetComponentInChildren<TextMeshProUGUI>().text = Lines[9].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Renal;
+        Lines[10].GetComponentInChildren<TextMeshProUGUI>().text = Lines[10].GetComponentInChildren<TextMeshProUGUI>().text + Caso.lab1;
+        Lines[11].GetComponentInChildren<TextMeshProUGUI>().text = Lines[11].GetComponentInChildren<TextMeshProUGUI>().text + Caso.lab2;
+        Lines[12].GetComponentInChildren<TextMeshProUGUI>().text = Lines[12].GetComponentInChildren<TextMeshProUGUI>().text + Caso.lab3;
+        Lines[13].GetComponentInChildren<TextMeshProUGUI>().text = Lines[13].GetComponentInChildren<TextMeshProUGUI>().text + Caso.lab4;
+
 
         int i;
         for(i=0; i < Lines.Count; i++)
@@ -46,7 +51,7 @@ public class Pontuacao : MonoBehaviour
                 acerto[count] = Lines[i].GetComponentInChildren<TextMeshProUGUI>().text;
                 count++;
                 acertos++;
-                Caso.pontuacao += 50;
+                Caso.pontuacao += 10;
             }
             else if (Caso.indexesCorretos.Contains(i) && !Caso.selecionados.Contains(i))
             {
@@ -54,7 +59,7 @@ public class Pontuacao : MonoBehaviour
                 erro[countError] = Lines[i].GetComponentInChildren<TextMeshProUGUI>().text;
                 countError++;
                 naoMarcados++;
-                Caso.pontuacao -= 25;
+                Caso.pontuacao -= 5;
             }
             else if (!Caso.indexesCorretos.Contains(i) && Caso.selecionados.Contains(i))
             {
@@ -62,7 +67,7 @@ public class Pontuacao : MonoBehaviour
                 erro[countError] = Lines[i].GetComponentInChildren<TextMeshProUGUI>().text;
                 countError++;
                 erros++;
-                Caso.pontuacao -= 25;
+                Caso.pontuacao -= 5;
             }
         }
 

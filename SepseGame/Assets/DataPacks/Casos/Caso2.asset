@@ -42,11 +42,13 @@ MonoBehaviour:
   Imagem: {fileID: 0}
   descricaoImagem: "Ultrassonografia abdominal: ves\xEDcula biliar distendida, com
     paredes  levemente espessadas e presen\xE7a de c\xE1lculos no seu interior."
-  lab1: 
-  lab2: 
-  lab3: 
-  lab4: 
+  lab1: "n\xE3o tem"
+  lab2: "n\xE3o tem"
+  lab3: "n\xE3o tem"
+  lab4: "n\xE3o tem"
   indexesCorretos: 000000000300000004000000
   selecionados: 
   buttonCorreto: 1
   pontuacao: 0
+  condutas: []
+  condSelected: 

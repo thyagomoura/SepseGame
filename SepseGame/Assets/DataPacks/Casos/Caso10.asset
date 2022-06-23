@@ -34,7 +34,14 @@ MonoBehaviour:
     Ru\xEDdos hidroa\xE9reos presentes."
   Renal: "Elimina\xE7\xE3o vesical presente, espont\xE2nea de aspecto amarelo  claro"
   Imagem: {fileID: 0}
+  descricaoImagem: 
+  lab1: "n\xE3o tem"
+  lab2: "n\xE3o tem"
+  lab3: "n\xE3o tem"
+  lab4: "n\xE3o tem"
   indexesCorretos: 000000000300000004000000
   selecionados: 
   buttonCorreto: 1
   pontuacao: 0
+  condutas: []
+  condSelected: 

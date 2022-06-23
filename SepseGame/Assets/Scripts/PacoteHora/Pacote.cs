@@ -95,6 +95,6 @@ public class Pacote : MonoBehaviour
 
     public void Avancar()
     {
-        SceneManager.LoadScene("Pontuacao");
+        SceneManager.LoadScene("FeedbackCondutas");
     }
 }

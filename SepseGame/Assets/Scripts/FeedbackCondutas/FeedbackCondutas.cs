@@ -29,16 +29,18 @@ public class FeedbackCondutas : MonoBehaviour
             if (Caso.condutas[i] == Caso.condutas[Caso.condSelected[i]])
             {
                 txtMarcadas[i].GetComponent<Image>().color = Acerto;
+                Caso.pontuacao += 10;
             }
             else
             {
                 txtMarcadas[i].GetComponent<Image>().color = Erro;
+                Caso.pontuacao -= 5;
             }
         }
     }
 
     public void goNext()
     {
-        SceneManager.LoadScene("Transicao");
+        SceneManager.LoadScene("Pontuacao");
     }
 }

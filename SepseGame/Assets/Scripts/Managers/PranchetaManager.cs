@@ -173,6 +173,57 @@ public class PranchetaManager : MonoBehaviour
         EnterNotificacao();
     }
 
+    public void updateLab()
+    {
+        if (!texts[10].text.Contains(Caso.lab1))
+        {
+            texts[10].text = texts[10].text + " " + Caso.lab1;
+        }
+        if (!texts[11].text.Contains(Caso.lab2))
+        {
+            texts[11].text = texts[11].text + " " + Caso.lab2;
+        }
+        if (!texts[12].text.Contains(Caso.lab3))
+        {
+            texts[12].text = texts[12].text + " " + Caso.lab3;
+        }
+        if (!texts[13].text.Contains(Caso.lab4))
+        {
+            texts[13].text = texts[13].text + " " + Caso.lab4;
+        }
+
+        if(Caso.lab1 != "não tem")
+        {
+            if (!aferidos.Contains(10))
+            {
+                aferidos.Add(10);
+            }
+            if (!aferidos.Contains(11))
+            {
+                aferidos.Add(11);
+            }
+            if (!aferidos.Contains(12))
+            {
+                aferidos.Add(12);
+            }
+            if (!aferidos.Contains(13))
+            {
+                aferidos.Add(13);
+            }
+        }
+        
+        if (Caso.lab1 == "não tem")
+        {
+            setText = Caso.lab1;
+        }
+        else
+        {
+            setText = (Caso.lab1 + "\n" + Caso.lab2 + "\n" + Caso.lab3 + "\n" + Caso.lab4);
+        }
+        
+        EnterNotificacao();
+    }
+
     public void UpdateSelected()
     {
         int i;
@@ -253,11 +304,11 @@ public class PranchetaManager : MonoBehaviour
     {
         if(Caso.buttonCorreto == 0)
         {
-            Caso.pontuacao += 500;
+            Caso.pontuacao += 25;
         }
         else
         {
-            Caso.pontuacao -= 500;
+            Caso.pontuacao -= 15;
         }
         SceneManager.LoadScene("Pacotao");
     }
@@ -266,11 +317,11 @@ public class PranchetaManager : MonoBehaviour
     {
         if (Caso.buttonCorreto == 1)
         {
-            Caso.pontuacao += 500;
+            Caso.pontuacao += 25;
         }
         else
         {
-            Caso.pontuacao -= 500;
+            Caso.pontuacao -= 15;
         }
         SceneManager.LoadScene("Pacotao");
     }
@@ -279,7 +330,8 @@ public class PranchetaManager : MonoBehaviour
     {
         PopUpVerificamedico.SetActive(true);
     }
-    public void ContabilizarChamada()
+
+    /*public void ContabilizarChamada()
     {
         if(chamadaMedico == 0)
         {
@@ -293,5 +345,19 @@ public class PranchetaManager : MonoBehaviour
             PopUpVerificamedico.SetActive(false);
             darDiagnostico();
         }
+    }*/
+
+    public void chamarEquipe()
+    {
+        Caso.pontuacao -= 10;
+        PopUpVerificamedico.SetActive(false);
+        darDiagnostico();
+    }
+
+    public void recusarEquipe()
+    {
+        Caso.pontuacao += 15;
+        PopUpVerificamedico.SetActive(false);
+        darDiagnostico();
     }
 }

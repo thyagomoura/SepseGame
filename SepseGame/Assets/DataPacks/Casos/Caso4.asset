@@ -35,11 +35,13 @@ MonoBehaviour:
   Renal: "Refere diminui\xE7\xE3o do d\xE9bito urin\xE1rio, urina de aspecto  concentrado."
   Imagem: {fileID: 0}
   descricaoImagem: 
-  lab1: 
-  lab2: 
-  lab3: 
-  lab4: 
+  lab1: "n\xE3o tem"
+  lab2: "n\xE3o tem"
+  lab3: "n\xE3o tem"
+  lab4: "n\xE3o tem"
   indexesCorretos: 0000000001000000020000000300000004000000
   selecionados: 
   buttonCorreto: 0
   pontuacao: 0
+  condutas: []
+  condSelected: 
