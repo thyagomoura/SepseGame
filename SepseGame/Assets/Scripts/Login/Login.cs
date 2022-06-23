@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -13,15 +14,17 @@ public class Login : MonoBehaviour
 
     public void ReceberNome()
     {
-        nome = inputFieldNome.GetComponent<Text>().text;
+        nome = inputFieldNome.GetComponent<TextMeshProUGUI>().text;
+        
     }
     public void ReceberCpf()
     {
-        cpf = inputFieldCpf.GetComponent<Text>().text;
+        cpf = inputFieldCpf.GetComponent<TextMeshProUGUI>().text;
+        
     }
     [System.Obsolete]
     public void ProxScene()
     {
-        Application.LoadLevel("Pontuacao");
+        Application.LoadLevel("MainMenu");
     }
 }

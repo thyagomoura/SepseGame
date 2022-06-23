@@ -17,14 +17,13 @@ public class EmailUtility : MonoBehaviour
     void Start()
     {
         caso = Casos[pack.currentCase - 1];
-        NumeroDePosicoesEmAcertosEErros();
 
         titleName = "Relatorio de desempenho - " + Login.nome;
         // Linhas referentes a "conexao" com o smtp de envio
         SmtpClient client = new SmtpClient("smtp.mailgun.org", 587);
         //credenciamento para permitir o envio
         client.Credentials = new System.Net.NetworkCredential(
-            "login",
+            "Login",
             "senha");
         client.EnableSsl = true;
 
@@ -46,7 +45,7 @@ public class EmailUtility : MonoBehaviour
         inlineLogo.ContentDisposition.DispositionType = DispositionTypeNames.Inline;
         
         MailMessage message = new MailMessage(from, to);
-        message.Body = $"Aluno: {Login.nome}\r\nCPF: {Login.cpf} \r\nColocar as variaveis referentes ao relatório de desempenho";
+        message.Body = $"Aluno: {Login.nome}\r\nCPF: {Login.cpf} \r\nColocar as variaveis referentes ao relatório de desempenho \r\nCorretos exemplo1: {caso.FrequenciaCardiaca} ";
         message.BodyEncoding = System.Text.Encoding.UTF8;
         message.Subject = titleName;
         message.SubjectEncoding = System.Text.Encoding.UTF8;
@@ -77,27 +76,4 @@ public class EmailUtility : MonoBehaviour
         }
     }
 
-    public void NumeroDePosicoesEmAcertosEErros()
-    {
-        numeroAcertos = Pontuacao.acerto.Length;
-        numeroErros = Pontuacao.erro.Length;
-
-        Debug.Log("Pontuacao: " + caso.pontuacao);
-        Debug.Log("Acertos: ");
-        for (int i = 0; i < (Pontuacao.acerto.Length-1); i++)
-        {
-            if (Pontuacao.acerto[i] != null)
-            {
-                Debug.Log(Pontuacao.acerto[i]);
-            }
-        }
-        Debug.Log("Erros: ");
-        for (int i = 0; i < (Pontuacao.erro.Length-1); i++)
-        {
-            if (Pontuacao.erro[i] != null)
-            {
-                Debug.Log(Pontuacao.erro[i]);
-            }
-        }
-    }
 }
