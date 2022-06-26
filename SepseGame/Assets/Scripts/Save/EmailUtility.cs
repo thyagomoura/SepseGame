@@ -13,43 +13,47 @@ public class EmailUtility : MonoBehaviour
     public Estetica pack;
     string titleName;
     public int numeroAcertos, numeroErros;
+    string emailText;
 
     void Start()
     {
         caso = Casos[pack.currentCase];
 
         titleName = "Relatorio de desempenho - " + Login.nome;
+
         // Linhas referentes a "conexao" com o smtp de envio
-        SmtpClient client = new SmtpClient("smtp.mailgun.org", 587);
+        SmtpClient client = new SmtpClient("smtp.sendgrid.net", 587);
+
         //credenciamento para permitir o envio
         client.Credentials = new System.Net.NetworkCredential(
-            "postmaster@sandbox8817461d51f14c9cbc0017e85b3afad4.mailgun.org",
-            "ea1571d3f7d71cc46dfd7e988c3e70db-4f207195-e33bb4f3");
+            "login",
+            "senha");
         client.EnableSsl = true;
 
         // Definir quem envia o email e o nome do email que sera enviado
         MailAddress from = new MailAddress(
-            "stryard.dxt@gmail.com",
+            "bmdrcompany@gmail.com",
             titleName,
             System.Text.Encoding.UTF8);
 
         // Definir quem vai receber o email
-        MailAddress to = new MailAddress("stryard.dxt@gmail.com");
+        MailAddress to = new MailAddress("bmdrcompany@gmail.com");
 
         // Conteudo da mensagem.
-        var contentID = "Image";
+        //var contentID = "Image";
 
-        var inlineLogo = new Attachment(@"D:\Projetos\Sepse Game\SepseGame\SepseGame\Assets\Sprites\Personagens\BasePersonagensFemininos.png");
-        inlineLogo.ContentId = contentID;
-        inlineLogo.ContentDisposition.Inline = true;
-        inlineLogo.ContentDisposition.DispositionType = DispositionTypeNames.Inline;
-        
+        //var inlineLogo = new Attachment(@"D:\Projetos\Sepse Game\SepseGame\SepseGame\Assets\Sprites\Personagens\BasePersonagensFemininos.png");
+        //inlineLogo.ContentId = contentID;
+        //inlineLogo.ContentDisposition.Inline = true;
+        //inlineLogo.ContentDisposition.DispositionType = DispositionTypeNames.Inline;
+
         MailMessage message = new MailMessage(from, to);
-        message.Body = $"Aluno: {Login.nome}\r\nCPF: {Login.cpf} \r\nColocar as variaveis referentes ao relatório de desempenho \r\nCorretos exemplo1: {caso.FrequenciaCardiaca} ";
+        message.Body = EmailTextBodyMessage();
+
         message.BodyEncoding = System.Text.Encoding.UTF8;
         message.Subject = titleName;
         message.SubjectEncoding = System.Text.Encoding.UTF8;
-        message.Attachments.Add(inlineLogo);
+        //message.Attachments.Add(inlineLogo);
 
         // Metodos para envio e callback.
         client.SendCompleted += new SendCompletedEventHandler(SendCompletedCallback);
@@ -76,4 +80,24 @@ public class EmailUtility : MonoBehaviour
         }
     }
 
+    string EmailTextBodyMessage()
+    {
+        emailText = $"Aluno: {Login.nome}\r\nCPF: {Login.cpf} " +
+            $"\r\n\r\nCaso {pack.currentCase}" +
+            $"\r\n\r\nAcertos: " +
+            $"\r\n1. {caso.Respiratorio}" +
+            $"\r\n2. {caso.PressaoArterial}" +
+            $"\r\n3. {caso.Renal}" +
+            $"\r\n\r\nErros " +
+            $"\r\n1. {caso.Neurologico}" +
+            $"\r\n2. {caso.FrequenciaCardiaca}" +
+            $"\r\n\r\nNão marcados " +
+            $"\r\n1. {caso.FrequenciaRespiratoria}" +
+            $"\r\n2. {caso.Saturacao}" +
+            $"\r\n\r\nCondutas corretas " +
+            $"\r\n1. Levante o leito para 45º" +
+            $"\r\n2. Aplicar soro";
+
+        return emailText;
+    }
 }
