@@ -23,18 +23,18 @@ public class EmailUtility : MonoBehaviour
         SmtpClient client = new SmtpClient("smtp.mailgun.org", 587);
         //credenciamento para permitir o envio
         client.Credentials = new System.Net.NetworkCredential(
-            "Login",
-            "senha");
+            "postmaster@sandbox8817461d51f14c9cbc0017e85b3afad4.mailgun.org",
+            "ea1571d3f7d71cc46dfd7e988c3e70db-4f207195-e33bb4f3");
         client.EnableSsl = true;
 
         // Definir quem envia o email e o nome do email que sera enviado
         MailAddress from = new MailAddress(
-            "bmdrcompany@gmail.com",
+            "stryard.dxt@gmail.com",
             titleName,
             System.Text.Encoding.UTF8);
 
         // Definir quem vai receber o email
-        MailAddress to = new MailAddress("bmdrcompany@gmail.com");
+        MailAddress to = new MailAddress("stryard.dxt@gmail.com");
 
         // Conteudo da mensagem.
         var contentID = "Image";

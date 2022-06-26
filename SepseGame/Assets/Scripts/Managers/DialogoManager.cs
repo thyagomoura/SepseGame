@@ -23,7 +23,7 @@ public class DialogoManager : MonoBehaviour
 
     private void Start()
     {
-        Caso = ArrayCasos[pack.currentCase - 1];
+        Caso = ArrayCasos[pack.currentCase];
 
         HC.GetComponent<TextMeshProUGUI>().text = Caso.historiaClinica;
     }
