@@ -504,6 +504,8 @@ MonoBehaviour:
   en: {fileID: 11400000, guid: fcfc5772fb0a6a84a9b7df6e3a64168b, type: 2}
   E1: {fileID: 123974060}
   E2: {fileID: 1496754421}
+  btn1Change: {fileID: 21300000, guid: a2cd3ecadb8e84d8cac749c30b1907df, type: 3}
+  btn2Change: {fileID: 21300000, guid: 43d859d281f744e1b99d54184ca71eef, type: 3}
 --- !u!114 &196821793
 MonoBehaviour:
   m_ObjectHideFlags: 0

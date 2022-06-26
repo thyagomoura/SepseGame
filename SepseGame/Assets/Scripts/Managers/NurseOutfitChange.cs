@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NurseOutfitChange : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class NurseOutfitChange : MonoBehaviour
     public EsteticaNurse en;
     public GameObject E1;
     public GameObject E2;
+    public Sprite btn1Change;
+    public Sprite btn2Change;
+    bool seeBtn;
     private void Start()
     {
         
@@ -42,8 +46,15 @@ public class NurseOutfitChange : MonoBehaviour
 
     public void Nurse()
     {
+        seeBtn = false;
         GameObject ProfissaoF = GameObject.Find("ProfissaoF");
         GameObject Profissao = GameObject.Find("Profissao");
+        if(!seeBtn){
+            E1.GetComponent<Image>().sprite = btn2Change;
+            E2.GetComponent<Image>().sprite = btn1Change;
+        }
+       
+
         if (en.gender == 0)
         {
             nm.role = 0;
@@ -60,8 +71,16 @@ public class NurseOutfitChange : MonoBehaviour
 
     public void Doctor()
     {
+        seeBtn = true;
         GameObject ProfissaoF = GameObject.Find("ProfissaoF");
         GameObject Profissao = GameObject.Find("Profissao");
+
+        if (seeBtn)
+        {
+            E1.GetComponent<Image>().sprite = btn1Change;
+            E2.GetComponent<Image>().sprite = btn2Change;
+        }
+
         if (en.gender == 0)
         {
             Profissao.GetComponent<SpriteRenderer>().sprite = nm.profissaoArray[1];
