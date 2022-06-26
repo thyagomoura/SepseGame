@@ -16,7 +16,7 @@ public class EmailUtility : MonoBehaviour
 
     void Start()
     {
-        caso = Casos[pack.currentCase - 1];
+        caso = Casos[pack.currentCase];
 
         titleName = "Relatorio de desempenho - " + Login.nome;
         // Linhas referentes a "conexao" com o smtp de envio

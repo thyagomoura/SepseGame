@@ -25,7 +25,7 @@ public class Pontuacao : MonoBehaviour
 
     void Start()
     {
-        Caso = Casos[pack.currentCase - 1];
+        Caso = Casos[pack.currentCase];
         Lines[0].GetComponentInChildren<TextMeshProUGUI>().text = Lines[0].GetComponentInChildren<TextMeshProUGUI>().text + Caso.FrequenciaCardiaca;
         Lines[1].GetComponentInChildren<TextMeshProUGUI>().text = Lines[1].GetComponentInChildren<TextMeshProUGUI>().text + Caso.PressaoArterial;
         Lines[2].GetComponentInChildren<TextMeshProUGUI>().text = Lines[2].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Saturacao;
@@ -83,7 +83,7 @@ public class Pontuacao : MonoBehaviour
 
         sliders[2].maxValue = Lines.Count;
         sliders[2].value = erros;
-        textsStats[2].GetComponent<Text>().text = erros.ToString();
+        textsStats[2].GetComponent<Text>().text = erros.ToString() + "%";
     }
 
     public void transition()
