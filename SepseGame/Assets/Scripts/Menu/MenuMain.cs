@@ -9,6 +9,8 @@ public class MenuMain : MonoBehaviour
     public GameObject OptionsMenuUI;
     public GameObject MainMenuUI;
     public AudioSource Musica;
+    public GameObject anim1, anim2;
+    public GameObject contButton;
 
     private void Start()
     {

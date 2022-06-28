@@ -24,6 +24,7 @@ public class PranchetaManager : MonoBehaviour
     public GameObject pranchTxt;
     public GameObject PopUpVerificamedico;
     public GameObject bsepse1, bsepse2;
+    public GameObject exameDesc;
     int chamadaMedico;
 
     List<int> aferidos = new List<int>();
@@ -285,6 +286,7 @@ public class PranchetaManager : MonoBehaviour
             ExameImagem.SetActive(true);
             pranchImg.GetComponent<Image>().sprite = Caso.Imagem;
             pranchTxt.GetComponent<TextMeshProUGUI>().text = Caso.descricaoImagem;
+            exameDesc.GetComponent<TextMeshProUGUI>().text = Caso.descricaoImagem;
         }
         else
         {
