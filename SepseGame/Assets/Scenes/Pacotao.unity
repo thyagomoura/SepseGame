@@ -1320,14 +1320,13 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Marque os procedimentos que perten\xE7am ao Pacote de 1 Hora na ordem
-    correta:"
+  m_Text: 'Marque as condutas a serem tomadas por ordem de prioridade:'
 --- !u!222 &490010443
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3679,7 +3678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pack: {fileID: 11400000, guid: f0d4e489b31b05947b364615576b5215, type: 2}
-  Caso: {fileID: 0}
+  Caso: {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}
   avancarButton: {fileID: 1619355866}
   Casos:
   - {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}

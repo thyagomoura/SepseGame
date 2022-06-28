@@ -102,7 +102,7 @@ public class NurseOutfitChange : MonoBehaviour
         GameObject PeleF = GameObject.Find("PeleF");
         if (en.gender == 0)
         {
-            Debug.Log(en.gender);
+            //Debug.Log(en.gender);
             currentOptionSkin++;
             if (currentOptionSkin >= nm.peleArray.Length)
             {

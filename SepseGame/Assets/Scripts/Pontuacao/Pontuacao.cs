@@ -15,6 +15,7 @@ public class Pontuacao : MonoBehaviour
     public GameObject ptsText;
     public List<Slider> sliders;
     public List<GameObject> textsStats;
+    public List<TextMeshProUGUI> avisos;
 
     public static string[] acerto = new string[10];
     public static string[] erro = new string[10];
@@ -25,7 +26,7 @@ public class Pontuacao : MonoBehaviour
 
     void Start()
     {
-        Caso = Casos[pack.currentCase];
+        Caso = Casos[pack.currentCase - 1];
         Lines[0].GetComponentInChildren<TextMeshProUGUI>().text = Lines[0].GetComponentInChildren<TextMeshProUGUI>().text + Caso.FrequenciaCardiaca;
         Lines[1].GetComponentInChildren<TextMeshProUGUI>().text = Lines[1].GetComponentInChildren<TextMeshProUGUI>().text + Caso.PressaoArterial;
         Lines[2].GetComponentInChildren<TextMeshProUGUI>().text = Lines[2].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Saturacao;
@@ -73,21 +74,46 @@ public class Pontuacao : MonoBehaviour
 
         ptsText.GetComponent<TextMeshProUGUI>().text = ptsText.GetComponent<TextMeshProUGUI>().text + " " + Caso.pontuacao.ToString() + " pontos";
 
+        int slot = 0;
+        if (!Caso.abriuProtocolo)
+        {
+            avisos[slot].text = "O Protocolo de Sepse não foi aberto! -10 pontos";
+            slot++;
+        }
+        if (!Caso.chamouEquipe)
+        {
+            avisos[slot].text = "A Equipe Médica não foi acionada! -20 pontos";
+            slot++;
+        }
+        if (!Caso.apertouBotaoCorreto)
+        {
+            if (Caso.buttonCorreto == 1)
+            {
+                avisos[slot].text = "O Protocolo de Sepse deveria ter sido descontinuado! -10 pontos";
+                slot++;
+            }
+            else
+            {
+                avisos[slot].text = "O Protocolo de Sepse deveria ter sido continuado! -10 pontos";
+                slot++;
+            }
+        }
+
         sliders[0].maxValue = Caso.indexesCorretos.Count;
         sliders[0].value = acertos;
-        textsStats[0].GetComponent<Text>().text = Mathf.Floor(acertos/Caso.indexesCorretos.Count * 100).ToString("") + "%%";
+        textsStats[0].GetComponent<Text>().text = Mathf.Floor(acertos/Caso.indexesCorretos.Count * 100).ToString("") + "%";
 
         sliders[1].maxValue = Caso.indexesCorretos.Count;
         sliders[1].value = naoMarcados;
-        textsStats[1].GetComponent<Text>().text = Mathf.Floor(naoMarcados / Caso.indexesCorretos.Count * 100).ToString("") + "%%";
+        textsStats[1].GetComponent<Text>().text = Mathf.Floor(naoMarcados / Caso.indexesCorretos.Count * 100).ToString("") + "%";
 
         sliders[2].maxValue = Lines.Count;
         sliders[2].value = erros;
-        textsStats[2].GetComponent<Text>().text = erros.ToString() + "%";
+        textsStats[2].GetComponent<Text>().text = erros.ToString();
     }
 
     public void transition()
     {
-        SceneManager.LoadScene("FeedbackCondutas");
+        SceneManager.LoadScene("Transicao");
     }
 }

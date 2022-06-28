@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NurseManage : MonoBehaviour
 {
     public GameObject PersonagemMasculino;
-    public GameObject BigodeOptions;
+    //public GameObject BigodeOptions;
     public Sprite[] peleArray;
     public Sprite[] cabeloArray;
     public Sprite[] barbaArray;
@@ -35,6 +36,7 @@ public class NurseManage : MonoBehaviour
 
     public Color corRoupas;
 
+    string cs;
 
     GameObject Blusa, Calca, BlusaF, CalcaF;
 
@@ -45,7 +47,14 @@ public class NurseManage : MonoBehaviour
         BlusaF = GameObject.Find("BlusaF");
         CalcaF = GameObject.Find("CalcaF");
 
-        if (!CompareTag("hospital")) scm.slider.onValueChanged.AddListener(delegate { SetSliderColor(); });
+        cs = SceneManager.GetActiveScene().name;
+
+        if (cs != "Hospital")
+        {
+            scm.slider.onValueChanged.AddListener(delegate { SetSliderColor(); });
+        }
+
+        //if (!CompareTag("hospital")) scm.slider.onValueChanged.AddListener(delegate { SetSliderColor(); });
 
         if (!EsteticaNurse.set)
         {
@@ -137,7 +146,7 @@ public class NurseManage : MonoBehaviour
     {
         PersonagemMasculino.SetActive(true);
         PersonagemFeminino.SetActive(false);
-        BigodeOptions.SetActive(true);
+        //BigodeOptions.SetActive(true);
 
         GameObject Pele = GameObject.Find("Pele");
         GameObject Cabelo = GameObject.Find("Cabelin");
@@ -223,7 +232,10 @@ public class NurseManage : MonoBehaviour
 
         }
         Color corzinha = EsteticaNurse.corRoupa;
-        if (!CompareTag("hospital")) scm.MudarBolinha(corzinha);
+        if (cs != "Hospital")
+        {
+            scm.MudarBolinha(corzinha);
+        }
         Blusa.GetComponent<SpriteRenderer>().color = corzinha;
         Calca.GetComponent<SpriteRenderer>().color = corzinha;
 
@@ -233,7 +245,7 @@ public class NurseManage : MonoBehaviour
     {
         PersonagemMasculino.SetActive(false);
         PersonagemFeminino.SetActive(true);
-        BigodeOptions.SetActive(false);
+        //BigodeOptions.SetActive(false);
 
         GameObject PeleF = GameObject.Find("PeleF");
         GameObject CabeloF = GameObject.Find("CabelinF");
@@ -299,7 +311,11 @@ public class NurseManage : MonoBehaviour
         }
 
         Color corzinha = EsteticaNurse.corRoupa;
-        if (!CompareTag("hospital")) scm.MudarBolinha(corzinha);
+
+        if (cs != "Hospital")
+        {
+            scm.MudarBolinha(corzinha);
+        }
         BlusaF.GetComponent<SpriteRenderer>().color = corzinha;
         CalcaF.GetComponent<SpriteRenderer>().color = corzinha;
     }

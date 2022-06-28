@@ -12271,7 +12271,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PersonagemMasculino: {fileID: 130360381549097621}
-  BigodeOptions: {fileID: 1285953646}
   peleArray:
   - {fileID: 4785416502366957982, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   - {fileID: 636125614853124351, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}

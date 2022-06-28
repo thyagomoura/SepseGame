@@ -49,6 +49,15 @@ MonoBehaviour:
   indexesCorretos: 000000000300000004000000
   selecionados: 
   buttonCorreto: 1
+  abriuProtocolo: 0
+  chamouEquipe: 0
+  apertouBotaoCorreto: 0
   pontuacao: 0
-  condutas: []
+  condutas:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   condSelected: 

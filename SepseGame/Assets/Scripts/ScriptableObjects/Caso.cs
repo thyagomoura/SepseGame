@@ -35,6 +35,10 @@ public class Caso : ScriptableObject
 
     public int buttonCorreto;
 
+    public bool abriuProtocolo = false;
+    public bool chamouEquipe = false;
+    public bool apertouBotaoCorreto = false;
+
     public int pontuacao;
 
     public List<string> condutas;

@@ -42,8 +42,11 @@ MonoBehaviour:
   lab3: "n\xE3o tem"
   lab4: "n\xE3o tem"
   indexesCorretos: 000000000300000004000000
-  selecionados: 
+  selecionados: 00000000
   buttonCorreto: 1
+  abriuProtocolo: 0
+  chamouEquipe: 0
+  apertouBotaoCorreto: 0
   pontuacao: 0
   condutas:
   - Manter cabeceira do leito elvada a 45 graus

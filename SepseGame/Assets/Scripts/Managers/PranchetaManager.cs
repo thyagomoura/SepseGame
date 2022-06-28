@@ -14,7 +14,6 @@ public class PranchetaManager : MonoBehaviour
     public Toggle[] Toggles;
     public Animator content;
     public GameObject NotificacaoButton;
-    public string setText;
     public GameObject notificationText;
     public Estetica pack;
     public GameObject pranchetaDiag;
@@ -24,9 +23,11 @@ public class PranchetaManager : MonoBehaviour
     public GameObject pranchImg;
     public GameObject pranchTxt;
     public GameObject PopUpVerificamedico;
+    public GameObject bsepse1, bsepse2;
     int chamadaMedico;
 
     List<int> aferidos = new List<int>();
+    string setText;
 
     private void Start()
     {
@@ -241,6 +242,16 @@ public class PranchetaManager : MonoBehaviour
                 Caso.selecionados.Remove(i);
             }
         }
+        if (Caso.selecionados.Count > 0)
+        {
+            bsepse1.GetComponent<Button>().interactable = true;
+            bsepse2.GetComponent<Button>().interactable = true;
+        }
+        else
+        {
+            bsepse1.GetComponent<Button>().interactable = false;
+            bsepse2.GetComponent<Button>().interactable = false;
+        }
     }
 
     public void updatePrancheta()
@@ -304,11 +315,13 @@ public class PranchetaManager : MonoBehaviour
     {
         if(Caso.buttonCorreto == 0)
         {
-            Caso.pontuacao += 25;
+            Caso.pontuacao += 20;
+            Caso.apertouBotaoCorreto = true;
         }
         else
         {
             Caso.pontuacao -= 15;
+            Caso.apertouBotaoCorreto = false;
         }
         SceneManager.LoadScene("Pacotao");
     }
@@ -317,46 +330,45 @@ public class PranchetaManager : MonoBehaviour
     {
         if (Caso.buttonCorreto == 1)
         {
-            Caso.pontuacao += 25;
+            Caso.pontuacao += 20;
+            Caso.apertouBotaoCorreto = true;
         }
         else
         {
             Caso.pontuacao -= 15;
+            Caso.apertouBotaoCorreto = false;
         }
         SceneManager.LoadScene("Pacotao");
     }
 
-    public void VerificarChamadaMedico()
+    public void VerificarChamadaMedico(int idx)
     {
+        if (idx == 0)
+        {
+            Caso.abriuProtocolo = true;
+            Caso.pontuacao += 15;
+        }
+        else
+        {
+            Caso.abriuProtocolo = false;
+            Caso.pontuacao -= 10;
+        }
         PopUpVerificamedico.SetActive(true);
     }
 
-    /*public void ContabilizarChamada()
-    {
-        if(chamadaMedico == 0)
-        {
-            chamadaMedico = 1;
-            PopUpVerificamedico.SetActive(false);
-            darDiagnostico();
-        }
-        else if(chamadaMedico == 1)
-        {
-            chamadaMedico = 0;
-            PopUpVerificamedico.SetActive(false);
-            darDiagnostico();
-        }
-    }*/
-
     public void chamarEquipe()
     {
-        Caso.pontuacao -= 10;
+        Caso.pontuacao += 15;
+        Caso.chamouEquipe = true;
+        Debug.Log("chamou");
         PopUpVerificamedico.SetActive(false);
         darDiagnostico();
     }
-
-    public void recusarEquipe()
+    public void naoChamarEquipe()
     {
-        Caso.pontuacao += 15;
+        Caso.pontuacao -= 10;
+        Caso.chamouEquipe = false;
+        Debug.Log("naochamou");
         PopUpVerificamedico.SetActive(false);
         darDiagnostico();
     }
