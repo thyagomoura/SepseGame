@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso7
   m_EditorClassIdentifier: 
-  historiaClinica: "Hist\xF3ria cl\xEDnica: J.A.S., 68 anos, sexo masculino, obeso,
-    procurou atendimento m\xE9dico no servi\xE7o de  emerg\xEAncia com queixas de
-    febre h\xE1 2 dias, n\xE1useas, calafrios, sensa\xE7\xE3o de fraqueza  associada
-    a dor no membro inferior direito onde surgiu uma extensa \xE1rea hiperemiada 
-    que se tornou uma bolha drenando secre\xE7\xE3o amarelada. Informa ter diabetes
-    mellitus  tipo 2, fazendo tratamento irregular h\xE1 cerca de 05 anos, juntamente
-    com hipertens\xE3o  arterial."
+  historiaClinica: "Hist\xF3ria cl\xEDnica: J.A.S., 68 anos, obeso, procurou atendimento
+    m\xE9dico no servi\xE7o de  emerg\xEAncia com queixas de febre h\xE1 2 dias,
+    n\xE1useas, calafrios, sensa\xE7\xE3o de fraqueza  associada a dor no membro
+    inferior direito onde surgiu uma extensa \xE1rea hiperemiada  que se tornou uma
+    bolha drenando secre\xE7\xE3o amarelada. Informa ter diabetes mellitus  tipo
+    2, fazendo tratamento irregular h\xE1 cerca de 05 anos, juntamente com hipertens\xE3o 
+    arterial."
   dialogo1: "Estou sentindo dor na minha perna direita, n\xE1useas e calafrio"
   dialogo2: "Aumento da febre, mal estar geral e sensa\xE7\xE3o de fraqueza"
   FrequenciaCardiaca: 110b.p.m
@@ -41,7 +41,18 @@ MonoBehaviour:
   lab2: "Hemoglobina: 11g/dL (Valor de Refer\xEAncia: 12 a 16 g/dL)"
   lab3: "Plaquetas: 433.000 /mm\xB3 (Valor de Refer\xEAncia: 150.000 a 450.000/mm\xB3)"
   lab4: "Leuc\xF3citos: 17.000 mg/dL (Valor de refer\xEAncia: 4.000 a 11.000/ mm\xB3)"
-  indexesCorretos: 0000000004000000
+  indexesCorretos: 0000000004000000050000000d000000
   selecionados: 
   buttonCorreto: 0
+  abriuProtocolo: 0
+  chamouEquipe: 0
+  apertouBotaoCorreto: 0
   pontuacao: 0
+  condutas:
+  - "Puncionar acesso venoso perif\xE9rico calibroso"
+  - "Coletar dois pares de hemoculturas de s\xEDtios diferentes"
+  - Coletar gasometria e lactato arterial, hemograma, creatinina, bilirrubina, coagulograma
+  - "Administar antimicrobiano endovenoso na 1a hora conforme prescri\xE7\xE3o m\xE9dica"
+  - "Avaliar n\xEDvel de consci\xEAncia de 2 em 2 horas"
+  - Verificar e avaliar sinais vitais de 2 em 2 horas
+  condSelected: 

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso2
   m_EditorClassIdentifier: 
-  historiaClinica: "Hist\xF3ria cl\xEDnica: L.M.S , 75 anos, sexo feminino, 80 kg,
-    1,62 metros de altura. \xC9  hipertensa e dislipid\xEAmica. Tem uma alimenta\xE7\xE3o
-    pouco saud\xE1vel e rica em gordura. H\xE1  um ano apresenta quadros espor\xE1dicos
+  historiaClinica: "Hist\xF3ria cl\xEDnica: L.M.S , 75 anos, 80 kg, 1,62 metros de
+    altura. \xC9  hipertensa e dislipid\xEAmica. Tem uma alimenta\xE7\xE3o pouco
+    saud\xE1vel e rica em gordura. H\xE1  um ano apresenta quadros espor\xE1dicos
     de dor em c\xF3licas na regi\xE3o do hipoc\xF4ndrio  direito e regi\xE3o epig\xE1strica.
     Toda vez que sentia estas dores comparecia ao servi\xE7o de  emerg\xEAncia, no
     qual era medicada e ap\xF3s algumas horas era liberada para casa. No  momento,
@@ -54,10 +54,12 @@ MonoBehaviour:
   apertouBotaoCorreto: 0
   pontuacao: 0
   condutas:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Manter cabeceira do leito elevada a 45 graus
+  - " Puncionar acesso venoso perif\xE9rico"
+  - "Administrar analg\xE9sico e antiem\xE9tico conforme prescri\xE7\xE3o m\xE9dica"
+  - "Monitorar n\xEDvel de consci\xEAncia do paciente a cada 2 horas"
+  - "Verificar press\xE3o arterial sist\xEAmica, pulso, temperatura axilar, frequ\xEAncia
+    respirat\xF3ria,  expansibilidade tor\xE1cica de 2 em 2 horas"
+  - "Postergar administra\xE7\xE3o de antimicrobianos at\xE9 defini\xE7\xE3o do quadro
+    infecioso do paciente pela  equipe m\xE9dica"
   condSelected: 

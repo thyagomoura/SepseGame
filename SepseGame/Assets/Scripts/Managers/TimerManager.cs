@@ -8,7 +8,7 @@ public class TimerManager : MonoBehaviour
 {
     public Text timerText;
 
-    float timeLeft = 900.0f;
+    float timeLeft = 1200.0f;
 
     private bool active = false;
 

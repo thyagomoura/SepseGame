@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso11
   m_EditorClassIdentifier: 
-  historiaClinica: "Hist\xF3ria Cl\xEDnica: L.S.S, 30 anos, sexo masculino, compareceu
-    ao pronto socorro  com hist\xF3ria de tosse seca, febre alta, secre\xE7\xE3o
-    nasal clara, dor no corpo,  fraqueza h\xE1 36 horas. Nega comorbidades e medica\xE7\xF5es
+  historiaClinica: "Hist\xF3ria Cl\xEDnica: L.S.S, 30 anos, compareceu ao pronto
+    socorro  com hist\xF3ria de tosse seca, febre alta, secre\xE7\xE3o nasal clara,
+    dor no corpo,  fraqueza h\xE1 36 horas. Nega comorbidades e medica\xE7\xF5es
     de uso cont\xEDnuo."
   dialogo1: "Fraqueza, dor no corpo, des\xE2nimo, tosse seca com secre\xE7\xE3o clara"
   dialogo2: "A minha febre alta, a falta de disposi\xE7\xE3o e dor no corpo.  "
@@ -40,6 +40,18 @@ MonoBehaviour:
   indexesCorretos: 0000000004000000
   selecionados: 
   buttonCorreto: 1
+  abriuProtocolo: 0
+  chamouEquipe: 0
+  apertouBotaoCorreto: 0
   pontuacao: 0
-  condutas: []
+  condutas:
+  - "Adotar medidas de precau\xE7\xF5es por contato e precau\xE7\xF5es para got\xEDculas
+    durante todo o atendimento do paciente"
+  - "Fornecer oxig\xEAnio suplementar por meio de cateter nasal a 3l/min conforme
+    prescri\xE7\xE3o m\xE9dica e avaliar oximetria de pulso"
+  - Manter cabeceira do leito elevada entre 30 e 45 graus
+  - "Administrar analg\xE9sico / antit\xE9rmico via oral conforme prescri\xE7\xE3o
+    m\xE9dica e avaliar temperatura axilar"
+  - Encaminhar paciente para o teste de Covid 19
+  - "Monitorar frequ\xEAncia, ritmo , profundidade dos esfor\xE7os respirat\xF3rios"
   condSelected: 

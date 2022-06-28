@@ -360,15 +360,14 @@ public class PranchetaManager : MonoBehaviour
     {
         Caso.pontuacao += 15;
         Caso.chamouEquipe = true;
-        Debug.Log("chamou");
         PopUpVerificamedico.SetActive(false);
         darDiagnostico();
     }
+
     public void naoChamarEquipe()
     {
         Caso.pontuacao -= 10;
         Caso.chamouEquipe = false;
-        Debug.Log("naochamou");
         PopUpVerificamedico.SetActive(false);
         darDiagnostico();
     }

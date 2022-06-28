@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso8
   m_EditorClassIdentifier: 
-  historiaClinica: "Hist\xF3ria cl\xEDnica: L.R.W, feminino, 67 anos, procurou o
-    pronto atendimento do hospital  com queixas de ins\xF4nia, dispneia progressiva,
-    tosse produtiva com expectora\xE7\xE3o branca  e cansa\xE7o aos m\xE9dios esfor\xE7os
-    como subir dois lances de escada. Refere ter o  diagn\xF3stico de bronquite,
-    em uso pr\xE9vio de budesonida e formoterol, o qual  interrompeu por conta pr\xF3pria.
-    Tabagista (dois ma\xE7os de cigarro/dia), hipertensa, infarto agudo do mioc\xE1rdio
-    pr\xE9vio em uso de AAS 100 mg/dia; carvedilol 6,25mg/dia ,  75mg/dia de captopril
-    e 600 mg/dia de aminofilina."
+  historiaClinica: "Hist\xF3ria cl\xEDnica: L.R.W, 67 anos, procurou o pronto atendimento
+    do hospital  com queixas de ins\xF4nia, dispneia progressiva, tosse produtiva
+    com expectora\xE7\xE3o branca  e cansa\xE7o aos m\xE9dios esfor\xE7os como subir
+    dois lances de escada. Refere ter o  diagn\xF3stico de bronquite, em uso pr\xE9vio
+    de budesonida e formoterol, o qual  interrompeu por conta pr\xF3pria. Tabagista
+    (dois ma\xE7os de cigarro/dia), hipertensa, infarto agudo do mioc\xE1rdio pr\xE9vio
+    em uso de AAS 100 mg/dia; carvedilol 6,25mg/dia ,  75mg/dia de captopril e 600
+    mg/dia de aminofilina."
   dialogo1: "Muito cansa\xE7o, tosse e falta de ar. H\xE1 2 dias n\xE3o durmo direito
     a noite"
   dialogo2: A dificuldade de respirar
@@ -44,6 +44,20 @@ MonoBehaviour:
   lab3: "Ureia: 35 mg/dL ( Valor de refer\xEAncia: 15 a 40 mg/dL)"
   lab4: "Creatinina: 0,8mg/dL (Valor de refer\xEAncia: 0,4 a 1,4 mg/dL"
   indexesCorretos: 0000000003000000
-  selecionados: 0000000001000000020000000300000004000000
+  selecionados: 
   buttonCorreto: 0
-  pontuacao: 3600
+  abriuProtocolo: 0
+  chamouEquipe: 0
+  apertouBotaoCorreto: 0
+  pontuacao: 0
+  condutas:
+  - Puncionar acessso venoso periferico calibroso
+  - Coletar Kit sepse (lactato e gasometria arterial, hemograma, creatinina, bilirrubina,
+    coagulograma, dois pares de hemocultura de  sitios diferentes)
+  - "Administar antimicrobiano endovenoso na 1a hora , broncodilatador e otimizar
+    suporte de oxigenoterapia, conforme  prescri\xE7\xE3o m\xE9dica"
+  - "Avaliar n\xEDvel de consci\xEAncia de 2 em 2 horas"
+  - Verificar e avaliar sinais vitais de 2 em 2 horas
+  - "Encaminhar paciente para a Unidade de Terapia intensiva, imediatamente, ap\xF3s
+    libera\xE7\xE3o m\xE9dica"
+  condSelected: 

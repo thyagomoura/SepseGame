@@ -25,4 +25,4 @@ MonoBehaviour:
   corBlusa: {x: 1, y: 0.9484685, z: 0.54866475, w: 1}
   corCalca: {x: 1, y: 0.36822867, z: 0.37738824, w: 1}
   corPisante: {x: 0.81686705, y: 1, z: 0.8122021, w: 1}
-  currentCase: 0
+  currentCase: 1

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso3
   m_EditorClassIdentifier: 
-  historiaClinica: "Hist\xF3ria cl\xEDnica: B.C.L, sexo masculino, 45 anos, deu entrada
-    no servi\xE7o de emerg\xEAncia  com queixas de febre, tr\xEAs epis\xF3dios de
-    v\xF4mito, dis\xFAria, hemat\xFAria e dor de forte  intensidade na regi\xE3o
-    lombar direita h\xE1 duas horas, irradiada para a bexiga, coxa e  genit\xE1lia.
-    Tem hist\xF3ria cl\xEDnica de c\xE1lculo renal, mas at\xE9 ontem mantinha-se
-    sintom\xE1tico.  Nega diabetes e outras doen\xE7as cardiovasculares."
+  historiaClinica: "Hist\xF3ria cl\xEDnica: B.C.L, 45 anos, deu entrada no servi\xE7o
+    de emerg\xEAncia  com queixas de febre, tr\xEAs epis\xF3dios de v\xF4mito, dis\xFAria,
+    hemat\xFAria e dor de forte  intensidade na regi\xE3o lombar direita h\xE1 duas
+    horas, irradiada para a bexiga, coxa e  genit\xE1lia. Tem hist\xF3ria cl\xEDnica
+    de c\xE1lculo renal, mas at\xE9 ontem mantinha-se sintom\xE1tico.  Nega diabetes
+    e outras doen\xE7as cardiovasculares."
   dialogo1: "Estou sentindo dor no abdome, na regi\xE3o lombar, na minha coxa e genit\xE1lia."
   dialogo2: A piora da minha dor, febre e sangue na urina
   FrequenciaCardiaca: 109 b.p.m
@@ -47,5 +47,11 @@ MonoBehaviour:
   chamouEquipe: 0
   apertouBotaoCorreto: 0
   pontuacao: 0
-  condutas: []
+  condutas:
+  - "Puncionar acesso venoso perif\xE9rico calibroso"
+  - "Coletar lactato arterial s\xE9rico"
+  - "Coletar dois pares de hemoculturas de s\xEDtios diferentes"
+  - "Administar antimicrobiano endovenoso na 1a hora conforme prescri\xE7\xE3o m\xE9dica"
+  - "Administrar volume por via endovenosa, conforme prescri\xE7\xE3o m\xE9dica"
+  - Realizar glicemia capilar de 4 em 4 horas
   condSelected: 

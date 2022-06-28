@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso6
   m_EditorClassIdentifier: 
-  historiaClinica: "Hist\xF3ria cl\xEDnica: VSS, 35 anos, sexo masculino, deu entrada
-    no servi\xE7o de emerg\xEAncia do  hospital, queixando-se de dor abdominal cont\xEDnua
-    em regi\xE3o epig\xE1strica irradiada para  as costas que come\xE7ou depois de
-    retornar para casa de uma festa de anivers\xE1rio na qual  ingeriu pizza, salgados
-    fritos (pastel de queijo, kibe) e 10 latinhas de cerveja. Refere que  h\xE1 cerca
-    de 4 horas ap\xF3s o in\xEDcio da dor, apresentou 1 epis\xF3dio de v\xF4mito,
-    mas n\xE3o teve  diarreia. Nega diabetes e doen\xE7as cardiovasculares. Relata
-    consumo de bebida alc\xF3olica  em m\xE9dia quantidade aos finais de semana."
+  historiaClinica: "Hist\xF3ria cl\xEDnica: VSS, 35 anos, deu entrada no servi\xE7o
+    de emerg\xEAncia do  hospital, queixando-se de dor abdominal cont\xEDnua em regi\xE3o
+    epig\xE1strica irradiada para  as costas que come\xE7ou depois de retornar para
+    casa de uma festa de anivers\xE1rio na qual  ingeriu pizza, salgados fritos (pastel
+    de queijo, kibe) e 10 latinhas de cerveja. Refere que  h\xE1 cerca de 4 horas
+    ap\xF3s o in\xEDcio da dor, apresentou 1 epis\xF3dio de v\xF4mito, mas n\xE3o
+    teve  diarreia. Nega diabetes e doen\xE7as cardiovasculares. Relata consumo de
+    bebida alc\xF3olica  em m\xE9dia quantidade aos finais de semana."
   dialogo1: "Estou sentindo muita dor no abdome, nas costas e muita n\xE1usea"
   dialogo2: "Depois que vomitei, achei que a minha dor no abdome ia passar e n\xE3o
     passou."
@@ -46,4 +46,15 @@ MonoBehaviour:
   indexesCorretos: 000000000300000004000000
   selecionados: 
   buttonCorreto: 1
+  abriuProtocolo: 0
+  chamouEquipe: 0
+  apertouBotaoCorreto: 0
   pontuacao: 0
+  condutas:
+  - Manter cabeceira do leito elevada a 45 graus
+  - "Puncionar acesso venoso perif\xE9rico calibroso"
+  - "Colher exames laboratorais solicitados pelo m\xE9dico fora do protocolo de sepse"
+  - "Instalar hidrata\xE7\xE3o venosa conforme prescri\xE7\xE3o m\xE9dica"
+  - "Administrar analg\xE9sico endovenoso conforme prescri\xE7\xE3o medica"
+  - Encaminhar o paciente para o exame de tomografia computadorizada de abdome
+  condSelected: 

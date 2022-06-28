@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso9
   m_EditorClassIdentifier: 
-  historiaClinica: "Hist\xF3ria Cl\xEDnica: : L.S.R , 26 anos, sexo feminino, peso
-    60 kg, previamente h\xEDgida. Deu  entrada no pronto atendimento do servi\xE7o
-    hospitalar devido quadro de diarreia  sanguinolenta associada a febre de 38,5\xBAC,
-    com inicio h\xE1 24 horas. Refere fadiga, dor  abdominal, n\xE1useas e 10 epis\xF3dios
-    diarreicos. Sem hist\xF3rias de comorbidades."
+  historiaClinica: "Hist\xF3ria Cl\xEDnica: L.S.R , 26 anos, peso 60 kg, previamente
+    h\xEDgida. Deu  entrada no pronto atendimento do servi\xE7o hospitalar devido
+    quadro de diarreia  sanguinolenta associada a febre de 38,5\xBAC, com inicio
+    h\xE1 24 horas. Refere fadiga, dor  abdominal, n\xE1useas e 10 epis\xF3dios diarreicos.
+    Sem hist\xF3rias de comorbidades."
   dialogo1: "Sensa\xE7\xE3o de fadiga, fraqueza, dor no meu abdome, n\xE1useas"
   dialogo2: A diarreia com sangue e a febre
   FrequenciaCardiaca: 115b.p.m
@@ -40,7 +40,20 @@ MonoBehaviour:
   lab2: "Creatinina: 2,6 mg/dL (Valor de refer\xEAncia: 0,4 a 1,4 mg/dL"
   lab3: 'Ureia: 100 mg/dL (15 a 40 mg/dL)'
   lab4: "Plaquetas: 350.000 /mm\xB3 (Valor de Refer\xEAncia: 150.000 \u2013 450.000/mm\xB3)"
-  indexesCorretos: 000000000100000004000000
+  indexesCorretos: 000000000100000004000000050000000a0000000b000000
   selecionados: 
   buttonCorreto: 0
+  abriuProtocolo: 0
+  chamouEquipe: 0
+  apertouBotaoCorreto: 0
   pontuacao: 0
+  condutas:
+  - "Puncionar acesso venoso perif\xE9rico calibroso"
+  - "Coletar dois pares de hemoculturas de s\xEDtios diferentes e coprocultura"
+  - "Coletar lactato arterial s\xE9rico e outros exames do kit sepse (gasometria
+    arterial, bilirrubina, hemograma, coagulograma)"
+  - "Administar antimicrobiano endovenoso na 1a hora conforme prescri\xE7\xE3o m\xE9dica"
+  - "Iniciar a administra\xE7\xE3o de cristal\xF3ide conforme prescri\xE7\xE3o m\xE9dica"
+  - "Encaminhar o paciente para a Unidade de Terapia Intensiva, ap\xF3s autoriza\xE7\xE3o
+    m\xE9dica"
+  condSelected: 

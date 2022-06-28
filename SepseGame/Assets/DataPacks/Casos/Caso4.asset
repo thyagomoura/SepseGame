@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso4
   m_EditorClassIdentifier: 
-  historiaClinica: "Hist\xF3ria Cl\xEDnica: SDR, 30 anos, sexo feminino. Procurou
-    atendimento m\xE9dico no  Pronto Socorro com queixas de cefaleia intensa, irritabilidade,
-    dor nas articula\xE7\xF5es, calafrios. Refere ter otite recorrente, o que faz
-    necess\xE1rio o uso de  analg\xE9sicos frequente. H\xE1 dois dias iniciou com
-    otalgia de forte intensidade a  esquerda com sa\xEDda de secre\xE7\xE3o purulenta
-    associada a febre de 39\xB0C."
+  historiaClinica: "Hist\xF3ria Cl\xEDnica: SDR, 30 anos. Procurou atendimento m\xE9dico
+    no  Pronto Socorro com queixas de cefaleia intensa, irritabilidade, dor nas articula\xE7\xF5es,
+    calafrios. Refere ter otite recorrente, o que faz necess\xE1rio o uso de  analg\xE9sicos
+    frequente. H\xE1 dois dias iniciou com otalgia de forte intensidade a  esquerda
+    com sa\xEDda de secre\xE7\xE3o purulenta associada a febre de 39\xB0C."
   dialogo1: "N\xE1useas, dor de cabe\xE7a, dor nas articula\xE7\xF5es"
   dialogo2: "V\xF4mitos frequentes desde ontem a noite, piora da minha dor de  cabe\xE7a,
     febre, calafrios."
@@ -39,9 +38,21 @@ MonoBehaviour:
   lab2: "n\xE3o tem"
   lab3: "n\xE3o tem"
   lab4: "n\xE3o tem"
-  indexesCorretos: 0000000001000000020000000300000004000000
+  indexesCorretos: 000000000100000002000000030000000400000005000000
   selecionados: 
   buttonCorreto: 0
+  abriuProtocolo: 0
+  chamouEquipe: 0
+  apertouBotaoCorreto: 0
   pontuacao: 0
-  condutas: []
+  condutas:
+  - Manter cabeceira do leito elevada a 45 graus
+  - "Prover oxig\xEAnio suplementar, conforme prescri\xE7\xE3o m\xE9dica, por m\xE1scara
+    de venturi a 50%"
+  - "Puncionar acesso venoso perif\xE9rico calibroso"
+  - "Coletar dois pares de hemoculturas de s\xEDtios diferentes, lactato arterial
+    s\xE9rico e outros exames  solicitados pelo m\xE9dico"
+  - "Administar antimicrobiano endovenoso na 1a hora conforme prescri\xE7\xE3o m\xE9dica"
+  - "Encaminhar o paciente para a Unidade de Terapia Intensiva, ap\xF3s autoriza\xE7\xE3o
+    m\xE9dica"
   condSelected: 

@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso13
   m_EditorClassIdentifier: 
-  historiaClinica: "Hist\xF3ria Cl\xEDnica: MMM, sexo masculino, 64 anos, 1,58 metros
-    de altura, 94 kg. Diabetes  tipo 2 e hipertens\xE3o n\xE3o tratadas. H\xE1 30
-    dias traumatizou o h\xE1lux do p\xE9 direito, o qual  evoluiu com edema e descolamento
-    da unha. Realizou tratamento domiciliar por conta  pr\xF3pria utilizando pomadas.
-    H\xE1 uma semana percebeu vermelhid\xE3o no dorso do p\xE9  direito que se estendeu
+  historiaClinica: "Hist\xF3ria Cl\xEDnica: MMM, 64 anos, 1,58 metros de altura,
+    94 kg. Diabetes  tipo 2 e hipertens\xE3o n\xE3o tratadas. H\xE1 30 dias traumatizou
+    o h\xE1lux do p\xE9 direito, o qual  evoluiu com edema e descolamento da unha.
+    Realizou tratamento domiciliar por conta  pr\xF3pria utilizando pomadas. H\xE1
+    uma semana percebeu vermelhid\xE3o no dorso do p\xE9  direito que se estendeu
     at\xE9 a face anterior da perna. Hoje, deu entrada no pronto  socorro com altera\xE7\xE3o
     do n\xEDvel de consci\xEAncia, calafrios, aumento da temperatura  corporal."
   dialogo1: Desorientado. Alega calafrios e muito sono
   dialogo2: "N\xE3o sei n\xE3o. Estou na minha casa?"
   FrequenciaCardiaca: 112b.p.m
   PressaoArterial: 80x65mmHg
-  Saturacao: 90% em ar ambiente
+  Saturacao: 92% em ar ambiente
   FrequenciaRespiratoria: 22 i.p.m
   Temperatura: "38,7\xB0C"
   Neurologico: Confuso, agitado, Glasgow 13 (Abertura ocular=3,Melhor  resposta verbal=4,
@@ -45,7 +45,21 @@ MonoBehaviour:
   lab2: "Creatinina: 2,4 mg/dL (Valor de refer\xEAncia: 0,4 a 1,4 mg/dL)"
   lab3: "Plaquetas 100.000/mm3 (valor de refer\xEAncia: 150 a 450.000/mm3 )"
   lab4: 'Ureia: 100 mg/dL (15 a 40 mg/dL'
-  indexesCorretos: 0000000001000000020000000300000004000000
+  indexesCorretos: 0000000001000000030000000400000005000000090000000a0000000b000000
   selecionados: 
   buttonCorreto: 0
+  abriuProtocolo: 0
+  chamouEquipe: 0
+  apertouBotaoCorreto: 0
   pontuacao: 0
+  condutas:
+  - "Puncionar acesso venoso perif\xE9rico calibroso"
+  - "Coletar dois pares de hemoculturas de s\xEDtios diferentes e secre\xE7\xE3o
+    de h\xE1lux direito para cultura"
+  - "Coletar lactato arterial s\xE9rico e outros exames do kit sepse (gasometria
+    arterial, bilirrubina, hemograma, coagulograma  completo)"
+  - "Administar antimicrobiano endovenoso na 1a hora conforme prescri\xE7\xE3o m\xE9dica"
+  - "Iniciar a administra\xE7\xE3o de cristal\xF3ide conforme prescri\xE7\xE3o m\xE9dica"
+  - "Encaminhar o paciente para a Unidade de Terapia Intensiva, ap\xF3s autoriza\xE7\xE3o
+    m\xE9dica"
+  condSelected: 
