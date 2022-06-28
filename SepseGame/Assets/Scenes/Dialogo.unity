@@ -1073,7 +1073,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Como o senhor est\xE1 se sentindo neste momento?"
+  m_Text: "Como voc\xEA est\xE1 se sentindo neste momento?"
 --- !u!222 &549730307
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3707,8 +3707,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Bom dia, senhor. Eu sou o enfermeiro respons\xE1vel pelo seu cuidado no
-    dia de hoje."
+  m_Text: "Bom dia! Eu sou respons\xE1vel pelo seu cuidado no dia de hoje."
 --- !u!222 &1891863260
 CanvasRenderer:
   m_ObjectHideFlags: 0
