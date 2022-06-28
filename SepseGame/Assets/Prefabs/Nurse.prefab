@@ -235,7 +235,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -8745384162588317561, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
+  m_Sprite: {fileID: -465554932055314407, guid: be850a1ee9d12144d8adb921d3f880a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1226,7 +1226,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 6946253139321095085, guid: c7e6c7064da4db445ae2c8713d1bc15b, type: 3}
+  m_Sprite: {fileID: 6597097866119081974, guid: c7e6c7064da4db445ae2c8713d1bc15b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1308,7 +1308,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: -6097251582043861225, guid: c7e6c7064da4db445ae2c8713d1bc15b, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1316,7 +1316,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &130360381852622232
@@ -2440,16 +2440,16 @@ MonoBehaviour:
   EsteticaNurse: {fileID: 11400000, guid: fcfc5772fb0a6a84a9b7df6e3a64168b, type: 2}
   scm: {fileID: 0}
   gender: 1
-  corDaPele: 1
+  corDaPele: 3
   hasBigas: 0
   hasCabas: 0
-  hasOclin: 26
-  cabelin: 13
+  hasOclin: 72
+  cabelin: 16
   bigas: 0
   sexo: 0
   role: 0
   estetoscopio: 0
-  mascara: 1
+  mascara: 0
   corRoupas: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &130360383351461198
 GameObject:
@@ -2604,7 +2604,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 7
-  m_Sprite: {fileID: -6232474119413852534, guid: c7e6c7064da4db445ae2c8713d1bc15b, type: 3}
+  m_Sprite: {fileID: -1806627891051310533, guid: c7e6c7064da4db445ae2c8713d1bc15b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

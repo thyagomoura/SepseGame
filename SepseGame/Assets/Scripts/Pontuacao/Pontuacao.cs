@@ -110,6 +110,7 @@ public class Pontuacao : MonoBehaviour
         sliders[2].maxValue = Lines.Count;
         sliders[2].value = erros;
         textsStats[2].GetComponent<Text>().text = erros.ToString();
+        Caso = null;
     }
 
     public void transition()
