@@ -17,8 +17,8 @@ public class Pontuacao : MonoBehaviour
     public List<GameObject> textsStats;
     public List<TextMeshProUGUI> avisos;
 
-    public static string[] acerto = new string[10];
-    public static string[] erro = new string[10];
+    //public static string[] acerto = new string[10];
+    //public static string[] erro = new string[10];
     public static int count = 0, countError = 0;
     float acertos;
     float naoMarcados;
@@ -26,7 +26,7 @@ public class Pontuacao : MonoBehaviour
 
     void Start()
     {
-        Caso = Casos[pack.currentCase - 1];
+        Caso = Casos[pack.currentCase];
         Lines[0].GetComponentInChildren<TextMeshProUGUI>().text = Lines[0].GetComponentInChildren<TextMeshProUGUI>().text + Caso.FrequenciaCardiaca;
         Lines[1].GetComponentInChildren<TextMeshProUGUI>().text = Lines[1].GetComponentInChildren<TextMeshProUGUI>().text + Caso.PressaoArterial;
         Lines[2].GetComponentInChildren<TextMeshProUGUI>().text = Lines[2].GetComponentInChildren<TextMeshProUGUI>().text + Caso.Saturacao;
@@ -42,14 +42,21 @@ public class Pontuacao : MonoBehaviour
         Lines[12].GetComponentInChildren<TextMeshProUGUI>().text = Lines[12].GetComponentInChildren<TextMeshProUGUI>().text + Caso.lab3;
         Lines[13].GetComponentInChildren<TextMeshProUGUI>().text = Lines[13].GetComponentInChildren<TextMeshProUGUI>().text + Caso.lab4;
 
+        Debug.Log(Caso.pontuacao);
+        Debug.Log(erros);
+        Debug.Log(Caso.indexesCorretos.Count);
 
+        load1();
+    }
+    void load1()
+    {
         int i;
-        for(i=0; i < Lines.Count; i++)
+        for (i = 0; i < Lines.Count; i++)
         {
             if (Caso.indexesCorretos.Contains(i) && Caso.selecionados.Contains(i))
             {
                 Lines[i].GetComponent<Image>().color = Acerto;
-                acerto[count] = Lines[i].GetComponentInChildren<TextMeshProUGUI>().text;
+                //acerto[count] = Lines[i].GetComponentInChildren<TextMeshProUGUI>().text;
                 count++;
                 acertos++;
                 Caso.pontuacao += 10;
@@ -57,7 +64,7 @@ public class Pontuacao : MonoBehaviour
             else if (Caso.indexesCorretos.Contains(i) && !Caso.selecionados.Contains(i))
             {
                 Lines[i].GetComponent<Image>().color = NaoMarcou;
-                erro[countError] = Lines[i].GetComponentInChildren<TextMeshProUGUI>().text;
+                //erro[countError] = Lines[i].GetComponentInChildren<TextMeshProUGUI>().text;
                 countError++;
                 naoMarcados++;
                 Caso.pontuacao -= 5;
@@ -65,7 +72,7 @@ public class Pontuacao : MonoBehaviour
             else if (!Caso.indexesCorretos.Contains(i) && Caso.selecionados.Contains(i))
             {
                 Lines[i].GetComponent<Image>().color = Erro;
-                erro[countError] = Lines[i].GetComponentInChildren<TextMeshProUGUI>().text;
+                //erro[countError] = Lines[i].GetComponentInChildren<TextMeshProUGUI>().text;
                 countError++;
                 erros++;
                 Caso.pontuacao -= 5;
@@ -74,6 +81,11 @@ public class Pontuacao : MonoBehaviour
 
         ptsText.GetComponent<TextMeshProUGUI>().text = ptsText.GetComponent<TextMeshProUGUI>().text + " " + Caso.pontuacao.ToString() + " pontos";
 
+        load2();
+    }
+
+    void load2()
+    {
         int slot = 0;
         if (!Caso.abriuProtocolo)
         {
@@ -99,9 +111,14 @@ public class Pontuacao : MonoBehaviour
             }
         }
 
+        load3();
+    }
+
+    void load3()
+    {
         sliders[0].maxValue = Caso.indexesCorretos.Count;
         sliders[0].value = acertos;
-        textsStats[0].GetComponent<Text>().text = Mathf.Floor(acertos/Caso.indexesCorretos.Count * 100).ToString("") + "%";
+        textsStats[0].GetComponent<Text>().text = Mathf.Floor(acertos / Caso.indexesCorretos.Count * 100).ToString("") + "%";
 
         sliders[1].maxValue = Caso.indexesCorretos.Count;
         sliders[1].value = naoMarcados;
@@ -110,7 +127,6 @@ public class Pontuacao : MonoBehaviour
         sliders[2].maxValue = Lines.Count;
         sliders[2].value = erros;
         textsStats[2].GetComponent<Text>().text = erros.ToString();
-        Caso = null;
     }
 
     public void transition()

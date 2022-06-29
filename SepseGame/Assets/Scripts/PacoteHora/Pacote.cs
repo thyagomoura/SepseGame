@@ -26,7 +26,7 @@ public class Pacote : MonoBehaviour
 
     void Start()
     {
-        Caso = Casos[pack.currentCase - 1];
+        Caso = Casos[pack.currentCase];
 
         updateOptions();
     }

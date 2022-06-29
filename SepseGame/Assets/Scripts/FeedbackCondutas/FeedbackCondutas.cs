@@ -18,7 +18,7 @@ public class FeedbackCondutas : MonoBehaviour
 
     void Start()
     {
-        Caso = Casos[pack.currentCase - 1];
+        Caso = Casos[pack.currentCase];
 
         int i;
         for (i=0; i < txtCorretas.Count; i++)

@@ -32,7 +32,7 @@ public class PranchetaManager : MonoBehaviour
 
     private void Start()
     {
-        Caso = ArrayCasos[pack.currentCase - 1];
+        Caso = ArrayCasos[pack.currentCase];
     }
 
     public void updateFC()

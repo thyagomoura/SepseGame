@@ -41,7 +41,7 @@ MonoBehaviour:
   lab3: "Plaquetas: 180.000 /mm3(Valor de refer\xEAncia: 150.000 \u2013 450.000/mm3)"
   lab4: "Plaquetas: 180.000 /mm3(Valor de refer\xEAncia: 150.000 \u2013 450.000/mm3)"
   indexesCorretos: 010000000300000004000000050000000b000000
-  selecionados: 00000000
+  selecionados: 
   buttonCorreto: 0
   abriuProtocolo: 0
   chamouEquipe: 0
