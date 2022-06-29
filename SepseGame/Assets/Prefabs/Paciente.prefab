@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6868304036231180632}
   - component: {fileID: 6868304036231180639}
   m_Layer: 0
-  m_Name: OlhosF
+  m_Name: pOlhosF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 6868304036274121997}
   - component: {fileID: 6868304036274121996}
   m_Layer: 0
-  m_Name: PeloFacial
+  m_Name: pPeloFacial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 6868304036508378727}
   - component: {fileID: 6868304036508378726}
   m_Layer: 0
-  m_Name: BocaF
+  m_Name: pBocaF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -375,7 +375,19 @@ MonoBehaviour:
   oclinSprite: {fileID: 7816188602955872549, guid: 1c03906b28ca96748b4bd423c95c0504, type: 3}
   PersonagemMasculino: {fileID: 6868304037278291539}
   PersonagemFeminino: {fileID: 6868304037176130235}
-  teste: 1
+  Monitorizar: {fileID: 0}
+  Estetica: {fileID: 0}
+  corDaPele: 0
+  hasBigas: 0
+  hasCabas: 0
+  hasCorta: 0
+  hasCalca: 0
+  hasOclin: 0
+  cabelin: 0
+  bigas: 0
+  corBlusa: {x: 0, y: 0, z: 0, w: 0}
+  corCalca: {x: 0, y: 0, z: 0, w: 0}
+  corPisante: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &6868304036788744584
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,7 +399,7 @@ GameObject:
   - component: {fileID: 6868304036788744591}
   - component: {fileID: 6868304036788744590}
   m_Layer: 0
-  m_Name: BlusaF
+  m_Name: pBlusaF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -469,7 +481,7 @@ GameObject:
   - component: {fileID: 6868304036841465474}
   - component: {fileID: 6868304036841465473}
   m_Layer: 0
-  m_Name: PisanteF
+  m_Name: pPisanteF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -551,7 +563,7 @@ GameObject:
   - component: {fileID: 6868304036901576584}
   - component: {fileID: 6868304036901576591}
   m_Layer: 0
-  m_Name: CabelinF
+  m_Name: pCabelinF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -633,7 +645,7 @@ GameObject:
   - component: {fileID: 6868304037068430524}
   - component: {fileID: 6868304037068430515}
   m_Layer: 0
-  m_Name: Calca
+  m_Name: pCalca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -715,7 +727,7 @@ GameObject:
   - component: {fileID: 6868304037082452263}
   - component: {fileID: 6868304037082452262}
   m_Layer: 0
-  m_Name: BlusaOutline
+  m_Name: pBlusaOutline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -797,7 +809,7 @@ GameObject:
   - component: {fileID: 6868304037090890740}
   - component: {fileID: 6868304037090890699}
   m_Layer: 0
-  m_Name: BlusaOutlineF
+  m_Name: pBlusaOutlineF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -879,7 +891,7 @@ GameObject:
   - component: {fileID: 6868304037173029912}
   - component: {fileID: 6868304037173029919}
   m_Layer: 0
-  m_Name: PupilaF
+  m_Name: pPupilaF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1002,7 +1014,7 @@ GameObject:
   - component: {fileID: 6868304037209960808}
   - component: {fileID: 6868304037209960815}
   m_Layer: 0
-  m_Name: Cabelin
+  m_Name: pCabelin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1084,7 +1096,7 @@ GameObject:
   - component: {fileID: 6868304037220828634}
   - component: {fileID: 6868304037220828633}
   m_Layer: 0
-  m_Name: CalcaF
+  m_Name: pCalcaF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1166,7 +1178,7 @@ GameObject:
   - component: {fileID: 6868304037272876426}
   - component: {fileID: 6868304037272876425}
   m_Layer: 0
-  m_Name: Olhos
+  m_Name: pOlhos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1290,7 +1302,7 @@ GameObject:
   - component: {fileID: 6868304037338999958}
   - component: {fileID: 6868304037338999957}
   m_Layer: 0
-  m_Name: AcessorioRostoF
+  m_Name: pAcessorioRostoF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1372,7 +1384,7 @@ GameObject:
   - component: {fileID: 6868304037415420361}
   - component: {fileID: 6868304037415420360}
   m_Layer: 0
-  m_Name: PeleF
+  m_Name: pPeleF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1454,7 +1466,7 @@ GameObject:
   - component: {fileID: 6868304037444467037}
   - component: {fileID: 6868304037444467036}
   m_Layer: 0
-  m_Name: Pupila
+  m_Name: pPupila
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1536,7 +1548,7 @@ GameObject:
   - component: {fileID: 6868304037453643349}
   - component: {fileID: 6868304037453643348}
   m_Layer: 0
-  m_Name: Pisante
+  m_Name: pPisante
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1618,7 +1630,7 @@ GameObject:
   - component: {fileID: 6868304037801303283}
   - component: {fileID: 6868304037801303282}
   m_Layer: 0
-  m_Name: AcessorioRosto
+  m_Name: pAcessorioRosto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1700,7 +1712,7 @@ GameObject:
   - component: {fileID: 6868304037803038799}
   - component: {fileID: 6868304037803038798}
   m_Layer: 0
-  m_Name: Blusa
+  m_Name: pBlusa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1782,7 +1794,7 @@ GameObject:
   - component: {fileID: 6868304037845428311}
   - component: {fileID: 6868304037845428310}
   m_Layer: 0
-  m_Name: CalcaOutlineF
+  m_Name: pCalcaOutlineF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1864,7 +1876,7 @@ GameObject:
   - component: {fileID: 6868304038043640018}
   - component: {fileID: 6868304038043640017}
   m_Layer: 0
-  m_Name: CalcaOutline
+  m_Name: pCalcaOutline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1946,7 +1958,7 @@ GameObject:
   - component: {fileID: 6868304038068169379}
   - component: {fileID: 6868304038068169378}
   m_Layer: 0
-  m_Name: Boca
+  m_Name: pBoca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2028,7 +2040,7 @@ GameObject:
   - component: {fileID: 6868304038092150498}
   - component: {fileID: 6868304038092150499}
   m_Layer: 0
-  m_Name: Pele
+  m_Name: pPele
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

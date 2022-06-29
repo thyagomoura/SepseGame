@@ -148,15 +148,15 @@ public class PacienteManager : MonoBehaviour
         PersonagemMasculino.SetActive(true);
         PersonagemFeminino.SetActive(false);
 
-        GameObject Pele = GameObject.Find("Pele");
-        GameObject Cabelo = GameObject.Find("Cabelin");
-        GameObject Blusa = GameObject.Find("Blusa");
-        GameObject BlusaOutline = GameObject.Find("BlusaOutline");
-        GameObject Calca = GameObject.Find("Calca");
-        GameObject CalcaOutline = GameObject.Find("CalcaOutline");
-        GameObject Pisante = GameObject.Find("Pisante");
-        GameObject PeloFacial = GameObject.Find("PeloFacial");
-        GameObject Oclin = GameObject.Find("AcessorioRosto");
+        GameObject Pele = GameObject.Find("pPele");
+        GameObject Cabelo = GameObject.Find("pCabelin");
+        GameObject Blusa = GameObject.Find("pBlusa");
+        GameObject BlusaOutline = GameObject.Find("pBlusaOutline");
+        GameObject Calca = GameObject.Find("pCalca");
+        GameObject CalcaOutline = GameObject.Find("pCalcaOutline");
+        GameObject Pisante = GameObject.Find("pPisante");
+        GameObject PeloFacial = GameObject.Find("pPeloFacial");
+        GameObject Oclin = GameObject.Find("pAcessorioRosto");
 
         corDaPele = Estetica.corDaPele;
         hasBigas = Estetica.hasBigas;
@@ -228,13 +228,13 @@ public class PacienteManager : MonoBehaviour
         PersonagemMasculino.SetActive(false);
         PersonagemFeminino.SetActive(true);
 
-        GameObject PeleF = GameObject.Find("PeleF");
-        GameObject CabeloF = GameObject.Find("CabelinF");
-        GameObject BlusaF = GameObject.Find("BlusaF");
-        GameObject CalcaF = GameObject.Find("CalcaF");
-        GameObject CalcaOutlineF = GameObject.Find("CalcaOutlineF");
-        GameObject PisanteF = GameObject.Find("PisanteF");
-        GameObject Oclin = GameObject.Find("AcessorioRostoF");
+        GameObject PeleF = GameObject.Find("pPeleF");
+        GameObject CabeloF = GameObject.Find("pCabelinF");
+        GameObject BlusaF = GameObject.Find("pBlusaF");
+        GameObject CalcaF = GameObject.Find("pCalcaF");
+        GameObject CalcaOutlineF = GameObject.Find("pCalcaOutlineF");
+        GameObject PisanteF = GameObject.Find("pPisanteF");
+        GameObject Oclin = GameObject.Find("pAcessorioRostoF");
 
         corDaPele = Estetica.corDaPele;
         hasCalca = Estetica.hasCalca;
