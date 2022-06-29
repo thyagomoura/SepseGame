@@ -44,6 +44,7 @@ public class InicialAnimManager : MonoBehaviour
     public void skipAnim()
     {
         anim1.GetComponent<PlayableDirector>().Stop();
+        anim2.GetComponent<PlayableDirector>().Stop();
         anim2.GetComponent<PlayableDirector>().initialTime = 22;
         anim2.GetComponent<PlayableDirector>().Play();
         txt1.SetActive(false);

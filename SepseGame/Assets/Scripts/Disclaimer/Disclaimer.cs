@@ -22,6 +22,6 @@ public class Disclaimer : MonoBehaviour
     [System.Obsolete]
     void LoadMainMenu()
     {
-        Application.LoadLevel("MainMenu");
+        Application.LoadLevel("Login");
     }
 }
