@@ -8,7 +8,7 @@ using TMPro;
 
 public class DialogoManager : MonoBehaviour
 {
-    public GameObject Opcao1, Opcao2, objResposta, buttonContinuar, buttonAvancar, o1txt, o2txt, Resposta, HC, CasoClinico, Opcoes;
+    public GameObject Opcao1, Opcao2, objResposta, buttonContinuar, buttonAvancar, o1txt, o2txt, Resposta, HC, CasoClinico, Opcoes, contCC;
     public PacienteManager paciente;
     public Caso Caso;
     public Estetica pack;
@@ -91,6 +91,7 @@ public class DialogoManager : MonoBehaviour
     public void fecharHC()
     {
         CasoClinico.SetActive(false);
+        contCC.SetActive(false);
         Opcoes.SetActive(true);
     }
 

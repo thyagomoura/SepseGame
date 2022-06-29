@@ -1039,6 +1039,7 @@ MonoBehaviour:
   HC: {fileID: 1204540014}
   CasoClinico: {fileID: 1880191825}
   Opcoes: {fileID: 1554554321}
+  contCC: {fileID: 873203548}
   paciente: {fileID: 581999262}
   Caso: {fileID: 0}
   pack: {fileID: 11400000, guid: f0d4e489b31b05947b364615576b5215, type: 2}
