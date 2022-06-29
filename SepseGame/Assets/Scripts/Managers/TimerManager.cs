@@ -50,9 +50,10 @@ public class TimerManager : MonoBehaviour
             timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         }
 
-        if(timeLeft <= 0)
+        if(timeLeft <= 0.0f)
         {
             SceneManager.LoadScene("TimeUp");
+            Destroy(gameObject);
         }
     }
 }

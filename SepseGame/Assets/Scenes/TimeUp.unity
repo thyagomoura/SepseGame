@@ -545,6 +545,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2146784032}
     m_Modifications:
+    - target: {fileID: 1542587375810697997, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
+      propertyPath: m_text
+      value: Obrigado por jogar!
+      objectReference: {fileID: 0}
     - target: {fileID: 2078739464231457309, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
       propertyPath: m_Name
       value: TimeOverBox
@@ -632,6 +636,18 @@ PrefabInstance:
     - target: {fileID: 3841317103651345469, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450959610440025581, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1600251000}
+    - target: {fileID: 7450959610440025581, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: fechar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450959610440025581, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TimeUpManager, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}

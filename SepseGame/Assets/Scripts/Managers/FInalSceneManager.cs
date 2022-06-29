@@ -13,12 +13,17 @@ public class FInalSceneManager : MonoBehaviour
 
     private void Start()
     {
-        int i;
+        /*int i;
         for (i=0; i < Casos.Count; i++)
         {
             totalPontos += Casos[i].pontuacao;
         }
 
-        ptsTxt.GetComponent<TextMeshProUGUI>().text = ptsTxt.GetComponent<TextMeshProUGUI>().text + totalPontos.ToString() + " pontos";
+        ptsTxt.GetComponent<TextMeshProUGUI>().text = ptsTxt.GetComponent<TextMeshProUGUI>().text + totalPontos.ToString() + " pontos";*/
+    }
+
+    public void fechar()
+    {
+        Application.Quit();
     }
 }

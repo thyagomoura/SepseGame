@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FeedbackCondutas.unity
     guid: 618dd59e9aeef4042a1c876aa4b981d1
+  - enabled: 1
+    path: Assets/Scenes/TimeUp.unity
+    guid: abd252fd876043545bc02ac933ff9881
+  - enabled: 1
+    path: Assets/Scenes/FinalScene.unity
+    guid: c1288ab4320714e4db300512db83813d
   m_configObjects: {}

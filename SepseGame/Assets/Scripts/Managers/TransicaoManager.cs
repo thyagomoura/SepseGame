@@ -11,12 +11,13 @@ public class TransicaoManager : MonoBehaviour
 
     void Start()
     {
-        if (Estetica.currentCase == 12)
+        Estetica.set = false;
+        Estetica.currentCase++;
+        if (Estetica.currentCase > 12)
         {
             SceneManager.LoadScene("FinalScene");
         }
-        Estetica.set = false;
-        Estetica.currentCase++;
+
         text.GetComponent<TextMeshProUGUI>().text = "CASO " + (Estetica.currentCase + 1).ToString();
     }
 
