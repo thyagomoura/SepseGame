@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Estetica
   m_EditorClassIdentifier: 
   set: 0
-  gender: 0
-  corDaPele: 2
+  gender: 1
+  corDaPele: 0
   hasBigas: 1
   hasCabas: 53
   hasCorta: 1
   hasCalca: 1
-  hasOclin: 10
-  cabelin: 16
+  hasOclin: 99
+  cabelin: 21
   bigas: 6
-  corBlusa: {x: 0.9997572, y: 1, z: 0.81841564, w: 1}
-  corCalca: {x: 0.5999878, y: 1, z: 0.58135766, w: 1}
-  corPisante: {x: 0.8489108, y: 1, z: 0.9856727, w: 1}
+  corBlusa: {x: 0.919771, y: 1, z: 0.9156861, w: 1}
+  corCalca: {x: 0.35510594, y: 0.75202405, z: 1, w: 1}
+  corPisante: {x: 0.9322778, y: 0.90555996, z: 1, w: 1}
   currentCase: -1
