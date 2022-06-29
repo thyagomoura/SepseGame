@@ -32,7 +32,7 @@ public class TimerManager : MonoBehaviour
     void Update()
     {
         string cs = SceneManager.GetActiveScene().name;
-        if (cs == "Customize Nurse" || cs == "MainMenu" || cs == "Transicao")
+        if (cs == "Customize Nurse" || cs == "MainMenu" || cs == "Transicao" || cs == "Pontuacao" || cs == "FeedbackCondutas")
         {
             active = false;
         }

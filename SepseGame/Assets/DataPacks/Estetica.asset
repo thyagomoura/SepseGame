@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   set: 0
   gender: 1
-  corDaPele: 1
+  corDaPele: 0
   hasBigas: 1
-  hasCabas: 53
+  hasCabas: 86
   hasCorta: 1
   hasCalca: 1
-  hasOclin: 81
-  cabelin: 10
-  bigas: 6
-  corBlusa: {x: 0.7950407, y: 0.88477075, z: 1, w: 1}
-  corCalca: {x: 0.5649536, y: 0.48030174, z: 1, w: 1}
-  corPisante: {x: 0.57890075, y: 1, z: 0.58672655, w: 1}
-  currentCase: -1
+  hasOclin: 63
+  cabelin: 17
+  bigas: 7
+  corBlusa: {x: 0.5781494, y: 1, z: 0.5274744, w: 1}
+  corCalca: {x: 0.83119285, y: 1, z: 0.79311454, w: 1}
+  corPisante: {x: 0.9557689, y: 0.8368291, z: 1, w: 1}
+  currentCase: 1
