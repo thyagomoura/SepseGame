@@ -38,22 +38,13 @@ public class EmailUtility : MonoBehaviour
 
         // Definir quem vai receber o email
         MailAddress to = new MailAddress("bmdrcompany@gmail.com");
-
-        // Conteudo da mensagem.
-        //var contentID = "Image";
-
-        //var inlineLogo = new Attachment(@"D:\Projetos\Sepse Game\SepseGame\SepseGame\Assets\Sprites\Personagens\BasePersonagensFemininos.png");
-        //inlineLogo.ContentId = contentID;
-        //inlineLogo.ContentDisposition.Inline = true;
-        //inlineLogo.ContentDisposition.DispositionType = DispositionTypeNames.Inline;
-
         MailMessage message = new MailMessage(from, to);
         message.Body = EmailTextBodyMessage();
 
         message.BodyEncoding = System.Text.Encoding.UTF8;
         message.Subject = titleName;
         message.SubjectEncoding = System.Text.Encoding.UTF8;
-        //message.Attachments.Add(inlineLogo);
+
 
         // Metodos para envio e callback.
         client.SendCompleted += new SendCompletedEventHandler(SendCompletedCallback);

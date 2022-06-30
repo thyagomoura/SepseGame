@@ -20,8 +20,7 @@ public class FeedbackCondutas : MonoBehaviour
     {
         Caso = Casos[pack.currentCase];
 
-        int i;
-        for (i=0; i < txtCorretas.Count; i++)
+        for (int i=0; i < txtCorretas.Count; i++)
         {
             txtCorretas[i].GetComponentInChildren<TextMeshProUGUI>().text = Caso.condutas[i];
             txtMarcadas[i].GetComponentInChildren<TextMeshProUGUI>().text = Caso.condutas[Caso.condSelected[i]];

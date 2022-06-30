@@ -17,8 +17,6 @@ public class Pontuacao : MonoBehaviour
     public List<GameObject> textsStats;
     public List<TextMeshProUGUI> avisos;
 
-    //public static string[] acerto = new string[10];
-    //public static string[] erro = new string[10];
     public static int count = 0, countError = 0;
     float acertos;
     float naoMarcados;
@@ -50,13 +48,11 @@ public class Pontuacao : MonoBehaviour
     }
     void load1()
     {
-        int i;
-        for (i = 0; i < Lines.Count; i++)
+        for (int i = 0; i < Lines.Count; i++)
         {
             if (Caso.indexesCorretos.Contains(i) && Caso.selecionados.Contains(i))
             {
                 Lines[i].GetComponent<Image>().color = Acerto;
-                //acerto[count] = Lines[i].GetComponentInChildren<TextMeshProUGUI>().text;
                 count++;
                 acertos++;
                 Caso.pontuacao += 10;
@@ -64,7 +60,6 @@ public class Pontuacao : MonoBehaviour
             else if (Caso.indexesCorretos.Contains(i) && !Caso.selecionados.Contains(i))
             {
                 Lines[i].GetComponent<Image>().color = NaoMarcou;
-                //erro[countError] = Lines[i].GetComponentInChildren<TextMeshProUGUI>().text;
                 countError++;
                 naoMarcados++;
                 Caso.pontuacao -= 5;
@@ -72,7 +67,6 @@ public class Pontuacao : MonoBehaviour
             else if (!Caso.indexesCorretos.Contains(i) && Caso.selecionados.Contains(i))
             {
                 Lines[i].GetComponent<Image>().color = Erro;
-                //erro[countError] = Lines[i].GetComponentInChildren<TextMeshProUGUI>().text;
                 countError++;
                 erros++;
                 Caso.pontuacao -= 5;
