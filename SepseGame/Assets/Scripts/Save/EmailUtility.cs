@@ -57,8 +57,8 @@ public class EmailUtility : MonoBehaviour
 
         //credenciamento para permitir o envio
         client.Credentials = new System.Net.NetworkCredential(
-            "apikey",
-            "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");
+            "login",
+            "senha");
         client.EnableSsl = true;
 
         // Definir quem envia o email e o nome do email que sera enviado
