@@ -40,10 +40,6 @@ public class Pontuacao : MonoBehaviour
         Lines[12].GetComponentInChildren<TextMeshProUGUI>().text = Lines[12].GetComponentInChildren<TextMeshProUGUI>().text + Caso.lab3;
         Lines[13].GetComponentInChildren<TextMeshProUGUI>().text = Lines[13].GetComponentInChildren<TextMeshProUGUI>().text + Caso.lab4;
 
-        Debug.Log(Caso.pontuacao);
-        Debug.Log(erros);
-        Debug.Log(Caso.indexesCorretos.Count);
-
         load1();
     }
     void load1()
