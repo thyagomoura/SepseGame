@@ -2,6 +2,7 @@ using UnityEngine;
 using System.ComponentModel;
 using System.Net.Mail;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine.UI;
 using System.Net.Mime;
@@ -15,19 +16,19 @@ public class EmailUtility : MonoBehaviour
     string emailText;
     int numCasoCurrent;
     string txtAux;
-    string[,] caso0 = new string[50, 6];
-    string[,] caso1 = new string[50, 6];
-    string[,] caso2 = new string[50, 6];
-    string[,] caso3 = new string[50, 6];
-    string[,] caso4 = new string[50, 6];
-    string[,] caso5 = new string[50, 6];
-    string[,] caso6 = new string[50, 6];
-    string[,] caso7 = new string[50, 6];
-    string[,] caso8 = new string[50, 6];
-    string[,] caso9 = new string[50, 6];
-    string[,] caso10 = new string[50, 6];
-    string[,] caso11 = new string[50, 6];
-    string[,] caso12 = new string[50, 6];
+    string[,] caso0 = new string[12, 7];
+    string[,] caso1 = new string[12, 7];
+    string[,] caso2 = new string[12, 7];
+    string[,] caso3 = new string[12, 7];
+    string[,] caso4 = new string[12, 7];
+    string[,] caso5 = new string[12, 7];
+    string[,] caso6 = new string[12, 7];
+    string[,] caso7 = new string[12, 7];
+    string[,] caso8 = new string[12, 7];
+    string[,] caso9 = new string[12, 7];
+    string[,] caso10 = new string[12, 7];
+    string[,] caso11 = new string[12, 7];
+    string[,] caso12 = new string[12, 7];
 
     void Start()
     {
@@ -43,6 +44,8 @@ public class EmailUtility : MonoBehaviour
         //nao marcadas de sinais
         //acerto condutas
         //erros condutas
+        //avisos
+
         numCasoCurrent = pack.currentCase;
         SelecaoCaso();
 
@@ -52,25 +55,32 @@ public class EmailUtility : MonoBehaviour
 
     void SendEmail()
     {
+
+        var results = string.Join(",",
+             Enumerable.Range(0, caso0.GetUpperBound(0) + 1)
+            .Select(x => Enumerable.Range(0, caso0.GetUpperBound(1) + 1)
+            .Select(y => caso0[x, y]))
+            .Select(z => string.Join("\n ", z)));
+
         // Linhas referentes a "conexao" com o smtp de envio
-        SmtpClient client = new SmtpClient("smtp.sendgrid.net", 587);
+        SmtpClient client = new SmtpClient("smtp.mailgun.org", 587);
 
         //credenciamento para permitir o envio
         client.Credentials = new System.Net.NetworkCredential(
-            "login",
-            "senha");
+            "",
+            "");
         client.EnableSsl = true;
 
         // Definir quem envia o email e o nome do email que sera enviado
         MailAddress from = new MailAddress(
-            "bmdrcompany@gmail.com",
+            "sepsegamerelatorio@gmail.com",
             titleName,
             System.Text.Encoding.UTF8);
 
         // Definir quem vai receber o email
-        MailAddress to = new MailAddress("bmdrcompany@gmail.com");
+        MailAddress to = new MailAddress("sepsegamerelatorio@gmail.com");
         MailMessage message = new MailMessage(from, to);
-        message.Body = EmailTextBodyMessage();
+        message.Body = $"Caso 1 {results}";
 
         message.BodyEncoding = System.Text.Encoding.UTF8;
         message.Subject = titleName;
@@ -101,36 +111,6 @@ public class EmailUtility : MonoBehaviour
         }
     }
 
-    string EmailTextBodyMessage()
-    {
-        int x = 0;
-        emailText = $"Aluno: {Login.nome}\r\nCPF: {Login.cpf} " +
-            $"\r\n\r\nCaso {1} - Pontuacao: {caso0[0, 0]}" +
-            $"\r\n       Acertos:" +
-            "\r\n          1." + caso0[0, 1] +
-            $"\r\n       Erros:" +
-            "\r\n          1." + caso0[0, 2] +
-            $"\r\n       Não Marcados:" +
-            "\r\n          1." + caso0[0, 3] +
-            $"\r\n       Condutas Certas: " +
-            "\r\n          1." + caso0[0, 4] +
-            $"\r\n       Condutas Erradas: " +
-            "\r\n          1." + caso0[0, 5] +
-            $"\r\n\r\nCaso {2}" +
-            $"\r\n\r\nCaso {3}" +
-            $"\r\n\r\nCaso {4}" +
-            $"\r\n\r\nCaso {5}" +
-            $"\r\n\r\nCaso {6}" +
-            $"\r\n\r\nCaso {7}" +
-            $"\r\n\r\nCaso {8}" +
-            $"\r\n\r\nCaso {9}" +
-            $"\r\n\r\nCaso {10}" +
-            $"\r\n\r\nCaso {11}" +
-            $"\r\n\r\nCaso {12}" +
-            $"\r\n\r\nCaso {13}";
-
-        return emailText;
-    }
     void SelecaoCaso()
     {
         switch (numCasoCurrent)
