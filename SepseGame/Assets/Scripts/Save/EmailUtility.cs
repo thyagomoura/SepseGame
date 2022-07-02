@@ -12,7 +12,7 @@ public class EmailUtility : MonoBehaviour
     public List<Caso> Casos;
     public Caso caso;
     public Estetica pack;
-    string titleName;
+
     int numCasoCurrent;
     string txtAux;
     string[,] caso0 = new string[7, 14];
@@ -28,113 +28,35 @@ public class EmailUtility : MonoBehaviour
     string[,] caso10 = new string[7, 14];
     string[,] caso11 = new string[7, 14];
     string[,] caso12 = new string[7, 14];
-    string[,] caso13 = new string[7, 14];
+
     string resultsAux;
-    string results0;
-    string results1;
-    string results2;
-    string results3;
-    string results4;
-    string results5;
-    string results6;
-    string results7;
-    string results8;
-    string results9;
-    string results10;
-    string results11;
-    string results12;
-    string results13;
-    string legendaEmail;
+
+    public static string results0;
+    public static string results1;
+    public static string results2;
+    public static string results3;
+    public static string results4;
+    public static string results5;
+    public static string results6;
+    public static string results7;
+    public static string results8;
+    public static string results9;
+    public static string results10;
+    public static string results11;
+    public static string results12;
+
     void Start()
     {
-        legendaEmail = "Para entendender o relatório, cada linha significa algo, dessa forma, segue as instruções abaixo, lembrando que as linhas são separadas por (;;;;;;;;):\n" +
-            "1. Primeira linha sempre será a PONTUAÇÂO\n" +
-            "2. Segunda linha sempre será os ACERTOS\n" +
-            "3. Terceira linha sempre será os ERROS\n" +
-            "4. Quarta linha sempre será os NÂO MARCADOS\n" +
-            "5. Quinta linha sempre será os ACERTOS DE CONDUTA\n" +
-            "6. Sexta linha sempre será os ERROS DE CONDUTA\n" +
-            "7. Sétima linha sempre será os AVISOS\n\n";
+
 
         caso = Casos[pack.currentCase];
 
-        titleName = "Relatorio de desempenho - " + Login.nome;
-
         numCasoCurrent = pack.currentCase;
-        SelecaoCaso();
-
-        if (numCasoCurrent == 0)
-        {
-            SendEmail();
-        }
-    }
-    void SendEmail()
-    {
-        // Linhas referentes a "conexao" com o smtp de envio
-        SmtpClient client = new SmtpClient("smtp.mailgun.org", 587);
-
-        //credenciamento para permitir o envio
-        client.Credentials = new System.Net.NetworkCredential(
-            "",
-            "");
-        client.EnableSsl = true;
-
-        // Definir quem envia o email e o nome do email que sera enviado
-        MailAddress from = new MailAddress(
-            "sepsegamerelatorio@gmail.com",
-            titleName,
-            System.Text.Encoding.UTF8);
-
-        // Definir quem vai receber o email
-        MailAddress to = new MailAddress("sepsegamerelatorio@gmail.com");
-        MailMessage message = new MailMessage(from, to);
-        message.Body = $"\nNome: {Login.nome}" +
-            $"\nCPF: {Login.cpf}\n\n" +
-            $"Legenda para leitura dos casos:\n {legendaEmail}" +
-            $"\r\nCaso 1 \n{results0}\n\n" +
-            $"\r\nCaso 2: \n{results1}\n\n" +
-            $"\r\nCaso 3 \n{results2}\n\n" +
-            $"\r\nCaso 4 \n{results3}\n\n" +
-            $"\r\nCaso 5 \n{results4}\n\n" +
-            $"\r\nCaso 6 \n{results5}\n\n" +
-            $"\r\nCaso 7 \n{results6}\n\n" +
-            $"\r\nCaso 8 \n{results7}\n\n" +
-            $"\r\nCaso 9 \n{results8}\n\n" +
-            $"\r\nCaso 10 \n{results9}\n\n" +
-            $"\r\nCaso 11 \n{results10}\n\n" +
-            $"\r\nCaso 12 \n{results11}\n\n" +
-            $"\r\nCaso 13 \n{results12}\n\n";
-
-        message.BodyEncoding = System.Text.Encoding.UTF8;
-        message.Subject = titleName;
-        message.SubjectEncoding = System.Text.Encoding.UTF8;
-
-
-        // Metodos para envio e callback.
-        client.SendCompleted += new SendCompletedEventHandler(SendCompletedCallback);
-        string userState = titleName;
-        client.SendAsync(message, userState);
-    }
-    private static void SendCompletedCallback(object sender, AsyncCompletedEventArgs e)
-    {
-        // Get the unique identifier for this asynchronous operation.
-        string token = (string)e.UserState;
-
-        if (e.Cancelled)
-        {
-            Debug.Log("Send canceled " + token);
-        }
-        if (e.Error != null)
-        {
-            Debug.Log("[ " + token + " ] " + " " + e.Error.ToString());
-        }
-        else
-        {
-            Debug.Log("Message sent.");
-        }
+        SelecaoCaso(numCasoCurrent);
     }
 
-    void SelecaoCaso()
+
+    void SelecaoCaso(int numCasoCurrent)
     {
         switch (numCasoCurrent)
         {
@@ -155,6 +77,7 @@ public class EmailUtility : MonoBehaviour
                 SaveAvisos(caso0);
                 //Correcao do caso para mostrar no email
                 results0 = CorrigirMatriz(caso0);
+                EmailSend.resultado0R = results0;
                 break;
             case 1:
                 //pontuacao
@@ -173,6 +96,7 @@ public class EmailUtility : MonoBehaviour
                 SaveAvisos(caso1);
                 //Correcao do caso para mostrar no email
                 results1 = CorrigirMatriz(caso1);
+                EmailSend.resultado1R = results1;
                 break;
             case 2:
                 //pontuacao
@@ -191,6 +115,7 @@ public class EmailUtility : MonoBehaviour
                 SaveAvisos(caso2);
                 //Correcao do caso para mostrar no email
                 results2 = CorrigirMatriz(caso2);
+                EmailSend.resultado2R = results2;
                 break;
             case 3:
                 //pontuacao
@@ -209,6 +134,7 @@ public class EmailUtility : MonoBehaviour
                 SaveAvisos(caso3);
                 //Correcao do caso para mostrar no email
                 results3 = CorrigirMatriz(caso3);
+                EmailSend.resultado3R = results3;
                 break;
             case 4:
                 //pontuacao
@@ -227,6 +153,7 @@ public class EmailUtility : MonoBehaviour
                 SaveAvisos(caso4);
                 //Correcao do caso para mostrar no email
                 results4 = CorrigirMatriz(caso4);
+                EmailSend.resultado4R = results4;
                 break;
             case 5:
                 //pontuacao
@@ -245,6 +172,7 @@ public class EmailUtility : MonoBehaviour
                 SaveAvisos(caso5);
                 //Correcao do caso para mostrar no email
                 results5 = CorrigirMatriz(caso5);
+                EmailSend.resultado5R = results5;
                 break;
             case 6:
                 //pontuacao
@@ -263,6 +191,7 @@ public class EmailUtility : MonoBehaviour
                 SaveAvisos(caso6);
                 //Correcao do caso para mostrar no email
                 results6 = CorrigirMatriz(caso6);
+                EmailSend.resultado6R = results6;
                 break;
             case 7:
                 //pontuacao
@@ -281,6 +210,7 @@ public class EmailUtility : MonoBehaviour
                 SaveAvisos(caso7);
                 //Correcao do caso para mostrar no email
                 results7 = CorrigirMatriz(caso7);
+                EmailSend.resultado7R = results7;
                 break;
             case 8:
                 //pontuacao
@@ -299,6 +229,7 @@ public class EmailUtility : MonoBehaviour
                 SaveAvisos(caso8);
                 //Correcao do caso para mostrar no email
                 results8 = CorrigirMatriz(caso8);
+                EmailSend.resultado8R = results8;
                 break;
             case 9:
                 //pontuacao
@@ -317,6 +248,7 @@ public class EmailUtility : MonoBehaviour
                 SaveAvisos(caso9);
                 //Correcao do caso para mostrar no email
                 results9 = CorrigirMatriz(caso9);
+                EmailSend.resultado9R = results9;
                 break;
             case 10:
                 //pontuacao
@@ -335,6 +267,7 @@ public class EmailUtility : MonoBehaviour
                 SaveAvisos(caso10);
                 //Correcao do caso para mostrar no email
                 results10 = CorrigirMatriz(caso10);
+                EmailSend.resultado10R = results10;
                 break;
             case 11:
                 //pontuacao
@@ -353,6 +286,7 @@ public class EmailUtility : MonoBehaviour
                 SaveAvisos(caso11);
                 //Correcao do caso para mostrar no email
                 results11 = CorrigirMatriz(caso11);
+                EmailSend.resultado11R = results11;
                 break;
             case 12:
                 //pontuacao
@@ -371,24 +305,7 @@ public class EmailUtility : MonoBehaviour
                 SaveAvisos(caso12);
                 //Correcao do caso para mostrar no email
                 results12 = CorrigirMatriz(caso12);
-                break;
-            case 13:
-                //pontuacao
-                caso13[0, 0] = caso.pontuacao.ToString();
-                //acertos
-                SaveAcertos(caso13);
-                //erros
-                SaveErros(caso13);
-                //naomarcados
-                SaveNaoMarcados(caso13);
-                //acertocondutas
-                SaveCondutasCertas(caso13);
-                //erroscondutas
-                SaveCondutasErrada(caso13);
-                //avisos
-                SaveAvisos(caso13);
-                //Correcao do caso para mostrar no email
-                results13 = CorrigirMatriz(caso13);
+                EmailSend.resultado12R = results12;
                 break;
             default:
                 break;
