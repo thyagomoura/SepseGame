@@ -47,7 +47,7 @@ public class EmailUtility : MonoBehaviour
     string legendaEmail;
     void Start()
     {
-        legendaEmail = "Para entendender o relatório, cada linha significa algo, dessa forma, segue as instruções abaixo:\n" +
+        legendaEmail = "Para entendender o relatório, cada linha significa algo, dessa forma, segue as instruções abaixo, lembrando que as linhas são separadas por (;;;;;;;;):\n" +
             "1. Primeira linha sempre será a PONTUAÇÂO\n" +
             "2. Segunda linha sempre será os ACERTOS\n" +
             "3. Terceira linha sempre será os ERROS\n" +
@@ -75,8 +75,8 @@ public class EmailUtility : MonoBehaviour
 
         //credenciamento para permitir o envio
         client.Credentials = new System.Net.NetworkCredential(
-            "postmaster@sandbox30329b9ee820478ea4847b2cc8f25e13.mailgun.org",
-            "d9ce1d513e5157c93aad9b3bd2023a2a-77985560-4cd1dfd8");
+            "",
+            "");
         client.EnableSsl = true;
 
         // Definir quem envia o email e o nome do email que sera enviado
