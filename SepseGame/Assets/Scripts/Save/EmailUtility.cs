@@ -16,19 +16,19 @@ public class EmailUtility : MonoBehaviour
     string emailText;
     int numCasoCurrent;
     string txtAux;
-    string[,] caso0 = new string[12, 7];
-    string[,] caso1 = new string[12, 7];
-    string[,] caso2 = new string[12, 7];
-    string[,] caso3 = new string[12, 7];
-    string[,] caso4 = new string[12, 7];
-    string[,] caso5 = new string[12, 7];
-    string[,] caso6 = new string[12, 7];
-    string[,] caso7 = new string[12, 7];
-    string[,] caso8 = new string[12, 7];
-    string[,] caso9 = new string[12, 7];
-    string[,] caso10 = new string[12, 7];
-    string[,] caso11 = new string[12, 7];
-    string[,] caso12 = new string[12, 7];
+    string[,] caso0 = new string[7, 14];
+    string[,] caso1 = new string[7, 14];
+    string[,] caso2 = new string[7, 14];
+    string[,] caso3 = new string[7, 14];
+    string[,] caso4 = new string[7, 14];
+    string[,] caso5 = new string[7, 14];
+    string[,] caso6 = new string[7, 14];
+    string[,] caso7 = new string[7, 14];
+    string[,] caso8 = new string[7, 14];
+    string[,] caso9 = new string[7, 14];
+    string[,] caso10 = new string[7, 14];
+    string[,] caso11 = new string[7, 14];
+    string[,] caso12 = new string[7, 14];
 
     void Start()
     {
@@ -48,67 +48,70 @@ public class EmailUtility : MonoBehaviour
 
         numCasoCurrent = pack.currentCase;
         SelecaoCaso();
-
-
         SendEmail();
-    }
 
+        //if (pack.currentCase < 14)
+        //{
+        //    SendEmail();
+        //}
+    }
     void SendEmail()
     {
-
-        var results = string.Join(",",
+        // 1. transformar isso em uma função com ponteiro
+        // 2. arrumar a forma com que é mostrado os valores
+        var results = string.Join("\r\n",
              Enumerable.Range(0, caso0.GetUpperBound(0) + 1)
             .Select(x => Enumerable.Range(0, caso0.GetUpperBound(1) + 1)
             .Select(y => caso0[x, y]))
-            .Select(z => string.Join("\n ", z)));
+            .Select(z => string.Join("", z)));
+        Debug.Log(results);
+        //    // Linhas referentes a "conexao" com o smtp de envio
+        //    SmtpClient client = new SmtpClient("smtp.mailgun.org", 587);
 
-        // Linhas referentes a "conexao" com o smtp de envio
-        SmtpClient client = new SmtpClient("smtp.mailgun.org", 587);
+        //    //credenciamento para permitir o envio
+        //    client.Credentials = new System.Net.NetworkCredential(
+        //        "",
+        //        "");
+        //    client.EnableSsl = true;
 
-        //credenciamento para permitir o envio
-        client.Credentials = new System.Net.NetworkCredential(
-            "",
-            "");
-        client.EnableSsl = true;
+        //    // Definir quem envia o email e o nome do email que sera enviado
+        //    MailAddress from = new MailAddress(
+        //        "sepsegamerelatorio@gmail.com",
+        //        titleName,
+        //        System.Text.Encoding.UTF8);
 
-        // Definir quem envia o email e o nome do email que sera enviado
-        MailAddress from = new MailAddress(
-            "sepsegamerelatorio@gmail.com",
-            titleName,
-            System.Text.Encoding.UTF8);
+        //    // Definir quem vai receber o email
+        //    MailAddress to = new MailAddress("sepsegamerelatorio@gmail.com");
+        //    MailMessage message = new MailMessage(from, to);
+        //    message.Body = $"Caso 1 {results}";
 
-        // Definir quem vai receber o email
-        MailAddress to = new MailAddress("sepsegamerelatorio@gmail.com");
-        MailMessage message = new MailMessage(from, to);
-        message.Body = $"Caso 1 {results}";
-
-        message.BodyEncoding = System.Text.Encoding.UTF8;
-        message.Subject = titleName;
-        message.SubjectEncoding = System.Text.Encoding.UTF8;
+        //    message.BodyEncoding = System.Text.Encoding.UTF8;
+        //    message.Subject = titleName;
+        //    message.SubjectEncoding = System.Text.Encoding.UTF8;
 
 
-        // Metodos para envio e callback.
-        client.SendCompleted += new SendCompletedEventHandler(SendCompletedCallback);
-        string userState = titleName;
-        client.SendAsync(message, userState);
-    }
-    private static void SendCompletedCallback(object sender, AsyncCompletedEventArgs e)
-    {
-        // Get the unique identifier for this asynchronous operation.
-        string token = (string)e.UserState;
+        //    // Metodos para envio e callback.
+        //    client.SendCompleted += new SendCompletedEventHandler(SendCompletedCallback);
+        //    string userState = titleName;
+        //    client.SendAsync(message, userState);
+        //}
+        //private static void SendCompletedCallback(object sender, AsyncCompletedEventArgs e)
+        //{
+        //    // Get the unique identifier for this asynchronous operation.
+        //    string token = (string)e.UserState;
 
-        if (e.Cancelled)
-        {
-            Debug.Log("Send canceled " + token);
-        }
-        if (e.Error != null)
-        {
-            Debug.Log("[ " + token + " ] " + " " + e.Error.ToString());
-        }
-        else
-        {
-            Debug.Log("Message sent.");
-        }
+        //    if (e.Cancelled)
+        //    {
+        //        Debug.Log("Send canceled " + token);
+        //    }
+        //    if (e.Error != null)
+        //    {
+        //        Debug.Log("[ " + token + " ] " + " " + e.Error.ToString());
+        //    }
+        //    else
+        //    {
+        //        Debug.Log("Message sent.");
+        //    }
     }
 
     void SelecaoCaso()
@@ -128,6 +131,8 @@ public class EmailUtility : MonoBehaviour
                 SaveCondutasCertas(caso0);
                 //erroscondutas
                 SaveCondutasErrada(caso0);
+                //avisos
+                SaveAvisos(caso0);
                 break;
             case 1:
                 caso1[0, 0] = caso.pontuacao.ToString();
@@ -178,7 +183,7 @@ public class EmailUtility : MonoBehaviour
             if (caso.indexesCorretos.Contains(i) && caso.selecionados.Contains(i))
             {
                 txtAux = IndiceDoSinalVital(i);
-                x[contA, 1] = txtAux;
+                x[1, contA] = txtAux;
                 contA++;
             }
         }
@@ -194,7 +199,7 @@ public class EmailUtility : MonoBehaviour
             {
                 txtAux = null;
                 txtAux = IndiceDoSinalVital(i);
-                j[contE, 2] = txtAux;
+                j[2, contE] = txtAux;
                 contE++;
             }
         }
@@ -209,7 +214,7 @@ public class EmailUtility : MonoBehaviour
             {
                 txtAux = null;
                 txtAux = IndiceDoSinalVital(i);
-                k[contNM, 3] = txtAux;
+                k[3, contNM] = txtAux;
                 contNM++;
             }
         }
@@ -224,7 +229,7 @@ public class EmailUtility : MonoBehaviour
             {
                 txtAux = null;
                 txtAux = IndiceDaConduta(i);
-                z[contCC, 4] = txtAux;
+                z[4, contCC] = txtAux;
                 contCC++;
             }
         }
@@ -239,12 +244,39 @@ public class EmailUtility : MonoBehaviour
             {
                 txtAux = null;
                 txtAux = IndiceDaConduta(i);
-                b[contCE, 5] = txtAux;
+                b[5, contCE] = txtAux;
                 contCE++;
             }
         }
     }
 
+    void SaveAvisos(string[,] sx)
+    {
+        int slot = 0;
+        if (!caso.abriuProtocolo)
+        {
+            sx[6, slot] = "O Protocolo de Sepse não foi aberto! -10 pontos";
+            slot++;
+        }
+        if (!caso.chamouEquipe)
+        {
+            sx[6, slot] = "A Equipe Médica não foi acionada! -20 pontos";
+            slot++;
+        }
+        if (!caso.apertouBotaoCorreto)
+        {
+            if (caso.buttonCorreto == 1)
+            {
+                sx[6, slot] = "O Protocolo de Sepse deveria ter sido descontinuado! -10 pontos";
+                slot++;
+            }
+            else
+            {
+                sx[6, slot] = "O Protocolo de Sepse deveria ter sido continuado! -10 pontos";
+                slot++;
+            }
+        }
+    }
     string IndiceDoSinalVital(int contador)
     {
         switch (contador)
