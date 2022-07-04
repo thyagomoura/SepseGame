@@ -42,8 +42,7 @@ public class NurseManage : MonoBehaviour
 
     private void Start()
     {
-        
-        Debug.Log(EsteticaNurse.set);
+        //Debug.Log(EsteticaNurse.set);
 
         Blusa = GameObject.Find("Blusa");
         Calca = GameObject.Find("Calca");
@@ -266,7 +265,7 @@ public class NurseManage : MonoBehaviour
         hasOclin = EsteticaNurse.hasOclin;
         role = EsteticaNurse.role;
         mascara = EsteticaNurse.mascara;
-        EsteticaNurse.cabelin = cabelin;
+        cabelin = EsteticaNurse.cabelin;
 
         PeleF.GetComponent<SpriteRenderer>().sprite = peleArrayF[corDaPele];
         CabeloF.GetComponent<SpriteRenderer>().sprite = cabeloArrayF[cabelin];

@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdfa52e3009a6144bbe98e91aedf724e, type: 3}
   m_Name: EsteticaNurse
   m_EditorClassIdentifier: 
-  set: 1
+  set: 0
   gender: 1
-  corDaPele: 3
+  corDaPele: 1
   hasBigas: 0
-  hasCabas: 35
-  hasOclin: 63
-  cabelin: 0
-  bigas: 7
-  role: 89
+  hasCabas: 92
+  hasOclin: 22
+  cabelin: 15
+  bigas: 0
+  role: 63
   estetoscopio: 1
-  mascara: 66
-  corRoupa: {x: 1, y: 0.426, z: 0.8879371, w: 1}
+  mascara: 72
+  corRoupa: {x: 0.5877463, y: 1, z: 0.426, w: 1}
