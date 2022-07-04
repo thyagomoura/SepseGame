@@ -2315,7 +2315,7 @@ GameObject:
   - component: {fileID: 130360383317633404}
   m_Layer: 0
   m_Name: Nurse
-  m_TagString: Untagged
+  m_TagString: hospital
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

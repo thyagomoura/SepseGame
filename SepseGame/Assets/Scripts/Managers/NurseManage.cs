@@ -42,6 +42,9 @@ public class NurseManage : MonoBehaviour
 
     private void Start()
     {
+        
+        Debug.Log(EsteticaNurse.set);
+
         Blusa = GameObject.Find("Blusa");
         Calca = GameObject.Find("Calca");
         BlusaF = GameObject.Find("BlusaF");
@@ -51,6 +54,7 @@ public class NurseManage : MonoBehaviour
 
         if (cs != "Hospital")
         {
+            EsteticaNurse.set = false;
             scm.slider.onValueChanged.AddListener(delegate { SetSliderColor(); });
         }
 
@@ -318,6 +322,9 @@ public class NurseManage : MonoBehaviour
         }
         BlusaF.GetComponent<SpriteRenderer>().color = corzinha;
         CalcaF.GetComponent<SpriteRenderer>().color = corzinha;
+    }
+    public void Save() {
+        EsteticaNurse.set = true;
     }
 
 }
