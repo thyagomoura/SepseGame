@@ -12,9 +12,19 @@ public class TutorialManager : MonoBehaviour
     public TextMeshProUGUI tutorialText, pageCountText;
     int currentPage = 1;
     public Slider slider;
+    public Estetica pack;
+    public GameObject BBG, Box, TopTitle, Exit;
 
+    [System.Obsolete]
     private void Start()
     {
+        if (pack.currentCase == 0)
+        {
+            BBG.SetActive(true);
+            Box.SetActive(true);
+            TopTitle.SetActive(true);
+            Exit.SetActive(true);
+        }
         atualSprite.sprite = tutorialSprites[0];
         slider.value = currentPage;
         pageCountText.text = $"{tutorialText.pageToDisplay} / 5";
@@ -50,4 +60,9 @@ public class TutorialManager : MonoBehaviour
         //Debug.Log($"Paginas: {tutorialText.textInfo.pageCount}, atual: {currentPage}");
     }
 
+    [System.Obsolete]
+    public void ExitTutorial()
+    {
+        GameObject.Find("Tutorial").active = false;
+    } 
 }

@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a861e85245ec4341953f68494aae2ee, type: 3}
   m_Name: Estetica
   m_EditorClassIdentifier: 
-  set: 0
+  set: 1
   gender: 0
-  corDaPele: 0
+  corDaPele: 1
   hasBigas: 0
-  hasCabas: 32
+  hasCabas: 58
   hasCorta: 0
   hasCalca: 0
-  hasOclin: 10
-  cabelin: 3
-  bigas: 3
-  corBlusa: {x: 0.9962988, y: 0.85931075, z: 1, w: 1}
-  corCalca: {x: 1, y: 0.9714052, z: 0.90334374, w: 1}
-  corPisante: {x: 1, y: 0.6387663, z: 0.77479905, w: 1}
-  currentCase: -1
+  hasOclin: 82
+  cabelin: 18
+  bigas: 6
+  corBlusa: {x: 0.7116835, y: 1, z: 0.79879266, w: 1}
+  corCalca: {x: 1, y: 0.8081466, z: 0.8069707, w: 1}
+  corPisante: {x: 0.57462704, y: 1, z: 0.279099, w: 1}
+  currentCase: 0
