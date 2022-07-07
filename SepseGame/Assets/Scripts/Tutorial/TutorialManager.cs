@@ -64,11 +64,12 @@ public class TutorialManager : MonoBehaviour
 
     public void ExitTutorial()
     {
-        GameObject.Find("Tutorial").active = false;
+        GameObject.Find("Tutorial").SetActive(false);
     }
 
     public void EnterTutorial()
     {
+        GameObject.Find("Tutorial").SetActive(true);
         BBG.SetActive(true);
         Box.SetActive(true);
         TopTitle.SetActive(true);

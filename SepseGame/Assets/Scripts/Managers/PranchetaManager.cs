@@ -25,6 +25,8 @@ public class PranchetaManager : MonoBehaviour
     public GameObject PopUpVerificamedico;
     public GameObject bsepse1, bsepse2;
     public GameObject exameDesc;
+    public GameObject sangue;
+    public GameObject s1, s2, s3, s4;
     int chamadaMedico;
 
     List<int> aferidos = new List<int>();
@@ -217,13 +219,16 @@ public class PranchetaManager : MonoBehaviour
         if (Caso.lab1 == "não tem")
         {
             setText = Caso.lab1;
+            EnterNotificacao();
         }
         else
         {
-            setText = (Caso.lab1 + "\n" + Caso.lab2 + "\n" + Caso.lab3 + "\n" + Caso.lab4);
+            s1.GetComponent<TextMeshProUGUI>().text = Caso.lab1;
+            s2.GetComponent<TextMeshProUGUI>().text = Caso.lab2;
+            s3.GetComponent<TextMeshProUGUI>().text = Caso.lab3;
+            s4.GetComponent<TextMeshProUGUI>().text = Caso.lab4;
+            sangue.SetActive(true);
         }
-        
-        EnterNotificacao();
     }
 
     public void UpdateSelected()

@@ -41,8 +41,8 @@ MonoBehaviour:
   descricaoImagem: "Raio X de t\xF3rax com eleva\xE7\xE3o da c\xFApula diafragm\xE1tica"
   lab1: "Leuc\xF3citos: 12.000/mm3 (valor de refer\xEAncia: 4.000 a 11.000 mm3 )"
   lab2: "Bilirrubina 1,9 mg/dl (valor de refer\xEAncia: 0,2 a 1,0mg/dl) "
-  lab3: "Creatinina= 2,0 mg/dl (Valor de refer\xEAncia: 0,4 a 1,4 mg/dl) "
-  lab4: "Plaquetas= 250.000/mm3 (Valor de refer\xEAncia: 150.000 a 450.000 mm3 )"
+  lab3: "Creatinina: 2,0 mg/dl (Valor de refer\xEAncia: 0,4 a 1,4 mg/dl) "
+  lab4: "Plaquetas: 250.000/mm3 (Valor de refer\xEAncia: 150.000 a 450.000 mm3 )"
   indexesCorretos: 000000000300000004000000
   selecionados: 
   buttonCorreto: 1

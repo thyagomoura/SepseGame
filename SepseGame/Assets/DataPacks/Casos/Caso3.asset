@@ -39,7 +39,7 @@ MonoBehaviour:
   lab1: "Ureia: 61 mg/dL Valor de Refer\xEAncia: 15 a 50 mg/dl"
   lab2: "Creatinina: 2,3 mg/dL Valor de Refer\xEAncia: 0,7-1,6 mg/dL"
   lab3: "Plaquetas: 180.000 /mm3(Valor de refer\xEAncia: 150.000 \u2013 450.000/mm3)"
-  lab4: "Plaquetas: 180.000 /mm3(Valor de refer\xEAncia: 150.000 \u2013 450.000/mm3)"
+  lab4: "Leuc\xF3citos: 5.500/mm3 (Valor de Refer\xEAncia: 4.000 a 10.000 /mm3)"
   indexesCorretos: 010000000300000004000000050000000b000000
   selecionados: 
   buttonCorreto: 0

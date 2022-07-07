@@ -4530,7 +4530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &342332850
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5736,7 +5736,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1695456656}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.23542303
+  m_Size: 0.23542304
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9419,7 +9419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c8669ec05b0a74da18a3359ede4234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xrayPanel: {fileID: 2023351011}
+  xrayPanel: {fileID: 342332849}
 --- !u!1 &843866804
 GameObject:
   m_ObjectHideFlags: 0
@@ -12988,6 +12988,11 @@ MonoBehaviour:
   bsepse1: {fileID: 799012219}
   bsepse2: {fileID: 631535561}
   exameDesc: {fileID: 1962481111}
+  sangue: {fileID: 342332849}
+  s1: {fileID: 2027800787}
+  s2: {fileID: 350486654}
+  s3: {fileID: 741109228}
+  s4: {fileID: 935625715}
 --- !u!1 &1265416533
 GameObject:
   m_ObjectHideFlags: 0
@@ -16497,7 +16502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c8669ec05b0a74da18a3359ede4234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xrayPanel: {fileID: 2023351011}
+  xrayPanel: {fileID: 153487651}
 --- !u!114 &1559098368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18628,6 +18633,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 492044446052463788, guid: 30ad3416885df0f448c3cdd8750fa3eb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 8.946899
+      objectReference: {fileID: 0}
     - target: {fileID: 492044446052463795, guid: 30ad3416885df0f448c3cdd8750fa3eb, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -19573,7 +19582,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2023351012
 MonoBehaviour:
   m_ObjectHideFlags: 0
