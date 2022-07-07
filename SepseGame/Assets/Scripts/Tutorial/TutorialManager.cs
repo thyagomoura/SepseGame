@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TutorialManager : MonoBehaviour
 {
@@ -18,7 +19,8 @@ public class TutorialManager : MonoBehaviour
     [System.Obsolete]
     private void Start()
     {
-        if (pack.currentCase == 0)
+        string cs = SceneManager.GetActiveScene().name;
+        if (pack.currentCase == 0 && cs == "Dialogo")
         {
             BBG.SetActive(true);
             Box.SetActive(true);
@@ -60,9 +62,16 @@ public class TutorialManager : MonoBehaviour
         //Debug.Log($"Paginas: {tutorialText.textInfo.pageCount}, atual: {currentPage}");
     }
 
-    [System.Obsolete]
     public void ExitTutorial()
     {
         GameObject.Find("Tutorial").active = false;
-    } 
+    }
+
+    public void EnterTutorial()
+    {
+        BBG.SetActive(true);
+        Box.SetActive(true);
+        TopTitle.SetActive(true);
+        Exit.SetActive(true);
+    }
 }
