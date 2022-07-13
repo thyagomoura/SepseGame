@@ -19,10 +19,10 @@ MonoBehaviour:
     Sem hist\xF3rias de comorbidades."
   dialogo1: "Sensa\xE7\xE3o de fadiga, fraqueza, dor no meu abdome, n\xE1useas"
   dialogo2: A diarreia com sangue e a febre
-  FrequenciaCardiaca: 115b.p.m
+  FrequenciaCardiaca: 115bpm
   PressaoArterial: 90x65mmHg
   Saturacao: 97% em ar ambiente
-  FrequenciaRespiratoria: 20 i.p.m
+  FrequenciaRespiratoria: 20ipm
   Temperatura: "38\xB0C"
   Neurologico: "Prostrada, abertura ocular \xE0 voz, obedece a comandos  motores."
   Respiratorio: "A ausculta pulmonar murm\xFArios vesiculares presentes  sem ru\xEDdos

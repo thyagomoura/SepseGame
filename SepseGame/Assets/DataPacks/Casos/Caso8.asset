@@ -23,10 +23,10 @@ MonoBehaviour:
   dialogo1: "Muito cansa\xE7o, tosse e falta de ar. H\xE1 2 dias n\xE3o durmo direito
     a noite"
   dialogo2: A dificuldade de respirar
-  FrequenciaCardiaca: 116b.p.m
+  FrequenciaCardiaca: 116bpm
   PressaoArterial: 160x100mmHg
   Saturacao: 92% em ar ambiente
-  FrequenciaRespiratoria: 24 i.p.m
+  FrequenciaRespiratoria: 24ipm
   Temperatura: "36,8\xB0C"
   Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa"
   Respiratorio: "A ausculta pulmonar sibilos difusos e roncos em hemit\xF3rax  direito

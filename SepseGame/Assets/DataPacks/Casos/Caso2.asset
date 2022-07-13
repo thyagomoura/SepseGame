@@ -23,10 +23,10 @@ MonoBehaviour:
     febre, n\xE1useas e v\xF4mitos."
   dialogo1: "Estou sentindo fraqueza, n\xE1useas e muita dor abdome ( barriga)"
   dialogo2: A piora da minha dor abdominal (na barriga) e a febre
-  FrequenciaCardiaca: 118b.p.m
+  FrequenciaCardiaca: 118bpm
   PressaoArterial: 155x90mmHg
   Saturacao: 97% em ar ambiente
-  FrequenciaRespiratoria: 25i.p.m
+  FrequenciaRespiratoria: 25ipm
   Temperatura: "38,5\xB0C"
   Neurologico: "Consciente, orientada em tempo, espa\xE7o, pessoa. Fascies  de dor
     e ansiedade."

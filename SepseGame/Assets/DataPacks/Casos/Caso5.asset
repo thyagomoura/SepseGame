@@ -21,10 +21,10 @@ MonoBehaviour:
   dialogo1: "Dor de cabe\xE7a, nos olhos, no corpo todo"
   dialogo2: "Piora da dor no corpo, febre, des\xE2nimo. Tenho vontade de ficar  deitado
     o tempo todo."
-  FrequenciaCardiaca: 110 b.p.m
+  FrequenciaCardiaca: 110bpm
   PressaoArterial: 110 x 65mmHg
   Saturacao: 94 % em ar ambiente
-  FrequenciaRespiratoria: 24i.p.m.
+  FrequenciaRespiratoria: 24ipm
   Temperatura: "39\xB0 C"
   Neurologico: "Orientado, por\xE9m sonolento. Aus\xEAncia de rigidez de nuca"
   Respiratorio: "Murm\xFArios vesiculares presentes e sem ru\xEDdos advent\xEDcios"

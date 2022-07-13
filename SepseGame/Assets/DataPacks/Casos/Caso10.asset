@@ -20,10 +20,10 @@ MonoBehaviour:
     em uso de medica\xE7\xF5es de rotina."
   dialogo1: Estou sentindo muita dor de garganta e dificuldade para deglutir
   dialogo2: "A piora da minha dor de garganta, sensa\xE7\xE3o febril."
-  FrequenciaCardiaca: 109b.p.m
+  FrequenciaCardiaca: 109bpm
   PressaoArterial: 110x69 mmHg
   Saturacao: 92% em ar ambiente
-  FrequenciaRespiratoria: 22 i.p.m
+  FrequenciaRespiratoria: 22ipm
   Temperatura: "39\xB0C"
   Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa"
   Respiratorio: "Ausculta pulmonar com murm\xFArios vesiculares presentes,  sem ru\xEDdos

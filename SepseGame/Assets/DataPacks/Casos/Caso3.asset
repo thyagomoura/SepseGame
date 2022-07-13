@@ -20,10 +20,10 @@ MonoBehaviour:
     e outras doen\xE7as cardiovasculares."
   dialogo1: "Estou sentindo dor no abdome, na regi\xE3o lombar, na minha coxa e genit\xE1lia."
   dialogo2: A piora da minha dor, febre e sangue na urina
-  FrequenciaCardiaca: 109 b.p.m
+  FrequenciaCardiaca: 109 bpm
   PressaoArterial: 90X50mmHg
   Saturacao: 94% em ar ambiente
-  FrequenciaRespiratoria: 28 i.p.m
+  FrequenciaRespiratoria: 28 ipm
   Temperatura: "38,8\xB0C"
   Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa.  Sonolento, abertura
     ocular apenas aos chamados verbais."

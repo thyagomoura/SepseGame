@@ -18,10 +18,10 @@ MonoBehaviour:
     de uso cont\xEDnuo."
   dialogo1: "Fraqueza, dor no corpo, des\xE2nimo, tosse seca com secre\xE7\xE3o clara"
   dialogo2: "A minha febre alta, a falta de disposi\xE7\xE3o e dor no corpo.  "
-  FrequenciaCardiaca: 104b.p.m
+  FrequenciaCardiaca: 104bpm
   PressaoArterial: 120x80mmHg
   Saturacao: 92% em ar ambiente
-  FrequenciaRespiratoria: 20 i.p.m.
+  FrequenciaRespiratoria: 20ipm
   Temperatura: "38,5\xB0C"
   Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa"
   Respiratorio: "Murm\xFArios vesiculares presentes sem ru\xEDdos advent\xEDcios, 

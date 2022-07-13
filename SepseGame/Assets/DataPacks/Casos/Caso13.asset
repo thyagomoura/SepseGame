@@ -21,10 +21,10 @@ MonoBehaviour:
     do n\xEDvel de consci\xEAncia, calafrios, aumento da temperatura  corporal."
   dialogo1: Desorientado. Alega calafrios e muito sono
   dialogo2: "N\xE3o sei n\xE3o. Estou na minha casa?"
-  FrequenciaCardiaca: 112b.p.m
+  FrequenciaCardiaca: 112bpm
   PressaoArterial: 80x65mmHg
   Saturacao: 92% em ar ambiente
-  FrequenciaRespiratoria: 22 i.p.m
+  FrequenciaRespiratoria: 22ipm
   Temperatura: "38,7\xB0C"
   Neurologico: Confuso, agitado, Glasgow 13 (Abertura ocular=3,Melhor  resposta verbal=4,
     melhor resposta motora=6).

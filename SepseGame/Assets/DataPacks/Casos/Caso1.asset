@@ -21,10 +21,10 @@ MonoBehaviour:
   dialogo1: "Eu sinto muito cansa\xE7o e n\xE3o paro de tossir."
   dialogo2: "O meu estado de des\xE2nimo, inapet\xEAncia e cansa\xE7o aos m\xEDnimos
     esfor\xE7os."
-  FrequenciaCardiaca: 164b.p.m
+  FrequenciaCardiaca: 164bpm
   PressaoArterial: 110x80mmHg
   Saturacao: 92% em ar ambiente
-  FrequenciaRespiratoria: 26i.p.m
+  FrequenciaRespiratoria: 26ipm
   Temperatura: "39\xBAC"
   Neurologico: "Consciente, abertura ocular espont\xE2nea, orientado,  obedece a
     comandos. Escala de coma de Glasgow = 15."

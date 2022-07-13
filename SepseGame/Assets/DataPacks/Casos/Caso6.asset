@@ -23,10 +23,10 @@ MonoBehaviour:
   dialogo1: "Estou sentindo muita dor no abdome, nas costas e muita n\xE1usea"
   dialogo2: "Depois que vomitei, achei que a minha dor no abdome ia passar e n\xE3o
     passou."
-  FrequenciaCardiaca: '110 b.p.m '
+  FrequenciaCardiaca: '110bpm '
   PressaoArterial: 110 x 69 mmHg
   Saturacao: 94% em ar ambiente
-  FrequenciaRespiratoria: 26i.p.m
+  FrequenciaRespiratoria: 26ipm
   Temperatura: "38\xB0C"
   Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa, face de  dor.
     EVA= 7/10 (dor moderada intensidade)."

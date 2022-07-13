@@ -22,10 +22,10 @@ MonoBehaviour:
     Nega comorbidades."
   dialogo1: Dor no peito e falta de ar
   dialogo2: A dor no meu peito, a falta de ar e o sangue no meu escarro
-  FrequenciaCardiaca: 105 b.p.m
+  FrequenciaCardiaca: 105bpm
   PressaoArterial: 110x80mmHg
   Saturacao: 91% em ar ambiente
-  FrequenciaRespiratoria: 26 i.p.m.
+  FrequenciaRespiratoria: 26ipm
   Temperatura: "36,5\xB0C"
   Neurologico: "Consciente, orientado em tempo, espa\xE7o"
   Respiratorio: "Taquipneica, expansibilidade pulmonar diminu\xEDda,  murm\xFArios

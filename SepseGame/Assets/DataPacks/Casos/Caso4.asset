@@ -20,10 +20,10 @@ MonoBehaviour:
   dialogo1: "N\xE1useas, dor de cabe\xE7a, dor nas articula\xE7\xF5es"
   dialogo2: "V\xF4mitos frequentes desde ontem a noite, piora da minha dor de  cabe\xE7a,
     febre, calafrios."
-  FrequenciaCardiaca: 120b.p.m
+  FrequenciaCardiaca: 120bpm
   PressaoArterial: 90x60mmHg
   Saturacao: 90% em ar ambiente
-  FrequenciaRespiratoria: 25 rpm
+  FrequenciaRespiratoria: 25rpm
   Temperatura: "39\xB0C"
   Neurologico: "Irritabilidade, agita\xE7\xE3o, fotofobia, rigidez de nuca"
   Respiratorio: "A ausculta pulmonar murm\xFArios vesiculares presentes sem ru\xEDdos
