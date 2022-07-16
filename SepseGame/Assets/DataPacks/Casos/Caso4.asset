@@ -24,7 +24,7 @@ MonoBehaviour:
   FrequenciaCardiaca: 120 bpm
   PressaoArterial: 90x60 mmHg
   Saturacao: 90% em ar ambiente
-  FrequenciaRespiratoria: 25 rpm
+  FrequenciaRespiratoria: 25 ipm
   Temperatura: "39\xB0C"
   Neurologico: "Irritabilidade, agita\xE7\xE3o, fotofobia, rigidez de nuca"
   Respiratorio: "A ausculta pulmonar murm\xFArios vesiculares presentes sem ru\xEDdos

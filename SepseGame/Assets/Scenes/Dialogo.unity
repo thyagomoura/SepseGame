@@ -1482,6 +1482,62 @@ PrefabInstance:
       propertyPath: Monitorizar
       value: 
       objectReference: {fileID: 11400000, guid: 109e1ad231ed30445b533dec47538130, type: 2}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: ArrayCasos.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: ArrayCasos.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 74bf6ef6600739c4591988ff4bda67fe, type: 2}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: ArrayCasos.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7886000bd22f26e47bb8544df39a6ba6, type: 2}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: ArrayCasos.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 95b94bb6d5f8fd344a64adfa77eb48bf, type: 2}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: ArrayCasos.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: c5895efc851d9134c89ac4f9de30264d, type: 2}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: ArrayCasos.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: db95b5c6db7f8884d8507a30a12e1c42, type: 2}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: ArrayCasos.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0897e249e810a8b4fbe0b04879681089, type: 2}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: ArrayCasos.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: f2a6d46bf5549434abb8ed5725f15d04, type: 2}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: ArrayCasos.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4e0e70d036c412d49a728c89a022fd8d, type: 2}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: ArrayCasos.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: dd320aa9e3547764098f76eda5894f48, type: 2}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: ArrayCasos.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: 86e07f68bbb15bc4da20b27d69314087, type: 2}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: ArrayCasos.Array.data[10]
+      value: 
+      objectReference: {fileID: 11400000, guid: 62cb05028d173cb4fa3acb016504c32a, type: 2}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: ArrayCasos.Array.data[11]
+      value: 
+      objectReference: {fileID: 11400000, guid: 15d368d6a7020bf46bb5b803d55a44b6, type: 2}
+    - target: {fileID: 5453922506090650979, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: ArrayCasos.Array.data[12]
+      value: 
+      objectReference: {fileID: 11400000, guid: 401ab15f4e846504f85665e7ec10603e, type: 2}
     - target: {fileID: 6868304036755426748, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1541,6 +1597,10 @@ PrefabInstance:
     - target: {fileID: 6868304036755426749, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
       propertyPath: m_Name
       value: Paciente
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868304036755426749, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c229b7739a43a54cace89ba40ad0f5b, type: 3}

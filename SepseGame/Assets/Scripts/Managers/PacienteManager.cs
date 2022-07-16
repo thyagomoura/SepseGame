@@ -66,7 +66,7 @@ public class PacienteManager : MonoBehaviour
         }
         else
         {
-            gender = 1;
+            gender = 2;
         }
         
         Estetica.gender = gender;
