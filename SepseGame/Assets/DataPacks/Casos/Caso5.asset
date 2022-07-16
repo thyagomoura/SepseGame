@@ -35,8 +35,8 @@ MonoBehaviour:
   Renal: "Sem d\xE9bito urin\xE1rio at\xE9 o momento"
   Imagem: {fileID: 21300000, guid: 01006a2ef6fa77844ae4d12641c9e458, type: 3}
   descricaoImagem: "Raio X de t\xF3rax sem altera\xE7\xF5es"
-  lab1: "Leuc\xF3citos 11.500/mm3 (Valor de Refer\xEAncia: 4.000 a 10.000 /mm3) "
-  lab2: "Plaquetas: 100.000 /mm3(Valor de Refer\xEAncia: 150.000 \u2013 450.000/mm3)"
+  lab1: "Leuc\xF3citos 11.500/mm\xB3 (Valor de Refer\xEAncia: 4.000 a 10.000 /mm\xB3) "
+  lab2: "Plaquetas: 100.000 /mm\xB3 (Valor de Refer\xEAncia: 150.000 \u2013 450.000/mm\xB3)"
   lab3: "Hemoglobina 16 g/dL (Valor de Refer\xEAncia: 12 a 16 g/dL"
   lab4: "Hemat\xF3crito 48% (Valor de Refer\xEAncia: 36 a 46%)"
   indexesCorretos: 000000000300000004000000
@@ -46,7 +46,7 @@ MonoBehaviour:
   chamouEquipe: 0
   apertouBotaoCorreto: 0
   sexo: 1
-  pontuacao: 0
+  pontuacao: -15
   condutas:
   - "Puncionar acesso venoso perif\xE9rico calibroso"
   - "Administrar hidrata\xE7\xE3o venosa conforme prescricao m\xE9dica"
