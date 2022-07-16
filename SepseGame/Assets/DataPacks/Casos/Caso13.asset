@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso13
   m_EditorClassIdentifier: 
-  historiaClinica: "Hist\xF3ria Cl\xEDnica: MMM, 64 anos, 1,58 metros de altura,
+  historiaClinica: "<b>Hist\xF3ria cl\xEDnica:</b> MMM, 64 anos, 1,58 metros de altura,
     94 kg. Diabetes  tipo 2 e hipertens\xE3o n\xE3o tratadas. H\xE1 30 dias traumatizou
     o h\xE1lux do p\xE9 direito, o qual  evoluiu com edema e descolamento da unha.
     Realizou tratamento domiciliar por conta  pr\xF3pria utilizando pomadas. H\xE1
@@ -58,7 +58,8 @@ MonoBehaviour:
     de h\xE1lux direito para cultura"
   - "Coletar lactato arterial s\xE9rico e outros exames do kit sepse (gasometria
     arterial, bilirrubina, hemograma, coagulograma  completo)"
-  - "Administar antimicrobiano endovenoso na 1a hora conforme prescri\xE7\xE3o m\xE9dica"
+  - "Administar antimicrobiano endovenoso na 1\xAA hora conforme prescri\xE7\xE3o
+    m\xE9dica"
   - "Iniciar a administra\xE7\xE3o de cristal\xF3ide conforme prescri\xE7\xE3o m\xE9dica"
   - "Encaminhar o paciente para a Unidade de Terapia Intensiva, ap\xF3s autoriza\xE7\xE3o
     m\xE9dica"

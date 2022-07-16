@@ -455,7 +455,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1 <page> Aaaa <page> bbbb <page> eeeee <page>5
+  m_text: "Selecione a pergunta que deseja fazer ao paciente clicando no \xEDcone
+    correspondente. As perguntas podem ser refeitas quantas vezes forem necess\xE1rias.
+    <page>Ap\xF3s fazer cada uma das perguntas ao menos uma vez, ser\xE1 poss\xEDvel
+    avan\xE7ar para o pr\xF3ximo est\xE1gio. <page>Neste est\xE1gio, clique em um
+    dos bot\xF5es na parte inferior da tela para selecionar o sinal vital a ser aferido.
+    <page>Os sinais vitais aferidos, bem como os exames realizados, aparecer\xE3o
+    na prancheta, acessada atrav\xE9s do \xEDcone no canto infeiror direito. Selecione
+    os crit\xE9rios de SRIS e/ou Disfun\xE7\xF5es Org\xE2nicas e prossiga como achar
+    cab\xEDvel. <page>No \xFAltimo est\xE1gio, marque na ordem que achar correta,
+    as condutas do enfermeiro na situa\xE7\xE3o atual. Voc\xEA pode recome\xE7ar
+    a marca\xE7\xE3o a qualquer momento clicando no bot\xE3o na parte inferior. Bom
+    Jogo e Boa Sorte!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
@@ -710,7 +721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -14.01004, y: 8.94693}
+  m_AnchoredPosition: {x: -14.01001, y: 8.946899}
   m_SizeDelta: {x: 2101.69, y: 904.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &492044446052463790
@@ -1403,7 +1414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &492044447386239513
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1421,7 +1432,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.700012, y: -8.200012}
+  m_AnchoredPosition: {x: -7.699951, y: -8.199951}
   m_SizeDelta: {x: 57.19, y: 52.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &492044447386239508
@@ -1505,7 +1516,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 492044447386239515}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 492044447002320894}
+        m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+        m_MethodName: ExitTutorial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &492044447487395450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,6 +1594,11 @@ MonoBehaviour:
   tutorialText: {fileID: 492044445785464586}
   pageCountText: {fileID: 492044446570292956}
   slider: {fileID: 2070673005}
+  pack: {fileID: 11400000, guid: f0d4e489b31b05947b364615576b5215, type: 2}
+  BBG: {fileID: 492044446052463795}
+  Box: {fileID: 492044447749762700}
+  TopTitle: {fileID: 492044445813827235}
+  Exit: {fileID: 492044447386239512}
 --- !u!1 &492044447749762700
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,7 +1638,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0025024414, y: -0.0025024414}
+  m_AnchoredPosition: {x: 0.0024414062, y: -0.0024414062}
   m_SizeDelta: {x: -0.009887695, y: -0.51501465}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &492044447749762696

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso2
   m_EditorClassIdentifier: 
-  historiaClinica: "Hist\xF3ria cl\xEDnica: L.M.S , 75 anos, 80 kg, 1,62 metros de
-    altura. \xC9  hipertensa e dislipid\xEAmica. Tem uma alimenta\xE7\xE3o pouco
+  historiaClinica: "<b>Hist\xF3ria cl\xEDnica:</b> L.M.S , 75 anos, 80 kg, 1,62 metros
+    de altura. \xC9  hipertensa e dislipid\xEAmica. Tem uma alimenta\xE7\xE3o pouco
     saud\xE1vel e rica em gordura. H\xE1  um ano apresenta quadros espor\xE1dicos
     de dor em c\xF3licas na regi\xE3o do hipoc\xF4ndrio  direito e regi\xE3o epig\xE1strica.
     Toda vez que sentia estas dores comparecia ao servi\xE7o de  emerg\xEAncia, no

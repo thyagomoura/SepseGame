@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso9
   m_EditorClassIdentifier: 
-  historiaClinica: "Hist\xF3ria Cl\xEDnica: L.S.R , 26 anos, peso 60 kg, previamente
+  historiaClinica: "<b>Hist\xF3ria cl\xEDnica:</b> L.S.R , 26 anos, peso 60 kg, previamente
     h\xEDgida. Deu  entrada no pronto atendimento do servi\xE7o hospitalar devido
     quadro de diarreia  sanguinolenta associada a febre de 38,5\xBAC, com inicio
     h\xE1 24 horas. Refere fadiga, dor  abdominal, n\xE1useas e 10 epis\xF3dios diarreicos.

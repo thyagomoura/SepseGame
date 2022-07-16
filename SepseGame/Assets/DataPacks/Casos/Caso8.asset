@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso8
   m_EditorClassIdentifier: 
-  historiaClinica: "Hist\xF3ria cl\xEDnica: L.R.W, 67 anos, procurou o pronto atendimento
-    do hospital  com queixas de ins\xF4nia, dispneia progressiva, tosse produtiva
-    com expectora\xE7\xE3o branca  e cansa\xE7o aos m\xE9dios esfor\xE7os como subir
-    dois lances de escada. Refere ter o  diagn\xF3stico de bronquite, em uso pr\xE9vio
-    de budesonida e formoterol, o qual  interrompeu por conta pr\xF3pria. Tabagista
-    (dois ma\xE7os de cigarro/dia), hipertensa, infarto agudo do mioc\xE1rdio pr\xE9vio
-    em uso de AAS 100 mg/dia; carvedilol 6,25mg/dia ,  75mg/dia de captopril e 600
-    mg/dia de aminofilina."
+  historiaClinica: "<b>Hist\xF3ria cl\xEDnica:</b> L.R.W, 67 anos, procurou o pronto
+    atendimento do hospital  com queixas de ins\xF4nia, dispneia progressiva, tosse
+    produtiva com expectora\xE7\xE3o branca  e cansa\xE7o aos m\xE9dios esfor\xE7os
+    como subir dois lances de escada. Refere ter o  diagn\xF3stico de bronquite,
+    em uso pr\xE9vio de budesonida e formoterol, o qual  interrompeu por conta pr\xF3pria.
+    Tabagista (dois ma\xE7os de cigarro/dia), hipertensa, infarto agudo do mioc\xE1rdio
+    pr\xE9vio em uso de AAS 100 mg/dia; carvedilol 6,25mg/dia ,  75mg/dia de captopril
+    e 600 mg/dia de aminofilina."
   dialogo1: "Muito cansa\xE7o, tosse e falta de ar. H\xE1 2 dias n\xE3o durmo direito
     a noite"
   dialogo2: A dificuldade de respirar

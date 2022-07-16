@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso6
   m_EditorClassIdentifier: 
-  historiaClinica: "Hist\xF3ria cl\xEDnica: VSS, 35 anos, deu entrada no servi\xE7o
+  historiaClinica: "<b>Hist\xF3ria cl\xEDnica:</b> VSS, 35 anos, deu entrada no servi\xE7o
     de emerg\xEAncia do  hospital, queixando-se de dor abdominal cont\xEDnua em regi\xE3o
     epig\xE1strica irradiada para  as costas que come\xE7ou depois de retornar para
     casa de uma festa de anivers\xE1rio na qual  ingeriu pizza, salgados fritos (pastel
