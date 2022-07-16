@@ -2018,7 +2018,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.21625, y: 0.08222223}
   m_AnchorMax: {x: 0.78124994, y: 0.7702221}
-  m_AnchoredPosition: {x: -158, y: -5.0944824}
+  m_AnchoredPosition: {x: -157.99998, y: -5.0944824}
   m_SizeDelta: {x: 61.64, y: 41.609}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &504204309
@@ -5211,7 +5211,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Sinal de Disfun\xE7\xE3o"
+  m_text: "Sinal de Disfun\xE7\xE3o Org\xE2nica"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc2cc93475f76427c86a8262bee36b88, type: 2}
   m_sharedMaterial: {fileID: 2269793554123077917, guid: dc2cc93475f76427c86a8262bee36b88, type: 2}
@@ -6702,7 +6702,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 93558456}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.2746889
+  m_Size: 0.2745218
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8470,8 +8470,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 446536413}
   m_HandleRect: {fileID: 446536412}
   m_Direction: 2
-  m_Value: 0.9999999
-  m_Size: 0.496874
+  m_Value: 1
+  m_Size: 0.4964333
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
