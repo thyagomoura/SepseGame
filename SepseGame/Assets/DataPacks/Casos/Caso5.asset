@@ -40,9 +40,9 @@ MonoBehaviour:
   lab3: "Hemoglobina 16 g/dL (Valor de Refer\xEAncia: 12 a 16 g/dL"
   lab4: "Hemat\xF3crito 48% (Valor de Refer\xEAncia: 36 a 46%)"
   indexesCorretos: 000000000300000004000000
-  selecionados: 
-  buttonCorreto: 0
-  abriuProtocolo: 0
+  selecionados: 01000000
+  buttonCorreto: 2
+  abriuProtocolo: 1
   chamouEquipe: 0
   apertouBotaoCorreto: 0
   sexo: 1
@@ -54,4 +54,4 @@ MonoBehaviour:
   - "Colher hemat\xF3crito"
   - "Verificar press\xE3o arterial e temperatura axilar de 2/2 horas"
   - Instituir controle de diurese de 2 em 2 horas
-  condSelected: 
+  condSelected: 010000000200000005000000000000000400000003000000

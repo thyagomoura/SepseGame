@@ -45,7 +45,7 @@ MonoBehaviour:
   lab4: "Creatinina: 0,8mg/dL (Valor de refer\xEAncia: 0,4 a 1,4 mg/dL"
   indexesCorretos: 0000000003000000
   selecionados: 
-  buttonCorreto: 0
+  buttonCorreto: 1
   abriuProtocolo: 0
   chamouEquipe: 0
   apertouBotaoCorreto: 0

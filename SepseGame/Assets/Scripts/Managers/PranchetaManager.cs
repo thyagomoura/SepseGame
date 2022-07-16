@@ -307,9 +307,21 @@ public class PranchetaManager : MonoBehaviour
         {
             diagText.GetComponent<Text>().text = "SEPSE PROVÁVEL";
         }
-        else
+        else if(Caso.buttonCorreto == 1)
         {
             diagText.GetComponent<Text>().text = "SEPSE POSSÍVEL";
+        }
+        else if(Caso.buttonCorreto == 2)
+        {
+            diagText.GetComponent<Text>().text = "Suspeita de DENGUE";
+        }
+        else if(Caso.buttonCorreto == 3)
+        {
+            diagText.GetComponent<Text>().text = "Síndrome GRIPAL";
+        }
+        else if(Caso.buttonCorreto == 4)
+        {
+            diagText.GetComponent<Text>().text = "Suspeita de EMBOLIA PULMONAR";
         }
     }
 
@@ -325,7 +337,7 @@ public class PranchetaManager : MonoBehaviour
             Caso.pontuacao += 20;
             Caso.apertouBotaoCorreto = true;
         }
-        else
+        else if(Caso.buttonCorreto>=1)
         {
             Caso.pontuacao -= 15;
             Caso.apertouBotaoCorreto = false;
@@ -335,12 +347,12 @@ public class PranchetaManager : MonoBehaviour
 
     public void opcaoDois()
     {
-        if (Caso.buttonCorreto == 1)
+        if (Caso.buttonCorreto >= 1)
         {
             Caso.pontuacao += 20;
             Caso.apertouBotaoCorreto = true;
         }
-        else
+        else if(Caso.buttonCorreto == 0)
         {
             Caso.pontuacao -= 15;
             Caso.apertouBotaoCorreto = false;
@@ -352,13 +364,29 @@ public class PranchetaManager : MonoBehaviour
     {
         if (idx == 0)
         {
-            Caso.abriuProtocolo = true;
-            Caso.pontuacao += 15;
+            if (Caso.buttonCorreto == 0)
+            {
+                Caso.abriuProtocolo = true;
+                Caso.pontuacao += 15;
+            }
+            else if (Caso.buttonCorreto >0)
+            {
+                Caso.pontuacao -= 10;
+            }
+                
         }
-        else
+        else if(idx == 1)
         {
-            Caso.abriuProtocolo = false;
-            Caso.pontuacao -= 10;
+            if (Caso.buttonCorreto == 0)
+            {
+                Caso.abriuProtocolo = false;
+                Caso.pontuacao -= 10;
+            }
+            else if(Caso.buttonCorreto > 0)
+            {
+                Caso.pontuacao += 10;
+            }
+            
         }
         PopUpVerificamedico.SetActive(true);
     }

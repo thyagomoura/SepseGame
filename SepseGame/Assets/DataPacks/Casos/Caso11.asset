@@ -39,7 +39,7 @@ MonoBehaviour:
   lab4: "n\xE3o tem"
   indexesCorretos: 0000000004000000
   selecionados: 
-  buttonCorreto: 1
+  buttonCorreto: 3
   abriuProtocolo: 0
   chamouEquipe: 0
   apertouBotaoCorreto: 0
