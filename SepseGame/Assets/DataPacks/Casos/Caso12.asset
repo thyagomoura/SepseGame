@@ -12,20 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso12
   m_EditorClassIdentifier: 
-  historiaClinica: "<b>Hist\xF3ria cl\xEDnica:</b> R.S.N, 32 anos, h\xEDgida, deu
-    entrada no pronto  socorro queixando-se de falta de ar e de uma dor tor\xE1cica
-    que descreve  como \u201Cao lado direito e intensificada com a respira\xE7\xE3o
-    profunda (sic)\u201D. Refere  que os sintomas surgiram de repente, ao acordar
-    de manh\xE3 e que  expectorou escarro com estrias de sangue. Relata uso cont\xEDnuo
-    de  anticoncepcional h\xE1 11 anos e dor em MID h\xE1 uma semana. Tem hist\xF3ria
-    de  procedimento cir\xFArgico no joelho direito h\xE1 10 dias. N\xE3o soube informar
-    se  fez uso de anticoagulante. Nega comorbidades."
+  historiaClinica: "<b>Hist\xF3ria cl\xEDnica:</b> R.S.N, 32 anos, h\xEDgida, sexo
+    feminino, deu entrada no pronto  socorro queixando-se de falta de ar e de uma
+    dor tor\xE1cica que descreve  como \u201Cao lado direito e intensificada com
+    a respira\xE7\xE3o profunda (sic)\u201D. Refere  que os sintomas surgiram de
+    repente, ao acordar de manh\xE3 e que  expectorou escarro com estrias de sangue.
+    Relata uso cont\xEDnuo de  anticoncepcional h\xE1 11 anos e dor em MID h\xE1
+    uma semana. Tem hist\xF3ria de  procedimento cir\xFArgico no joelho direito h\xE1
+    10 dias. N\xE3o soube informar se  fez uso de anticoagulante. Nega comorbidades."
   dialogo1: Dor no peito e falta de ar
   dialogo2: A dor no meu peito, a falta de ar e o sangue no meu escarro
-  FrequenciaCardiaca: 105bpm
-  PressaoArterial: 110x80mmHg
+  FrequenciaCardiaca: 105 bpm
+  PressaoArterial: 110x80 mmHg
   Saturacao: 91% em ar ambiente
-  FrequenciaRespiratoria: 26ipm
+  FrequenciaRespiratoria: 26 ipm
   Temperatura: "36,5\xB0C"
   Neurologico: "Consciente, orientado em tempo, espa\xE7o"
   Respiratorio: "Taquipneica, expansibilidade pulmonar diminu\xEDda,  murm\xFArios
@@ -48,6 +48,7 @@ MonoBehaviour:
   abriuProtocolo: 0
   chamouEquipe: 0
   apertouBotaoCorreto: 0
+  sexo: 0
   pontuacao: 0
   condutas:
   - "Manter o paciente em posi\xE7\xE3o de Semi-Folwer (entre 30 a 45 graus)"

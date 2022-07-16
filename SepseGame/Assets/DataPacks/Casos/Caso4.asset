@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso4
   m_EditorClassIdentifier: 
-  historiaClinica: "<b>Hist\xF3ria cl\xEDnica:</b> SDR, 30 anos. Procurou atendimento
-    m\xE9dico no  Pronto Socorro com queixas de cefaleia intensa, irritabilidade,
+  historiaClinica: "<b>Hist\xF3ria cl\xEDnica:</b> SDR, 30 anos, sexo feminino. Procurou
+    atendimento m\xE9dico no  Pronto Socorro com queixas de cefaleia intensa, irritabilidade,
     dor nas articula\xE7\xF5es, calafrios. Refere ter otite recorrente, o que faz
     necess\xE1rio o uso de  analg\xE9sicos frequente. H\xE1 dois dias iniciou com
     otalgia de forte intensidade a  esquerda com sa\xEDda de secre\xE7\xE3o purulenta
@@ -21,10 +21,10 @@ MonoBehaviour:
   dialogo1: "N\xE1useas, dor de cabe\xE7a, dor nas articula\xE7\xF5es"
   dialogo2: "V\xF4mitos frequentes desde ontem a noite, piora da minha dor de  cabe\xE7a,
     febre, calafrios."
-  FrequenciaCardiaca: 120bpm
-  PressaoArterial: 90x60mmHg
+  FrequenciaCardiaca: 120 bpm
+  PressaoArterial: 90x60 mmHg
   Saturacao: 90% em ar ambiente
-  FrequenciaRespiratoria: 25rpm
+  FrequenciaRespiratoria: 25 rpm
   Temperatura: "39\xB0C"
   Neurologico: "Irritabilidade, agita\xE7\xE3o, fotofobia, rigidez de nuca"
   Respiratorio: "A ausculta pulmonar murm\xFArios vesiculares presentes sem ru\xEDdos
@@ -45,6 +45,7 @@ MonoBehaviour:
   abriuProtocolo: 0
   chamouEquipe: 0
   apertouBotaoCorreto: 0
+  sexo: 0
   pontuacao: 0
   condutas:
   - Manter cabeceira do leito elevada a 45 graus

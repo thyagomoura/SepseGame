@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso3
   m_EditorClassIdentifier: 
-  historiaClinica: "<b>Hist\xF3ria cl\xEDnica:</b> B.C.L, 45 anos, deu entrada no
-    servi\xE7o de emerg\xEAncia  com queixas de febre, tr\xEAs epis\xF3dios de v\xF4mito,
-    dis\xFAria, hemat\xFAria e dor de forte  intensidade na regi\xE3o lombar direita
-    h\xE1 duas horas, irradiada para a bexiga, coxa e  genit\xE1lia. Tem hist\xF3ria
-    cl\xEDnica de c\xE1lculo renal, mas at\xE9 ontem mantinha-se sintom\xE1tico. 
-    Nega diabetes e outras doen\xE7as cardiovasculares."
+  historiaClinica: "<b>Hist\xF3ria cl\xEDnica:</b> B.C.L, sexo masculino, 45 anos,
+    deu entrada no servi\xE7o de emerg\xEAncia  com queixas de febre, tr\xEAs epis\xF3dios
+    de v\xF4mito, dis\xFAria, hemat\xFAria e dor de forte  intensidade na regi\xE3o
+    lombar direita h\xE1 duas horas, irradiada para a bexiga, coxa e  genit\xE1lia.
+    Tem hist\xF3ria cl\xEDnica de c\xE1lculo renal, mas at\xE9 ontem mantinha-se
+    sintom\xE1tico.  Nega diabetes e outras doen\xE7as cardiovasculares."
   dialogo1: "Estou sentindo dor no abdome, na regi\xE3o lombar, na minha coxa e genit\xE1lia."
   dialogo2: A piora da minha dor, febre e sangue na urina
   FrequenciaCardiaca: 109 bpm
-  PressaoArterial: 90X50mmHg
+  PressaoArterial: 90X50 mmHg
   Saturacao: 94% em ar ambiente
   FrequenciaRespiratoria: 28 ipm
   Temperatura: "38,8\xB0C"
@@ -40,12 +40,13 @@ MonoBehaviour:
   lab2: "Creatinina: 2,3 mg/dL Valor de Refer\xEAncia: 0,7-1,6 mg/dL"
   lab3: "Plaquetas: 180.000 /mm3(Valor de refer\xEAncia: 150.000 \u2013 450.000/mm3)"
   lab4: "Leuc\xF3citos: 5.500/mm3 (Valor de Refer\xEAncia: 4.000 a 10.000 /mm3)"
-  indexesCorretos: 010000000300000004000000050000000b000000
+  indexesCorretos: 00000000010000000300000004000000050000000b000000
   selecionados: 
   buttonCorreto: 0
   abriuProtocolo: 0
   chamouEquipe: 0
   apertouBotaoCorreto: 0
+  sexo: 1
   pontuacao: 0
   condutas:
   - "Puncionar acesso venoso perif\xE9rico calibroso"

@@ -38,6 +38,8 @@ public class Caso : ScriptableObject
     public bool abriuProtocolo = false;
     public bool chamouEquipe = false;
     public bool apertouBotaoCorreto = false;
+    //masculino = true; feminino = false;
+    public bool sexo = true;
 
     public int pontuacao;
 

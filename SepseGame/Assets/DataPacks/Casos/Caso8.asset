@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810b57f999251c649b4c9511994c1939, type: 3}
   m_Name: Caso8
   m_EditorClassIdentifier: 
-  historiaClinica: "<b>Hist\xF3ria cl\xEDnica:</b> L.R.W, 67 anos, procurou o pronto
-    atendimento do hospital  com queixas de ins\xF4nia, dispneia progressiva, tosse
-    produtiva com expectora\xE7\xE3o branca  e cansa\xE7o aos m\xE9dios esfor\xE7os
+  historiaClinica: "<b>Hist\xF3ria cl\xEDnica:</b> L.R.W, feminino, 67 anos, procurou
+    o pronto atendimento do hospital  com queixas de ins\xF4nia, dispneia progressiva,
+    tosse produtiva com expectora\xE7\xE3o branca  e cansa\xE7o aos m\xE9dios esfor\xE7os
     como subir dois lances de escada. Refere ter o  diagn\xF3stico de bronquite,
     em uso pr\xE9vio de budesonida e formoterol, o qual  interrompeu por conta pr\xF3pria.
     Tabagista (dois ma\xE7os de cigarro/dia), hipertensa, infarto agudo do mioc\xE1rdio
@@ -23,10 +23,10 @@ MonoBehaviour:
   dialogo1: "Muito cansa\xE7o, tosse e falta de ar. H\xE1 2 dias n\xE3o durmo direito
     a noite"
   dialogo2: A dificuldade de respirar
-  FrequenciaCardiaca: 116bpm
-  PressaoArterial: 160x100mmHg
+  FrequenciaCardiaca: 116 bpm
+  PressaoArterial: 160x100 mmHg
   Saturacao: 92% em ar ambiente
-  FrequenciaRespiratoria: 24ipm
+  FrequenciaRespiratoria: 24 ipm
   Temperatura: "36,8\xB0C"
   Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa"
   Respiratorio: "A ausculta pulmonar sibilos difusos e roncos em hemit\xF3rax  direito
@@ -49,6 +49,7 @@ MonoBehaviour:
   abriuProtocolo: 0
   chamouEquipe: 0
   apertouBotaoCorreto: 0
+  sexo: 0
   pontuacao: 0
   condutas:
   - Puncionar acessso venoso periferico calibroso
