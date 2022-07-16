@@ -19,14 +19,6 @@ public class TutorialManager : MonoBehaviour
     [System.Obsolete]
     private void Start()
     {
-        string cs = SceneManager.GetActiveScene().name;
-        if (pack.currentCase == 0 && cs == "Dialogo")
-        {
-            BBG.SetActive(true);
-            Box.SetActive(true);
-            TopTitle.SetActive(true);
-            Exit.SetActive(true);
-        }
         atualSprite.sprite = tutorialSprites[0];
         slider.value = currentPage;
         pageCountText.text = $"{tutorialText.pageToDisplay} / 5";
@@ -64,7 +56,10 @@ public class TutorialManager : MonoBehaviour
 
     public void ExitTutorial()
     {
-        GameObject.Find("Tutorial").SetActive(false);
+        BBG.SetActive(false);
+        Box.SetActive(false);
+        TopTitle.SetActive(false);
+        Exit.SetActive(false);
     }
 
     public void EnterTutorial()
@@ -74,5 +69,6 @@ public class TutorialManager : MonoBehaviour
         Box.SetActive(true);
         TopTitle.SetActive(true);
         Exit.SetActive(true);
+        Debug.Log("kjbsdlkjhfg");
     }
 }
