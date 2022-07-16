@@ -13,7 +13,7 @@ public class PacienteManager : MonoBehaviour
     public Sprite[] peleArrayF;
     public Sprite[] cabeloArrayF;
     public Sprite[] calcaArrayF;
-
+    
     public Sprite oclinSprite;
 
     public GameObject PersonagemMasculino;
@@ -22,6 +22,8 @@ public class PacienteManager : MonoBehaviour
     public Monitorizar Monitorizar;
 
     public Estetica Estetica;
+    public Caso Caso;
+    public Caso[] ArrayCasos;
 
     public int corDaPele, hasBigas, hasCabas, hasCorta, hasCalca, hasOclin, cabelin, bigas;
 
@@ -31,11 +33,13 @@ public class PacienteManager : MonoBehaviour
 
     private void Start()
     {
+        Caso = ArrayCasos[Estetica.currentCase];
+
         if (!Estetica.set)
         {
             Generate();
         }
-        else if(Estetica.gender == 0)
+        else if(Estetica.gender == 0 && Caso.sexo)
         {
             SetMale();
         }
@@ -55,7 +59,16 @@ public class PacienteManager : MonoBehaviour
 
     public void Generate()
     {
-        int gender = Random.Range(0, 2);
+        int gender;
+        if (Caso.sexo)
+        {
+            gender = 0;
+        }
+        else
+        {
+            gender = 1;
+        }
+        
         Estetica.gender = gender;
         Estetica.set = true;
         if (gender < 1)
