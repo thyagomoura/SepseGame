@@ -16,6 +16,7 @@ public class Pontuacao : MonoBehaviour
     public List<Slider> sliders;
     public List<GameObject> textsStats;
     public List<TextMeshProUGUI> avisos;
+    public GameObject tempoText;
 
     public static int count = 0, countError = 0;
     float acertos;
@@ -117,6 +118,14 @@ public class Pontuacao : MonoBehaviour
         sliders[2].maxValue = Lines.Count;
         sliders[2].value = erros;
         textsStats[2].GetComponent<Text>().text = erros.ToString();
+
+        TimerManager timer = GameObject.Find("Timer").GetComponent<TimerManager>();
+        Caso.time = timer.timeLeft - pack.lastTime;
+
+        float minutes = Mathf.FloorToInt(Caso.time / 60);
+        float seconds = Mathf.FloorToInt(Caso.time % 60);
+
+        tempoText.GetComponent<TextMeshProUGUI>().text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
     public void transition()

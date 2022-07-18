@@ -8,7 +8,7 @@ public class TimerManager : MonoBehaviour
 {
     public Text timerText;
 
-    float timeLeft = 99999.0f;
+    public float timeLeft = 0.0f;
 
     private bool active = false;
 
@@ -32,7 +32,7 @@ public class TimerManager : MonoBehaviour
     void Update()
     {
         string cs = SceneManager.GetActiveScene().name;
-        if (cs == "Customize Nurse" || cs == "MainMenu" || cs == "Transicao" || cs == "Pontuacao" || cs == "FeedbackCondutas" || cs == "FinalScene" || cs == "TimeUp" || GameObject.Find("Tutorial") != null)
+        if (cs == "Customize Nurse" || cs == "MainMenu" || cs == "Transicao" || cs == "Pontuacao" || cs == "FeedbackCondutas" || cs == "FinalScene" || cs == "TimeUp" || GameObject.Find("BBGTutorial") != null)
         {
             active = false;
         }
@@ -43,17 +43,13 @@ public class TimerManager : MonoBehaviour
 
         if (active)
         {
-            timeLeft -= Time.deltaTime;
+            timeLeft += Time.deltaTime;
             float minutes = Mathf.FloorToInt(timeLeft / 60);
             float seconds = Mathf.FloorToInt(timeLeft % 60);
 
             timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         }
 
-        if(timeLeft <= 0.0f)
-        {
-            SceneManager.LoadScene("TimeUp");
-            Destroy(gameObject);
-        }
+        Debug.Log(active);
     }
 }

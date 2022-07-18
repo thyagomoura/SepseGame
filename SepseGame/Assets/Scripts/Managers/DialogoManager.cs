@@ -25,6 +25,8 @@ public class DialogoManager : MonoBehaviour
     {
         Caso = ArrayCasos[pack.currentCase];
 
+        pack.lastTime = GameObject.Find("Timer").GetComponent<TimerManager>().timeLeft;
+
         HC.GetComponent<TextMeshProUGUI>().text = Caso.historiaClinica;
     }
 
@@ -98,5 +100,12 @@ public class DialogoManager : MonoBehaviour
     public void changeScene()
     {
         SceneManager.LoadScene("Hospital");
+    }
+
+    public void abrirHC()
+    {
+        CasoClinico.SetActive(true);
+        contCC.SetActive(true);
+        Opcoes.SetActive(false);
     }
 }

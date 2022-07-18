@@ -46,4 +46,6 @@ public class Caso : ScriptableObject
     public List<string> condutas;
 
     public List<int> condSelected;
+
+    public float time;
 }
