@@ -460,7 +460,7 @@ MonoBehaviour:
     <page>Ap\xF3s fazer cada uma das perguntas ao menos uma vez, ser\xE1 poss\xEDvel
     avan\xE7ar para o pr\xF3ximo est\xE1gio. <page>Neste est\xE1gio, clique em um
     dos bot\xF5es na parte inferior da tela para selecionar o sinal vital a ser aferido.
-    <page>Clique na prancheta para ver os dados da anamnese e do exame f\xEDsico
+    <page>Clique na prancheta para ver os dados da an\xE1lise e do exame f\xEDsico
     que voc\xEA realizou. Selecione os crit\xE9rios de SRIS e/ou Disfun\xE7\xF5es
     Org\xE2nicas e prossiga como achar cab\xEDvel. <page>No \xFAltimo est\xE1gio,
     marque na ordem que achar correta, as condutas do enfermeiro na situa\xE7\xE3o
@@ -1584,7 +1584,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fd16a33106fa8704b9ae13fe59596319, type: 3}
   - {fileID: 21300000, guid: 580b828b1917285408b718a5ac21a0fc, type: 3}
   - {fileID: 21300000, guid: 46b0f0a7d187c03488ba287921914360, type: 3}
-  - {fileID: 21300000, guid: 515ce2d294355cc42a70de217bfecfed, type: 3}
+  - {fileID: 21300000, guid: aff4014a53d0c4e49a75c2a30ba6581c, type: 3}
   - {fileID: 21300000, guid: c3ec524cb75140f46952c1e0ccdcfafc, type: 3}
   atualSprite: {fileID: 492044446972535264}
   btnNext: {fileID: 8420438910434922393}
