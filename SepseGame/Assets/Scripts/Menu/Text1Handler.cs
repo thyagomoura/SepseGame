@@ -6,7 +6,7 @@ using TMPro;
 public class Text1Handler : MonoBehaviour
 {
     int currentPosition;
-    string fullText = "Você será o (a) enfermeiro (a) que está de plantão na unidade de emergência e deverá avaliar cada paciente admitido. O desafio de hoje é reconhecer os casos confirmados ou suspeitos de sepse, tomar decisões acerca do preenchimento ou não o protocolo de sepse, iniciar ou não o pacote de primeira hora para o tratamento de casos suspeitos, priorizar as condutas de enfermagem necessárias para cada caso clínico.";
+    string fullText = "Você será o (a) enfermeiro (a) que está de plantão na unidade de emergência e deverá avaliar cada paciente admitido. O desafio de hoje é reconhecer os casos confirmados ou suspeitos de sepse e com base na presença de disfunção orgânica ou critérios de síndrome de resposta inflamatória sistêmica (SRIS) deverá tomar decisões acerca da abertura  ou não do protocolo de sepse, chamar ou não a equipe médica, iniciar ou não o pacote de primeira hora para o tratamento de casos suspeitos, priorizar as condutas de enfermagem necessárias para cada caso clínico. Sua tomada de decisão permitirá que você avance no jogo. Utilize o sistema de clicks para ativar os diálogos, as tomadas de decisões e as ações. Condutas corretas permitirá que você acumule pontos, caso contrário perderá pontos. No total há 13 casos clínicos para serem solucionados. No final de cada caso, você terá um feedback de sua performance.  Aparecerá uma janela mostrando o seu desempenho.  Boa sorte!";
     float Delay = 0.04f;
     public GameObject T1;
 
