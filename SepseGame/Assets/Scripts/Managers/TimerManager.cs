@@ -12,6 +12,7 @@ public class TimerManager : MonoBehaviour
 
     private bool active = false;
 
+
     void Awake()
     {
         SetUpSingleton();
@@ -35,10 +36,13 @@ public class TimerManager : MonoBehaviour
         if (cs == "Customize Nurse" || cs == "MainMenu" || cs == "Transicao" || cs == "Pontuacao" || cs == "FeedbackCondutas" || cs == "FinalScene" || cs == "TimeUp" || GameObject.Find("BBGTutorial") != null)
         {
             active = false;
+            gameObject.SetActive(false);
+
         }
         else
         {
             active = true;
+            gameObject.SetActive(true);
         }
 
         if (active)

@@ -13,6 +13,7 @@ public class EmailUtility : MonoBehaviour
     public List<Caso> Casos;
     public Caso caso;
     public Estetica pack;
+    public string auxTime;
 
     int numCasoCurrent;
     string txtAux;
@@ -52,8 +53,17 @@ public class EmailUtility : MonoBehaviour
 
         numCasoCurrent = pack.currentCase;
         SelecaoCaso(numCasoCurrent);
+        Debug.Log(results0);
     }
 
+    string ConvertTime()
+    {
+        float minutes = Mathf.FloorToInt(caso.time / 60);
+        float seconds = Mathf.FloorToInt(caso.time % 60);
+
+        auxTime = string.Format("{0:00}:{1:00}", minutes, seconds);
+        return auxTime;
+    }
 
     void SelecaoCaso(int numCasoCurrent)
     {
@@ -62,7 +72,7 @@ public class EmailUtility : MonoBehaviour
             case 0:
                 //pontuacao
                 caso0[0, 0] = caso.pontuacao.ToString();
-                caso0[7, 0] = caso.time.ToString();
+                caso0[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso0);
                 //erros
