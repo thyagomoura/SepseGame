@@ -52,7 +52,6 @@ public class EmailUtility : MonoBehaviour
 
         numCasoCurrent = pack.currentCase;
         SelecaoCaso(numCasoCurrent);
-        Debug.Log(EmailSend.resultado0R);
     }
 
 
@@ -64,7 +63,6 @@ public class EmailUtility : MonoBehaviour
                 //pontuacao
                 caso0[0, 0] = caso.pontuacao.ToString();
                 caso0[7, 0] = caso.time.ToString();
-                Debug.Log(caso0[7,0]);
                 //acertos
                 SaveAcertos(caso0);
                 //erros
