@@ -6,6 +6,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine.UI;
 using System.Net.Mime;
+using System.Linq;
 
 public class EmailUtility : MonoBehaviour
 {
@@ -15,19 +16,19 @@ public class EmailUtility : MonoBehaviour
 
     int numCasoCurrent;
     string txtAux;
-    string[,] caso0 = new string[7, 14];
-    string[,] caso1 = new string[7, 14];
-    string[,] caso2 = new string[7, 14];
-    string[,] caso3 = new string[7, 14];
-    string[,] caso4 = new string[7, 14];
-    string[,] caso5 = new string[7, 14];
-    string[,] caso6 = new string[7, 14];
-    string[,] caso7 = new string[7, 14];
-    string[,] caso8 = new string[7, 14];
-    string[,] caso9 = new string[7, 14];
-    string[,] caso10 = new string[7, 14];
-    string[,] caso11 = new string[7, 14];
-    string[,] caso12 = new string[7, 14];
+    string[,] caso0 = new string[8, 14];
+    string[,] caso1 = new string[8, 14];
+    string[,] caso2 = new string[8, 14];
+    string[,] caso3 = new string[8, 14];
+    string[,] caso4 = new string[8, 14];
+    string[,] caso5 = new string[8, 14];
+    string[,] caso6 = new string[8, 14];
+    string[,] caso7 = new string[8, 14];
+    string[,] caso8 = new string[8, 14];
+    string[,] caso9 = new string[8, 14];
+    string[,] caso10 = new string[8, 14];
+    string[,] caso11 = new string[8, 14];
+    string[,] caso12 = new string[8, 14];
 
     string resultsAux;
 
@@ -47,12 +48,11 @@ public class EmailUtility : MonoBehaviour
 
     void Start()
     {
-
-
         caso = Casos[pack.currentCase];
 
         numCasoCurrent = pack.currentCase;
         SelecaoCaso(numCasoCurrent);
+        Debug.Log(EmailSend.resultado0R);
     }
 
 
@@ -63,6 +63,8 @@ public class EmailUtility : MonoBehaviour
             case 0:
                 //pontuacao
                 caso0[0, 0] = caso.pontuacao.ToString();
+                caso0[7, 0] = caso.time.ToString();
+                Debug.Log(caso0[7,0]);
                 //acertos
                 SaveAcertos(caso0);
                 //erros
@@ -82,6 +84,7 @@ public class EmailUtility : MonoBehaviour
             case 1:
                 //pontuacao
                 caso1[0, 0] = caso.pontuacao.ToString();
+                caso1[7, 0] = caso.time.ToString();
                 //acertos
                 SaveAcertos(caso1);
                 //erros
@@ -101,6 +104,7 @@ public class EmailUtility : MonoBehaviour
             case 2:
                 //pontuacao
                 caso2[0, 0] = caso.pontuacao.ToString();
+                caso2[7, 0] = pack.lastTime.ToString();
                 //acertos
                 SaveAcertos(caso2);
                 //erros
@@ -120,6 +124,7 @@ public class EmailUtility : MonoBehaviour
             case 3:
                 //pontuacao
                 caso3[0, 0] = caso.pontuacao.ToString();
+                caso3[7, 0] = caso.time.ToString();
                 //acertos
                 SaveAcertos(caso3);
                 //erros
@@ -139,6 +144,7 @@ public class EmailUtility : MonoBehaviour
             case 4:
                 //pontuacao
                 caso4[0, 0] = caso.pontuacao.ToString();
+                caso4[7, 0] = caso.time.ToString();
                 //acertos
                 SaveAcertos(caso4);
                 //erros
@@ -158,6 +164,7 @@ public class EmailUtility : MonoBehaviour
             case 5:
                 //pontuacao
                 caso5[0, 0] = caso.pontuacao.ToString();
+                caso5[7, 0] = caso.time.ToString();
                 //acertos
                 SaveAcertos(caso5);
                 //erros
@@ -177,6 +184,7 @@ public class EmailUtility : MonoBehaviour
             case 6:
                 //pontuacao
                 caso6[0, 0] = caso.pontuacao.ToString();
+                caso6[7, 0] = caso.time.ToString();
                 //acertos
                 SaveAcertos(caso6);
                 //erros
@@ -196,6 +204,7 @@ public class EmailUtility : MonoBehaviour
             case 7:
                 //pontuacao
                 caso7[0, 0] = caso.pontuacao.ToString();
+                caso7[7, 0] = caso.time.ToString();
                 //acertos
                 SaveAcertos(caso7);
                 //erros
@@ -215,6 +224,7 @@ public class EmailUtility : MonoBehaviour
             case 8:
                 //pontuacao
                 caso8[0, 0] = caso.pontuacao.ToString();
+                caso8[7, 0] = caso.time.ToString();
                 //acertos
                 SaveAcertos(caso8);
                 //erros
@@ -234,6 +244,7 @@ public class EmailUtility : MonoBehaviour
             case 9:
                 //pontuacao
                 caso9[0, 0] = caso.pontuacao.ToString();
+                caso9[7, 0] = caso.time.ToString();
                 //acertos
                 SaveAcertos(caso9);
                 //erros
@@ -253,6 +264,7 @@ public class EmailUtility : MonoBehaviour
             case 10:
                 //pontuacao
                 caso10[0, 0] = caso.pontuacao.ToString();
+                caso10[7, 0] = caso.time.ToString();
                 //acertos
                 SaveAcertos(caso10);
                 //erros
@@ -272,6 +284,7 @@ public class EmailUtility : MonoBehaviour
             case 11:
                 //pontuacao
                 caso11[0, 0] = caso.pontuacao.ToString();
+                caso11[7, 0] = caso.time.ToString();
                 //acertos
                 SaveAcertos(caso11);
                 //erros
@@ -291,6 +304,7 @@ public class EmailUtility : MonoBehaviour
             case 12:
                 //pontuacao
                 caso12[0, 0] = caso.pontuacao.ToString();
+                caso12[7, 0] = caso.time.ToString();
                 //acertos
                 SaveAcertos(caso12);
                 //erros
@@ -474,6 +488,19 @@ public class EmailUtility : MonoBehaviour
 
     string CorrigirMatriz(string[,] res)
     {
+        string[,] aux2;
+        aux2 = res;
+        for (int f=0; f < 8; f++)
+        {
+            for (int j=0; j<14;j++)
+            {
+                if (res[f,j] == null || res[f, j] == string.Empty)
+                {
+                    res[f,j] = "-";
+                }
+            }
+        }
+
         resultsAux = string.Join("\n",
               Enumerable.Range(0, res.GetUpperBound(0) + 1)
              .Select(x => Enumerable.Range(0, res.GetUpperBound(1) + 1)

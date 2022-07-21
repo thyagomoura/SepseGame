@@ -37,10 +37,11 @@ public class EmailSend : MonoBehaviour
             "4. Quarta linha sempre será os NÂO MARCADOS\n" +
             "5. Quinta linha sempre será os ACERTOS DE CONDUTA\n" +
             "6. Sexta linha sempre será os ERROS DE CONDUTA\n" +
-            "7. Sétima linha sempre será os AVISOS\n\n";
+            "7. Sétima linha sempre será os AVISOS\n" +
+            "8. Oitava linha sempre será o TEMPO FINAL DO CASO\n\n";
 
         titleName = "Relatorio de desempenho - " + Login.nome;
-
+        
         if (pack.currentCase == 13)
         {
             SendEmail();

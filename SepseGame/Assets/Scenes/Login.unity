@@ -560,6 +560,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputFieldNome: {fileID: 825033358}
   inputFieldCpf: {fileID: 92752023}
+  PlaceHolderNome: {fileID: 1200549355}
+  PlaceHolderCpf: {fileID: 1995787158}
+  permited: 0
 --- !u!1 &372862742
 GameObject:
   m_ObjectHideFlags: 0
