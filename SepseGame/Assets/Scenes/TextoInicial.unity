@@ -315,7 +315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 182.56, y: -16.63}
+  m_AnchoredPosition: {x: 182.56, y: -16.630005}
   m_SizeDelta: {x: 397.14, y: 61.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &519910897
@@ -451,6 +451,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8218927766576583382, guid: 61f537d071f9c9440ba014995d09361b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1996746697}
+    - target: {fileID: 8218927766576583382, guid: 61f537d071f9c9440ba014995d09361b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ProxSceneMain
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218927766576583382, guid: 61f537d071f9c9440ba014995d09361b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TextoInicial, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61f537d071f9c9440ba014995d09361b, type: 3}
 --- !u!224 &856160019 stripped
@@ -575,7 +587,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 11.7, y: 0}
+  m_AnchoredPosition: {x: 11.699997, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1261363070
@@ -840,6 +852,7 @@ GameObject:
   - component: {fileID: 1996746695}
   - component: {fileID: 1996746694}
   - component: {fileID: 1996746693}
+  - component: {fileID: 1996746697}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -929,6 +942,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1996746697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996746692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840eb7c30aa877f43831d9395ddb350a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2048779668
 PrefabInstance:
   m_ObjectHideFlags: 0

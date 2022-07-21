@@ -25,6 +25,6 @@ public class Login : MonoBehaviour
     [System.Obsolete]
     public void ProxScene()
     {
-        Application.LoadLevel("MainMenu");
+        Application.LoadLevel("TextoInicial");
     }
 }
