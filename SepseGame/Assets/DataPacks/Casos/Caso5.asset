@@ -46,7 +46,7 @@ MonoBehaviour:
   chamouEquipe: 0
   apertouBotaoCorreto: 0
   sexo: 1
-  pontuacao: -15
+  pontuacao: 0
   condutas:
   - "Puncionar acesso venoso perif\xE9rico calibroso"
   - "Administrar hidrata\xE7\xE3o venosa conforme prescricao m\xE9dica"
@@ -55,3 +55,4 @@ MonoBehaviour:
   - "Verificar press\xE3o arterial e temperatura axilar de 2/2 horas"
   - Instituir controle de diurese de 2 em 2 horas
   condSelected: 010000000200000005000000000000000400000003000000
+  time: 0

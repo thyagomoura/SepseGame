@@ -6,7 +6,6 @@ using System.Linq;
 using TMPro;
 using UnityEngine.UI;
 using System.Net.Mime;
-using System.Linq;
 
 public class EmailUtility : MonoBehaviour
 {
