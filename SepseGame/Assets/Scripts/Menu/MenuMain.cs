@@ -11,6 +11,7 @@ public class MenuMain : MonoBehaviour
     public AudioSource Musica;
     public GameObject anim1, anim2;
     public GameObject contButton;
+    public EsteticaNurse EsteticaNurse;
 
     private void Start()
     {
@@ -18,11 +19,13 @@ public class MenuMain : MonoBehaviour
         {
             Musica.volume = 0.5f;
         }
+        
     }
 
     public void Play()
     {
         //ir pro jogo
+        EsteticaNurse.set = false;
         SceneManager.LoadScene("CustomizeNurse");
     }
     public void Quit()
@@ -47,6 +50,7 @@ public class MenuMain : MonoBehaviour
     public void GoCustomize()
     {
         //ir pra customizacao de personagem
+        EsteticaNurse.set = false;
         SceneManager.LoadScene("CustomizeNurse");
     }
 }

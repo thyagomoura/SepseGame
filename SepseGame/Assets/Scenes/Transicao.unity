@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Estetica: {fileID: 11400000, guid: f0d4e489b31b05947b364615576b5215, type: 2}
+  EsteticaNurse: {fileID: 11400000, guid: fcfc5772fb0a6a84a9b7df6e3a64168b, type: 2}
   text: {fileID: 582314008}
 --- !u!1 &548578462
 GameObject:

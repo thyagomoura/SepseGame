@@ -8706,6 +8706,7 @@ MonoBehaviour:
   anim1: {fileID: 1726111236}
   anim2: {fileID: 1279974959}
   contButton: {fileID: 241608590}
+  EsteticaNurse: {fileID: 11400000, guid: fcfc5772fb0a6a84a9b7df6e3a64168b, type: 2}
 --- !u!114 &1774508005
 MonoBehaviour:
   m_ObjectHideFlags: 0

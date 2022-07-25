@@ -16,11 +16,11 @@ MonoBehaviour:
   gender: 0
   corDaPele: 2
   hasBigas: 1
-  hasCabas: 10
-  hasOclin: 27
-  cabelin: 12
-  bigas: 8
-  role: 65
-  estetoscopio: 78
-  mascara: 13
-  corRoupa: {x: 0.426, y: 1, z: 0.65930134, w: 1}
+  hasCabas: 40
+  hasOclin: 32
+  cabelin: 16
+  bigas: 7
+  role: 50
+  estetoscopio: 18
+  mascara: 88
+  corRoupa: {x: 0.7941181, y: 1, z: 0.426, w: 1}

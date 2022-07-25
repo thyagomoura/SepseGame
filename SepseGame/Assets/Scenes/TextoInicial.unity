@@ -1049,6 +1049,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hospital BG Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 1245932758401733727, guid: 21115ee243da5d142a669624eca0f666, type: 3}
+      propertyPath: m_Color.b
+      value: 0.106000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245932758401733727, guid: 21115ee243da5d142a669624eca0f666, type: 3}
+      propertyPath: m_Color.g
+      value: 0.106000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245932758401733727, guid: 21115ee243da5d142a669624eca0f666, type: 3}
+      propertyPath: m_Color.r
+      value: 0.106000006
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21115ee243da5d142a669624eca0f666, type: 3}
 --- !u!224 &2048779669 stripped
