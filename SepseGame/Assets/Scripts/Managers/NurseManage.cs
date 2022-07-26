@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class NurseManage : MonoBehaviour
 {
     public GameObject PersonagemMasculino;
-    //public GameObject BigodeOptions;
     public Sprite[] peleArray;
     public Sprite[] cabeloArray;
     public Sprite[] barbaArray;
@@ -42,7 +41,8 @@ public class NurseManage : MonoBehaviour
 
     private void Start()
     {
-        //Debug.Log(EsteticaNurse.set);
+        //DontDestroyOnLoad(this.gameObject);
+        ////Debug.Log(EsteticaNurse.set);
 
         Blusa = GameObject.Find("Blusa");
         Calca = GameObject.Find("Calca");
@@ -50,28 +50,51 @@ public class NurseManage : MonoBehaviour
         CalcaF = GameObject.Find("CalcaF");
 
         cs = SceneManager.GetActiveScene().name;
+        //Debug.Log("testes");
+        //Debug.Log(cs);
+        //Debug.Log(EsteticaNurse.set);
 
         if (cs != "Hospital")
         {
             EsteticaNurse.set = false;
             scm.slider.onValueChanged.AddListener(delegate { SetSliderColor(); });
+            if (!EsteticaNurse.set)
+            {
+                //Debug.Log("entrou primeiro if");
+                Generate();
+            }
+
+            else if (EsteticaNurse.gender == 0)
+            {
+                //Debug.Log("entrou segundo if");
+                SetMale();
+            }
+            else
+            {
+                //Debug.Log("entrou terceiro if");
+                ////Debug.Log(EsteticaNurse.gender);
+                SetFemale();
+            }
+        }
+        else
+        {
+            Debug.Log("Gender = " + EsteticaNurse.gender);
+            if (EsteticaNurse.gender == 0)
+            {
+                PersonagemMasculino.SetActive(true);
+                PersonagemFeminino.SetActive(false);
+
+            }
+            else if (EsteticaNurse.gender == 1)
+            {
+                PersonagemFeminino.SetActive(true);
+                PersonagemMasculino.SetActive(false);
+            }
         }
 
         //if (!CompareTag("hospital")) scm.slider.onValueChanged.AddListener(delegate { SetSliderColor(); });
 
-        if (!EsteticaNurse.set)
-        {
-            Generate();
-        }
-        else if (EsteticaNurse.gender == 0)
-        {
-            SetMale();
-        }
-        else
-        {
-            //Debug.Log(EsteticaNurse.gender);
-            SetFemale();
-        }
+
 
     }
 
@@ -322,7 +345,8 @@ public class NurseManage : MonoBehaviour
         BlusaF.GetComponent<SpriteRenderer>().color = corzinha;
         CalcaF.GetComponent<SpriteRenderer>().color = corzinha;
     }
-    public void Save() {
+    public void Save()
+    {
         EsteticaNurse.set = true;
     }
 

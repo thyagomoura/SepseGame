@@ -3,7 +3,17 @@ guid: 8e0f868fbf8238443b10ef436930d50d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - PersonagemMasculino: {instanceID: 0}
+  - blusa: {instanceID: 0}
+  - calca: {instanceID: 0}
+  - PersonagemFeminino: {instanceID: 0}
+  - blusaF: {instanceID: 0}
+  - calcaF: {instanceID: 0}
+  - oclinSprite: {instanceID: 0}
+  - estetoscopioSprite: {instanceID: 0}
+  - EsteticaNurse: {fileID: 11400000, guid: fcfc5772fb0a6a84a9b7df6e3a64168b, type: 2}
+  - scm: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
