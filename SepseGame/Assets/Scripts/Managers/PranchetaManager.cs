@@ -328,6 +328,7 @@ public class PranchetaManager : MonoBehaviour
     public void hideDiagnostico()
     {
         pranchetaDiag.SetActive(false);
+        Caso.pontuacao = 0;
     }
 
     public void opcaoUm()
@@ -360,36 +361,36 @@ public class PranchetaManager : MonoBehaviour
         SceneManager.LoadScene("Pacotao");
     }
 
-    public void VerificarChamadaMedico(int idx)
-    {
-        if (idx == 0)
-        {
-            if (Caso.buttonCorreto == 0)
-            {
-                Caso.abriuProtocolo = true;
-                Caso.pontuacao += 15;
-            }
-            else if (Caso.buttonCorreto >0)
-            {
-                Caso.pontuacao -= 10;
-            }
+    //public void VerificarChamadaMedico(int idx)
+    //{
+    //    if (idx == 0)
+    //    {
+    //        if (Caso.buttonCorreto == 0)
+    //        {
+    //            Caso.abriuProtocolo = true;
+    //            Caso.pontuacao += 15;
+    //        }
+    //        else if (Caso.buttonCorreto >0)
+    //        {
+    //            Caso.pontuacao -= 10;
+    //        }
                 
-        }
-        else if(idx == 1)
-        {
-            if (Caso.buttonCorreto == 0)
-            {
-                Caso.abriuProtocolo = false;
-                Caso.pontuacao -= 10;
-            }
-            else if(Caso.buttonCorreto > 0)
-            {
-                Caso.pontuacao += 10;
-            }
+    //    }
+    //    else if(idx == 1)
+    //    {
+    //        if (Caso.buttonCorreto == 0)
+    //        {
+    //            Caso.abriuProtocolo = false;
+    //            Caso.pontuacao -= 10;
+    //        }
+    //        else if(Caso.buttonCorreto > 0)
+    //        {
+    //            Caso.pontuacao += 10;
+    //        }
             
-        }
-        PopUpVerificamedico.SetActive(true);
-    }
+    //    }
+    //    PopUpVerificamedico.SetActive(true);
+    //}
 
     public void chamarEquipe()
     {
@@ -405,5 +406,18 @@ public class PranchetaManager : MonoBehaviour
         Caso.chamouEquipe = false;
         PopUpVerificamedico.SetActive(false);
         darDiagnostico();
+    }
+    public void abrirProtocolo()
+    {
+        Caso.pontuacao += 15;
+        Caso.abriuProtocolo = true;
+        PopUpVerificamedico.SetActive(true);
+    }
+
+    public void naoAbrirProtocolo()
+    {
+        Caso.pontuacao -= 10;
+        Caso.abriuProtocolo = false;
+        PopUpVerificamedico.SetActive(true);
     }
 }
