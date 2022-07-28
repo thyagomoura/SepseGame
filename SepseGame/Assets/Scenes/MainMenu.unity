@@ -292,7 +292,7 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 4.8
-  m_fontSizeMax: 47.7
+  m_fontSizeMax: 42
   m_fontStyle: 0
   m_HorizontalAlignment: 8
   m_VerticalAlignment: 512
@@ -3343,7 +3343,7 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 4.8
-  m_fontSizeMax: 47.7
+  m_fontSizeMax: 42
   m_fontStyle: 0
   m_HorizontalAlignment: 8
   m_VerticalAlignment: 512
