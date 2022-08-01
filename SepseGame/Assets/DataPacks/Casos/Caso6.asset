@@ -32,7 +32,7 @@ MonoBehaviour:
     EVA= 7/10 (dor moderada intensidade)."
   Respiratorio: "Ausculta pulmonar com murm\xFArios vesiculares presentes,  sem ru\xEDdos
     advent\xEDcios"
-  Cardiocirculatorio: "R\xEDtmico card\xEDaco regular, bulhas card\xEDacas  normofon\xE9ticas
+  Cardiocirculatorio: "Ritmo card\xEDaco regular, bulhas card\xEDacas  normofon\xE9ticas
     em 2 tempos, sem sopro."
   Gastrintestinal: "Abdome distendido, doloroso a palpa\xE7\xE3o profunda na  regi\xE3o
     epig\xE1strica. Ru\xEDdos hidroa\xE9reos presentes, por\xE9m reduzidos."
@@ -59,3 +59,4 @@ MonoBehaviour:
   - "Administrar analg\xE9sico endovenoso conforme prescri\xE7\xE3o medica"
   - Encaminhar o paciente para o exame de tomografia computadorizada de abdome
   condSelected: 
+  time: 0

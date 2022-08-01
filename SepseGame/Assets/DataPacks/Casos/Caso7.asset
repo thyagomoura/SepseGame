@@ -26,7 +26,7 @@ MonoBehaviour:
   Saturacao: 93% em ar ambiente
   FrequenciaRespiratoria: 20 ipm
   Temperatura: "38,9\xB0C"
-  Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa. Por\xE9m,  sonolenta,
+  Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa. Por\xE9m,  sonolento,
     fala arrastada"
   Respiratorio: "Ausculta pulmonar com murm\xFArios vesiculares presentes e sem ru\xEDdos
     advent\xEDcios"
@@ -57,3 +57,4 @@ MonoBehaviour:
   - "Avaliar n\xEDvel de consci\xEAncia de 2 em 2 horas"
   - Verificar e avaliar sinais vitais de 2 em 2 horas
   condSelected: 
+  time: 0
