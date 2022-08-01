@@ -91,7 +91,7 @@ public class EmailUtility : MonoBehaviour
             case 1:
                 //pontuacao
                 caso1[0, 0] = caso.pontuacao.ToString();
-                caso1[7, 0] = caso.time.ToString();
+                caso1[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso1);
                 //erros
@@ -111,7 +111,7 @@ public class EmailUtility : MonoBehaviour
             case 2:
                 //pontuacao
                 caso2[0, 0] = caso.pontuacao.ToString();
-                caso2[7, 0] = pack.lastTime.ToString();
+                caso2[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso2);
                 //erros
@@ -131,7 +131,7 @@ public class EmailUtility : MonoBehaviour
             case 3:
                 //pontuacao
                 caso3[0, 0] = caso.pontuacao.ToString();
-                caso3[7, 0] = caso.time.ToString();
+                caso3[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso3);
                 //erros
@@ -151,7 +151,7 @@ public class EmailUtility : MonoBehaviour
             case 4:
                 //pontuacao
                 caso4[0, 0] = caso.pontuacao.ToString();
-                caso4[7, 0] = caso.time.ToString();
+                caso4[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso4);
                 //erros
@@ -171,7 +171,7 @@ public class EmailUtility : MonoBehaviour
             case 5:
                 //pontuacao
                 caso5[0, 0] = caso.pontuacao.ToString();
-                caso5[7, 0] = caso.time.ToString();
+                caso5[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso5);
                 //erros
@@ -191,7 +191,7 @@ public class EmailUtility : MonoBehaviour
             case 6:
                 //pontuacao
                 caso6[0, 0] = caso.pontuacao.ToString();
-                caso6[7, 0] = caso.time.ToString();
+                caso6[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso6);
                 //erros
@@ -211,7 +211,7 @@ public class EmailUtility : MonoBehaviour
             case 7:
                 //pontuacao
                 caso7[0, 0] = caso.pontuacao.ToString();
-                caso7[7, 0] = caso.time.ToString();
+                caso7[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso7);
                 //erros
@@ -231,7 +231,7 @@ public class EmailUtility : MonoBehaviour
             case 8:
                 //pontuacao
                 caso8[0, 0] = caso.pontuacao.ToString();
-                caso8[7, 0] = caso.time.ToString();
+                caso8[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso8);
                 //erros
@@ -251,7 +251,7 @@ public class EmailUtility : MonoBehaviour
             case 9:
                 //pontuacao
                 caso9[0, 0] = caso.pontuacao.ToString();
-                caso9[7, 0] = caso.time.ToString();
+                caso9[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso9);
                 //erros
@@ -271,7 +271,7 @@ public class EmailUtility : MonoBehaviour
             case 10:
                 //pontuacao
                 caso10[0, 0] = caso.pontuacao.ToString();
-                caso10[7, 0] = caso.time.ToString();
+                caso10[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso10);
                 //erros
@@ -291,7 +291,7 @@ public class EmailUtility : MonoBehaviour
             case 11:
                 //pontuacao
                 caso11[0, 0] = caso.pontuacao.ToString();
-                caso11[7, 0] = caso.time.ToString();
+                caso11[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso11);
                 //erros
@@ -311,7 +311,7 @@ public class EmailUtility : MonoBehaviour
             case 12:
                 //pontuacao
                 caso12[0, 0] = caso.pontuacao.ToString();
-                caso12[7, 0] = caso.time.ToString();
+                caso12[7, 0] = ConvertTime();
                 //acertos
                 SaveAcertos(caso12);
                 //erros
