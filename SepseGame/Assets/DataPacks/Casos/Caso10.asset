@@ -25,7 +25,7 @@ MonoBehaviour:
   Saturacao: 92% em ar ambiente
   FrequenciaRespiratoria: 22 ipm
   Temperatura: "39\xB0C"
-  Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa"
+  Neurologico: "Consciente, orientada em tempo, espa\xE7o, pessoa"
   Respiratorio: "Ausculta pulmonar com murm\xFArios vesiculares presentes,  sem ru\xEDdos
     advent\xEDcios"
   Cardiocirculatorio: "R\xEDtmico card\xEDaco regular, taquicardia, bulhas  card\xEDacas
@@ -55,3 +55,4 @@ MonoBehaviour:
   - "Colher exames laboratorais solicitados pelo m\xE9dico fora do protocolo de sepse"
   - Verificar e avaliar sinais vitais de 2/2 horas
   condSelected: 
+  time: 0

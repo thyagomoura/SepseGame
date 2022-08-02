@@ -27,7 +27,7 @@ MonoBehaviour:
   Saturacao: 91% em ar ambiente
   FrequenciaRespiratoria: 26 ipm
   Temperatura: "36,5\xB0C"
-  Neurologico: "Consciente, orientado em tempo, espa\xE7o"
+  Neurologico: "Consciente, orientada em tempo, espa\xE7o"
   Respiratorio: "Taquipneica, expansibilidade pulmonar diminu\xEDda,  murm\xFArios
     vesiculares reduzidos em bases pulmonares, hemoptise."
   Cardiocirculatorio: "Taquicardia, bulhas r\xEDtmicas e hiperfon\xE9ticas, sem 
@@ -60,3 +60,4 @@ MonoBehaviour:
   - "Avaliar n\xEDvel de consci\xEAncia de 15 em 15 minutos"
   - "Administrar medica\xE7\xF5es e coletar exames solicitadas pelo m\xE9dico"
   condSelected: 
+  time: 0

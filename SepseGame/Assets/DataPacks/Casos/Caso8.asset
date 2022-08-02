@@ -31,7 +31,7 @@ MonoBehaviour:
   Neurologico: "Consciente, orientado em tempo, espa\xE7o, pessoa"
   Respiratorio: "A ausculta pulmonar sibilos difusos e roncos em hemit\xF3rax  direito
     e esquerdo, expira\xE7\xE3o prolongada"
-  Cardiocirculatorio: "R\xEDtmico card\xEDaco regular, bulhas card\xEDacas  normofon\xE9ticas
+  Cardiocirculatorio: "Ritmo card\xEDaco regular, bulhas card\xEDacas  normofon\xE9ticas
     em 2 tempos, sem sopro."
   Gastrintestinal: "Abdome globoso, fl\xE1cido, indolor a palpa\xE7\xE3o  superficial
     e profunda. Ru\xEDdos hidroa\xE9reos presentes."
@@ -62,3 +62,4 @@ MonoBehaviour:
   - "Encaminhar paciente para a Unidade de Terapia intensiva, imediatamente, ap\xF3s
     libera\xE7\xE3o m\xE9dica"
   condSelected: 
+  time: 0

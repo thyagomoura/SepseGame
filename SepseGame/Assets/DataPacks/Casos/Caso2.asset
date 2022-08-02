@@ -39,7 +39,7 @@ MonoBehaviour:
     Ru\xEDdos hidroa\xE9reos diminu\xEDdos"
   Renal: "Elimina\xE7\xE3o vesical presente com altera\xE7\xE3o na colora\xE7\xE3o
     da urina  (col\xFAria) e com volume m\xE9dio de 1.500 mL nas \xFAltimas 24 horas"
-  Imagem: {fileID: 0}
+  Imagem: {fileID: 21300000, guid: f9e914c1a2b313f4baeb8505e29f6d2c, type: 3}
   descricaoImagem: "Ultrassonografia abdominal: ves\xEDcula biliar distendida, com
     paredes  levemente espessadas e presen\xE7a de c\xE1lculos no seu interior."
   lab1: "n\xE3o tem"
@@ -64,3 +64,4 @@ MonoBehaviour:
   - "Postergar administra\xE7\xE3o de antimicrobianos at\xE9 defini\xE7\xE3o do quadro
     infecioso do paciente pela  equipe m\xE9dica"
   condSelected: 
+  time: 0

@@ -27,7 +27,7 @@ MonoBehaviour:
   Neurologico: "Prostrada, abertura ocular \xE0 voz, obedece a comandos  motores."
   Respiratorio: "A ausculta pulmonar murm\xFArios vesiculares presentes  sem ru\xEDdos
     advent\xEDcios."
-  Cardiocirculatorio: "Turgor da pele diminu\xEDdo. ritmo card\xEDaco regular,  bulhas
+  Cardiocirculatorio: "Turgor da pele diminu\xEDdo. Ritmo card\xEDaco regular,  bulhas
     card\xEDacas normofon\xE9ticas em 2 tempos, sem sopro."
   Gastrintestinal: "Abdome plano, levemente distendido, doloroso a  palpa\xE7\xE3o
     superficial e profunda. Ru\xEDdos hidroa\xE9reos aumentados"
@@ -58,3 +58,4 @@ MonoBehaviour:
   - "Encaminhar o paciente para a Unidade de Terapia Intensiva, ap\xF3s autoriza\xE7\xE3o
     m\xE9dica"
   condSelected: 
+  time: 0
