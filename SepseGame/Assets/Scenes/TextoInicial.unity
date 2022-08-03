@@ -189,20 +189,20 @@ MonoBehaviour:
     refere-se ao mau funcionamento de algum \xF3rg\xE3o do corpo humano. Para a triagem
     de pacientes com suspeita de sepse utiliza-se os seguintes indicadores de disfun\xE7\xE3o
     org\xE2nica: hipotens\xE3o: PAS < ou igual a 90mmHg; altera\xE7\xE3o do n\xEDvel
-    de consci\xEAncia; StO\u2082 < ou igual a 90%, necessidade de O\u2082 ou dispneia
-    importante. Exames laboratorais: creatinina > 2 mg/dL; Lactato acima do valor
-    normal ; Plaquetas < 100.000mm\xB3 ou INR>1,5; Bilirrubinas > 2mg/dL.\r\n\n<b>Sepse
-    Prov\xE1vel:</b>  disfun\xE7\xE3o org\xE2nica e foco infeccioso suspeito ou confirmado
-    na presen\xE7a ou n\xE3o de hipotens\xE3o. Considerar tamb\xE9m pacientes cujo
-    protocolo foi iniciado com base apenas nos crit\xE9rios de SRIS, sem disfun\xE7\xE3o
-    org\xE2nica clinicamente aparente mas que possuem fatores de risco para a sepse
-    como pacientes acima de 65 anos, imunossuprimidos e portadores de comorbidades
-    graves.O protocolo de sepse deve ser mantido, com coletas de exames e administra\xE7\xE3o
-    de antibi\xF3ticos na primeira hora. \r\n\n<b>Sepse Possivel:</b> pacientes com
-    crit\xE9rios de SRIS e foco infecioso suspeito ou confirmado,  sem disfun\xE7\xE3o
-    org\xE2nica e sem fatores de risco evidentes. O protocolo de sepse deve ser encerrado
-    e o atendimento ao paciente deve ser continuado, com o objetivo de avaliar se
-    existe realmente presen\xE7a de infec\xE7\xE3o, a presen\xE7a ou n\xE3o de sepse.\n"
+    de consci\xEAncia; StO2 < ou igual a 90%, necessidade de O2 ou dispneia importante.
+    Exames laboratorais: creatinina > 2 mg/dL; Lactato acima do valor normal ; Plaquetas
+    < 100.000mm\xB3 ou INR>1,5; Bilirrubinas > 2mg/dL.\r\n\n<b>Sepse Prov\xE1vel:</b> 
+    disfun\xE7\xE3o org\xE2nica e foco infeccioso suspeito ou confirmado na presen\xE7a
+    ou n\xE3o de hipotens\xE3o. Considerar tamb\xE9m pacientes cujo protocolo foi
+    iniciado com base apenas nos crit\xE9rios de SRIS, sem disfun\xE7\xE3o org\xE2nica
+    clinicamente aparente mas que possuem fatores de risco para a sepse como pacientes
+    acima de 65 anos, imunossuprimidos e portadores de comorbidades graves.O protocolo
+    de sepse deve ser mantido, com coletas de exames e administra\xE7\xE3o de antibi\xF3ticos
+    na primeira hora. \r\n\n<b>Sepse Possivel:</b> pacientes com crit\xE9rios de
+    SRIS e foco infecioso suspeito ou confirmado,  sem disfun\xE7\xE3o org\xE2nica
+    e sem fatores de risco evidentes. O protocolo de sepse deve ser encerrado e o
+    atendimento ao paciente deve ser continuado, com o objetivo de avaliar se existe
+    realmente presen\xE7a de infec\xE7\xE3o, a presen\xE7a ou n\xE3o de sepse.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -470,85 +470,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8218927766576583381, guid: 61f537d071f9c9440ba014995d09361b, type: 3}
   m_PrefabInstance: {fileID: 856160018}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &867082183
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 867082184}
-  - component: {fileID: 867082186}
-  - component: {fileID: 867082185}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &867082184
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867082183}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1574919382}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -174, y: -481}
-  m_SizeDelta: {x: 1161.19, y: 569.79}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &867082185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867082183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: e110c919ea5e84fea8cbc2f0556ecfef, type: 3}
-    m_FontSize: 100
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 300
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "O\u2082"
---- !u!222 &867082186
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867082183}
-  m_CullTransparentMesh: 1
 --- !u!1 &991827831
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,7 +660,6 @@ RectTransform:
   - {fileID: 215513073}
   - {fileID: 519910896}
   - {fileID: 856160019}
-  - {fileID: 867082184}
   m_Father: {fileID: 1996746696}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
