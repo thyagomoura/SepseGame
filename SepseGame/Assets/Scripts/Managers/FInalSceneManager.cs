@@ -18,7 +18,7 @@ public class FInalSceneManager : MonoBehaviour
             totalPontos += Casos[i].pontuacao;
         }
 
-        ptsTxt.GetComponent<TextMeshProUGUI>().text = "Você marcou " + totalPontos.ToString() + " pontos de 1940 pontos.";
+        ptsTxt.GetComponent<TextMeshProUGUI>().text = "VocÃª marcou <b>" + totalPontos.ToString() + "</b> pontos de <b>1940</b> pontos.";
     }
     IEnumerator Example()
     {

@@ -202,6 +202,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1782691619}
     m_Modifications:
+    - target: {fileID: 1542587375810697996, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -68
+      objectReference: {fileID: 0}
     - target: {fileID: 1542587375810697997, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
       propertyPath: m_text
       value: Obrigado por jogar!
@@ -225,6 +229,42 @@ PrefabInstance:
     - target: {fileID: 1542587376681158362, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
       propertyPath: m_text
       value: Fim de Jogo!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542587377209110684, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 276.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542587377209110684, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -32.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542587377508530681, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542587377508530681, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542587377508530681, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542587377508530681, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542587377508530681, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 69.98001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542587377508530681, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 271.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542587377508530681, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 18.699997
       objectReference: {fileID: 0}
     - target: {fileID: 2078739464231457309, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
       propertyPath: m_Name
@@ -326,6 +366,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: FInalSceneManager, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 7450959610440025582, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -276
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05fc505aa2316e74297e93206ace34cd, type: 3}
 --- !u!224 &331596551 stripped
@@ -372,7 +416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -57}
+  m_AnchoredPosition: {x: 0, y: 29}
   m_SizeDelta: {x: 550, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1004236204
@@ -395,7 +439,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Voc\xEA marcou 1940 pontos de 1940 pontos."
+  m_text: "Voc\xEA marcou <b>1940</b> pontos de <b>1940</b> pontos."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
   m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
