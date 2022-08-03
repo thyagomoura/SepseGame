@@ -70,7 +70,12 @@ public class Pontuacao : MonoBehaviour
             }
         }
 
-        ptsText.GetComponent<TextMeshProUGUI>().text = ptsText.GetComponent<TextMeshProUGUI>().text + " " + Caso.pontuacao.ToString() + " pontos";
+        if (Caso.pontuacao < 0)
+        {
+            Caso.pontuacao = 0;
+        }
+
+        ptsText.GetComponent<TextMeshProUGUI>().text = ptsText.GetComponent<TextMeshProUGUI>().text + " " + Caso.pontuacao.ToString() + "/" + (Caso.indexesCorretos.Count * 10 + 110).ToString() + " pontos";
 
         load2();
     }
@@ -85,19 +90,19 @@ public class Pontuacao : MonoBehaviour
         }
         if (!Caso.chamouEquipe)
         {
-            avisos[slot].text = "A Equipe Médica não foi acionada! -20 pontos";
+            avisos[slot].text = "A Equipe Médica não foi acionada! -10 pontos";
             slot++;
         }
         if (!Caso.apertouBotaoCorreto)
         {
             if (Caso.buttonCorreto == 1)
             {
-                avisos[slot].text = "O Protocolo de Sepse deveria ter sido descontinuado! -10 pontos";
+                avisos[slot].text = "O Protocolo de Sepse deveria ter sido descontinuado! -15 pontos";
                 slot++;
             }
             else
             {
-                avisos[slot].text = "O Protocolo de Sepse deveria ter sido continuado! -10 pontos";
+                avisos[slot].text = "O Protocolo de Sepse deveria ter sido continuado! -15 pontos";
                 slot++;
             }
         }

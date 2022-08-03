@@ -42,7 +42,7 @@ MonoBehaviour:
   indexesCorretos: 000000000300000004000000
   selecionados: 01000000
   buttonCorreto: 2
-  abriuProtocolo: 1
+  abriuProtocolo: 0
   chamouEquipe: 0
   apertouBotaoCorreto: 0
   sexo: 1
@@ -54,5 +54,5 @@ MonoBehaviour:
   - "Colher hemat\xF3crito"
   - "Verificar press\xE3o arterial e temperatura axilar de 2/2 horas"
   - Instituir controle de diurese de 2 em 2 horas
-  condSelected: 010000000200000005000000000000000400000003000000
+  condSelected: 
   time: 0

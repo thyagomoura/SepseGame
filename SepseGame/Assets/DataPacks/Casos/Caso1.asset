@@ -42,9 +42,9 @@ MonoBehaviour:
   lab3: "n\xE3o tem"
   lab4: "n\xE3o tem"
   indexesCorretos: 000000000300000004000000
-  selecionados: 
+  selecionados: 000000000300000004000000
   buttonCorreto: 1
-  abriuProtocolo: 1
+  abriuProtocolo: 0
   chamouEquipe: 0
   apertouBotaoCorreto: 0
   sexo: 1
@@ -58,3 +58,4 @@ MonoBehaviour:
   - "Instalar dispositivo urin\xE1rio sistema aberto para controle de d\xE9bito urin\xE1rio
     a cada 2 horas"
   condSelected: 
+  time: 0

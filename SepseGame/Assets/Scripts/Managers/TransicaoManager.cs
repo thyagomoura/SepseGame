@@ -13,7 +13,7 @@ public class TransicaoManager : MonoBehaviour
     void Start()
     {
         Estetica.set = false;
-        Debug.Log(EsteticaNurse.set);
+        //Debug.Log(EsteticaNurse.set);
         Estetica.currentCase++;
         if (Estetica.currentCase > 12)
         {
