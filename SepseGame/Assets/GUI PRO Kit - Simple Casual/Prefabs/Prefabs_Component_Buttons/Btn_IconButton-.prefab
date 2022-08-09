@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2413764840900920277}
   m_Layer: 0
-  m_Name: "Popup00-\u2193\u2193\u2193\u2193\u2193\u2193\u2193\u2193\u2193\u2193\u2193\u2193\u2193\u2193"
+  m_Name: Btn_IconButton-
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -182,6 +182,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 62cb05028d173cb4fa3acb016504c32a, type: 2}
   - {fileID: 11400000, guid: 15d368d6a7020bf46bb5b803d55a44b6, type: 2}
   - {fileID: 11400000, guid: 401ab15f4e846504f85665e7ec10603e, type: 2}
+  timer: {fileID: 0}
 --- !u!114 &45200669
 MonoBehaviour:
   m_ObjectHideFlags: 0
