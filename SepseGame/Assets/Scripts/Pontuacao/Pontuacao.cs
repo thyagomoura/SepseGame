@@ -17,6 +17,7 @@ public class Pontuacao : MonoBehaviour
     public List<GameObject> textsStats;
     public List<TextMeshProUGUI> avisos;
     public GameObject tempoText;
+    public TimerManager timer;
 
     public static int count = 0, countError = 0;
     float acertos;
@@ -131,6 +132,9 @@ public class Pontuacao : MonoBehaviour
         float seconds = Mathf.FloorToInt(Caso.time % 60);
 
         tempoText.GetComponent<TextMeshProUGUI>().text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        timer = GameObject.Find("Timer").GetComponent<TimerManager>();
+        timer.totalPoints += Caso.pontuacao;
     }
 
     public void transition()

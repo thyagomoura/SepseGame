@@ -12,6 +12,8 @@ public class TimerManager : MonoBehaviour
 
     private bool active = false;
 
+    public int totalPoints;
+
 
     void Awake()
     {

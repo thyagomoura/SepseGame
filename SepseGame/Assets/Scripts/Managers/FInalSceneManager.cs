@@ -9,14 +9,13 @@ public class FInalSceneManager : MonoBehaviour
     public GameObject ptsTxt;
     public List<Caso> Casos;
     int totalPontos;
+    public TimerManager timer;
 
     private void Start()
     {
-        int i;
-        for (i=0; i < Casos.Count; i++)
-        {
-            totalPontos += Casos[i].pontuacao;
-        }
+        timer = GameObject.Find("Timer").GetComponent<TimerManager>();
+
+        totalPontos = timer.totalPoints;
 
         ptsTxt.GetComponent<TextMeshProUGUI>().text = "Você marcou <b>" + totalPontos.ToString() + "</b> pontos de <b>1940</b> pontos.";
     }
