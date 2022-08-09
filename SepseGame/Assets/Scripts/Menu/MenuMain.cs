@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MenuMain : MonoBehaviour
 {
@@ -12,14 +13,15 @@ public class MenuMain : MonoBehaviour
     public GameObject anim1, anim2;
     public GameObject contButton;
     public EsteticaNurse EsteticaNurse;
+    public GameObject slider;
 
     private void Start()
     {
         if (gameObject.activeSelf)
         {
-            Musica.volume = 0.5f;
+            Musica = GameObject.Find("MusicManager").GetComponent<AudioSource>();
+            Musica.volume = slider.GetComponent<Slider>().value;
         }
-        
     }
 
     public void Play()
@@ -52,5 +54,11 @@ public class MenuMain : MonoBehaviour
         //ir pra customizacao de personagem
         EsteticaNurse.set = false;
         SceneManager.LoadScene("CustomizeNurse");
+    }
+
+    public void setVolume()
+    {
+        slider = GameObject.Find("VolumeSlider");
+        Musica.volume = slider.GetComponent<Slider>().value;
     }
 }

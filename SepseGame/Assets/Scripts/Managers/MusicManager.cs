@@ -24,6 +24,11 @@ public class MusicManager : MonoBehaviour
         }
     }
 
+    public void getSlider()
+    {
+        slider = GameObject.Find("VolumeSlider");
+    }
+
     public void setVolume()
     {
         slider = GameObject.Find("VolumeSlider");
